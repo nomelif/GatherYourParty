@@ -108,14 +108,14 @@ animations = [ {
 "name": "up_idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 28 ), ExtResource( 27 ) ],
-"loop": true,
-"name": "left_idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "down_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "left_idle",
 "speed": 5.0
 } ]
 
@@ -192,5 +192,6 @@ script = SubResource( 4 )
 [node name="SorceressSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 327.893, 202.266 )
 frames = SubResource( 5 )
+frame = 1
 playing = true
 offset = Vector2( 0, -85 )
