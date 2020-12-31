@@ -7,7 +7,7 @@
 0/texture = ExtResource( 1 )
 0/tex_offset = Vector2( 0, 0 )
 0/modulate = Color( 1, 1, 1, 1 )
-0/region = Rect2( 0, 0, 200, 200 )
+0/region = Rect2( 0, 0, 200, 10800 )
 0/tile_mode = 2
 0/autotile/icon_coordinate = Vector2( 0, 0 )
 0/autotile/tile_size = Vector2( 200, 200 )
@@ -24,30 +24,8 @@
 0/shape_one_way_margin = 0.0
 0/shapes = [  ]
 0/z_index = 0
-1/name = "atlas.png 1"
-1/texture = ExtResource( 1 )
-1/tex_offset = Vector2( 0, 0 )
-1/modulate = Color( 1, 1, 1, 1 )
-1/region = Rect2( 0, 0, 200, 10000 )
-1/tile_mode = 2
-1/autotile/icon_coordinate = Vector2( 0, 0 )
-1/autotile/tile_size = Vector2( 200, 200 )
-1/autotile/spacing = 0
-1/autotile/occluder_map = [  ]
-1/autotile/navpoly_map = [  ]
-1/autotile/priority_map = [  ]
-1/autotile/z_index_map = [  ]
-1/occluder_offset = Vector2( 0, 0 )
-1/navigation_offset = Vector2( 0, 0 )
-1/shape_offset = Vector2( 0, 0 )
-1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
-1/shape_one_way = false
-1/shape_one_way_margin = 0.0
-1/shapes = [  ]
-1/z_index = 0
 
 [node name="TileMap" type="TileMap"]
 tile_set = SubResource( 1 )
 cell_size = Vector2( 200, 200 )
 format = 1
-tile_data = PoolIntArray( 0, 1, 1769472, 1, 1, 1769472, 2, 1, 1769472, 3, 1, 1769472, 4, 1, 1769472, 5, 1, 1769472, 9, 1, 1703936, 65536, 1, 1769472, 65537, 1, 1769472, 65538, 1, 2162688, 65539, 1, 1966080, 65540, 1, 1966080, 65541, 1, 2228224, 65545, 1, 1703936, 131072, 1, 2949120, 131073, 1, 2949120, 131074, 1, 1900544, 131075, 1, 2097152, 131076, 1, 2097152, 131077, 1, 2031616, 131080, 1, 1703936, 131081, 1, 1703936, 131082, 1, 1703936, 196608, 1, 1114112, 196609, 1, 1376256, 196610, 1, 3014656, 196611, 1, 1835008, 196612, 1, 1835008, 196613, 1, 2293760, 196616, 1, 1703936, 196617, 1, 1703936, 196618, 1, 1703936, 262144, 1, 2424832, 262145, 1, 1441792, 262146, 1, 3014656, 262147, 1, 1769472, 262148, 1, 1769472, 262149, 1, 1769472 )
