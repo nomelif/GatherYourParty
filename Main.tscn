@@ -158,12 +158,28 @@ shape = SubResource( 1 )
 
 [node name="FighterSprite" type="AnimatedSprite" parent="PlayerCharacter"]
 position = Vector2( -1.0061, -89.9921 )
+z_as_relative = false
 frames = SubResource( 2 )
 animation = "down_idle"
 script = SubResource( 3 )
 
 [node name="SorceressSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 327.893, 202.266 )
+frames = SubResource( 4 )
+animation = "left"
+playing = true
+offset = Vector2( 0, -85 )
+
+[node name="HealerSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 489.146, 204.048 )
+frames = SubResource( 4 )
+animation = "left"
+frame = 1
+playing = true
+offset = Vector2( 0, -85 )
+
+[node name="ProtectorSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 633.471, 204.939 )
 frames = SubResource( 4 )
 animation = "left"
 frame = 1
