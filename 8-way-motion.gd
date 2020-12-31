@@ -3,45 +3,51 @@ extends KinematicBody2D
 export (int) var speed = 350
 
 var velocity = Vector2()
-var idle_animation = 'default'
+var direction = 'down'
 var positions = []
+var directions = []
 var position_index = 0
 
 func get_input():
 	velocity = Vector2()
-	var animation_choice = idle_animation
 	if Input.is_action_pressed('right'):
-		animation_choice = 'right'
+		direction = 'right'
 		velocity.x += 1
 	if Input.is_action_pressed('left'):
-		animation_choice = 'left'
+		direction = 'left'
 		velocity.x -= 1
 	if Input.is_action_pressed('down'):
-		animation_choice = 'down'
+		direction = 'down'
 		velocity.y += 1
 	if Input.is_action_pressed('up'):
-		animation_choice = 'up'
+		direction = 'up'
 		velocity.y -= 1
-	
-	if "idle" in animation_choice:
-		idle_animation = animation_choice
+	if velocity != Vector2(0, 0):
+		$FighterSprite.play(direction)
 	else:
-		idle_animation = animation_choice + "_idle"
-	
-	$FighterSprite.play(animation_choice)
-	get_node('../SorceressSprite').play(animation_choice)
+		$FighterSprite.play(direction + "_idle")
+	# get_node('../SorceressSprite').play(animation_choice)
 	velocity = velocity.normalized() * speed
 
 func _physics_process(delta):
 	get_input()
 	velocity = move_and_slide(velocity)
+	
+	if len(positions) == 20:
+		if velocity == Vector2(0, 0):
+			get_node('../SorceressSprite').play(directions[(position_index + 1) % 20] + "_idle")
+		else:
+			get_node('../SorceressSprite').play(directions[(position_index + 1) % 20])
+	
 	if not velocity == Vector2(0, 0):
 		if len(positions) < 20:
 			positions.append(position)
+			directions.append(direction)
 			position_index += 1
 			position_index %= 20
 		else:
 			positions[position_index] = position
+			directions[position_index] = direction
 			position_index += 1
 			position_index %= 20
 			if len(positions) == 20:

@@ -166,5 +166,6 @@ script = SubResource( 3 )
 position = Vector2( 327.893, 202.266 )
 frames = SubResource( 4 )
 animation = "left"
+frame = 1
 playing = true
 offset = Vector2( 0, -85 )
