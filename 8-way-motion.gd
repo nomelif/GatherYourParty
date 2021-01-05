@@ -63,4 +63,4 @@ func _physics_process(delta):
 				y_order.sort()
 				for i in range(4):
 					get_node(y_order[i][0]).z_index = 10 - i
-	
+	get_node('../Camera2D').position = position;	
