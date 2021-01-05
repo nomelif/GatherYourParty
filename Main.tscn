@@ -68,7 +68,7 @@
 [ext_resource path="res://Character animation/Protector/hahmo_taka_b.png" type="Texture" id=66]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 40, 90.0107 )
+extents = Vector2( 40, 15.2259 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
@@ -271,7 +271,7 @@ z_index = 10
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter"]
-position = Vector2( 2, -87.4955 )
+position = Vector2( -1.07477, -14.7663 )
 shape = SubResource( 1 )
 
 [node name="FighterSprite" type="AnimatedSprite" parent="PlayerCharacter"]
