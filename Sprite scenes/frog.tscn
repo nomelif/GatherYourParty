@@ -1,0 +1,41 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Sprites Finished/frog_idle_b.png" type="Texture" id=1]
+[ext_resource path="res://Sprites Finished/frog_idle_a.png" type="Texture" id=2]
+[ext_resource path="res://Sprite scenes/Frog.gd" type="Script" id=3]
+[ext_resource path="res://Sprites Finished/frog_mid_air.png" type="Texture" id=4]
+[ext_resource path="res://Sprites Finished/frog_descending.png" type="Texture" id=5]
+[ext_resource path="res://Sprites Finished/frog_leaping.png" type="Texture" id=6]
+[ext_resource path="res://Sprites Finished/frog_squish.png" type="Texture" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 14.1486, 8.00197 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "idle",
+"speed": 2.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "jump",
+"speed": 5.0
+} ]
+
+[node name="Frog" type="Node2D"]
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D"]
+shape = SubResource( 1 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+frames = SubResource( 2 )
+animation = "idle"
+frame = 1
+playing = true
