@@ -22,7 +22,6 @@ func _ready():
 
 func _stop():
 	jump_direction = Vector2(0, 0)
-	print("Noni")
 
 func _on_timer_timeout():
 	var jump_proposed = Vector2(0, 0)
@@ -31,7 +30,6 @@ func _on_timer_timeout():
 	jump_direction = jump_proposed.normalized()
 	vertical_speed = Vector2(0, -2.5)
 	$AnimatedSprite.play("jump")
-	print("Jump direction: " + str(jump_direction))
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
