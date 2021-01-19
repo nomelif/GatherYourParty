@@ -57,10 +57,4 @@ func _physics_process(delta):
 			if len(positions) == 60:
 				for i in range(3):
 					get_node('../'+sprites[i]+'Sprite').position = positions[(position_index + 1 + i*20) % 60]
-				y_order = [['FighterSprite', position.y]]
-				for i in range(3):
-					y_order.append(['../'+sprites[i]+'Sprite', get_node('../'+sprites[i]+'Sprite').position.y])
-				y_order.sort()
-				for i in range(4):
-					get_node(y_order[i][0]).z_index = 10 - i
-	get_node('../Camera2D').position = position;	
+	get_node('/root/Main/Camera2D').position = position;	

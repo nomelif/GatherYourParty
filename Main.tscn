@@ -72,24 +72,19 @@ extents = Vector2( 40, 15.2259 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 9 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "right",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 10 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "left",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 9 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "right",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 28 ), ExtResource( 27 ) ],
@@ -100,6 +95,11 @@ animations = [ {
 "frames": [ ExtResource( 25 ), ExtResource( 26 ) ],
 "loop": true,
 "name": "right_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 12 ), ExtResource( 11 ) ],
@@ -134,24 +134,19 @@ func _ready():
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
-"loop": true,
-"name": "right",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 14 ), ExtResource( 20 ) ],
 "loop": true,
 "name": "left",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "right",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 36 ), ExtResource( 35 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 31 ), ExtResource( 32 ) ],
@@ -162,6 +157,11 @@ animations = [ {
 "frames": [ ExtResource( 33 ), ExtResource( 34 ) ],
 "loop": true,
 "name": "right_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 19 ), ExtResource( 13 ) ],
@@ -177,24 +177,19 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ ExtResource( 43 ), ExtResource( 44 ) ],
-"loop": true,
-"name": "right",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 48 ), ExtResource( 45 ) ],
 "loop": true,
 "name": "left",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 43 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "right",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 39 ), ExtResource( 40 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 15 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 49 ), ExtResource( 50 ) ],
@@ -205,6 +200,11 @@ animations = [ {
 "frames": [ ExtResource( 42 ), ExtResource( 41 ) ],
 "loop": true,
 "name": "right_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 38 ), ExtResource( 37 ) ],
@@ -220,24 +220,19 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ ExtResource( 57 ), ExtResource( 61 ) ],
-"loop": true,
-"name": "right",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 60 ), ExtResource( 59 ) ],
 "loop": true,
 "name": "left",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 57 ), ExtResource( 61 ) ],
+"loop": true,
+"name": "right",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 51 ), ExtResource( 66 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 64 ), ExtResource( 63 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 62 ), ExtResource( 58 ) ],
@@ -248,6 +243,11 @@ animations = [ {
 "frames": [ ExtResource( 53 ), ExtResource( 52 ) ],
 "loop": true,
 "name": "right_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 55 ), ExtResource( 54 ) ],
@@ -263,40 +263,42 @@ animations = [ {
 
 [node name="Main" type="Node2D"]
 
-[node name="Map" parent="." instance=ExtResource( 1 )]
+[node name="YSort" type="YSort" parent="."]
 
-[node name="PlayerCharacter" type="KinematicBody2D" parent="."]
+[node name="Map" parent="YSort" instance=ExtResource( 1 )]
+
+[node name="PlayerCharacter" type="KinematicBody2D" parent="YSort"]
 position = Vector2( 145, 607 )
 z_index = 10
 script = ExtResource( 3 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayerCharacter"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/PlayerCharacter"]
 position = Vector2( -1.07477, -14.7663 )
 shape = SubResource( 1 )
 
-[node name="FighterSprite" type="AnimatedSprite" parent="PlayerCharacter"]
+[node name="FighterSprite" type="AnimatedSprite" parent="YSort/PlayerCharacter"]
 position = Vector2( -1.0061, -89.9921 )
 z_as_relative = false
 frames = SubResource( 2 )
 animation = "down_idle"
 script = SubResource( 3 )
 
-[node name="SorceressSprite" type="AnimatedSprite" parent="."]
+[node name="SorceressSprite" type="AnimatedSprite" parent="YSort"]
 position = Vector2( 327.893, 202.266 )
 frames = SubResource( 4 )
 animation = "left"
+playing = true
+offset = Vector2( 0, -85 )
+
+[node name="HealerSprite" type="AnimatedSprite" parent="YSort"]
+position = Vector2( 482.868, 203.125 )
+frames = SubResource( 5 )
+animation = "up_idle"
 frame = 1
 playing = true
 offset = Vector2( 0, -85 )
 
-[node name="HealerSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 482.868, 203.125 )
-frames = SubResource( 5 )
-animation = "up_idle"
-playing = true
-offset = Vector2( 0, -85 )
-
-[node name="ProtectorSprite" type="AnimatedSprite" parent="."]
+[node name="ProtectorSprite" type="AnimatedSprite" parent="YSort"]
 position = Vector2( 607.594, 203.125 )
 frames = SubResource( 6 )
 animation = "left_idle"
