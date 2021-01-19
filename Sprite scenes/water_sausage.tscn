@@ -14,5 +14,7 @@ animations = [ {
 [node name="Node2D" type="Node2D"]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 0, -76.225 )
 frames = SubResource( 1 )
+frame = 1
 playing = true

@@ -3,7 +3,7 @@
 [ext_resource path="res://Hub.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Ruin.tscn" type="PackedScene" id=2]
 
-[node name="Map" type="Node2D"]
+[node name="Map" type="YSort"]
 
 [node name="Hub" parent="." instance=ExtResource( 1 )]
 
