@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/area1_door_1gem.tscn" type="PackedScene" id=2]
@@ -33,6 +33,14 @@
 [ext_resource path="res://Sprite scenes/water_extra_small_anim.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Sprite scenes/water_small_anim.tscn" type="PackedScene" id=32]
 [ext_resource path="res://Sprite scenes/water_big_anim.tscn" type="PackedScene" id=33]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 34.2408
+height = 155.089
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 26.6217
+height = 57.0522
 
 [node name="Hub" type="YSort"]
 
@@ -1630,3 +1638,136 @@ position = Vector2( 1390.85, 3881.81 )
 
 [node name="Forest Trees" parent="Forest Trees" instance=ExtResource( 27 )]
 position = Vector2( 1467.05, 3513.53 )
+
+[node name="River" type="KinematicBody2D" parent="."]
+
+[node name="Segment 1" type="CollisionShape2D" parent="River"]
+position = Vector2( 39.954, 1827.54 )
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 2" type="CollisionShape2D" parent="River"]
+position = Vector2( 132.096, 1955.06 )
+rotation = -1.1945
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 3" type="CollisionShape2D" parent="River"]
+position = Vector2( 412.648, 2085.67 )
+rotation = -0.534959
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 4" type="CollisionShape2D" parent="River"]
+position = Vector2( 306.078, 2012.31 )
+rotation = -1.1945
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 5" type="CollisionShape2D" parent="River"]
+position = Vector2( 569.784, 2180.69 )
+rotation = -1.30117
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 6" type="CollisionShape2D" parent="River"]
+position = Vector2( 760.436, 2215.43 )
+rotation = -1.52367
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 7" type="CollisionShape2D" parent="River"]
+position = Vector2( 947.887, 2258.08 )
+rotation = -1.24295
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 8" type="CollisionShape2D" parent="River"]
+position = Vector2( 1138.71, 2305.23 )
+rotation = -1.43616
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 9" type="CollisionShape2D" parent="River"]
+position = Vector2( 1336.26, 2345.26 )
+rotation = -1.28244
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 10" type="CollisionShape2D" parent="River"]
+position = Vector2( 1491.82, 2386.47 )
+rotation = -1.47477
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 11" type="CollisionShape2D" parent="River"]
+position = Vector2( 1610.39, 2463.83 )
+rotation = -0.750631
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 12" type="CollisionShape2D" parent="River"]
+position = Vector2( 1771.84, 2564.74 )
+rotation = -1.31273
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 13" type="CollisionShape2D" parent="River"]
+position = Vector2( 1891.65, 2595.66 )
+rotation = -1.31273
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 14" type="CollisionShape2D" parent="River"]
+position = Vector2( 2116.84, 2711.93 )
+rotation = -0.645386
+z_index = 1000
+shape = SubResource( 2 )
+
+[node name="Segment 15" type="CollisionShape2D" parent="River"]
+position = Vector2( 2238.49, 2794.34 )
+rotation = -1.26772
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 16" type="CollisionShape2D" parent="River"]
+position = Vector2( 2438.29, 2849.34 )
+rotation = -1.42047
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 17" type="CollisionShape2D" parent="River"]
+position = Vector2( 2629.17, 2895.59 )
+rotation = -1.23497
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 18" type="CollisionShape2D" parent="River"]
+position = Vector2( 2782.37, 3010.33 )
+rotation = -0.617341
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 19" type="CollisionShape2D" parent="River"]
+position = Vector2( 2896.92, 3163.06 )
+rotation = -0.674507
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 20" type="CollisionShape2D" parent="River"]
+position = Vector2( 3059.67, 3271.94 )
+rotation = -1.28132
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 21" type="CollisionShape2D" parent="River"]
+position = Vector2( 3247.13, 3316.84 )
+rotation = -1.4858
+z_index = 4096
+shape = SubResource( 1 )
+
+[node name="Segment 22" type="CollisionShape2D" parent="River"]
+position = Vector2( 3405.9, 3345.91 )
+rotation = -1.27216
+z_index = 4096
+shape = SubResource( 1 )
