@@ -8,8 +8,9 @@ extents = Vector2( 93.5805, 10.9635 )
 [node name="Ruin wall vines" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -89.0954 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 79.7354 )
+position = Vector2( 0, -9.36 )
 shape = SubResource( 1 )

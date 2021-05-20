@@ -9,12 +9,13 @@ height = 32.5095
 [node name="Frontfacing Gate" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -179.605 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -103.238, 136.472 )
+position = Vector2( -103.238, -43.1331 )
 shape = SubResource( 1 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
-position = Vector2( 94.7523, 136.472 )
+position = Vector2( 94.7523, -43.1331 )
 shape = SubResource( 1 )

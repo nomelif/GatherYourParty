@@ -9,8 +9,9 @@ height = 30.3464
 [node name="Pillar vines" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 0, -183.848 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( -23.5969, 146.301 )
+position = Vector2( -23.5969, -37.5467 )
 shape = SubResource( 1 )
