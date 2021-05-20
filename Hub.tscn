@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=58 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/area1_door_1gem.tscn" type="PackedScene" id=2]
@@ -54,6 +54,7 @@
 [ext_resource path="res://Sprite scenes/butterfly_2.tscn" type="PackedScene" id=52]
 [ext_resource path="res://Sprite scenes/butterfly_3.tscn" type="PackedScene" id=53]
 [ext_resource path="res://Sprite scenes/butterfly_1.tscn" type="PackedScene" id=54]
+[ext_resource path="res://Sprite scenes/River_animation.gd" type="Script" id=55]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 34.2408
@@ -1600,80 +1601,84 @@ position = Vector2( 376.429, 1503.9 )
 [node name="Node2D183" parent="Background/Grass" instance=ExtResource( 10 )]
 position = Vector2( 45.5033, 1597.24 )
 
-[node name="River" parent="Background" instance=ExtResource( 13 )]
-position = Vector2( 105.805, 1997.91 )
+[node name="River" type="Node2D" parent="Background"]
+script = ExtResource( 55 )
 
-[node name="Node2D" parent="Background/River" instance=ExtResource( 15 )]
-position = Vector2( 190.488, 22.2235 )
+[node name="Node2D23" parent="Background/River" instance=ExtResource( 13 )]
+position = Vector2( -302.156, 1598.31 )
 
-[node name="Node2D2" parent="Background/River" instance=ExtResource( 14 )]
-position = Vector2( 298.431, 80.9573 )
+[node name="Node2D22" parent="Background/River" instance=ExtResource( 14 )]
+position = Vector2( -182.766, 1650.84 )
 
-[node name="Node2D3" parent="Background/River" instance=ExtResource( 13 )]
-position = Vector2( 455.584, 226.998 )
+[node name="Node2D21" parent="Background/River" instance=ExtResource( 15 )]
+position = Vector2( -22.4389, 1768.31 )
 
-[node name="Node2D4" parent="Background/River" instance=ExtResource( 15 )]
-position = Vector2( 641.531, 245.321 )
-
-[node name="Node2D5" parent="Background/River" instance=ExtResource( 13 )]
-position = Vector2( 819.32, 300.88 )
-
-[node name="Node2D6" parent="Background/River" instance=ExtResource( 15 )]
-position = Vector2( 1012.98, 329.453 )
-
-[node name="Node2D" parent="Background/River/Node2D6" instance=ExtResource( 13 )]
-position = Vector2( 190.488, 57.1465 )
-
-[node name="Node2D2" parent="Background/River/Node2D6" instance=ExtResource( 15 )]
-position = Vector2( 380.976, 84.1321 )
-
-[node name="Node2D3" parent="Background/River/Node2D6" instance=ExtResource( 14 )]
-position = Vector2( 496.856, 138.104 )
-
-[node name="Node2D4" parent="Background/River/Node2D6" instance=ExtResource( 13 )]
-position = Vector2( 671.471, 290.494 )
-
-[node name="Node2D5" parent="Background/River/Node2D6" instance=ExtResource( 15 )]
-position = Vector2( 864.475, 317.16 )
-
-[node name="Node2D6" parent="Background/River/Node2D6" instance=ExtResource( 14 )]
-position = Vector2( 985.118, 375.746 )
-
-[node name="Node2D7" parent="Background/River/Node2D6" instance=ExtResource( 13 )]
-position = Vector2( 1158.14, 528.136 )
-
-[node name="Node2D8" parent="Background/River/Node2D6" instance=ExtResource( 15 )]
-position = Vector2( 1345.46, 553.535 )
-
-[node name="Node2D9" parent="Background/River/Node2D6" instance=ExtResource( 13 )]
-position = Vector2( 1519.78, 618.297 )
-
-[node name="Node2D10" parent="Background/River/Node2D6" instance=ExtResource( 14 )]
-position = Vector2( 1645.18, 665.919 )
-
-[node name="Node2D11" parent="Background/River/Node2D6" instance=ExtResource( 14 )]
-position = Vector2( 1772.17, 827.834 )
-
-[node name="Node2D12" parent="Background/River/Node2D6" instance=ExtResource( 13 )]
-position = Vector2( 1932.5, 986.574 )
-
-[node name="Node2D13" parent="Background/River/Node2D6" instance=ExtResource( 15 )]
-position = Vector2( 2129.34, 1013.56 )
-
-[node name="Node2D14" parent="Background/River/Node2D6" instance=ExtResource( 13 )]
-position = Vector2( 2300.78, 1069.12 )
-
-[node name="Waterfall" parent="Background" instance=ExtResource( 12 )]
+[node name="Waterfall" parent="Background/River" instance=ExtResource( 12 )]
 position = Vector2( 69.8457, 1865.2 )
 
-[node name="Node2D" parent="Background/Waterfall" instance=ExtResource( 15 )]
-position = Vector2( -92.2846, -96.8934 )
+[node name="River_node" parent="Background/River" instance=ExtResource( 13 )]
+position = Vector2( 105.805, 1997.91 )
+z_index = -1
 
-[node name="Node2D2" parent="Background/Waterfall" instance=ExtResource( 14 )]
-position = Vector2( -252.612, -214.361 )
+[node name="Node2D" parent="Background/River" instance=ExtResource( 15 )]
+position = Vector2( 296.293, 2020.13 )
 
-[node name="Node2D3" parent="Background/Waterfall" instance=ExtResource( 13 )]
-position = Vector2( -372.002, -266.893 )
+[node name="Node2D2" parent="Background/River" instance=ExtResource( 14 )]
+position = Vector2( 404.236, 2078.87 )
+
+[node name="Node2D3" parent="Background/River" instance=ExtResource( 13 )]
+position = Vector2( 561.389, 2224.91 )
+
+[node name="Node2D4" parent="Background/River" instance=ExtResource( 15 )]
+position = Vector2( 747.336, 2243.23 )
+
+[node name="Node2D5" parent="Background/River" instance=ExtResource( 13 )]
+position = Vector2( 925.125, 2298.79 )
+
+[node name="Node2D6" parent="Background/River" instance=ExtResource( 15 )]
+position = Vector2( 1118.79, 2327.36 )
+
+[node name="Node2D7" parent="Background/River" instance=ExtResource( 13 )]
+position = Vector2( 1309.27, 2384.51 )
+
+[node name="Node2D8" parent="Background/River" instance=ExtResource( 15 )]
+position = Vector2( 1499.76, 2411.5 )
+
+[node name="Node2D9" parent="Background/River" instance=ExtResource( 14 )]
+position = Vector2( 1615.64, 2465.47 )
+
+[node name="Node2D10" parent="Background/River" instance=ExtResource( 13 )]
+position = Vector2( 1790.26, 2617.86 )
+
+[node name="Node2D11" parent="Background/River" instance=ExtResource( 15 )]
+position = Vector2( 1983.26, 2644.52 )
+
+[node name="Node2D12" parent="Background/River" instance=ExtResource( 14 )]
+position = Vector2( 2103.9, 2703.11 )
+
+[node name="Node2D13" parent="Background/River" instance=ExtResource( 13 )]
+position = Vector2( 2276.93, 2855.5 )
+
+[node name="Node2D14" parent="Background/River" instance=ExtResource( 15 )]
+position = Vector2( 2464.25, 2880.9 )
+
+[node name="Node2D15" parent="Background/River" instance=ExtResource( 13 )]
+position = Vector2( 2638.56, 2945.66 )
+
+[node name="Node2D16" parent="Background/River" instance=ExtResource( 14 )]
+position = Vector2( 2763.97, 2993.28 )
+
+[node name="Node2D17" parent="Background/River" instance=ExtResource( 14 )]
+position = Vector2( 2890.96, 3155.2 )
+
+[node name="Node2D18" parent="Background/River" instance=ExtResource( 13 )]
+position = Vector2( 3051.29, 3313.94 )
+
+[node name="Node2D19" parent="Background/River" instance=ExtResource( 15 )]
+position = Vector2( 3248.12, 3340.92 )
+
+[node name="Node2D20" parent="Background/River" instance=ExtResource( 13 )]
+position = Vector2( 3419.56, 3396.48 )
 
 [node name="Broken Bridge" parent="Background" instance=ExtResource( 16 )]
 position = Vector2( 2037.92, 2631.08 )
