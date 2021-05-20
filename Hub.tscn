@@ -1767,7 +1767,7 @@ z_index = 4096
 shape = SubResource( 1 )
 
 [node name="Segment 22" type="CollisionShape2D" parent="River"]
-position = Vector2( 3405.9, 3345.91 )
+position = Vector2( 3446.87, 3441.32 )
 rotation = -1.27216
 z_index = 4096
 shape = SubResource( 1 )
