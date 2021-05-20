@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Sprites/fog 3 copy.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/fog 1 copy.png" type="Texture" id=2]
@@ -12,9 +12,17 @@ animations = [ {
 "speed": 2.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 146.001
+height = 111.999
+
+[node name="Fog" type="KinematicBody2D"]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
 frame = 3
 playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.57079
+shape = SubResource( 2 )
