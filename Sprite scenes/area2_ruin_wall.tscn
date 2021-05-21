@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Sprites/Area 2 ruin wall.png" type="Texture" id=1]
+[ext_resource path="res://Shadow.tscn" type="PackedScene" id=2]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 92.3208, 16.492 )
@@ -8,9 +9,19 @@ extents = Vector2( 92.3208, 16.492 )
 [node name="Ruin wall" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
+light_mask = 32
 position = Vector2( 0, -90.5096 )
 texture = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, -15.5896 )
 shape = SubResource( 1 )
+
+[node name="Shadow" parent="." instance=ExtResource( 2 )]
+position = Vector2( -82.4921, 0.157181 )
+
+[node name="Shadow2" parent="." instance=ExtResource( 2 )]
+position = Vector2( -2.22049, 0.157181 )
+
+[node name="Shadow3" parent="." instance=ExtResource( 2 )]
+position = Vector2( 86.3756, 0.157181 )

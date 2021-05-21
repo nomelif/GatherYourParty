@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Sprites/Area 2 ruin side copy.png" type="Texture" id=1]
+[ext_resource path="res://Shadow.tscn" type="PackedScene" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 19.7419
@@ -9,6 +10,7 @@ height = 33.7801
 [node name="Gate sidefacing" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
+light_mask = 32
 position = Vector2( 0, -154.149 )
 texture = ExtResource( 1 )
 
@@ -19,3 +21,9 @@ shape = SubResource( 1 )
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2( 50.3969, -31.9372 )
 shape = SubResource( 1 )
+
+[node name="Shadow" parent="." instance=ExtResource( 2 )]
+position = Vector2( -60.2632, 4.94588 )
+
+[node name="Shadow2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 60.6893, -18.3627 )

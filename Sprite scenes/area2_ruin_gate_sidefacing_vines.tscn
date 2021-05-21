@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Sprites/Area 2 ruin side with plants.png" type="Texture" id=1]
+[ext_resource path="res://Shadow.tscn" type="PackedScene" id=2]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 20.8528
@@ -8,6 +9,7 @@ radius = 20.8528
 [node name="Gate sidefacing vines" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
+light_mask = 32
 position = Vector2( 0, -151.321 )
 texture = ExtResource( 1 )
 
@@ -18,3 +20,9 @@ shape = SubResource( 1 )
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="."]
 position = Vector2( 51.44, -25.6258 )
 shape = SubResource( 1 )
+
+[node name="Shadow" parent="." instance=ExtResource( 2 )]
+position = Vector2( -66.1036, 3.56567 )
+
+[node name="Shadow2" parent="." instance=ExtResource( 2 )]
+position = Vector2( 48.983, -24.2139 )
