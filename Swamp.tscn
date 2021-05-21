@@ -6,5 +6,5 @@
 
 [node name="SwampTiles" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
+cell_size = Vector2( 200, 200 )
 format = 1
-tile_data = PoolIntArray( 0, 0, 2752512, 196608, 0, 2752512 )

@@ -6,5 +6,6 @@
 
 [node name="MeadowTiles" type="TileMap" parent="."]
 tile_set = ExtResource( 1 )
+cell_size = Vector2( 200, 200 )
 format = 1
 tile_data = PoolIntArray( 0, 0, 917504, 196608, 0, 917504 )
