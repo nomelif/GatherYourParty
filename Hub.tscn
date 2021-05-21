@@ -2296,10 +2296,6 @@ position = Vector2( 1390.85, 3881.81 )
 [node name="Forest Trees" parent="Forest Trees" instance=ExtResource( 27 )]
 position = Vector2( 1467.05, 3513.53 )
 
-[node name="Node2D3" parent="Forest Trees" instance=ExtResource( 37 )]
-position = Vector2( 1273.68, 3307.27 )
-scale = Vector2( 1.4, 1.64 )
-
 [node name="Node2D4" parent="Forest Trees" instance=ExtResource( 25 )]
 position = Vector2( 1177.35, 3398.13 )
 
@@ -2331,6 +2327,10 @@ scale = Vector2( 0.96, 0.68 )
 [node name="Node2D13" parent="Forest Trees" instance=ExtResource( 22 )]
 position = Vector2( 731.952, 3410.75 )
 scale = Vector2( 1, 0.76 )
+
+[node name="Fallen tree dead 2" parent="Forest Trees" instance=ExtResource( 37 )]
+position = Vector2( 1403.53, 3376.49 )
+scale = Vector2( 1.5, 1.5 )
 
 [node name="River" type="KinematicBody2D" parent="."]
 
