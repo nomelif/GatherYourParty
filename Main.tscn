@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=2]
+[gd_scene load_steps=76 format=2]
 
 [ext_resource path="res://Map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=2]
@@ -66,6 +66,8 @@
 [ext_resource path="res://Character animation/Protector/hahmo_etu_idle_a.png" type="Texture" id=64]
 [ext_resource path="res://Character animation/Protector/hahmo_taka_idle_a.png" type="Texture" id=65]
 [ext_resource path="res://Character animation/Protector/hahmo_taka_b.png" type="Texture" id=66]
+[ext_resource path="res://Hub to Ruins Collider.gd" type="Script" id=67]
+[ext_resource path="res://Camera2D.gd" type="Script" id=68]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 40, 15.2259 )
@@ -261,6 +263,9 @@ animations = [ {
 "speed": 5.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=7]
+extents = Vector2( 197.76, 234.566 )
+
 [node name="Main" type="Node2D"]
 
 [node name="YSort" type="YSort" parent="."]
@@ -303,6 +308,14 @@ frames = SubResource( 6 )
 animation = "left_idle"
 offset = Vector2( 0, -85 )
 
+[node name="Hub to Ruins Collider" type="Area2D" parent="."]
+position = Vector2( 3799.67, 982.922 )
+script = ExtResource( 67 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hub to Ruins Collider"]
+visible = false
+shape = SubResource( 7 )
+
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 511.143, 298.431 )
 current = true
@@ -311,3 +324,6 @@ limit_left = -400
 limit_top = -200
 limit_right = 4000
 limit_bottom = 3800
+script = ExtResource( 68 )
+[connection signal="body_entered" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_entered"]
+[connection signal="body_exited" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
