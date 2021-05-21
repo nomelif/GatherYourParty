@@ -9,6 +9,7 @@ height = 37.3251
 [node name="Frontfacing gate vines" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
+modulate = Color( 0.866667, 0.917647, 0.913725, 1 )
 position = Vector2( 0, -181.019 )
 texture = ExtResource( 1 )
 
