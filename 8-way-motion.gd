@@ -1,6 +1,7 @@
 extends KinematicBody2D
 
 export (int) var speed = 350
+export (float) var run_multiplier = 1.5
 
 var velocity = Vector2()
 var direction = 'down'
@@ -29,7 +30,10 @@ func get_input():
 	else:
 		$FighterSprite.play(direction + "_idle")
 	# get_node('../SorceressSprite').play(animation_choice)
-	velocity = velocity.normalized() * speed
+	var effective_speed = speed
+	if Input.is_action_pressed('run'):
+		effective_speed *= run_multiplier
+	velocity = velocity.normalized() * effective_speed
 
 func _physics_process(delta):
 	get_input()
