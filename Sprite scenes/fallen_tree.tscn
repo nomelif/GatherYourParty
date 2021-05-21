@@ -6,7 +6,7 @@
 radius = 39.8783
 height = 103.151
 
-[node name="Node2D" type="KinematicBody2D"]
+[node name="Fallen Tree A" type="KinematicBody2D"]
 scale = Vector2( 1.5, 1.5 )
 
 [node name="Sprite" type="Sprite" parent="."]

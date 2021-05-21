@@ -12,7 +12,7 @@ animations = [ {
 "speed": 2.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[node name="Fire" type="Node2D"]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )

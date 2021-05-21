@@ -5,7 +5,7 @@
 [sub_resource type="CircleShape2D" id=1]
 radius = 52.882
 
-[node name="Node2D" type="KinematicBody2D"]
+[node name="Tree A" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 0, -180 )

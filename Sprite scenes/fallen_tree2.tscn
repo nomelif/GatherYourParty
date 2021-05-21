@@ -6,7 +6,7 @@
 radius = 42.2368
 height = 99.2693
 
-[node name="Node2D" type="KinematicBody2D"]
+[node name="Fallen Tree B" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 1 )

@@ -11,9 +11,9 @@ animations = [ {
 "speed": 2.0
 } ]
 
-[node name="Node2D" type="Node2D"]
+[node name="Butterfly A" type="Node2D"]
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-frame = 2
+frame = 8
 playing = true
