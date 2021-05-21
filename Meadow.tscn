@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Tiles.tres" type="TileSet" id=1]
+
+[node name="Meadow" type="YSort"]
+
+[node name="MeadowTiles" type="TileMap" parent="."]
+tile_set = ExtResource( 1 )
+format = 1
+tile_data = PoolIntArray( 0, 0, 917504, 196608, 0, 917504 )
