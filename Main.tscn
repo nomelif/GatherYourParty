@@ -325,5 +325,4 @@ limit_top = -200
 limit_right = 4000
 limit_bottom = 3800
 script = ExtResource( 68 )
-[connection signal="body_entered" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_entered"]
 [connection signal="body_exited" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
