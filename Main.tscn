@@ -291,15 +291,12 @@ script = SubResource( 3 )
 position = Vector2( 327.893, 202.266 )
 frames = SubResource( 4 )
 animation = "left"
-frame = 1
-playing = true
 offset = Vector2( 0, -85 )
 
 [node name="HealerSprite" type="AnimatedSprite" parent="YSort"]
 position = Vector2( 482.868, 203.125 )
 frames = SubResource( 5 )
 animation = "up_idle"
-playing = true
 offset = Vector2( 0, -85 )
 
 [node name="ProtectorSprite" type="AnimatedSprite" parent="YSort"]
