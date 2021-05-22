@@ -1961,21 +1961,6 @@ position = Vector2( -217.156, 174.159 )
 [node name="Node2D11" parent="Background/Swamp water" instance=ExtResource( 33 )]
 position = Vector2( -273.724, 352.35 )
 
-[node name="Node2D12" parent="Background/Swamp water" instance=ExtResource( 28 )]
-position = Vector2( -273.724, 324.066 )
-
-[node name="Node2D13" parent="Background/Swamp water" instance=ExtResource( 28 )]
-position = Vector2( -143.616, 35.5662 )
-
-[node name="Node2D14" parent="Background/Swamp water" instance=ExtResource( 28 )]
-position = Vector2( -10.6802, -26.6594 )
-
-[node name="Node2D15" parent="Background/Swamp water" instance=ExtResource( 28 )]
-position = Vector2( 308.932, 264.669 )
-
-[node name="Node2D16" parent="Background/Swamp water" instance=ExtResource( 28 )]
-position = Vector2( 260.849, -15.3457 )
-
 [node name="Node2D17" parent="Background/Swamp water" instance=ExtResource( 45 )]
 position = Vector2( -135.131, 213.757 )
 
@@ -2127,6 +2112,21 @@ position = Vector2( 352.69, 1924.19 )
 
 [node name="Node2D16" parent="Sausages" instance=ExtResource( 28 )]
 position = Vector2( 2498.85, 2787.74 )
+
+[node name="Node2D17" parent="Sausages" instance=ExtResource( 28 )]
+position = Vector2( 3336.32, 2921.75 )
+
+[node name="Node2D18" parent="Sausages" instance=ExtResource( 28 )]
+position = Vector2( 3466.42, 2633.25 )
+
+[node name="Node2D19" parent="Sausages" instance=ExtResource( 28 )]
+position = Vector2( 3599.36, 2571.03 )
+
+[node name="Node2D20" parent="Sausages" instance=ExtResource( 28 )]
+position = Vector2( 3870.89, 2582.34 )
+
+[node name="Node2D21" parent="Sausages" instance=ExtResource( 28 )]
+position = Vector2( 3918.97, 2862.35 )
 
 [node name="Node2D2" parent="." instance=ExtResource( 22 )]
 position = Vector2( 1709.41, 3647.15 )
