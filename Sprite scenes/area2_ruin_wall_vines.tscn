@@ -8,7 +8,6 @@ extents = Vector2( 93.5805, 10.9635 )
 [node name="Ruin wall vines" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-modulate = Color( 0.866667, 0.917647, 0.913725, 1 )
 position = Vector2( 0, -89.0954 )
 texture = ExtResource( 1 )
 

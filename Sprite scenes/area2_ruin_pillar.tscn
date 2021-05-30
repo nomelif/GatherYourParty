@@ -9,7 +9,6 @@ height = 31.6619
 [node name="Pillar" type="KinematicBody2D"]
 
 [node name="Sprite" type="Sprite" parent="."]
-modulate = Color( 0.866667, 0.917647, 0.913725, 1 )
 position = Vector2( 0, -186.676 )
 texture = ExtResource( 1 )
 
