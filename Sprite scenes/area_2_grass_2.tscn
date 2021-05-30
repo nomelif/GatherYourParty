@@ -12,7 +12,9 @@ animations = [ {
 } ]
 
 [node name="Grass B" type="Node2D"]
+light_mask = -2147483647
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+light_mask = 32
 frames = SubResource( 1 )
 playing = true
