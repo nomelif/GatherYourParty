@@ -43,7 +43,6 @@ light_mask = 0
 position = Vector2( 1598.64, 997.794 )
 scale = Vector2( 1.56327, 2810.19 )
 texture = SubResource( 2 )
-energy = 0.8
 mode = 1
 shadow_item_cull_mask = 0
 
