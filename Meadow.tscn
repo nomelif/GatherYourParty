@@ -1,11 +1,1604 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://Sprite scenes/butterfly_1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Sprite scenes/butterfly_2.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sprite scenes/butterfly_3.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Sprite scenes/fallen_tree2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Sprite scenes/fallen_tree_dead.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Sprite scenes/tree_4.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Sprite scenes/fallen_tree_dead2.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Sprite scenes/area_1_flowers_1.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Sprite scenes/area_1_flowers_2.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Sprite scenes/flowers.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Sprite scenes/tree_2.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Sprite scenes/tree_1.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Sprite scenes/area_1_flowers_5.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Sprite scenes/area_1_flowers_3.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Sprite scenes/tree_3.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Sprite scenes/area_1_flowers_4.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Sprite scenes/flowers_and_leaves.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Sprite scenes/fallen_tree.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Sprite scenes/mushroom_1.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Sprite scenes/area_1_grass_3.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Sprite scenes/area_1_stones_4.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Sprite scenes/area_1_stones_2.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Sprite scenes/area_1_grass_4.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Sprite scenes/area_1_grass_1.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Sprite scenes/area_1_stones_1.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Sprite scenes/area_1_stones_3.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Sprite scenes/area_1_grass_2.tscn" type="PackedScene" id=28]
 
 [node name="Meadow" type="YSort"]
 
 [node name="MeadowTiles" type="TileMap" parent="."]
+z_index = -1
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 200, 200 )
 format = 1
 tile_data = PoolIntArray( 65527, 0, 1900544, 65528, 0, 1900544, 65529, 0, 917504, 65530, 0, 917504, 65531, 0, 917504, 65532, 0, 917504, 65533, 0, 917504, 65534, 0, 917504, 65535, 0, 917504, 0, 0, 917504, 1, 0, 917504, 2, 0, 917504, 3, 0, 917504, 4, 0, 917504, 5, 0, 917504, 6, 0, 917504, 7, 0, 917504, 8, 0, 917504, 9, 0, 917504, 10, 0, 917504, 131063, 0, 1966080, 131064, 0, 1966080, 131065, 0, 917504, 131066, 0, 917504, 131067, 0, 917504, 131068, 0, 917504, 131069, 0, 917504, 131070, 0, 917504, 131071, 0, 917504, 65536, 0, 917504, 65537, 0, 917504, 65538, 0, 917504, 65539, 0, 917504, 65540, 0, 917504, 65541, 0, 917504, 65542, 0, 917504, 65543, 0, 917504, 65544, 0, 917504, 65545, 0, 917504, 65546, 0, 917504, 196599, 0, 1900544, 196600, 0, 1900544, 196601, 0, 917504, 196602, 0, 917504, 196603, 0, 917504, 196604, 0, 917504, 196605, 0, 917504, 196606, 0, 917504, 196607, 0, 917504, 131072, 0, 917504, 131073, 0, 917504, 131074, 0, 917504, 131075, 0, 917504, 131076, 0, 917504, 131077, 0, 917504, 131078, 0, 917504, 131079, 0, 917504, 131080, 0, 917504, 131081, 0, 917504, 131082, 0, 917504, 262135, 0, 1900544, 262136, 0, 1966080, 262137, 0, 917504, 262138, 0, 917504, 262139, 0, 917504, 262140, 0, 917504, 262141, 0, 917504, 262142, 0, 917504, 262143, 0, 917504, 196608, 0, 917504, 196609, 0, 917504, 196610, 0, 917504, 196611, 0, 917504, 196612, 0, 917504, 196613, 0, 917504, 196614, 0, 917504, 196615, 0, 917504, 196616, 0, 917504, 196617, 0, 917504, 196618, 0, 917504, 327671, 0, 1966080, 327672, 0, 1966080, 327673, 0, 917504, 327674, 0, 917504, 327675, 0, 917504, 327676, 0, 917504, 327677, 0, 917504, 327678, 0, 917504, 327679, 0, 917504, 262144, 0, 917504, 262145, 0, 917504, 262146, 0, 917504, 262147, 0, 917504, 262148, 0, 917504, 262149, 0, 917504, 262150, 0, 917504, 262151, 0, 917504, 262152, 0, 917504, 262153, 0, 917504, 262154, 0, 917504, 393207, 0, 1966080, 393208, 0, 1900544, 393209, 0, 917504, 393210, 0, 917504, 393211, 0, 917504, 393212, 0, 917504, 393213, 0, 917504, 393214, 0, 917504, 393215, 0, 917504, 327680, 0, 917504, 327681, 0, 917504, 327682, 0, 917504, 327683, 0, 917504, 327684, 0, 917504, 327685, 0, 917504, 327686, 0, 917504, 327687, 0, 917504, 327688, 0, 917504, 327689, 0, 917504, 327690, 0, 917504, 458743, 0, 1900544, 458744, 0, 1966080, 458745, 0, 917504, 458746, 0, 917504, 458747, 0, 917504, 458748, 0, 917504, 458749, 0, 917504, 458750, 0, 917504, 458751, 0, 917504, 393216, 0, 917504, 393217, 0, 917504, 393218, 0, 917504, 393219, 0, 917504, 393220, 0, 917504, 393221, 0, 917504, 393222, 0, 917504, 393223, 0, 917504, 393224, 0, 917504, 393225, 0, 917504, 393226, 0, 917504, 393227, 0, 1966080, 393228, 0, 1900544, 524279, 0, 1966080, 524280, 0, 1900544, 524281, 0, 917504, 524282, 0, 917504, 524283, 0, 917504, 524284, 0, 917504, 524285, 0, 917504, 524286, 0, 917504, 524287, 0, 917504, 458752, 0, 917504, 458753, 0, 917504, 458754, 0, 917504, 458755, 0, 917504, 458756, 0, 917504, 458757, 0, 917504, 458758, 0, 917504, 458759, 0, 917504, 458760, 0, 917504, 458761, 0, 917504, 458762, 0, 917504, 458763, 0, 1966080, 458764, 0, 1900544, 589815, 0, 1900544, 589816, 0, 1966080, 589817, 0, 917504, 589818, 0, 917504, 589819, 0, 917504, 589820, 0, 917504, 589821, 0, 917504, 589822, 0, 917504, 589823, 0, 917504, 524288, 0, 917504, 524289, 0, 917504, 524290, 0, 917504, 524291, 0, 917504, 524292, 0, 917504, 524293, 0, 917504, 524294, 0, 917504, 524295, 0, 917504, 524296, 0, 917504, 524297, 0, 917504, 524298, 0, 917504, 524299, 0, 1900544, 524300, 0, 1966080, 655351, 0, 1966080, 655352, 0, 1966080, 655353, 0, 917504, 655354, 0, 917504, 655355, 0, 917504, 655356, 0, 917504, 655357, 0, 917504, 655358, 0, 917504, 655359, 0, 917504, 589824, 0, 917504, 589825, 0, 917504, 589826, 0, 917504, 589827, 0, 917504, 589828, 0, 917504, 589829, 0, 917504, 589830, 0, 917504, 589831, 0, 917504, 589832, 0, 917504, 589833, 0, 917504, 589834, 0, 917504, 589835, 0, 1900544, 589836, 0, 1966080, 720887, 0, 1900544, 720888, 0, 1900544, 720889, 0, 1966080, 720890, 0, 1966080, 720891, 0, 1900544, 720892, 0, 1966080, 720893, 0, 1900544, 720894, 0, 1966080, 720895, 0, 1900544, 655360, 0, 1966080, 655361, 0, 1966080, 655362, 0, 1900544, 655363, 0, 1966080, 655364, 0, 1966080, 655365, 0, 1900544, 655366, 0, 1900544, 655367, 0, 1966080, 655368, 0, 1900544, 655369, 0, 1900544, 655370, 0, 1966080, 655371, 0, 1966080, 655372, 0, 1900544, 786423, 0, 1900544, 786424, 0, 1966080, 786425, 0, 1900544, 786426, 0, 1966080, 786427, 0, 1966080, 786428, 0, 1900544, 786429, 0, 1900544, 786430, 0, 1900544, 786431, 0, 1966080, 720896, 0, 1900544, 720897, 0, 1966080, 720898, 0, 1966080, 720899, 0, 1900544, 720900, 0, 1900544, 720901, 0, 1966080, 720902, 0, 1900544, 720903, 0, 1966080, 720904, 0, 1900544, 720905, 0, 1966080, 720906, 0, 1900544, 720907, 0, 1900544, 720908, 0, 1966080 )
+
+[node name="Trees" type="YSort" parent="."]
+
+[node name="Fallen Tree B" parent="Trees" instance=ExtResource( 5 )]
+position = Vector2( 92, 911.777 )
+rotation = -0.380506
+scale = Vector2( 1.76, 1.64 )
+
+[node name="Tree A" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -56, 967.777 )
+
+[node name="Tree B" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -404, 1197.78 )
+
+[node name="Tree C" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 266, 961.777 )
+
+[node name="Tree D" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -214, 993.777 )
+
+[node name="Tree A2" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 366, 995.777 )
+
+[node name="Fallen tree dead" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( -304.33, 1036.21 )
+scale = Vector2( 1.8, 2.04 )
+
+[node name="Tree A3" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -354, 1424.86 )
+
+[node name="Tree B2" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 500, 1186.86 )
+
+[node name="Tree C2" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 442, 1090.86 )
+
+[node name="Tree C3" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -410, 1324.86 )
+
+[node name="Tree D2" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 436, 1392.86 )
+
+[node name="Tree C4" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 551.356, 1330.59 )
+
+[node name="Tree B3" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -302.096, 1553.46 )
+
+[node name="Tree C5" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -266.778, 988.373 )
+
+[node name="Tree B4" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 404.257, 1540 )
+
+[node name="Tree A4" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 303.349, 1597.18 )
+
+[node name="Tree D3" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -189.349, 154.657 )
+
+[node name="Tree C6" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 436.174, 118.981 )
+
+[node name="Tree B5" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -538.976, 83.3044 )
+
+[node name="Tree B6" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -978.983, 694.557 )
+
+[node name="Tree B7" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 1432.73, 618.448 )
+
+[node name="Tree B8" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -645.182, 1749.46 )
+
+[node name="Tree B9" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 1719.42, 861.468 )
+
+[node name="Tree B10" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 1800.15, 1816.73 )
+
+[node name="Tree A5" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -443.366, 77.7531 )
+
+[node name="Tree A6" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -1317.9, 1345.82 )
+
+[node name="Tree A7" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 2176.87, 1288.64 )
+
+[node name="Tree A8" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 1534.42, 622.654 )
+
+[node name="Tree B11" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 851.614, 1984.91 )
+
+[node name="Tree C7" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -1190.08, 158.479 )
+
+[node name="Tree C8" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -914.268, 1302.1 )
+
+[node name="Tree C9" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -1216.99, 1934.45 )
+
+[node name="Tree C10" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 71.2622, 1951.27 )
+
+[node name="Tree C11" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 1117.34, 1335.73 )
+
+[node name="Tree C12" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 2025.51, 346.84 )
+
+[node name="Tree C13" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 817.978, 649.563 )
+
+[node name="Tree A9" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 1117.34, 118.116 )
+
+[node name="Tree A10" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 1413.33, 1453.46 )
+
+[node name="Tree A11" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -517.365, 595.745 )
+
+[node name="Tree D4" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -1314.54, 229.114 )
+
+[node name="Tree D5" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -1260.72, 858.105 )
+
+[node name="Tree D6" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 1564.69, 118.116 )
+
+[node name="Tree D7" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 1167.79, 858.105 )
+
+[node name="Tree D8" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -19.5547, 1951.27 )
+
+[node name="Tree D9" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 733.888, 652.926 )
+
+[node name="Tree B12" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 2015.41, 110.637 )
+
+[node name="Tree C14" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 2153.32, 1997.61 )
+
+[node name="Tree D10" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 2062.5, 1987.52 )
+
+[node name="Fallen tree dead 2" parent="Trees" instance=ExtResource( 8 )]
+position = Vector2( 1763.15, 1149.98 )
+scale = Vector2( 1.88, 1.8 )
+
+[node name="Fallen tree dead2" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( -695.206, 852.75 )
+scale = Vector2( 1.92, 2.32 )
+
+[node name="Fallen Tree B2" parent="Trees" instance=ExtResource( 5 )]
+position = Vector2( -666.665, 883.669 )
+scale = Vector2( 1.51429, 2.52001 )
+
+[node name="Fallen Tree A" parent="Trees" instance=ExtResource( 19 )]
+position = Vector2( 503.359, 1792.43 )
+scale = Vector2( 1.95833, 1.765 )
+
+[node name="Tree A12" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 375.09, 251.907 )
+
+[node name="Tree B13" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 257.364, 712.719 )
+
+[node name="Tree C15" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 1367.35, 517.63 )
+
+[node name="Tree D11" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -1071.25, 568.084 )
+
+[node name="Tree A13" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -1114.98, 1809.25 )
+
+[node name="Tree B14" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -109.266, 1933.7 )
+
+[node name="Tree B15" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 1047.81, 786.717 )
+
+[node name="Tree C16" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 1680.16, 756.445 )
+
+[node name="Tree D12" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 943.536, 1893.34 )
+
+[node name="Tree D13" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 1367.35, 1392.16 )
+
+[node name="Tree D14" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 1707.07, 1758.79 )
+
+[node name="Tree A14" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -795.438, 1193.71 )
+
+[node name="Tree A15" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -1259.61, 763.172 )
+
+[node name="Tree A16" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -1323.52, 127.455 )
+
+[node name="Tree A17" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 2147.7, 275.452 )
+
+[node name="Tree B16" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -1027.53, 1210.53 )
+
+[node name="Tree C17" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -216.901, 510.903 )
+
+[node name="Tree D15" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -647.44, 537.812 )
+
+[node name="Tree D16" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -744.984, 1641.07 )
+
+[node name="Tree C18" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -613.804, 1627.61 )
+
+[node name="Tree C19" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -943.436, 534.448 )
+
+[node name="Tree D17" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 1939.16, 354.653 )
+
+[node name="Tree B17" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 654.268, 613.649 )
+
+[node name="Tree B18" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 1834.89, 310.926 )
+
+[node name="Tree C20" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -385.08, 1716.91 )
+
+[node name="Tree C21" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -842.528, 82.2023 )
+
+[node name="Tree C22" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 1367.35, 1935.54 )
+
+[node name="Tree C23" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 2164.52, 825.555 )
+
+[node name="Tree A18" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -822.347, 1595.82 )
+
+[node name="Tree A19" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 903.173, 1182.09 )
+
+[node name="Tree B19" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 2029.97, 677.557 )
+
+[node name="Tree B20" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 1232.8, 1727 )
+
+[node name="Tree B21" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 2066.97, 1568.91 )
+
+[node name="Tree B22" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -916.527, 1992.72 )
+
+[node name="Tree B23" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 761.902, 75.4751 )
+
+[node name="Tree C24" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 960.354, 112.475 )
+
+[node name="Tree C25" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 2177.97, 1454.55 )
+
+[node name="Tree D18" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -933.345, 85.5659 )
+
+[node name="Tree D19" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -1306.7, 1952.36 )
+
+[node name="Tree D20" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 1273.17, 1942.27 )
+
+[node name="Tree C26" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 2201.52, 1158.55 )
+
+[node name="Tree C27" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -1353.79, 1215.73 )
+
+[node name="Tree A20" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -1340.34, 559.831 )
+
+[node name="Tree B24" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 1404.35, 72.1115 )
+
+[node name="Tree B25" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -1279.79, 1548.73 )
+
+[node name="Tree C28" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -1320.16, 1807.72 )
+
+[node name="Tree C29" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( -607.077, 45.2028 )
+
+[node name="Tree B26" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 745.084, 1515.09 )
+
+[node name="Tree A21" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 956.99, 1975.9 )
+
+[node name="Tree C30" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 734.994, 1996.08 )
+
+[node name="Tree C31" parent="Trees" instance=ExtResource( 16 )]
+position = Vector2( 812.356, 1380.55 )
+
+[node name="Tree D21" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( 782.084, 1098.01 )
+
+[node name="Tree D22" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -916.527, 1108.1 )
+
+[node name="Tree D23" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -1377.34, 1552.09 )
+
+[node name="Tree D24" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -1387.43, 381.561 )
+
+[node name="Tree A22" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( -1128.43, 391.652 )
+
+[node name="Tree B27" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -274.082, 337.835 )
+
+[node name="Tree B28" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 2026.61, 1067.73 )
+
+[node name="Fallen Tree A2" parent="Trees" instance=ExtResource( 19 )]
+position = Vector2( 1222.71, 78.8387 )
+scale = Vector2( 1.78, 1.95833 )
+
+[node name="Fallen tree dead3" parent="Trees" instance=ExtResource( 6 )]
+position = Vector2( -765.166, 88.9294 )
+scale = Vector2( 1.6, 2.04 )
+
+[node name="Tree A23" parent="Trees" instance=ExtResource( 13 )]
+position = Vector2( 82.4579, 415.197 )
+
+[node name="Tree B29" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( -119.357, 566.559 )
+
+[node name="Tree D25" parent="Trees" instance=ExtResource( 7 )]
+position = Vector2( -35.2676, 492.56 )
+
+[node name="Flowers" type="Node2D" parent="."]
+
+[node name="Flowers and leaves" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 122.847, 1282.04 )
+
+[node name="Flowers and leaves2" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 57.7935, 1253.76 )
+
+[node name="Flowers and leaves3" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 247.298, 1092.54 )
+
+[node name="Flowers and leaves4" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 165.274, 1219.82 )
+
+[node name="Flowers and leaves5" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 32.3375, 1208.5 )
+
+[node name="Flowers and leaves6" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 122.847, 1188.7 )
+
+[node name="Flowers and leaves7" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -1.60352, 1134.96 )
+
+[node name="Flowers and leaves8" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 71.9355, 1132.13 )
+
+[node name="Flowers and leaves9" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -61.0005, 1211.33 )
+
+[node name="Flowers and leaves10" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 108.705, 1052.94 )
+
+[node name="Flowers and leaves11" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -15.7457, 1069.91 )
+
+[node name="Flowers and leaves12" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -117.569, 1154.76 )
+
+[node name="Flowers and leaves13" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 275.582, 1151.93 )
+
+[node name="Flowers and leaves14" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -66.6573, 1299.01 )
+
+[node name="Flowers and leaves15" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 15.3669, 1335.78 )
+
+[node name="Flowers and leaves16" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 108.705, 1358.41 )
+
+[node name="Flowers and leaves17" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 213.357, 1296.18 )
+
+[node name="Flowers and leaves18" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 165.274, 1120.82 )
+
+[node name="Flowers and leaves19" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 255.783, 1216.99 )
+
+[node name="Flowers and leaves20" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 207.7, 1041.63 )
+
+[node name="Flowers and leaves21" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -176.966, 1225.47 )
+
+[node name="Flowers and leaves22" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -159.995, 1284.87 )
+
+[node name="Flowers and leaves23" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -100.599, 1378.21 )
+
+[node name="Flowers and leaves24" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -140.197, 1335.78 )
+
+[node name="Flowers and leaves25" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -4.43201, 1403.66 )
+
+[node name="Flowers and leaves26" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 86.0776, 1434.78 )
+
+[node name="Flowers and leaves27" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 247.298, 1423.46 )
+
+[node name="Flowers and leaves28" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 391.548, 1313.15 )
+
+[node name="Flowers and leaves29" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -157.167, 1069.91 )
+
+[node name="Flowers and leaves30" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 450.945, 1166.08 )
+
+[node name="Flowers and leaves31" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 377.406, 1058.6 )
+
+[node name="Flowers and leaves32" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 278.411, 962.429 )
+
+[node name="Flowers and leaves33" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 120.019, 959.601 )
+
+[node name="Flowers and leaves34" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -18.5741, 976.571 )
+
+[node name="Flowers and leaves35" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -83.6279, 1539.43 )
+
+[node name="Flowers and leaves36" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -236.363, 1443.26 )
+
+[node name="Flowers and leaves37" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -301.417, 1315.98 )
+
+[node name="Flowers and leaves38" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -309.902, 1180.22 )
+
+[node name="Flowers and leaves39" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 103.048, 1547.91 )
+
+[node name="Flowers and leaves40" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 303.867, 1511.14 )
+
+[node name="Flowers and leaves41" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -179.794, 1505.49 )
+
+[node name="Flowers and leaves42" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -253.334, 1372.55 )
+
+[node name="Flowers and leaves43" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -290.103, 1245.27 )
+
+[node name="Flowers and leaves44" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -205.25, 1146.28 )
+
+[node name="Flowers and leaves45" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -66.6573, 1027.48 )
+
+[node name="Flowers and leaves46" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 60.6218, 1021.83 )
+
+[node name="Flowers and leaves47" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 383.063, 1143.45 )
+
+[node name="Flowers and leaves48" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 346.293, 1250.93 )
+
+[node name="Flowers and leaves49" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 281.239, 1338.61 )
+
+[node name="Flowers and leaves50" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 176.587, 1381.04 )
+
+[node name="Flowers and leaves51" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -120.397, 1448.92 )
+
+[node name="Flowers and leaves52" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -46.8584, 1482.86 )
+
+[node name="Flowers and leaves53" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 4.05334, 1553.57 )
+
+[node name="Flowers and leaves54" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 66.2787, 1494.17 )
+
+[node name="Flowers and leaves55" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 159.617, 1488.52 )
+
+[node name="Flowers and leaves56" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 202.043, 1542.26 )
+
+[node name="Flowers and leaves57" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 385.891, 1414.98 )
+
+[node name="Flowers and leaves58" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 349.121, 1375.38 )
+
+[node name="Flowers and leaves59" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 292.553, 1465.89 )
+
+[node name="Flowers and leaves60" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 456.602, 1239.62 )
+
+[node name="Flowers and leaves61" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -264.647, 1086.88 )
+
+[node name="Flowers and leaves62" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( -143.025, 993.542 )
+
+[node name="Flowers and leaves63" parent="Flowers" instance=ExtResource( 18 )]
+position = Vector2( 187.901, 988.918 )
+
+[node name="Flower A" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( -237.82, 1198.67 )
+
+[node name="Flower B" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( -202.464, 1193.02 )
+
+[node name="Flower C" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( -250.548, 1270.8 )
+
+[node name="Flower D" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( -212.364, 1273.63 )
+
+[node name="Flower E" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( -236.406, 1316.05 )
+
+[node name="Flower E2" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( -294.388, 1201.5 )
+
+[node name="Flower E3" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( -58.2147, 1112.41 )
+
+[node name="Flower E4" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( -220.849, 1108.16 )
+
+[node name="Flower E5" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( -222.263, 1477.27 )
+
+[node name="Flower A2" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( -243.477, 1406.56 )
+
+[node name="Flower B2" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( -205.293, 1392.42 )
+
+[node name="Flower C2" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( -192.565, 1457.47 )
+
+[node name="Flower D2" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( -164.281, 1426.36 )
+
+[node name="Flower A3" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( -160.038, 1396.66 )
+
+[node name="Flower B3" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( -251.962, 1494.24 )
+
+[node name="Flower A4" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( -192.565, 1325.95 )
+
+[node name="Flower B4" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( -271.761, 1331.61 )
+
+[node name="Flower C3" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( -182.665, 1368.38 )
+
+[node name="Flower D3" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( -309.945, 1344.34 )
+
+[node name="Flower E6" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( -333.986, 1362.72 )
+
+[node name="Flower E7" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( -131.754, 1412.22 )
+
+[node name="Flower A5" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( -92.1558, 1402.32 )
+
+[node name="Flower B5" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( -59.6289, 1393.83 )
+
+[node name="Flower C4" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( -154.381, 1533.84 )
+
+[node name="Flower D4" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( -131.754, 1519.7 )
+
+[node name="Flower E8" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( -114.783, 1498.49 )
+
+[node name="Flower A6" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( -79.4279, 1464.55 )
+
+[node name="Flower B6" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( -52.5578, 1443.33 )
+
+[node name="Flower C5" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( -21.4451, 1432.02 )
+
+[node name="Flower D5" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( 15.3244, 1433.43 )
+
+[node name="Flower E9" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( 42.1945, 1409.39 )
+
+[node name="Flower B7" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 20.9813, 1481.52 )
+
+[node name="Flower C6" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 50.6797, 1463.13 )
+
+[node name="Flower A7" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 77.5498, 1395.25 )
+
+[node name="Flower B8" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 114.319, 1388.18 )
+
+[node name="Flower A8" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( -55.3862, 1334.44 )
+
+[node name="Flower B9" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( -22.8593, 1374.04 )
+
+[node name="Flower C7" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 28.0524, 1355.65 )
+
+[node name="Flower D6" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( 69.0646, 1344.34 )
+
+[node name="Flower E10" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( 84.6209, 1324.54 )
+
+[node name="Flower A9" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 122.805, 1316.05 )
+
+[node name="Flower B10" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 158.16, 1308.98 )
+
+[node name="Flower C8" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 175.131, 1284.94 )
+
+[node name="Flower D7" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( 162.403, 1358.48 )
+
+[node name="Flower E11" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( 177.959, 1337.27 )
+
+[node name="Flower A10" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 210.486, 1334.44 )
+
+[node name="Flower B11" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 262.812, 1313.22 )
+
+[node name="Flower A11" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 136.947, 1454.65 )
+
+[node name="Flower B12" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 158.16, 1424.95 )
+
+[node name="Flower C9" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 182.202, 1439.09 )
+
+[node name="Flower D8" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( 192.101, 1409.39 )
+
+[node name="Flower E12" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( 77.5498, 1522.53 )
+
+[node name="Flower A12" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 187.859, 1511.21 )
+
+[node name="Flower B13" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 213.314, 1494.24 )
+
+[node name="Flower C10" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 228.871, 1465.96 )
+
+[node name="Flower D9" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( 288.268, 1432.02 )
+
+[node name="Flower E13" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( 312.309, 1415.05 )
+
+[node name="Flower B14" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 237.356, 1386.76 )
+
+[node name="Flower C11" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 276.954, 1371.21 )
+
+[node name="Flower A13" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 326.451, 1355.65 )
+
+[node name="Flower E14" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( -5.88879, 1296.25 )
+
+[node name="Flower A14" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( -104.884, 1190.19 )
+
+[node name="Flower B15" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( -69.5284, 1166.15 )
+
+[node name="Flower A15" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 209.072, 1142.1 )
+
+[node name="Flower B16" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 234.528, 1129.38 )
+
+[node name="Flower A16" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 268.469, 1115.23 )
+
+[node name="Flower B17" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 299.581, 1102.51 )
+
+[node name="Flower C12" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 343.422, 1119.48 )
+
+[node name="Flower D10" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( 339.179, 1094.02 )
+
+[node name="Flower E15" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( 375.949, 1101.09 )
+
+[node name="Flower A17" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 411.304, 1094.02 )
+
+[node name="Flower B18" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 152.503, 1082.71 )
+
+[node name="Flower A18" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 189.273, 1081.29 )
+
+[node name="Flower B19" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 224.628, 1060.08 )
+
+[node name="Flower C13" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 257.155, 1044.52 )
+
+[node name="Flower D11" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( 285.439, 1036.04 )
+
+[node name="Flower E16" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( 284.025, 996.441 )
+
+[node name="Flower A19" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 238.77, 996.441 )
+
+[node name="Flower B20" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 319.38, 1051.6 )
+
+[node name="Flower C14" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 312.309, 1013.41 )
+
+[node name="Flower A20" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 322.209, 983.713 )
+
+[node name="Flower B21" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 298.167, 1236.86 )
+
+[node name="Flower A21" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 323.623, 1287.77 )
+
+[node name="Flower B22" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 391.505, 1275.04 )
+
+[node name="Flower C15" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 339.179, 1195.85 )
+
+[node name="Flower D12" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( 398.576, 1202.92 )
+
+[node name="Flower E17" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( 418.375, 1224.13 )
+
+[node name="Flower E18" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( 230.285, 1187.36 )
+
+[node name="Flower D13" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( 183.616, 1174.63 )
+
+[node name="Flower A22" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 88.8635, 1159.08 )
+
+[node name="Flower B23" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 20.9813, 1171.8 )
+
+[node name="Flower C16" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( -25.6877, 1243.93 )
+
+[node name="Flower D14" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( -138.825, 1239.69 )
+
+[node name="Flower A23" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( -14.3741, 1099.68 )
+
+[node name="Flower B24" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 33.7092, 1081.29 )
+
+[node name="Flower C17" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( -61.0431, 1041.7 )
+
+[node name="Flower D15" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( -8.71722, 1021.9 )
+
+[node name="Flower E19" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( 22.3955, 990.784 )
+
+[node name="Flower A24" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( 52.094, 976.642 )
+
+[node name="Flower B25" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( 60.5793, 942.701 )
+
+[node name="Flower C18" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( 98.7631, 925.73 )
+
+[node name="Flower A25" parent="Flowers" instance=ExtResource( 9 )]
+position = Vector2( -201.05, 1050.18 )
+
+[node name="Flower B26" parent="Flowers" instance=ExtResource( 10 )]
+position = Vector2( -169.938, 1033.21 )
+
+[node name="Flower C19" parent="Flowers" instance=ExtResource( 15 )]
+position = Vector2( -131.754, 1020.48 )
+
+[node name="Flower D16" parent="Flowers" instance=ExtResource( 17 )]
+position = Vector2( -90.7416, 1002.1 )
+
+[node name="Flower E20" parent="Flowers" instance=ExtResource( 14 )]
+position = Vector2( -230.749, 1021.9 )
+
+[node name="Butterfly B" parent="Flowers" instance=ExtResource( 3 )]
+position = Vector2( -230, 1022.49 )
+
+[node name="Butterfly C" parent="Flowers" instance=ExtResource( 4 )]
+position = Vector2( 379, 1105.49 )
+
+[node name="Butterfly A" parent="Flowers" instance=ExtResource( 2 )]
+position = Vector2( 119, 1306.49 )
+
+[node name="Butterfly B2" parent="Flowers" instance=ExtResource( 3 )]
+position = Vector2( 219, 1490.49 )
+
+[node name="Butterfly C2" parent="Flowers" instance=ExtResource( 4 )]
+position = Vector2( 53, 980.494 )
+
+[node name="Butterfly A2" parent="Flowers" instance=ExtResource( 2 )]
+position = Vector2( -187, 1452.49 )
+
+[node name="Butterfly B3" parent="Flowers" instance=ExtResource( 3 )]
+position = Vector2( 285, 1246.49 )
+
+[node name="Butterfly C3" parent="Flowers" instance=ExtResource( 4 )]
+position = Vector2( -120, 1275.49 )
+
+[node name="Plants" type="Node2D" parent="."]
+
+[node name="Mushroom A8" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( 1644.87, 1139.89 )
+
+[node name="Mushroom A3" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( -1023.7, 24.4724 )
+
+[node name="Mushroom A" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( 1676.03, 1126.02 )
+
+[node name="Mushroom A4" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( -1346.6, 801.461 )
+
+[node name="Mushroom A5" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( 1687.35, 31.1996 )
+
+[node name="Mushroom A6" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( 715.275, 1376.63 )
+
+[node name="Mushroom A7" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( 2016.98, 1955.17 )
+
+[node name="Mushroom A9" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( 1706.71, 1143.45 )
+
+[node name="Mushroom A10" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( 1656.17, 1170.81 )
+
+[node name="Mushroom A11" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( 1694.22, 1171.4 )
+
+[node name="Mushroom A2" parent="Plants" instance=ExtResource( 20 )]
+position = Vector2( -1104.43, 1928.26 )
+
+[node name="Flowers and leaves" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 1790.9, 897.899 )
+
+[node name="Flowers and leaves2" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 1847.47, 909.213 )
+
+[node name="Flowers and leaves3" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -522.749, 1737.94 )
+
+[node name="Flowers and leaves4" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -469.009, 1709.66 )
+
+[node name="Flowers and leaves5" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -1348.65, 1975.53 )
+
+[node name="Flowers and leaves6" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -1345.82, 1927.45 )
+
+[node name="Flowers and leaves7" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -1351.48, 1879.36 )
+
+[node name="Flowers and leaves8" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -1221.37, 1978.36 )
+
+[node name="Flowers and leaves9" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -1283.6, 1972.7 )
+
+[node name="Flowers and leaves10" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 1544.83, 1508.84 )
+
+[node name="Flowers and leaves11" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 987.631, 1330.65 )
+
+[node name="Flowers and leaves12" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 1038.54, 1333.48 )
+
+[node name="Flowers and leaves13" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 1598.57, 1511.67 )
+
+[node name="Flowers and leaves14" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 526.598, 69.1697 )
+
+[node name="Flowers and leaves15" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 492.656, 49.3707 )
+
+[node name="Flowers and leaves16" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 622.764, 46.5423 )
+
+[node name="Flowers and leaves17" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 554.882, 40.8854 )
+
+[node name="Flowers and leaves18" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -822.562, 32.4001 )
+
+[node name="Flowers and leaves19" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -907.415, 9.77269 )
+
+[node name="Flowers and leaves20" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -1359.96, 719.708 )
+
+[node name="Flowers and leaves21" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -1365.62, 654.654 )
+
+[node name="Flowers and leaves22" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 1148.85, 815.874 )
+
+[node name="Flowers and leaves23" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 1103.6, 798.904 )
+
+[node name="Flowers and leaves24" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( 795.298, 1981.19 )
+
+[node name="Flowers and leaves25" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -692.455, 1978.36 )
+
+[node name="Flowers and leaves26" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -757.508, 1197.71 )
+
+[node name="Flowers and leaves27" parent="Plants" instance=ExtResource( 18 )]
+position = Vector2( -754.68, 1135.49 )
+
+[node name="YSorted flowers" type="YSort" parent="."]
+
+[node name="Flowers" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -292.932, 1159.34 )
+
+[node name="Flowers2" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -66.6573, 975.494 )
+
+[node name="Flowers3" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -1.60352, 958.523 )
+
+[node name="Flowers4" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 247.298, 969.837 )
+
+[node name="Flowers5" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 371.749, 1066 )
+
+[node name="Flowers6" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -110.541, 1153.42 )
+
+[node name="Flowers7" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 390.091, 1504.14 )
+
+[node name="Flowers8" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 450.902, 1391.01 )
+
+[node name="Flowers9" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -297.217, 1461.72 )
+
+[node name="Flowers10" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -345.3, 1337.27 )
+
+[node name="Flowers11" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 234.528, 1316.05 )
+
+[node name="Flowers12" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 121.39, 1125.13 )
+
+[node name="Flowers13" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -28.5162, 1563.54 )
+
+[node name="Flowers14" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -94.9843, 1362.72 )
+
+[node name="Flowers15" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 494.743, 1215.64 )
+
+[node name="Flowers16" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -366.513, 1294.84 )
+
+[node name="Flowers17" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 469.287, 1140.69 )
+
+[node name="Flowers18" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1807.88, 898.923 )
+
+[node name="Flowers19" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1864.44, 927.207 )
+
+[node name="Flowers20" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1601.4, 1532.49 )
+
+[node name="Flowers21" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1530.69, 1535.32 )
+
+[node name="Flowers22" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1230.88, 2007.67 )
+
+[node name="Flowers23" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1165.82, 2007.67 )
+
+[node name="Flowers24" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 800.955, 2004.84 )
+
+[node name="Flowers25" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -712.254, 2002.01 )
+
+[node name="Flowers26" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -652.857, 2002.01 )
+
+[node name="Flowers27" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -420.926, 2002.01 )
+
+[node name="Flowers28" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -205.965, 2013.32 )
+
+[node name="Flowers29" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -536.891, 1736.14 )
+
+[node name="Flowers30" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -471.837, 1699.37 )
+
+[node name="Flowers31" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -1342.99, 1999.18 )
+
+[node name="Flowers32" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -1306.22, 1917.16 )
+
+[node name="Flowers33" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -1359.96, 1917.16 )
+
+[node name="Flowers34" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -1198.74, 2007.67 )
+
+[node name="Flowers35" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -1348.65, 754.673 )
+
+[node name="Flowers36" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -1348.65, 661.335 )
+
+[node name="Flowers37" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -1263.8, 898.923 )
+
+[node name="Flowers38" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -1218.54, 961.148 )
+
+[node name="Flowers39" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1055.51, 1342.99 )
+
+[node name="Flowers40" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 984.803, 1348.64 )
+
+[node name="Flowers41" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 509.627, 75.8504 )
+
+[node name="Flowers42" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 594.48, 39.0809 )
+
+[node name="Flowers43" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 653.877, 47.5662 )
+
+[node name="Flowers44" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1830.5, 2007.67 )
+
+[node name="Flowers45" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1756.96, 2013.32 )
+
+[node name="Flowers46" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1499.58, 2004.84 )
+
+[node name="Flowers47" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 2164.26, 1645.63 )
+
+[node name="Flowers48" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 2175.57, 1557.95 )
+
+[node name="Flowers49" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 2096.37, 1631.49 )
+
+[node name="Flowers50" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1109.25, 824.36 )
+
+[node name="Flowers51" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1160.17, 849.816 )
+
+[node name="Flowers52" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1584.43, 52.1991 )
+
+[node name="Flowers53" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 1516.55, 32.4001 )
+
+[node name="Flowers54" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -746.195, 1158.11 )
+
+[node name="Flowers55" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -763.165, 1217.51 )
+
+[node name="Flowers56" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -915.9, 29.5717 )
+
+[node name="Flowers57" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( -791.45, 29.5717 )
+
+[node name="Flowers58" parent="YSorted flowers" instance=ExtResource( 11 )]
+position = Vector2( 928.234, 23.9148 )
+
+[node name="Stone A" parent="YSorted flowers" instance=ExtResource( 26 )]
+position = Vector2( -993.777, 1385.98 )
+
+[node name="Stone B" parent="YSorted flowers" instance=ExtResource( 23 )]
+position = Vector2( -1106.91, 1303.96 )
+
+[node name="Stone C" parent="YSorted flowers" instance=ExtResource( 27 )]
+position = Vector2( -597.797, 1151.22 )
+
+[node name="Stone D" parent="YSorted flowers" instance=ExtResource( 22 )]
+position = Vector2( -436.577, 732.613 )
+
+[node name="Stone A2" parent="YSorted flowers" instance=ExtResource( 26 )]
+position = Vector2( -781.645, 579.878 )
+
+[node name="Stone B2" parent="YSorted flowers" instance=ExtResource( 23 )]
+position = Vector2( -351.724, 469.569 )
+
+[node name="Stone C2" parent="YSorted flowers" instance=ExtResource( 27 )]
+position = Vector2( -388.494, 492.196 )
+
+[node name="Stone D2" parent="YSorted flowers" instance=ExtResource( 22 )]
+position = Vector2( -730.733, 277.236 )
+
+[node name="Stone A3" parent="YSorted flowers" instance=ExtResource( 26 )]
+position = Vector2( -399.807, 158.442 )
+
+[node name="Stone A4" parent="YSorted flowers" instance=ExtResource( 26 )]
+position = Vector2( -278.185, 1824.39 )
+
+[node name="Stone B3" parent="YSorted flowers" instance=ExtResource( 23 )]
+position = Vector2( 264.873, 1943.18 )
+
+[node name="Stone C3" parent="YSorted flowers" instance=ExtResource( 27 )]
+position = Vector2( 618.427, 1586.8 )
+
+[node name="Stone D3" parent="YSorted flowers" instance=ExtResource( 22 )]
+position = Vector2( 1526.35, 1818.73 )
+
+[node name="Stone A5" parent="YSorted flowers" instance=ExtResource( 26 )]
+position = Vector2( 1611.2, 1784.79 )
+
+[node name="Stone B4" parent="YSorted flowers" instance=ExtResource( 23 )]
+position = Vector2( 2058.1, 1886.61 )
+
+[node name="Stone C4" parent="YSorted flowers" instance=ExtResource( 27 )]
+position = Vector2( 1874.25, 1343.55 )
+
+[node name="Stone D4" parent="YSorted flowers" instance=ExtResource( 22 )]
+position = Vector2( 1548.98, 992.828 )
+
+[node name="Stone A6" parent="YSorted flowers" instance=ExtResource( 26 )]
+position = Vector2( 1489.58, 743.927 )
+
+[node name="Stone B5" parent="YSorted flowers" instance=ExtResource( 23 )]
+position = Vector2( 1916.67, 540.28 )
+
+[node name="Stone C5" parent="YSorted flowers" instance=ExtResource( 27 )]
+position = Vector2( 1028.55, 297.035 )
+
+[node name="Stone D5" parent="YSorted flowers" instance=ExtResource( 22 )]
+position = Vector2( 556.201, 198.04 )
+
+[node name="Stone A7" parent="YSorted flowers" instance=ExtResource( 26 )]
+position = Vector2( 222.447, 209.354 )
+
+[node name="Stone B6" parent="YSorted flowers" instance=ExtResource( 23 )]
+position = Vector2( -9.48425, 59.4471 )
+
+[node name="Grass A" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( -1104.09, 775.039 )
+
+[node name="Grass B" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( -775.988, 446.942 )
+
+[node name="Grass C" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( -385.665, 619.476 )
+
+[node name="Grass 6" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( -1163.48, 1103.14 )
+
+[node name="Grass A2" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( -1007.92, 1626.4 )
+
+[node name="Grass B2" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( -730.733, 1855.5 )
+
+[node name="Grass C2" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( -453.547, 1835.7 )
+
+[node name="Grass 7" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( -283.842, 1665.99 )
+
+[node name="Grass A3" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( -549.714, 1238.9 )
+
+[node name="Grass B3" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( -566.684, 1086.17 )
+
+[node name="Grass C3" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( -538.4, 718.471 )
+
+[node name="Grass 8" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( -422.435, 565.736 )
+
+[node name="Grass A4" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( -716.591, 610.99 )
+
+[node name="Grass B4" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( -795.787, 305.52 )
+
+[node name="Grass C4" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( -999.434, 124.501 )
+
+[node name="Grass 9" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( -1253.99, 345.118 )
+
+[node name="Grass A5" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( -484.66, 169.756 )
+
+[node name="Grass B5" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( -665.679, 118.844 )
+
+[node name="Grass C5" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( -365.866, 381.888 )
+
+[node name="Grass 10" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( -662.851, 458.255 )
+
+[node name="Grass A6" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( -490.317, 596.848 )
+
+[node name="Grass B6" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( -589.312, 605.334 )
+
+[node name="Grass C6" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( -928.723, 693.015 )
+
+[node name="Grass 11" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( -1058.83, 1097.48 )
+
+[node name="Grass A7" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( -990.949, 1329.41 )
+
+[node name="Grass B7" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( -1188.94, 1428.41 )
+
+[node name="Grass C7" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( -917.409, 1504.77 )
+
+[node name="Grass 12" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 148.908, 1866.81 )
+
+[node name="Grass A8" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 366.697, 1790.44 )
+
+[node name="Grass B8" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 233.76, 1714.08 )
+
+[node name="Grass C8" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 559.03, 1940.35 )
+
+[node name="Grass 13" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 666.51, 1866.81 )
+
+[node name="Grass A9" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 799.446, 1863.98 )
+
+[node name="Grass B9" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 451.549, 1606.6 )
+
+[node name="Grass A10" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 587.314, 1453.86 )
+
+[node name="Grass 14" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 759.848, 1578.31 )
+
+[node name="Grass A11" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 963.495, 1439.72 )
+
+[node name="Grass B10" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 1116.23, 1600.94 )
+
+[node name="Grass C9" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1107.74, 1855.5 )
+
+[node name="Grass 15" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 1254.82, 1858.33 )
+
+[node name="Grass A12" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 652.368, 1168.19 )
+
+[node name="Grass B11" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 700.451, 1023.94 )
+
+[node name="Grass C10" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 660.853, 831.608 )
+
+[node name="Grass 16" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 527.917, 721.299 )
+
+[node name="Grass A13" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 686.309, 712.814 )
+
+[node name="Grass B12" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 431.75, 565.736 )
+
+[node name="Grass C11" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 598.628, 486.54 )
+
+[node name="Grass 17" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 97.996, 698.672 )
+
+[node name="Grass A14" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 182.849, 582.706 )
+
+[node name="Grass B13" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( -34.9402, 560.079 )
+
+[node name="Grass C12" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 112.138, 452.598 )
+
+[node name="Grass 18" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 199.819, 302.692 )
+
+[node name="Grass A15" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 230.932, 116.016 )
+
+[node name="Grass B14" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 185.677, 22.6775 )
+
+[node name="Grass C13" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( -51.9106, 28.3344 )
+
+[node name="Grass 19" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 445.893, 333.805 )
+
+[node name="Grass A16" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 493.976, 158.442 )
+
+[node name="Grass B15" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 689.137, 135.815 )
+
+[node name="Grass C14" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 827.73, 229.153 )
+
+[node name="Grass 20" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 867.328, 127.329 )
+
+[node name="Grass A17" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 1017.23, 195.212 )
+
+[node name="Grass B16" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 986.122, 345.118 )
+
+[node name="Grass C15" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1164.31, 263.094 )
+
+[node name="Grass 21" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 875.813, 520.481 )
+
+[node name="Grass A18" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 929.553, 698.672 )
+
+[node name="Grass A19" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 1062.49, 924.946 )
+
+[node name="Grass B17" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 1280.28, 936.26 )
+
+[node name="Grass C16" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1212.4, 1190.82 )
+
+[node name="Grass 22" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 977.637, 1196.47 )
+
+[node name="Grass A20" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 1319.88, 1315.27 )
+
+[node name="Grass B18" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 1430.19, 1527.4 )
+
+[node name="Grass C17" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1563.12, 1649.02 )
+
+[node name="Grass 23" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 1407.56, 1855.5 )
+
+[node name="Grass A21" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 1611.2, 1968.64 )
+
+[node name="Grass B19" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 1681.92, 1855.5 )
+
+[node name="Grass C18" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1930.82, 1957.32 )
+
+[node name="Grass 24" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 1942.13, 1852.67 )
+
+[node name="Grass A22" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 1936.47, 1714.08 )
+
+[node name="Grass B20" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 2001.53, 1567 )
+
+[node name="Grass C19" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1976.07, 1419.92 )
+
+[node name="Grass 25" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 1755.45, 1332.24 )
+
+[node name="Grass A23" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 1557.46, 1275.67 )
+
+[node name="Grass B21" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 1582.92, 1103.14 )
+
+[node name="Grass C20" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1978.9, 1154.05 )
+
+[node name="Grass 26" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 1882.73, 1049.4 )
+
+[node name="Grass A24" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 1761.11, 1202.13 )
+
+[node name="Grass B22" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 1967.59, 936.26 )
+
+[node name="Grass C21" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1701.71, 967.372 )
+
+[node name="Grass 27" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 1435.84, 919.289 )
+
+[node name="Grass A25" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 1588.58, 868.377 )
+
+[node name="Grass B23" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 1356.65, 766.554 )
+
+[node name="Grass C22" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1557.46, 678.873 )
+
+[node name="Grass 28" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 1379.27, 644.932 )
+
+[node name="Grass A26" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 1294.42, 528.966 )
+
+[node name="Grass B24" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 1206.74, 390.373 )
+
+[node name="Grass C23" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1520.69, 186.726 )
+
+[node name="Grass 29" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 1359.47, 110.359 )
+
+[node name="Grass A27" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 1761.11, 178.241 )
+
+[node name="Grass B25" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 1687.57, 314.006 )
+
+[node name="Grass C24" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1848.79, 415.829 )
+
+[node name="Grass A28" parent="YSorted flowers" instance=ExtResource( 25 )]
+position = Vector2( 2179.72, 325.319 )
+
+[node name="Grass B26" parent="YSorted flowers" instance=ExtResource( 28 )]
+position = Vector2( 2176.89, 158.442 )
+
+[node name="Grass C25" parent="YSorted flowers" instance=ExtResource( 21 )]
+position = Vector2( 1735.66, 0.0501099 )
+
+[node name="Grass 30" parent="YSorted flowers" instance=ExtResource( 24 )]
+position = Vector2( 1647.97, 206.525 )
