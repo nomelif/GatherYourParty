@@ -1026,6 +1026,9 @@ position = Vector2( 2152.41, 1406.82 )
 [node name="Raven" parent="Pillars/Gate sidefacing3" instance=ExtResource( 20 )]
 position = Vector2( -12.4353, -244.166 )
 
+[node name="Raven2" parent="Pillars/Gate sidefacing3" instance=ExtResource( 20 )]
+position = Vector2( 8.97144, -247.584 )
+
 [node name="Gate sidefacing vines2" parent="Pillars" instance=ExtResource( 8 )]
 position = Vector2( 2554.05, 416.875 )
 
@@ -1195,6 +1198,9 @@ position = Vector2( 2629.86, 62.1289 )
 [node name="Raven" parent="Pillars/Ruin wall7" instance=ExtResource( 20 )]
 position = Vector2( -54.3076, -130.839 )
 
+[node name="Raven2" parent="Pillars/Ruin wall7" instance=ExtResource( 20 )]
+position = Vector2( -78.4788, -134.044 )
+
 [node name="Ruin wall8" parent="Pillars" instance=ExtResource( 16 )]
 position = Vector2( 2446.01, 56.472 )
 
@@ -1228,11 +1234,14 @@ position = Vector2( 2397.93, 1706.09 )
 [node name="Ruin wall17" parent="Pillars" instance=ExtResource( 16 )]
 position = Vector2( 437.826, 2000.25 )
 
+[node name="Raven2" parent="Pillars/Ruin wall17" instance=ExtResource( 20 )]
+position = Vector2( -65.6185, -129.966 )
+
 [node name="Raven" parent="Pillars/Ruin wall17" instance=ExtResource( 20 )]
 position = Vector2( -20.3636, -127.113 )
 
-[node name="Raven" parent="Pillars/Ruin wall17/Raven" instance=ExtResource( 20 )]
-position = Vector2( -45.2549, -2.85254 )
+[node name="Raven3" parent="Pillars/Ruin wall17" instance=ExtResource( 20 )]
+position = Vector2( 1.55542, -127.014 )
 
 [node name="Ruin wall18" parent="Pillars" instance=ExtResource( 16 )]
 position = Vector2( 262.464, 2003.08 )
