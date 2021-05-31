@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Sprites Finished/mushrooms_3_a.png" type="Texture" id=1]
 [ext_resource path="res://Sprites Finished/mushrooms_3_b.png" type="Texture" id=2]
+[ext_resource path="res://Sprite scenes/randomize.gd" type="Script" id=3]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -15,5 +16,5 @@ animations = [ {
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
-frame = 1
 playing = true
+script = ExtResource( 3 )
