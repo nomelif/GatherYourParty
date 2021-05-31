@@ -18,4 +18,5 @@ func _ready():
 func _on_Protector_pickup_body_entered(body):
 	if body.name == "PlayerCharacter":
 		body.people_qty = 2
+		get_node('../ProtectorSprite').visible = true
 		get_parent().remove_child(self)

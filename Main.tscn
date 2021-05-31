@@ -253,11 +253,11 @@ extents = Vector2( 197.76, 234.566 )
 
 [node name="YSort" type="YSort" parent="."]
 
-[node name="Map" parent="YSort" instance=ExtResource( 1 )]
-
-[node name="Protector_pickup" parent="YSort/Map" instance=ExtResource( 69 )]
+[node name="Protector_pickup" parent="YSort" instance=ExtResource( 69 )]
 position = Vector2( 6510.14, 349.936 )
 script = ExtResource( 70 )
+
+[node name="Map" parent="YSort" instance=ExtResource( 1 )]
 
 [node name="PlayerCharacter" type="KinematicBody2D" parent="YSort"]
 position = Vector2( 145, 607 )
@@ -276,6 +276,7 @@ animation = "down_idle"
 offset = Vector2( 0, -90 )
 
 [node name="SorceressSprite" type="AnimatedSprite" parent="YSort"]
+visible = false
 position = Vector2( 327.893, 202.266 )
 frames = SubResource( 3 )
 animation = "left"
@@ -283,6 +284,7 @@ frame = 1
 offset = Vector2( 0, -85 )
 
 [node name="HealerSprite" type="AnimatedSprite" parent="YSort"]
+visible = false
 position = Vector2( 482.868, 203.125 )
 frames = SubResource( 4 )
 animation = "up_idle"
@@ -290,6 +292,7 @@ frame = 1
 offset = Vector2( 0, -85 )
 
 [node name="ProtectorSprite" type="AnimatedSprite" parent="YSort"]
+visible = false
 position = Vector2( 607.594, 203.125 )
 frames = SubResource( 5 )
 animation = "left_idle"
@@ -312,5 +315,5 @@ limit_top = -200
 limit_right = 4000
 limit_bottom = 3800
 script = ExtResource( 68 )
-[connection signal="body_entered" from="YSort/Map/Protector_pickup" to="YSort/Map/Protector_pickup" method="_on_Protector_pickup_body_entered"]
+[connection signal="body_entered" from="YSort/Protector_pickup" to="YSort/Protector_pickup" method="_on_Protector_pickup_body_entered"]
 [connection signal="body_exited" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
