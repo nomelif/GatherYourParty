@@ -27,6 +27,7 @@ func _ready():
 	rng.randomize()
 	if rng.randi_range(0, 1) == 0:
 		set_flip_h(true)
+		$Eyes.set_flip_h(true)
 	timer = Timer.new()
 	timer.connect("timeout",self,"_on_timer_timeout")
 	timer.set_wait_time(rng.randf_range(2, 3))
@@ -38,10 +39,12 @@ func _on_timer_timeout():
 	if state in transitions.keys():
 		state = transitions[state][rng.randi_range(0, len(transitions[state])-1)]
 		play(state)
+		$Eyes.play(state)
 	
 func _stop():
 	if state in animation_finish_transition.keys():
 		play(animation_finish_transition[state])
+		$Eyes.play(animation_finish_transition[state])
 		state = animation_finish_transition[state]
 
 
