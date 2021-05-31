@@ -35,6 +35,7 @@ var position_index = 0
 # Order of followers, must match sprite names
 
 var sprites = ['Fighter', 'Protector', 'Sorceress', 'Healer']
+var peep_offset = 0
 
 func get_input():
 	velocity = Vector2()
@@ -54,6 +55,9 @@ func get_input():
 	if Input.is_action_pressed('run'):
 		effective_speed *= run_multiplier
 	velocity = velocity.normalized() * effective_speed
+	if Input.is_action_just_pressed('switch_peeps'):
+		peep_offset += 1
+		
 
 func _physics_process(delta):
 	get_input()
@@ -62,7 +66,7 @@ func _physics_process(delta):
 	# Play idle animation
 	if velocity == Vector2(0, 0):
 		for i in range(people_qty):
-			get_node('../'+sprites[i]+'Sprite').play(directions[(position_index - i*steps - 1) % total_steps] + "_idle")
+			get_node('../'+sprites[(i+peep_offset) % people_qty]+'Sprite').play(directions[(position_index - i*steps - 1) % total_steps] + "_idle")
 	else:
 		
 		# Memorize position & direction
@@ -78,12 +82,12 @@ func _physics_process(delta):
 		# Play non-idle animation
 		
 		for i in range(people_qty):
-			get_node('../'+sprites[i]+'Sprite').play(directions[(position_index - i*steps - 1) % total_steps])
+			get_node('../'+sprites[(i+peep_offset) % people_qty]+'Sprite').play(directions[(position_index - i*steps - 1) % total_steps])
 		
 	# Move characters to the correct position
 
 	for i in range(people_qty):
-		get_node('../'+sprites[i]+'Sprite').position = positions[(position_index - i*steps - 1) % total_steps]
+		get_node('../'+sprites[(i+peep_offset) % people_qty]+'Sprite').position = positions[(position_index - i*steps - 1) % total_steps]
 	
 	# Make camera follow character
 	
