@@ -23,6 +23,8 @@
 [ext_resource path="res://Sprites Finished/Light.png" type="Texture" id=21]
 
 [sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.0739857, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0.351562, 0.351562, 0.351562, 1, 1, 1, 1, 1 )
 
 [sub_resource type="GradientTexture" id=2]
 gradient = SubResource( 1 )
@@ -40,8 +42,8 @@ tile_data = PoolIntArray( -131072, 0, 196613, -131071, 0, 393221, -131070, 0, 39
 
 [node name="Darkness" type="Light2D" parent="."]
 light_mask = 0
-position = Vector2( 1598.64, 997.794 )
-scale = Vector2( 1.56327, 2810.19 )
+position = Vector2( 1490.88, 997.794 )
+scale = Vector2( 1.6685, 2810.19 )
 texture = SubResource( 2 )
 mode = 1
 shadow_item_cull_mask = 0
