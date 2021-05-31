@@ -41,6 +41,7 @@ format = 1
 tile_data = PoolIntArray( -131072, 0, 196613, -131071, 0, 393221, -131070, 0, 393220, -131069, 0, 196613, -131068, 0, 196613, -131067, 0, 196614, -131066, 0, 393221, -131065, 0, 196613, -131064, 0, 393220, -131063, 0, 196613, -131062, 0, 196614, -131061, 0, 393220, -131060, 0, 393220, -131059, 0, 196613, -131058, 0, 196614, -131057, 0, 393221, -65536, 0, 196614, -65535, 0, 196613, -65534, 0, 196614, -65533, 0, 196614, -65532, 0, 196613, -65531, 0, 196614, -65530, 0, 196613, -65529, 0, 196613, -65528, 0, 196614, -65527, 0, 196613, -65526, 0, 196614, -65525, 0, 196614, -65524, 0, 196613, -65523, 0, 196614, -65522, 0, 196614, -65521, 0, 196614, 0, 0, 0, 1, 0, 65536, 2, 0, 65536, 3, 0, 65536, 4, 0, 65536, 5, 0, 2, 6, 0, 65536, 7, 0, 1, 8, 0, 1, 9, 0, 65536, 10, 0, 3, 11, 0, 2, 12, 0, 3, 13, 0, 2, 14, 0, 196613, 15, 0, 196614, 65536, 0, 1, 65537, 0, 2, 65538, 0, 0, 65539, 0, 65536, 65540, 0, 2, 65541, 0, 65536, 65542, 0, 65536, 65543, 0, 65536, 65544, 0, 65536, 65545, 0, 65536, 65546, 0, 0, 65547, 0, 1, 65548, 0, 65536, 65549, 0, 0, 65550, 0, 196614, 65551, 0, 196613, 131072, 0, 2, 131073, 0, 65536, 131074, 0, 65536, 131075, 0, 3, 131076, 0, 65536, 131077, 0, 3, 131078, 0, 2, 131079, 0, 65536, 131080, 0, 65536, 131081, 0, 65536, 131082, 0, 65536, 131083, 0, 3, 131084, 0, 65536, 131085, 0, 65536, 131086, 0, 196613, 131087, 0, 196613, 196608, 0, 65536, 196609, 0, 2, 196610, 0, 3, 196611, 0, 0, 196612, 0, 65536, 196613, 0, 3, 196614, 0, 1, 196615, 0, 1, 196616, 0, 65536, 196617, 0, 2, 196618, 0, 65536, 196619, 0, 65536, 196620, 0, 0, 196621, 0, 65536, 196622, 0, 196613, 196623, 0, 196614, 262144, 0, 65536, 262145, 0, 3, 262146, 0, 65536, 262147, 0, 3, 262148, 0, 65536, 262149, 0, 65536, 262150, 0, 65536, 262151, 0, 65536, 262152, 0, 65536, 262153, 0, 3, 262154, 0, 2, 262155, 0, 65536, 262156, 0, 1, 262157, 0, 1, 262158, 0, 196614, 262159, 0, 196613, 327680, 0, 3, 327681, 0, 65536, 327682, 0, 65536, 327683, 0, 65536, 327684, 0, 2, 327685, 0, 65536, 327686, 0, 1, 327687, 0, 65536, 327688, 0, 65536, 327689, 0, 0, 327690, 0, 65536, 327691, 0, 65536, 327692, 0, 3, 327693, 0, 3, 327694, 0, 196614, 327695, 0, 196613, 393216, 0, 65536, 393217, 0, 65536, 393218, 0, 0, 393219, 0, 3, 393220, 0, 65536, 393221, 0, 65536, 393222, 0, 65536, 393223, 0, 65536, 393224, 0, 2, 393225, 0, 3, 393226, 0, 2, 393227, 0, 3, 393228, 0, 65536, 393229, 0, 65536, 393230, 0, 196613, 393231, 0, 196614, 458752, 0, 65536, 458753, 0, 2, 458754, 0, 65536, 458755, 0, 65536, 458756, 0, 1, 458757, 0, 65536, 458758, 0, 2, 458759, 0, 2, 458760, 0, 1, 458761, 0, 0, 458762, 0, 65536, 458763, 0, 1, 458764, 0, 2, 458765, 0, 65536, 458766, 0, 196614, 458767, 0, 196613, 524288, 0, 65536, 524289, 0, 65536, 524290, 0, 65536, 524291, 0, 1, 524292, 0, 65536, 524293, 0, 65536, 524294, 0, 2, 524295, 0, 65536, 524296, 0, 65536, 524297, 0, 65536, 524298, 0, 0, 524299, 0, 1, 524300, 0, 0, 524301, 0, 65536, 524302, 0, 196614, 524303, 0, 196613, 589824, 0, 1, 589825, 0, 1, 589826, 0, 0, 589827, 0, 3, 589828, 0, 0, 589829, 0, 65536, 589830, 0, 65536, 589831, 0, 65536, 589832, 0, 3, 589833, 0, 65536, 589834, 0, 65536, 589835, 0, 2, 589836, 0, 3, 589837, 0, 1, 589838, 0, 196614, 589839, 0, 196613, 655360, 0, 196613, 655361, 0, 196613, 655362, 0, 196614, 655363, 0, 196613, 655364, 0, 196614, 655365, 0, 196613, 655366, 0, 196614, 655367, 0, 196613, 655368, 0, 196613, 655369, 0, 196614, 655370, 0, 196614, 655371, 0, 196613, 655372, 0, 196614, 655373, 0, 196614, 655374, 0, 196613, 655375, 0, 196614, 720896, 0, 196614, 720897, 0, 196614, 720898, 0, 196613, 720899, 0, 196614, 720900, 0, 196613, 720901, 0, 196614, 720902, 0, 196614, 720903, 0, 196613, 720904, 0, 196614, 720905, 0, 196613, 720906, 0, 196614, 720907, 0, 196613, 720908, 0, 196614, 720909, 0, 196614, 720910, 0, 196614, 720911, 0, 196613 )
 
 [node name="Darkness" type="Light2D" parent="."]
+visible = false
 light_mask = 0
 position = Vector2( 1490.88, 997.794 )
 scale = Vector2( 1.6685, 2810.19 )
@@ -1034,8 +1035,14 @@ position = Vector2( -18.0946, -238.513 )
 [node name="Frontfacing Gate2" parent="Pillars" instance=ExtResource( 10 )]
 position = Vector2( 2197.67, 1706.64 )
 
+[node name="Raven" parent="Pillars/Frontfacing Gate2" instance=ExtResource( 20 )]
+position = Vector2( 60.9097, -275.723 )
+
 [node name="Gate sidefacing2" parent="Pillars" instance=ExtResource( 6 )]
 position = Vector2( 1482.07, 337.679 )
+
+[node name="Raven" parent="Pillars/Gate sidefacing2" instance=ExtResource( 20 )]
+position = Vector2( -57.8766, -221.981 )
 
 [node name="Gate sidefacing3" parent="Pillars" instance=ExtResource( 6 )]
 position = Vector2( 2152.41, 1406.82 )
@@ -1049,6 +1056,9 @@ position = Vector2( 8.97144, -247.584 )
 [node name="Gate sidefacing vines2" parent="Pillars" instance=ExtResource( 8 )]
 position = Vector2( 2554.05, 416.875 )
 
+[node name="Raven" parent="Pillars/Gate sidefacing vines2" instance=ExtResource( 20 )]
+position = Vector2( 21.3135, -247.437 )
+
 [node name="Gate sidefacing4" parent="Pillars" instance=ExtResource( 6 )]
 position = Vector2( 605.262, 1570.87 )
 rotation = 3.14159
@@ -1057,8 +1067,17 @@ scale = Vector2( 1, -1 )
 [node name="Gate sidefacing" parent="Pillars" instance=ExtResource( 6 )]
 position = Vector2( 87.66, 416.875 )
 
+[node name="Raven" parent="Pillars/Gate sidefacing" instance=ExtResource( 20 )]
+position = Vector2( -52.2244, -216.324 )
+
 [node name="Gate sidefacing5" parent="Pillars" instance=ExtResource( 6 )]
 position = Vector2( 653.345, 1893.31 )
+
+[node name="Raven" parent="Pillars/Gate sidefacing5" instance=ExtResource( 20 )]
+position = Vector2( -4.14063, -247.433 )
+
+[node name="Raven2" parent="Pillars/Gate sidefacing5" instance=ExtResource( 20 )]
+position = Vector2( -29.5964, -244.604 )
 
 [node name="Gate sidefacing vines3" parent="Pillars" instance=ExtResource( 8 )]
 position = Vector2( 783.453, 283.938 )
@@ -1079,6 +1098,9 @@ position = Vector2( 540.208, 668.605 )
 
 [node name="Pillar2" parent="Pillars" instance=ExtResource( 11 )]
 position = Vector2( 45.2336, 544.154 )
+
+[node name="Raven" parent="Pillars/Pillar2" instance=ExtResource( 20 )]
+position = Vector2( -35.3689, -325.334 )
 
 [node name="Pillar3" parent="Pillars" instance=ExtResource( 11 )]
 position = Vector2( 206.454, 402.732 )
@@ -1122,6 +1144,9 @@ position = Vector2( -34.5098, -302.983 )
 [node name="Pillar5" parent="Pillars" instance=ExtResource( 11 )]
 position = Vector2( 1919.92, 59.8854 )
 
+[node name="Raven" parent="Pillars/Pillar5" instance=ExtResource( 20 )]
+position = Vector2( -29.1512, -313.413 )
+
 [node name="Pillar6" parent="Pillars" instance=ExtResource( 11 )]
 position = Vector2( 2768.45, 76.856 )
 
@@ -1154,6 +1179,9 @@ position = Vector2( -37.3389, -311.964 )
 
 [node name="Pillar13" parent="Pillars" instance=ExtResource( 11 )]
 position = Vector2( 135.185, 1514.1 )
+
+[node name="Raven" parent="Pillars/Pillar13" instance=ExtResource( 20 )]
+position = Vector2( -34.8107, -310.987 )
 
 [node name="Pillar14" parent="Pillars" instance=ExtResource( 11 )]
 position = Vector2( 420.856, 1514.1 )
@@ -1206,6 +1234,9 @@ position = Vector2( 2709.05, 361.942 )
 [node name="Ruin wall5" parent="Pillars" instance=ExtResource( 16 )]
 position = Vector2( 1781.33, 53.6436 )
 
+[node name="Raven" parent="Pillars/Ruin wall5" instance=ExtResource( 20 )]
+position = Vector2( -60.2667, -126.151 )
+
 [node name="Ruin wall6" parent="Pillars" instance=ExtResource( 16 )]
 position = Vector2( 2018.92, 50.8152 )
 
@@ -1223,6 +1254,9 @@ position = Vector2( 2446.01, 56.472 )
 
 [node name="Ruin wall9" parent="Pillars" instance=ExtResource( 16 )]
 position = Vector2( 2270.65, 56.472 )
+
+[node name="Raven" parent="Pillars/Ruin wall9" instance=ExtResource( 20 )]
+position = Vector2( -60.2688, -128.98 )
 
 [node name="Ruin wall10" parent="Pillars" instance=ExtResource( 16 )]
 position = Vector2( 2157.51, 50.8152 )
@@ -1341,6 +1375,107 @@ position = Vector2( 177.512, 1048.89 )
 
 [node name="Pillar20" parent="Pillars" instance=ExtResource( 11 )]
 position = Vector2( 695.114, 1037.57 )
+
+[node name="Frontfacing Gate4" parent="Pillars" instance=ExtResource( 10 )]
+position = Vector2( 1559.84, 1921.53 )
+
+[node name="Frontfacing gate vines3" parent="Pillars" instance=ExtResource( 9 )]
+position = Vector2( 131.487, 32.144 )
+
+[node name="Raven" parent="Pillars/Frontfacing gate vines3" instance=ExtResource( 20 )]
+position = Vector2( -39.598, -306.965 )
+
+[node name="Raven2" parent="Pillars/Frontfacing gate vines3" instance=ExtResource( 20 )]
+position = Vector2( -11.3137, -315.451 )
+
+[node name="Gate sidefacing vines4" parent="Pillars" instance=ExtResource( 8 )]
+position = Vector2( 1624.9, 951.383 )
+
+[node name="Raven" parent="Pillars/Gate sidefacing vines4" instance=ExtResource( 20 )]
+position = Vector2( 0, -241.911 )
+
+[node name="Gate sidefacing vines5" parent="Pillars" instance=ExtResource( 8 )]
+position = Vector2( 2354.63, 911.785 )
+scale = Vector2( -1, 1 )
+
+[node name="Pillar vines12" parent="Pillars" instance=ExtResource( 7 )]
+position = Vector2( 1161.03, 29.3156 )
+
+[node name="Pillar vines13" parent="Pillars" instance=ExtResource( 7 )]
+position = Vector2( 306.85, 26.4872 )
+
+[node name="Pillar vines14" parent="Pillars" instance=ExtResource( 7 )]
+position = Vector2( 2490.4, 1010.78 )
+
+[node name="Pillar vines15" parent="Pillars" instance=ExtResource( 7 )]
+position = Vector2( 2303.72, 906.128 )
+
+[node name="Ruin wall vines14" parent="Pillars" instance=ExtResource( 17 )]
+position = Vector2( 1011.13, 20.8303 )
+
+[node name="Raven" parent="Pillars/Ruin wall vines14" instance=ExtResource( 20 )]
+position = Vector2( 53.7402, -125.946 )
+
+[node name="Raven2" parent="Pillars/Ruin wall vines14" instance=ExtResource( 20 )]
+position = Vector2( 22.6274, -134.431 )
+
+[node name="Ruin wall vines15" parent="Pillars" instance=ExtResource( 17 )]
+position = Vector2( 827.28, 23.6587 )
+
+[node name="Ruin wall vines16" parent="Pillars" instance=ExtResource( 17 )]
+position = Vector2( 411.501, 18.0019 )
+
+[node name="Pillar vines16" parent="Pillars" instance=ExtResource( 7 )]
+position = Vector2( 564.237, 26.4872 )
+
+[node name="Pillar vines17" parent="Pillars" instance=ExtResource( 7 )]
+position = Vector2( 722.628, 37.8009 )
+
+[node name="Raven" parent="Pillars/Pillar vines17" instance=ExtResource( 20 )]
+position = Vector2( -31.1127, -315.451 )
+
+[node name="Ruin wall vines17" parent="Pillars" instance=ExtResource( 17 )]
+position = Vector2( 620.805, 15.1734 )
+
+[node name="Raven" parent="Pillars/Ruin wall vines17" instance=ExtResource( 20 )]
+position = Vector2( -11.3137, -117.461 )
+
+[node name="Pillar21" parent="Pillars" instance=ExtResource( 11 )]
+position = Vector2( 1902.08, 1708.08 )
+
+[node name="Pillar22" parent="Pillars" instance=ExtResource( 11 )]
+position = Vector2( 2538.48, 1699.6 )
+
+[node name="Pillar23" parent="Pillars" instance=ExtResource( 11 )]
+position = Vector2( 1723.89, 1917.39 )
+
+[node name="Pillar24" parent="Pillars" instance=ExtResource( 11 )]
+position = Vector2( 2428.17, 1990.93 )
+
+[node name="Raven" parent="Pillars/Pillar24" instance=ExtResource( 20 )]
+position = Vector2( -36.7695, -299.71 )
+
+[node name="Gate sidefacing6" parent="Pillars" instance=ExtResource( 6 )]
+position = Vector2( 991.329, 1962.74 )
+
+[node name="Raven" parent="Pillars/Gate sidefacing6" instance=ExtResource( 20 )]
+position = Vector2( 22.6274, -246.073 )
+
+[node name="Gate sidefacing7" parent="Pillars" instance=ExtResource( 6 )]
+position = Vector2( 1791.77, 1937.29 )
+scale = Vector2( -1, 1 )
+
+[node name="Pillar25" parent="Pillars" instance=ExtResource( 11 )]
+position = Vector2( 1919.05, 2005.17 )
+
+[node name="Raven" parent="Pillars/Pillar25" instance=ExtResource( 20 )]
+position = Vector2( -31.1125, -294.156 )
+
+[node name="Pillar26" parent="Pillars" instance=ExtResource( 11 )]
+position = Vector2( 57.948, 1051.99 )
+
+[node name="Raven" parent="Pillars/Pillar26" instance=ExtResource( 20 )]
+position = Vector2( -33.9412, -313.955 )
 
 [node name="Fire light" type="Light2D" parent="."]
 position = Vector2( 2324.24, 94.7452 )
