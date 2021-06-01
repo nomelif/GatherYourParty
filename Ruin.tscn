@@ -23,6 +23,8 @@
 [ext_resource path="res://Sprites Finished/Light.png" type="Texture" id=21]
 
 [sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0, 0.0739857, 1 )
+colors = PoolColorArray( 0, 0, 0, 1, 0.351562, 0.351562, 0.351562, 1, 1, 1, 1, 1 )
 
 [sub_resource type="GradientTexture" id=2]
 gradient = SubResource( 1 )
