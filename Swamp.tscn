@@ -14,8 +14,8 @@
 [ext_resource path="res://Sprite scenes/mushroom_1.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Sprite scenes/plants_2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Sprite scenes/mushroom_3.tscn" type="PackedScene" id=14]
-[ext_resource path="res://Sprite scenes/tree_2.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Sprite scenes/tree_1.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Sprite scenes/tree_2_swamp.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Sprite scenes/tree_1_swamp.tscn" type="PackedScene" id=16]
 
 [node name="Swamp" type="YSort"]
 
@@ -1454,7 +1454,6 @@ position = Vector2( 148.632, 928.428 )
 position = Vector2( 280.632, 76.276 )
 
 [node name="Trees" type="YSort" parent="."]
-modulate = Color( 0.792157, 0.745098, 0.921569, 1 )
 
 [node name="Tree B" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 226.579, 52.3899 )
