@@ -1558,5 +1558,4 @@ scale = Vector2( 1.44, 1.44 )
 [node name="Hut" type="YSort" parent="."]
 
 [node name="Hut" parent="Hut" instance=ExtResource( 2 )]
-position = Vector2( 2386.66, 805.559 )
-scale = Vector2( 2.62, 2.85072 )
+position = Vector2( 2400.07, 1024.95 )
