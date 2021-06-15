@@ -23,6 +23,9 @@ var total_steps = steps * 4
 var positions = []
 var directions = []
 
+func front_peep():
+	return sprites[(peep_offset) % people_qty]
+
 func _ready():
 	for x in range(total_steps):
 		positions.append(position)

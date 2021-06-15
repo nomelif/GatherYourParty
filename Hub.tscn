@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/area1_door_1gem.tscn" type="PackedScene" id=2]
@@ -28,7 +28,6 @@
 [ext_resource path="res://Sprite scenes/flowers_and_leaves.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Sprite scenes/tree_1.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Sprite scenes/water_sausage.tscn" type="PackedScene" id=28]
-[ext_resource path="res://Sprite scenes/fog.tscn" type="PackedScene" id=29]
 [ext_resource path="res://Sprite scenes/frog.tscn" type="PackedScene" id=30]
 [ext_resource path="res://Sprite scenes/water_extra_small_anim.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Sprite scenes/water_small_anim.tscn" type="PackedScene" id=32]
@@ -2032,20 +2031,6 @@ position = Vector2( 370.267, 77.4854 )
 
 [node name="Node2D40" parent="Background/Swamp water" instance=ExtResource( 51 )]
 position = Vector2( -57.7334, 231.485 )
-
-[node name="Fog" parent="Background" instance=ExtResource( 29 )]
-position = Vector2( 3717.98, 2686.14 )
-z_index = 100
-z_as_relative = false
-
-[node name="Node2D2" parent="Background/Fog" instance=ExtResource( 29 )]
-position = Vector2( -50.7969, 219.061 )
-z_index = 100
-z_as_relative = false
-
-[node name="Node2D" parent="Background/Fog" instance=ExtResource( 29 )]
-position = Vector2( 304.327, 74.2554 )
-rotation = 1.43439
 
 [node name="Frog2" parent="Background" instance=ExtResource( 30 )]
 position = Vector2( 3324.31, 3244.91 )
