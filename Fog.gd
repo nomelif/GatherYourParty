@@ -18,6 +18,5 @@ func _ready():
 
 func _on_Fog_body_entered(body):
 	if body.name == "PlayerCharacter":
-		print(body.front_peep())
 		if body.front_peep() == "Protector":
 			self.get_parent().remove_child(self)
