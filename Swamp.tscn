@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/hut.tscn" type="PackedScene" id=2]
@@ -16,6 +16,8 @@
 [ext_resource path="res://Sprite scenes/mushroom_3.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Sprite scenes/tree_2_swamp.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Sprite scenes/tree_1_swamp.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Sprite scenes/mushroom_4.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Sprite scenes/mushroom_2.tscn" type="PackedScene" id=18]
 
 [node name="Swamp" type="YSort"]
 
@@ -1458,77 +1460,237 @@ position = Vector2( 280.632, 76.276 )
 [node name="Tree B" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 226.579, 52.3899 )
 
+[node name="Mushroom D" parent="Trees/Tree B" instance=ExtResource( 17 )]
+position = Vector2( -0.578995, -159.39 )
+
+[node name="Mushroom D2" parent="Trees/Tree B" instance=ExtResource( 17 )]
+position = Vector2( 45.421, -94.3899 )
+
 [node name="Tree B2" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 167.182, 1479.68 )
+
+[node name="Mushroom B" parent="Trees/Tree B2" instance=ExtResource( 18 )]
+position = Vector2( -15.182, -137.68 )
+
+[node name="Mushroom D" parent="Trees/Tree B2" instance=ExtResource( 17 )]
+position = Vector2( 41.818, -80.6801 )
+
+[node name="Mushroom D2" parent="Trees/Tree B2" instance=ExtResource( 17 )]
+position = Vector2( 43.818, -194.68 )
 
 [node name="Tree A" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 59.7017, 1796.46 )
 
+[node name="Mushroom D" parent="Trees/Tree A" instance=ExtResource( 17 )]
+position = Vector2( -12.6948, -115.449 )
+
+[node name="Mushroom D2" parent="Trees/Tree A" instance=ExtResource( 17 )]
+position = Vector2( -49.4643, -205.959 )
+
 [node name="Tree A2" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 59.7017, 1160.07 )
+
+[node name="Mushroom B" parent="Trees/Tree A2" instance=ExtResource( 18 )]
+position = Vector2( -52.2928, -121.112 )
+
+[node name="Mushroom B2" parent="Trees/Tree A2" instance=ExtResource( 18 )]
+position = Vector2( -6.52323, -202.994 )
+scale = Vector2( -1, 1 )
 
 [node name="Tree B3" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 2056.57, 1097.84 )
 
+[node name="Mushroom B" parent="Trees/Tree B3" instance=ExtResource( 18 )]
+position = Vector2( -14.1057, -197.494 )
+
+[node name="Mushroom D" parent="Trees/Tree B3" instance=ExtResource( 17 )]
+position = Vector2( 50.9482, -106.984 )
+
+[node name="Mushroom D2" parent="Trees/Tree B3" instance=ExtResource( 17 )]
+position = Vector2( 39.6345, -225.778 )
+
 [node name="Tree B4" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 2316.79, 1994.62 )
+
+[node name="Mushroom D" parent="Trees/Tree B4" instance=ExtResource( 17 )]
+position = Vector2( 42.4583, -214.633 )
+
+[node name="Mushroom D2" parent="Trees/Tree B4" instance=ExtResource( 17 )]
+position = Vector2( 8.51709, -73.2119 )
+
+[node name="Mushroom B" parent="Trees/Tree B4" instance=ExtResource( 18 )]
+position = Vector2( -2.79663, -143.923 )
 
 [node name="Tree A3" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 2729.74, 1839.05 )
 scale = Vector2( -1, 1 )
 
+[node name="Mushroom D" parent="Trees/Tree A3" instance=ExtResource( 17 )]
+position = Vector2( -25.4883, -76.0339 )
+
+[node name="Mushroom D2" parent="Trees/Tree A3" instance=ExtResource( 17 )]
+position = Vector2( -50.9441, -183.514 )
+
 [node name="Tree A4" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 331.231, 48.6554 )
+
+[node name="Mushroom B" parent="Trees/Tree A4" instance=ExtResource( 18 )]
+position = Vector2( -25.4209, -135.431 )
 
 [node name="Tree B5" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 1745.45, 54.1207 )
 
+[node name="Mushroom D" parent="Trees/Tree B5" instance=ExtResource( 17 )]
+position = Vector2( 11.3433, -78.6707 )
+
+[node name="Mushroom D2" parent="Trees/Tree B5" instance=ExtResource( 17 )]
+position = Vector2( 39.6277, -172.009 )
+
 [node name="Tree B6" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 2350.73, 848.91 )
+
+[node name="Mushroom D" parent="Trees/Tree B6" instance=ExtResource( 17 )]
+position = Vector2( 36.8027, -203.123 )
 
 [node name="Tree B7" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 2676, 353.934 )
 
+[node name="Mushroom D" parent="Trees/Tree B7" instance=ExtResource( 17 )]
+position = Vector2( 36.8018, -81.4991 )
+
+[node name="Mushroom D2" parent="Trees/Tree B7" instance=ExtResource( 17 )]
+position = Vector2( 11.3459, -186.151 )
+
 [node name="Tree B8" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 1236.33, 1270.35 )
 
+[node name="Mushroom D" parent="Trees/Tree B8" instance=ExtResource( 17 )]
+position = Vector2( 36.8022, -64.5341 )
+
+[node name="Mushroom D2" parent="Trees/Tree B8" instance=ExtResource( 17 )]
+position = Vector2( 11.3464, -172.014 )
+
+[node name="Mushroom B" parent="Trees/Tree B8" instance=ExtResource( 18 )]
+position = Vector2( -8.45251, -115.446 )
+
 [node name="Tree B9" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 1589.88, 1598.44 )
+
+[node name="Mushroom D" parent="Trees/Tree B9" instance=ExtResource( 17 )]
+position = Vector2( 70.7467, -112.61 )
+
+[node name="Mushroom D2" parent="Trees/Tree B9" instance=ExtResource( 17 )]
+position = Vector2( 5.69299, -180.492 )
+
+[node name="Mushroom B" parent="Trees/Tree B9" instance=ExtResource( 18 )]
+position = Vector2( -8.4491, -78.6686 )
 
 [node name="Tree A5" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 1253.3, 1635.3 )
 scale = Vector2( -1, 1 )
 
+[node name="Mushroom D" parent="Trees/Tree A5" instance=ExtResource( 17 )]
+position = Vector2( -48.1165, -92.9012 )
+
+[node name="Mushroom D2" parent="Trees/Tree A5" instance=ExtResource( 17 )]
+position = Vector2( -22.6606, -194.725 )
+
 [node name="Tree A6" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 1804.84, 792.43 )
 
+[node name="Mushroom D" parent="Trees/Tree A6" instance=ExtResource( 17 )]
+position = Vector2( -14.1056, -92.9026 )
+
+[node name="Mushroom D2" parent="Trees/Tree A6" instance=ExtResource( 17 )]
+position = Vector2( -48.0468, -194.726 )
+
 [node name="Tree A7" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 1360.78, 71.1798 )
+
+[node name="Mushroom D" parent="Trees/Tree A7" instance=ExtResource( 17 )]
+position = Vector2( -16.9371, -64.6171 )
+
+[node name="Mushroom D2" parent="Trees/Tree A7" instance=ExtResource( 17 )]
+position = Vector2( -42.3929, -163.612 )
+
+[node name="Mushroom B" parent="Trees/Tree A7" instance=ExtResource( 18 )]
+position = Vector2( -56.535, -228.666 )
 
 [node name="Tree A8" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 2065.06, 235.229 )
 scale = Vector2( -1, 1 )
 
+[node name="Mushroom D" parent="Trees/Tree A8" instance=ExtResource( 17 )]
+position = Vector2( -22.6592, -104.215 )
+
+[node name="Mushroom D2" parent="Trees/Tree A8" instance=ExtResource( 17 )]
+position = Vector2( -48.115, -208.867 )
+
 [node name="Tree B10" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 441.54, 585.954 )
+
+[node name="Mushroom D" parent="Trees/Tree B10" instance=ExtResource( 17 )]
+position = Vector2( 39.6326, -98.5586 )
+
+[node name="Mushroom D2" parent="Trees/Tree B10" instance=ExtResource( 17 )]
+position = Vector2( 14.1767, -189.068 )
+
+[node name="Mushroom B" parent="Trees/Tree B10" instance=ExtResource( 18 )]
+position = Vector2( -14.1075, -129.671 )
 
 [node name="Tree A9" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 1694.53, 1584.39 )
 
+[node name="Mushroom B" parent="Trees/Tree A9" instance=ExtResource( 18 )]
+position = Vector2( -36.7317, -152.3 )
+
 [node name="Tree A10" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 2175.37, 229.572 )
+
+[node name="Mushroom D" parent="Trees/Tree A10" instance=ExtResource( 17 )]
+position = Vector2( -16.9402, -61.7889 )
 
 [node name="Tree A11" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 2783.48, 51.3808 )
 
+[node name="Mushroom D" parent="Trees/Tree A11" instance=ExtResource( 17 )]
+position = Vector2( -42.394, -118.357 )
+
+[node name="Mushroom B" parent="Trees/Tree A11" instance=ExtResource( 18 )]
+position = Vector2( -22.595, -228.666 )
+
 [node name="Tree A12" parent="Trees" instance=ExtResource( 16 )]
 position = Vector2( 2783.48, 1165.78 )
+
+[node name="Mushroom D" parent="Trees/Tree A12" instance=ExtResource( 17 )]
+position = Vector2( -36.7371, -87.2434 )
+
+[node name="Mushroom D2" parent="Trees/Tree A12" instance=ExtResource( 17 )]
+position = Vector2( -14.1096, -200.38 )
 
 [node name="Tree B11" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 2319.62, 51.3808 )
 
+[node name="Mushroom D" parent="Trees/Tree B11" instance=ExtResource( 17 )]
+position = Vector2( 45.2852, -61.7886 )
+
+[node name="Mushroom B" parent="Trees/Tree B11" instance=ExtResource( 18 )]
+position = Vector2( -14.1118, -146.641 )
+
+[node name="Mushroom D2" parent="Trees/Tree B11" instance=ExtResource( 17 )]
+position = Vector2( 39.6282, -223.009 )
+
 [node name="Tree B12" parent="Trees" instance=ExtResource( 15 )]
 position = Vector2( 730.04, 2000.17 )
+
+[node name="Mushroom D" parent="Trees/Tree B12" instance=ExtResource( 17 )]
+position = Vector2( 31.1469, -78.762 )
+
+[node name="Mushroom D2" parent="Trees/Tree B12" instance=ExtResource( 17 )]
+position = Vector2( 2.86261, -197.556 )
+
+[node name="Mushroom B" parent="Trees/Tree B12" instance=ExtResource( 18 )]
+position = Vector2( -22.5932, -126.845 )
 
 [node name="Fallen trees" type="YSort" parent="."]
 __meta__ = {
