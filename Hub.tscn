@@ -1937,7 +1937,7 @@ position = Vector2( -25.3984, 285.732 )
 position = Vector2( 292.082, 273.033 )
 
 [node name="Node2D4" parent="Background/Swamp water" instance=ExtResource( 31 )]
-position = Vector2( 187.313, 165.09 )
+position = Vector2( 185.313, 302.09 )
 
 [node name="Node2D6" parent="Background/Swamp water" instance=ExtResource( 33 )]
 position = Vector2( 269.858, 15.874 )
@@ -1979,7 +1979,7 @@ position = Vector2( -139.445, -51.3162 )
 position = Vector2( -255.733, 283.485 )
 
 [node name="Node2D26" parent="Background/Swamp water" instance=ExtResource( 47 )]
-position = Vector2( 127.586, 114.407 )
+position = Vector2( 143.586, 243.407 )
 
 [node name="Node2D27" parent="Background/Swamp water" instance=ExtResource( 44 )]
 position = Vector2( 271.267, 291.485 )

@@ -626,7 +626,7 @@ position = Vector2( 2759.75, 315.794 )
 [node name="Water" type="Node2D" parent="."]
 
 [node name="Water big" parent="Water" instance=ExtResource( 8 )]
-position = Vector2( 140.165, 309.081 )
+position = Vector2( 115.165, 456.081 )
 
 [node name="Water extra small" parent="Water" instance=ExtResource( 5 )]
 position = Vector2( 88.1648, 397.081 )
@@ -1288,7 +1288,7 @@ position = Vector2( 69.9715, 392.569 )
 position = Vector2( 214.221, 401.054 )
 
 [node name="Water sausage35" parent="Sausages" instance=ExtResource( 4 )]
-position = Vector2( 118.055, 256.804 )
+position = Vector2( 150.055, 470.804 )
 
 [node name="Water sausage36" parent="Sausages" instance=ExtResource( 4 )]
 position = Vector2( 607.373, 53.1577 )
