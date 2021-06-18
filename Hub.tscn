@@ -2298,6 +2298,24 @@ position = Vector2( 390.272, 448.173 )
 position = Vector2( 71.1632, 758.263 )
 scale = Vector2( 1.44, 1.64 )
 
+[node name="Tree C" parent="Trees2" instance=ExtResource( 24 )]
+position = Vector2( 3577.6, 2315.47 )
+
+[node name="Tree C2" parent="Trees2" instance=ExtResource( 24 )]
+position = Vector2( 477.643, 1399.06 )
+
+[node name="Tree C3" parent="Trees2" instance=ExtResource( 24 )]
+position = Vector2( 2423.6, 737.205 )
+
+[node name="Tree D" parent="Trees2" instance=ExtResource( 38 )]
+position = Vector2( 2423.6, 2637.91 )
+
+[node name="Tree D2" parent="Trees2" instance=ExtResource( 38 )]
+position = Vector2( 698.26, 2739.73 )
+
+[node name="Tree C4" parent="Trees2" instance=ExtResource( 24 )]
+position = Vector2( 2453.54, 740.519 )
+
 [node name="Forest Trees" type="YSort" parent="."]
 
 [node name="Node2D" parent="Forest Trees" instance=ExtResource( 25 )]
