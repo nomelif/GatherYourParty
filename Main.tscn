@@ -1,4 +1,4 @@
-[gd_scene load_steps=81 format=2]
+[gd_scene load_steps=83 format=2]
 
 [ext_resource path="res://Map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=2]
@@ -73,6 +73,8 @@
 [ext_resource path="res://Sprite scenes/fog.tscn" type="PackedScene" id=71]
 [ext_resource path="res://Fog.gd" type="Script" id=72]
 [ext_resource path="res://Hub to Swamp Collider.gd" type="Script" id=73]
+[ext_resource path="res://Sorceress_pickup.tscn" type="PackedScene" id=74]
+[ext_resource path="res://Sorceress_pickup.gd" type="Script" id=75]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 40, 15.2259 )
@@ -264,6 +266,10 @@ extents = Vector2( 197.76, 234.566 )
 position = Vector2( 6510.14, 349.936 )
 script = ExtResource( 70 )
 
+[node name="Sorceress_pickup" parent="YSort" instance=ExtResource( 74 )]
+position = Vector2( 6312.87, 2943.72 )
+script = ExtResource( 75 )
+
 [node name="Map" parent="YSort" instance=ExtResource( 1 )]
 
 [node name="PlayerCharacter" type="KinematicBody2D" parent="YSort"]
@@ -347,7 +353,9 @@ limit_top = -200
 limit_right = 4000
 limit_bottom = 3800
 script = ExtResource( 68 )
+
 [connection signal="body_entered" from="YSort/Protector_pickup" to="YSort/Protector_pickup" method="_on_Protector_pickup_body_entered"]
+[connection signal="body_entered" from="YSort/Sorceress_pickup" to="YSort/Sorceress_pickup" method="_on_Sorceress_pickup_body_entered"]
 [connection signal="body_entered" from="YSort/Fog" to="YSort/Fog" method="_on_Fog_body_entered"]
 [connection signal="body_exited" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
 [connection signal="body_exited" from="Hub to Swamp Collider" to="Hub to Swamp Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
