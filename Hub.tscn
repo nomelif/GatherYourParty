@@ -1,7 +1,6 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=58 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
-[ext_resource path="res://Sprite scenes/area1_door_1gem.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Sprite scenes/area_1_flowers_5.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Sprite scenes/area_1_flowers_2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sprite scenes/area_1_flowers_1.tscn" type="PackedScene" id=5]
@@ -2031,9 +2030,6 @@ position = Vector2( 1349.58, 2441.68 )
 
 [node name="Frog3" parent="Background" instance=ExtResource( 30 )]
 position = Vector2( 222.524, 1921.02 )
-
-[node name="Door" parent="Background" instance=ExtResource( 2 )]
-position = Vector2( 1791.97, 190.37 )
 
 [node name="Sausages" type="YSort" parent="."]
 position = Vector2( 0, 76.225 )

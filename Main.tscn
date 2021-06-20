@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=2]
+[gd_scene load_steps=87 format=2]
 
 [ext_resource path="res://Map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=2]
@@ -77,6 +77,7 @@
 [ext_resource path="res://Healer_pickup.tscn" type="PackedScene" id=75]
 [ext_resource path="res://Sprite scenes/brushery.tscn" type="PackedScene" id=76]
 [ext_resource path="res://Hub to Meadow Collider.gd" type="Script" id=77]
+[ext_resource path="res://Sprite scenes/Door.tscn" type="PackedScene" id=78]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 62.4757
@@ -294,6 +295,9 @@ character = "Sorceress"
 position = Vector2( 1437.4, 5132.71 )
 script = ExtResource( 70 )
 character = "Healer"
+
+[node name="Door" parent="YSort" instance=ExtResource( 78 )]
+position = Vector2( 1797.38, 180.282 )
 
 [node name="Map" parent="YSort" instance=ExtResource( 1 )]
 

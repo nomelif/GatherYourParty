@@ -1,0 +1,25 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sprite scenes/area1_door_3gem.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprite scenes/area1_door_2gem.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Sprite scenes/area1_door_1gem.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sprite scenes/area1_door_allgemlit.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Sprite scenes/area1_door_allgem.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Sprite scenes/Door.gd" type="Script" id=7]
+
+[node name="Door" type="Node2D"]
+script = ExtResource( 7 )
+
+[node name="Door 1 gem" parent="." instance=ExtResource( 3 )]
+
+[node name="Door 2 gem" parent="." instance=ExtResource( 2 )]
+visible = false
+
+[node name="Door 3 gem" parent="." instance=ExtResource( 1 )]
+visible = false
+
+[node name="Door 4 gem" parent="." instance=ExtResource( 5 )]
+visible = false
+
+[node name="Door 5 gem lit" parent="." instance=ExtResource( 4 )]
+visible = false
