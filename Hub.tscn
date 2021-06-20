@@ -2107,9 +2107,6 @@ position = Vector2( 3918.97, 2862.35 )
 [node name="Node2D2" parent="." instance=ExtResource( 22 )]
 position = Vector2( 1709.41, 3647.15 )
 
-[node name="Brushery" parent="." instance=ExtResource( 22 )]
-position = Vector2( 1534.09, 3618.53 )
-
 [node name="Ruin pillars" type="YSort" parent="."]
 position = Vector2( 3681.54, 805.41 )
 

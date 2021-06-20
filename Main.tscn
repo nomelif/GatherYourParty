@@ -1,4 +1,4 @@
-[gd_scene load_steps=83 format=2]
+[gd_scene load_steps=85 format=2]
 
 [ext_resource path="res://Map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=2]
@@ -71,10 +71,15 @@
 [ext_resource path="res://Protector_pickup.tscn" type="PackedScene" id=69]
 [ext_resource path="res://Protector_pickup.gd" type="Script" id=70]
 [ext_resource path="res://Sprite scenes/fog.tscn" type="PackedScene" id=71]
-[ext_resource path="res://Fog.gd" type="Script" id=72]
+[ext_resource path="res://SelectiveDelete.gd" type="Script" id=72]
 [ext_resource path="res://Hub to Swamp Collider.gd" type="Script" id=73]
 [ext_resource path="res://Sorceress_pickup.tscn" type="PackedScene" id=74]
 [ext_resource path="res://Sorceress_pickup.gd" type="Script" id=75]
+[ext_resource path="res://Sprite scenes/brushery.tscn" type="PackedScene" id=76]
+
+[sub_resource type="CapsuleShape2D" id=8]
+radius = 62.4757
+height = 122.191
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 40, 15.2259 )
@@ -96,11 +101,6 @@ animations = [ {
 "name": "up",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 12 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "down",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
 "loop": true,
 "name": "up_idle",
@@ -120,6 +120,11 @@ animations = [ {
 "loop": true,
 "name": "down_idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "down",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=3]
@@ -137,11 +142,6 @@ animations = [ {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 19 ), ExtResource( 13 ) ],
-"loop": true,
-"name": "down",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 29 ), ExtResource( 30 ) ],
@@ -163,6 +163,11 @@ animations = [ {
 "loop": true,
 "name": "down_idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 19 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "down",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=4]
@@ -180,11 +185,6 @@ animations = [ {
 "frames": [ ExtResource( 39 ), ExtResource( 40 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 38 ), ExtResource( 37 ) ],
-"loop": true,
-"name": "down",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 47 ), ExtResource( 46 ) ],
@@ -206,6 +206,11 @@ animations = [ {
 "loop": true,
 "name": "down_idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 38 ), ExtResource( 37 ) ],
+"loop": true,
+"name": "down",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=5]
@@ -223,11 +228,6 @@ animations = [ {
 "frames": [ ExtResource( 51 ), ExtResource( 66 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 55 ), ExtResource( 54 ) ],
-"loop": true,
-"name": "down",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 65 ), ExtResource( 56 ) ],
@@ -249,6 +249,11 @@ animations = [ {
 "loop": true,
 "name": "down_idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 55 ), ExtResource( 54 ) ],
+"loop": true,
+"name": "down",
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=6]
@@ -261,6 +266,18 @@ extents = Vector2( 197.76, 234.566 )
 [node name="Main" type="Node2D"]
 
 [node name="YSort" type="YSort" parent="."]
+
+[node name="MeadowDoor" type="Area2D" parent="YSort"]
+position = Vector2( 1564.52, 3620 )
+script = ExtResource( 72 )
+required_character = "Sorceress"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/MeadowDoor"]
+position = Vector2( 2.97266, -42.8113 )
+rotation = -1.55524
+shape = SubResource( 8 )
+
+[node name="Brushery" parent="YSort/MeadowDoor" instance=ExtResource( 76 )]
 
 [node name="Protector_pickup" parent="YSort" instance=ExtResource( 69 )]
 position = Vector2( 6510.14, 349.936 )
@@ -313,6 +330,7 @@ offset = Vector2( 0, -85 )
 
 [node name="Fog" type="Area2D" parent="YSort"]
 script = ExtResource( 72 )
+required_character = "Protector"
 
 [node name="YSort" type="YSort" parent="YSort/Fog"]
 
@@ -354,8 +372,9 @@ limit_right = 4000
 limit_bottom = 3800
 script = ExtResource( 68 )
 
+[connection signal="body_entered" from="YSort/MeadowDoor" to="YSort/MeadowDoor" method="_on_body_entered"]
 [connection signal="body_entered" from="YSort/Protector_pickup" to="YSort/Protector_pickup" method="_on_Protector_pickup_body_entered"]
 [connection signal="body_entered" from="YSort/Sorceress_pickup" to="YSort/Sorceress_pickup" method="_on_Sorceress_pickup_body_entered"]
-[connection signal="body_entered" from="YSort/Fog" to="YSort/Fog" method="_on_Fog_body_entered"]
+[connection signal="body_entered" from="YSort/Fog" to="YSort/Fog" method="_on_body_entered"]
 [connection signal="body_exited" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
 [connection signal="body_exited" from="Hub to Swamp Collider" to="Hub to Swamp Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]

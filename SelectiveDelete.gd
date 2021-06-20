@@ -5,6 +5,7 @@ extends Area2D
 # var a = 2
 # var b = "text"
 
+export(String) var required_character;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -16,7 +17,7 @@ func _ready():
 #	pass
 
 
-func _on_Fog_body_entered(body):
+func _on_body_entered(body):
 	if body.name == "PlayerCharacter":
-		if body.front_peep() == "Protector":
+		if body.front_peep() == required_character:
 			self.get_parent().remove_child(self)
