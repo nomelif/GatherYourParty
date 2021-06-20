@@ -1,4 +1,4 @@
-[gd_scene load_steps=86 format=2]
+[gd_scene load_steps=85 format=2]
 
 [ext_resource path="res://Map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=2]
@@ -69,12 +69,11 @@
 [ext_resource path="res://Hub to Ruins Collider.gd" type="Script" id=67]
 [ext_resource path="res://Camera2D.gd" type="Script" id=68]
 [ext_resource path="res://Protector_pickup.tscn" type="PackedScene" id=69]
-[ext_resource path="res://Protector_pickup.gd" type="Script" id=70]
+[ext_resource path="res://Peep_pickup.gd" type="Script" id=70]
 [ext_resource path="res://Sprite scenes/fog.tscn" type="PackedScene" id=71]
 [ext_resource path="res://SelectiveDelete.gd" type="Script" id=72]
 [ext_resource path="res://Hub to Swamp Collider.gd" type="Script" id=73]
 [ext_resource path="res://Sorceress_pickup.tscn" type="PackedScene" id=74]
-[ext_resource path="res://Sorceress_pickup.gd" type="Script" id=75]
 [ext_resource path="res://Sprite scenes/brushery.tscn" type="PackedScene" id=76]
 [ext_resource path="res://Hub to Meadow Collider.gd" type="Script" id=77]
 
@@ -283,10 +282,12 @@ shape = SubResource( 1 )
 [node name="Protector_pickup" parent="YSort" instance=ExtResource( 69 )]
 position = Vector2( 6510.14, 349.936 )
 script = ExtResource( 70 )
+character = "Protector"
 
 [node name="Sorceress_pickup" parent="YSort" instance=ExtResource( 74 )]
 position = Vector2( 6407.31, 3550 )
-script = ExtResource( 75 )
+script = ExtResource( 70 )
+character = "Sorceress"
 
 [node name="Map" parent="YSort" instance=ExtResource( 1 )]
 
@@ -381,8 +382,8 @@ limit_bottom = 3800
 script = ExtResource( 68 )
 
 [connection signal="body_entered" from="YSort/MeadowDoor" to="YSort/MeadowDoor" method="_on_body_entered"]
-[connection signal="body_entered" from="YSort/Protector_pickup" to="YSort/Protector_pickup" method="_on_Protector_pickup_body_entered"]
-[connection signal="body_entered" from="YSort/Sorceress_pickup" to="YSort/Sorceress_pickup" method="_on_Sorceress_pickup_body_entered"]
+[connection signal="body_entered" from="YSort/Protector_pickup" to="YSort/Protector_pickup" method="_on_body_entered"]
+[connection signal="body_entered" from="YSort/Sorceress_pickup" to="YSort/Sorceress_pickup" method="_on_body_entered"]
 [connection signal="body_entered" from="YSort/Fog" to="YSort/Fog" method="_on_body_entered"]
 [connection signal="body_exited" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
 [connection signal="body_exited" from="Hub to Swamp Collider" to="Hub to Swamp Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]

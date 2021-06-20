@@ -5,6 +5,7 @@ extends Area2D
 # var a = 2
 # var b = "text"
 
+export(String) var character;
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -15,8 +16,8 @@ func _ready():
 #func _process(delta):
 #	pass
 
-func _on_Protector_pickup_body_entered(body):
+func _on_body_entered(body):
 	if body.name == "PlayerCharacter":
-		body.people_qty = 2
-		get_node('../ProtectorSprite').visible = true
+		body.people_qty += 1
+		get_node('../'+character+'Sprite').visible = true
 		get_parent().remove_child(self)
