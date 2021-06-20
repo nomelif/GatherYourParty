@@ -13,7 +13,7 @@ export (int) var people_qty = 4
 # direction: Velocity = 0 and direction 'down' means "idle downwards")
 
 var velocity = Vector2()
-var direction = 'down'
+var direction = 'up'
 
 # Ring buffer of steps*4 previous positions and directions
 # Used to anumate followers along path

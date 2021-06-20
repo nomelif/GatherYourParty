@@ -267,18 +267,18 @@ position = Vector2( 6510.14, 349.936 )
 script = ExtResource( 70 )
 
 [node name="Sorceress_pickup" parent="YSort" instance=ExtResource( 74 )]
-position = Vector2( 6312.87, 2943.72 )
+position = Vector2( 6407.31, 3550 )
 script = ExtResource( 75 )
 
 [node name="Map" parent="YSort" instance=ExtResource( 1 )]
 
 [node name="PlayerCharacter" type="KinematicBody2D" parent="YSort"]
-position = Vector2( 145, 607 )
+position = Vector2( 1800.29, 491.183 )
 script = ExtResource( 3 )
 people_qty = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/PlayerCharacter"]
-position = Vector2( -1.07477, -14.7663 )
+position = Vector2( -13.7557, -19.4383 )
 shape = SubResource( 1 )
 
 [node name="FighterSprite" type="AnimatedSprite" parent="YSort"]

@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://Character animation/Sorceress/hahmo_vasen_idle_a.png" type="Texture" id=1]
-[ext_resource path="res://Character animation/Sorceress/hahmo_vasen_idle_b.png" type="Texture" id=2]
+[ext_resource path="res://Character animation/Sorceress/hahmo_b.png" type="Texture" id=1]
+[ext_resource path="res://Character animation/Sorceress/hahmo_a.png" type="Texture" id=2]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 1 ) ],
 "loop": true,
 "name": "default",
 "speed": 2.0
@@ -21,6 +21,7 @@ position = Vector2( 2526.03, 195.32 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, -90 )
 frames = SubResource( 1 )
+frame = 1
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
