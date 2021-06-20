@@ -1,4 +1,4 @@
-[gd_scene load_steps=85 format=2]
+[gd_scene load_steps=86 format=2]
 
 [ext_resource path="res://Map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=2]
@@ -76,15 +76,16 @@
 [ext_resource path="res://Sorceress_pickup.tscn" type="PackedScene" id=74]
 [ext_resource path="res://Sorceress_pickup.gd" type="Script" id=75]
 [ext_resource path="res://Sprite scenes/brushery.tscn" type="PackedScene" id=76]
+[ext_resource path="res://Hub to Meadow Collider.gd" type="Script" id=77]
 
-[sub_resource type="CapsuleShape2D" id=8]
+[sub_resource type="CapsuleShape2D" id=1]
 radius = 62.4757
 height = 122.191
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 40, 15.2259 )
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 10 ), ExtResource( 6 ) ],
 "loop": true,
@@ -127,7 +128,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 14 ), ExtResource( 20 ) ],
 "loop": true,
@@ -170,7 +171,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="SpriteFrames" id=5]
 animations = [ {
 "frames": [ ExtResource( 48 ), ExtResource( 45 ) ],
 "loop": true,
@@ -213,7 +214,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=5]
+[sub_resource type="SpriteFrames" id=6]
 animations = [ {
 "frames": [ ExtResource( 60 ), ExtResource( 59 ) ],
 "loop": true,
@@ -256,12 +257,12 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=6]
+[sub_resource type="CapsuleShape2D" id=7]
 radius = 143.308
 height = 141.036
 
-[sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 197.76, 234.566 )
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 227.202, 200.39 )
 
 [node name="Main" type="Node2D"]
 
@@ -275,7 +276,7 @@ required_character = "Sorceress"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/MeadowDoor"]
 position = Vector2( 2.97266, -42.8113 )
 rotation = -1.55524
-shape = SubResource( 8 )
+shape = SubResource( 1 )
 
 [node name="Brushery" parent="YSort/MeadowDoor" instance=ExtResource( 76 )]
 
@@ -296,19 +297,19 @@ people_qty = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/PlayerCharacter"]
 position = Vector2( -13.7557, -19.4383 )
-shape = SubResource( 1 )
+shape = SubResource( 2 )
 
 [node name="FighterSprite" type="AnimatedSprite" parent="YSort"]
 position = Vector2( 143.994, 517.008 )
 z_as_relative = false
-frames = SubResource( 2 )
+frames = SubResource( 3 )
 animation = "down_idle"
 offset = Vector2( 0, -90 )
 
 [node name="SorceressSprite" type="AnimatedSprite" parent="YSort"]
 visible = false
 position = Vector2( 327.893, 202.266 )
-frames = SubResource( 3 )
+frames = SubResource( 4 )
 animation = "left"
 frame = 1
 offset = Vector2( 0, -85 )
@@ -316,7 +317,7 @@ offset = Vector2( 0, -85 )
 [node name="HealerSprite" type="AnimatedSprite" parent="YSort"]
 visible = false
 position = Vector2( 482.868, 203.125 )
-frames = SubResource( 4 )
+frames = SubResource( 5 )
 animation = "up_idle"
 frame = 1
 offset = Vector2( 0, -85 )
@@ -324,7 +325,7 @@ offset = Vector2( 0, -85 )
 [node name="ProtectorSprite" type="AnimatedSprite" parent="YSort"]
 visible = false
 position = Vector2( 607.594, 203.125 )
-frames = SubResource( 5 )
+frames = SubResource( 6 )
 animation = "left_idle"
 offset = Vector2( 0, -85 )
 
@@ -345,7 +346,7 @@ position = Vector2( 3646.32, 2876.78 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Fog"]
 position = Vector2( 3574.75, 2802.89 )
-shape = SubResource( 6 )
+shape = SubResource( 7 )
 
 [node name="Hub to Ruins Collider" type="Area2D" parent="."]
 visible = false
@@ -353,14 +354,21 @@ position = Vector2( 3799.67, 982.922 )
 script = ExtResource( 67 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hub to Ruins Collider"]
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [node name="Hub to Swamp Collider" type="Area2D" parent="."]
 position = Vector2( 3807.67, 2806.92 )
 script = ExtResource( 73 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hub to Swamp Collider"]
-shape = SubResource( 7 )
+shape = SubResource( 8 )
+
+[node name="Hub to Meadow Collider" type="Area2D" parent="."]
+position = Vector2( 1614.51, 3599.13 )
+script = ExtResource( 77 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hub to Meadow Collider"]
+shape = SubResource( 8 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 511.143, 298.431 )
@@ -378,3 +386,4 @@ script = ExtResource( 68 )
 [connection signal="body_entered" from="YSort/Fog" to="YSort/Fog" method="_on_body_entered"]
 [connection signal="body_exited" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
 [connection signal="body_exited" from="Hub to Swamp Collider" to="Hub to Swamp Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
+[connection signal="body_exited" from="Hub to Meadow Collider" to="Hub to Meadow Collider" method="_on_Hub_to_Meadow_Collider_body_exited"]
