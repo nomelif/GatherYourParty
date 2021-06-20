@@ -43,7 +43,6 @@ tile_data = PoolIntArray( 65527, 0, 196613, 65528, 0, 196613, 65529, 0, 65542, 6
 [node name="Fallen Tree B" parent="Trees" instance=ExtResource( 5 )]
 position = Vector2( 92, 911.777 )
 rotation = -0.380506
-scale = Vector2( 1.76, 1.64 )
 
 [node name="Tree A" parent="Trees" instance=ExtResource( 13 )]
 position = Vector2( -56, 967.777 )
@@ -62,7 +61,6 @@ position = Vector2( 366, 995.777 )
 
 [node name="Fallen tree dead" parent="Trees" instance=ExtResource( 6 )]
 position = Vector2( -304.33, 1036.21 )
-scale = Vector2( 1.8, 2.04 )
 
 [node name="Tree A3" parent="Trees" instance=ExtResource( 13 )]
 position = Vector2( -354, 1424.86 )
@@ -192,19 +190,15 @@ position = Vector2( 2062.5, 1987.52 )
 
 [node name="Fallen tree dead 2" parent="Trees" instance=ExtResource( 8 )]
 position = Vector2( 1763.15, 1149.98 )
-scale = Vector2( 1.88, 1.8 )
 
 [node name="Fallen tree dead2" parent="Trees" instance=ExtResource( 6 )]
 position = Vector2( -695.206, 852.75 )
-scale = Vector2( 1.92, 2.32 )
 
 [node name="Fallen Tree B2" parent="Trees" instance=ExtResource( 5 )]
 position = Vector2( -666.665, 883.669 )
-scale = Vector2( 1.51429, 2.52001 )
 
 [node name="Fallen Tree A" parent="Trees" instance=ExtResource( 19 )]
 position = Vector2( 503.359, 1792.43 )
-scale = Vector2( 1.95833, 1.765 )
 
 [node name="Tree A12" parent="Trees" instance=ExtResource( 13 )]
 position = Vector2( 375.09, 251.907 )
@@ -382,11 +376,9 @@ position = Vector2( 2026.61, 1067.73 )
 
 [node name="Fallen Tree A2" parent="Trees" instance=ExtResource( 19 )]
 position = Vector2( 1222.71, 78.8387 )
-scale = Vector2( 1.78, 1.95833 )
 
 [node name="Fallen tree dead3" parent="Trees" instance=ExtResource( 6 )]
 position = Vector2( -765.166, 88.9294 )
-scale = Vector2( 1.6, 2.04 )
 
 [node name="Tree A23" parent="Trees" instance=ExtResource( 13 )]
 position = Vector2( 82.4579, 415.197 )
