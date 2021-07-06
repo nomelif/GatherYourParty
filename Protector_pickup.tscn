@@ -12,7 +12,7 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 56.5
+radius = 133.259
 height = 110.0
 
 [node name="Protector_pickup" type="Area2D"]

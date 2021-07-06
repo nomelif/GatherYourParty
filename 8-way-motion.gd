@@ -18,6 +18,7 @@ var direction = 'up'
 # Ring buffer of steps*4 previous positions and directions
 # Used to anumate followers along path
 
+var cutscene = false
 var steps = 20
 var total_steps = steps * 4
 var positions = []
@@ -64,10 +65,11 @@ func get_input():
 
 func _physics_process(delta):
 	get_input()
-	velocity = move_and_slide(velocity)
+	if not cutscene:
+		velocity = move_and_slide(velocity)
 	
 	# Play idle animation
-	if velocity == Vector2(0, 0):
+	if velocity == Vector2(0, 0) or cutscene:
 		for i in range(people_qty):
 			get_node('../'+sprites[(i+peep_offset) % people_qty]+'Sprite').play(directions[(position_index - i*steps - 1) % total_steps] + "_idle")
 	else:
@@ -91,7 +93,38 @@ func _physics_process(delta):
 
 	for i in range(people_qty):
 		get_node('../'+sprites[(i+peep_offset) % people_qty]+'Sprite').position = positions[(position_index - i*steps - 1) % total_steps]
-	
+		get_node('../../'+sprites[(i+peep_offset) % people_qty]+'Bubble').position = positions[(position_index - i*steps - 1) % total_steps]
+		if i < people_qty:
+			get_node('../../'+sprites[(i+peep_offset) % people_qty]+'Bubble').position += Vector2(-30, -180)
 	# Make camera follow character
 	
 	get_node('/root/Main/Camera2D').position = position;	
+
+### Animation logic
+
+var queue = []
+
+func queue_animations(sequence):
+	if len(queue) == 0:
+		#queue.append("Creation")
+		queue.append_array(sequence)
+		#queue.append("Deleted") # TODO: täytyy toteuttaa
+	else:
+		#queue.pop_back()
+		queue.append_array(sequence)
+		#queue.append("Deleted")
+	cutscene = true
+	get_node(queue[0][0]).play(queue[0][1])
+	
+
+func _on_animation_finished():
+	queue.pop_front()
+	if len(queue) != 0:
+		if queue[0][0] == null:
+			queue[0][1].call_func()
+			_on_animation_finished()
+		else:
+			get_node(queue[0][0]).play(queue[0][1])
+	else:
+		cutscene = false
+	

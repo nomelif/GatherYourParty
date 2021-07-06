@@ -6,6 +6,8 @@ extends Area2D
 # var b = "text"
 
 export(String) var character;
+export(Array) var dialogue = [];
+var player = null
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,7 +20,13 @@ func _ready():
 
 func _on_body_entered(body):
 	if body.name == "PlayerCharacter":
-		body.people_qty += 1
-		get_node('../'+character+'Sprite').visible = true
-		get_node('../Door').increment_door()
-		get_parent().remove_child(self)
+		body.queue_animations(dialogue)
+		player = body
+		body.queue_animations([[null, funcref(self, "cleanup")]])
+
+func cleanup():
+	player.people_qty += 1
+	get_node('../'+character+'Sprite').visible = true
+	get_node('../Door').increment_door()
+	player.cutscene = false
+	get_parent().remove_child(self)

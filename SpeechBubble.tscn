@@ -1,0 +1,210 @@
+[gd_scene load_steps=147 format=2]
+
+[ext_resource path="res://Speechbubble/Hands/0002.png" type="Texture" id=1]
+[ext_resource path="res://Speechbubble/Annoyed/0003.png" type="Texture" id=2]
+[ext_resource path="res://Speechbubble/Smile/0007.png" type="Texture" id=3]
+[ext_resource path="res://Speechbubble/Annoyed/0008.png" type="Texture" id=4]
+[ext_resource path="res://Speechbubble/Annoyed/0009.png" type="Texture" id=5]
+[ext_resource path="res://Speechbubble/No/0003.png" type="Texture" id=6]
+[ext_resource path="res://Speechbubble/Hands/0003.png" type="Texture" id=7]
+[ext_resource path="res://Speechbubble/Exclamation/0005.png" type="Texture" id=8]
+[ext_resource path="res://Speechbubble/Exclamation/0006.png" type="Texture" id=9]
+[ext_resource path="res://Speechbubble/Exclamation/0007.png" type="Texture" id=10]
+[ext_resource path="res://Speechbubble/Exclamation/0008.png" type="Texture" id=11]
+[ext_resource path="res://Speechbubble/Exclamation/0010.png" type="Texture" id=12]
+[ext_resource path="res://Speechbubble/Exclamation/0009.png" type="Texture" id=13]
+[ext_resource path="res://Speechbubble/Exclamation/0011.png" type="Texture" id=14]
+[ext_resource path="res://Speechbubble/Question/0006.png" type="Texture" id=15]
+[ext_resource path="res://Speechbubble/Smile/0002.png" type="Texture" id=16]
+[ext_resource path="res://Speechbubble/Hands/0006.png" type="Texture" id=17]
+[ext_resource path="res://Speechbubble/Hands/0011.png" type="Texture" id=18]
+[ext_resource path="res://Speechbubble/Hands/0012.png" type="Texture" id=19]
+[ext_resource path="res://Speechbubble/Hands/0013.png" type="Texture" id=20]
+[ext_resource path="res://Speechbubble/Hands/0014.png" type="Texture" id=21]
+[ext_resource path="res://Speechbubble/Hands/0007.png" type="Texture" id=22]
+[ext_resource path="res://Speechbubble/Hands/0008.png" type="Texture" id=23]
+[ext_resource path="res://Speechbubble/Hands/0010.png" type="Texture" id=24]
+[ext_resource path="res://Speechbubble/Hands/0009.png" type="Texture" id=25]
+[ext_resource path="res://Speechbubble/Annoyed/0004.png" type="Texture" id=26]
+[ext_resource path="res://Speechbubble/Exclamation/0003.png" type="Texture" id=27]
+[ext_resource path="res://Speechbubble/Creation/0005.png" type="Texture" id=28]
+[ext_resource path="res://Speechbubble/Creation/0001.png" type="Texture" id=29]
+[ext_resource path="res://Speechbubble/Annoyed/0007.png" type="Texture" id=30]
+[ext_resource path="res://Speechbubble/Creation/0002.png" type="Texture" id=31]
+[ext_resource path="res://Speechbubble/Creation/0008.png" type="Texture" id=32]
+[ext_resource path="res://Speechbubble/Creation/0009.png" type="Texture" id=33]
+[ext_resource path="res://Speechbubble/Creation/0010.png" type="Texture" id=34]
+[ext_resource path="res://Speechbubble/Creation/0011.png" type="Texture" id=35]
+[ext_resource path="res://Speechbubble/Creation/0012.png" type="Texture" id=36]
+[ext_resource path="res://Speechbubble/Creation/0013.png" type="Texture" id=37]
+[ext_resource path="res://Speechbubble/Creation/0014.png" type="Texture" id=38]
+[ext_resource path="res://Speechbubble/Creation/0015.png" type="Texture" id=39]
+[ext_resource path="res://Speechbubble/Creation/0016.png" type="Texture" id=40]
+[ext_resource path="res://Speechbubble/Creation/0017.png" type="Texture" id=41]
+[ext_resource path="res://Speechbubble/Creation/0018.png" type="Texture" id=42]
+[ext_resource path="res://Speechbubble/Creation/0019.png" type="Texture" id=43]
+[ext_resource path="res://Speechbubble/Dotdotdot/0001.png" type="Texture" id=44]
+[ext_resource path="res://Speechbubble/Annoyed/0005.png" type="Texture" id=45]
+[ext_resource path="res://Speechbubble/Agree/0001.png" type="Texture" id=46]
+[ext_resource path="res://Speechbubble/Smile/0001.png" type="Texture" id=47]
+[ext_resource path="res://Speechbubble/Hands/0005.png" type="Texture" id=48]
+[ext_resource path="res://Speechbubble/Hands/0015.png" type="Texture" id=49]
+[ext_resource path="res://Speechbubble/Hands/0016.png" type="Texture" id=50]
+[ext_resource path="res://Speechbubble/Hands/0017.png" type="Texture" id=51]
+[ext_resource path="res://Speechbubble/Hands/0018.png" type="Texture" id=52]
+[ext_resource path="res://Speechbubble/Hands/0019.png" type="Texture" id=53]
+[ext_resource path="res://Speechbubble/Hands/0020.png" type="Texture" id=54]
+[ext_resource path="res://Speechbubble/Hands/0021.png" type="Texture" id=55]
+[ext_resource path="res://Speechbubble/Hands/0022.png" type="Texture" id=56]
+[ext_resource path="res://Speechbubble/Hands/0023.png" type="Texture" id=57]
+[ext_resource path="res://Speechbubble/Hands/0024.png" type="Texture" id=58]
+[ext_resource path="res://Speechbubble/Hands/0025.png" type="Texture" id=59]
+[ext_resource path="res://Speechbubble/Hands/0026.png" type="Texture" id=60]
+[ext_resource path="res://Speechbubble/No/0004.png" type="Texture" id=61]
+[ext_resource path="res://Speechbubble/No/0005.png" type="Texture" id=62]
+[ext_resource path="res://Speechbubble/No/0006.png" type="Texture" id=63]
+[ext_resource path="res://Speechbubble/No/0011.png" type="Texture" id=64]
+[ext_resource path="res://Speechbubble/No/0012.png" type="Texture" id=65]
+[ext_resource path="res://Speechbubble/No/0009.png" type="Texture" id=66]
+[ext_resource path="res://Speechbubble/Dotdotdot/0003.png" type="Texture" id=67]
+[ext_resource path="res://Speechbubble/Creation/0007.png" type="Texture" id=68]
+[ext_resource path="res://Speechbubble/Creation/0006.png" type="Texture" id=69]
+[ext_resource path="res://Speechbubble/Question/0002.png" type="Texture" id=70]
+[ext_resource path="res://Speechbubble/Hands/0004.png" type="Texture" id=71]
+[ext_resource path="res://Speechbubble/Hands/0001.png" type="Texture" id=72]
+[ext_resource path="res://Speechbubble/Door/0003.png" type="Texture" id=73]
+[ext_resource path="res://Speechbubble/Door/0004.png" type="Texture" id=74]
+[ext_resource path="res://Speechbubble/Door/0005.png" type="Texture" id=75]
+[ext_resource path="res://Speechbubble/Door/0006.png" type="Texture" id=76]
+[ext_resource path="res://Speechbubble/Door/0007.png" type="Texture" id=77]
+[ext_resource path="res://Speechbubble/Door/0008.png" type="Texture" id=78]
+[ext_resource path="res://Speechbubble/Door/0009.png" type="Texture" id=79]
+[ext_resource path="res://Speechbubble/Door/0010.png" type="Texture" id=80]
+[ext_resource path="res://Speechbubble/Door/0011.png" type="Texture" id=81]
+[ext_resource path="res://Speechbubble/Exclamation/0004.png" type="Texture" id=82]
+[ext_resource path="res://Speechbubble/Agree/0003.png" type="Texture" id=83]
+[ext_resource path="res://Speechbubble/Agree/0002.png" type="Texture" id=84]
+[ext_resource path="res://Speechbubble/Annoyed/0001.png" type="Texture" id=85]
+[ext_resource path="res://Speechbubble/Annoyed/0006.png" type="Texture" id=86]
+[ext_resource path="res://Speechbubble/Question/0003.png" type="Texture" id=87]
+[ext_resource path="res://Speechbubble/Dotdotdot/0002.png" type="Texture" id=88]
+[ext_resource path="res://Speechbubble/Agree/0008.png" type="Texture" id=89]
+[ext_resource path="res://Speechbubble/Agree/0009.png" type="Texture" id=90]
+[ext_resource path="res://Speechbubble/No/0001.png" type="Texture" id=91]
+[ext_resource path="res://Speechbubble/Door/0001.png" type="Texture" id=92]
+[ext_resource path="res://Speechbubble/Creation/0003.png" type="Texture" id=93]
+[ext_resource path="res://Speechbubble/Door/0002.png" type="Texture" id=94]
+[ext_resource path="res://Speechbubble/Agree/0004.png" type="Texture" id=95]
+[ext_resource path="res://Speechbubble/Question/0005.png" type="Texture" id=96]
+[ext_resource path="res://Speechbubble/Agree/0006.png" type="Texture" id=97]
+[ext_resource path="res://Speechbubble/Agree/0005.png" type="Texture" id=98]
+[ext_resource path="res://Speechbubble/Creation/0004.png" type="Texture" id=99]
+[ext_resource path="res://Speechbubble/Question/0004.png" type="Texture" id=100]
+[ext_resource path="res://Speechbubble/Agree/0007.png" type="Texture" id=101]
+[ext_resource path="res://Speechbubble/Exclamation/0002.png" type="Texture" id=102]
+[ext_resource path="res://Speechbubble/Annoyed/0002.png" type="Texture" id=103]
+[ext_resource path="res://Speechbubble/No/0002.png" type="Texture" id=104]
+[ext_resource path="res://Speechbubble/No/0007.png" type="Texture" id=105]
+[ext_resource path="res://Speechbubble/No/0008.png" type="Texture" id=106]
+[ext_resource path="res://Speechbubble/No/0010.png" type="Texture" id=107]
+[ext_resource path="res://Speechbubble/Question/0008.png" type="Texture" id=108]
+[ext_resource path="res://Speechbubble/Question/0009.png" type="Texture" id=109]
+[ext_resource path="res://Speechbubble/Question/0010.png" type="Texture" id=110]
+[ext_resource path="res://Speechbubble/Question/0007.png" type="Texture" id=111]
+[ext_resource path="res://Speechbubble/Question/0011.png" type="Texture" id=112]
+[ext_resource path="res://Speechbubble/Question/0012.png" type="Texture" id=113]
+[ext_resource path="res://Speechbubble/Question/0013.png" type="Texture" id=114]
+[ext_resource path="res://Speechbubble/Question/0014.png" type="Texture" id=115]
+[ext_resource path="res://Speechbubble/Question/0015.png" type="Texture" id=116]
+[ext_resource path="res://Speechbubble/Smile/0004.png" type="Texture" id=117]
+[ext_resource path="res://Speechbubble/Smile/0003.png" type="Texture" id=118]
+[ext_resource path="res://Speechbubble/Smile/0005.png" type="Texture" id=119]
+[ext_resource path="res://Speechbubble/Smile/0006.png" type="Texture" id=120]
+[ext_resource path="res://Speechbubble/Smile/0008.png" type="Texture" id=121]
+[ext_resource path="res://Speechbubble/Smile/0009.png" type="Texture" id=122]
+[ext_resource path="res://Speechbubble/Question/0001.png" type="Texture" id=123]
+[ext_resource path="res://Speechbubble/Exclamation/0001.png" type="Texture" id=124]
+[ext_resource path="res://Speechbubble/Creation/0000.png" type="Texture" id=125]
+[ext_resource path="res://Speechbubble/Deletion/0006.png" type="Texture" id=126]
+[ext_resource path="res://Speechbubble/Deletion/0003.png" type="Texture" id=127]
+[ext_resource path="res://Speechbubble/Deletion/0005.png" type="Texture" id=128]
+[ext_resource path="res://Speechbubble/Deletion/0007.png" type="Texture" id=129]
+[ext_resource path="res://Speechbubble/Deletion/0001.png" type="Texture" id=130]
+[ext_resource path="res://Speechbubble/Deletion/0002.png" type="Texture" id=131]
+[ext_resource path="res://Speechbubble/Deletion/0009.png" type="Texture" id=132]
+[ext_resource path="res://Speechbubble/Deletion/0010.png" type="Texture" id=133]
+[ext_resource path="res://Speechbubble/Deletion/0011.png" type="Texture" id=134]
+[ext_resource path="res://Speechbubble/Deletion/0008.png" type="Texture" id=135]
+[ext_resource path="res://Speechbubble/Deletion/0012.png" type="Texture" id=136]
+[ext_resource path="res://Speechbubble/Deletion/0013.png" type="Texture" id=137]
+[ext_resource path="res://Speechbubble/Deletion/0014.png" type="Texture" id=138]
+[ext_resource path="res://Speechbubble/Deletion/0016.png" type="Texture" id=139]
+[ext_resource path="res://Speechbubble/Deletion/0015.png" type="Texture" id=140]
+[ext_resource path="res://Speechbubble/Deletion/0017.png" type="Texture" id=141]
+[ext_resource path="res://Speechbubble/Deletion/0019.png" type="Texture" id=142]
+[ext_resource path="res://Speechbubble/Deletion/0018.png" type="Texture" id=143]
+[ext_resource path="res://Speechbubble/Deletion/0004.png" type="Texture" id=144]
+[ext_resource path="res://Speechbubble/Deletion/0020.png" type="Texture" id=145]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 46 ), ExtResource( 84 ), ExtResource( 83 ), ExtResource( 95 ), ExtResource( 98 ), ExtResource( 97 ), ExtResource( 101 ), ExtResource( 89 ), ExtResource( 90 ) ],
+"loop": false,
+"name": "Agree",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 92 ), ExtResource( 94 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ) ],
+"loop": false,
+"name": "Door",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 91 ), ExtResource( 104 ), ExtResource( 6 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 66 ), ExtResource( 107 ), ExtResource( 64 ), ExtResource( 65 ) ],
+"loop": false,
+"name": "No",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 85 ), ExtResource( 103 ), ExtResource( 2 ), ExtResource( 26 ), ExtResource( 45 ), ExtResource( 86 ), ExtResource( 30 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "Annoyed",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 72 ), ExtResource( 1 ), ExtResource( 7 ), ExtResource( 71 ), ExtResource( 48 ), ExtResource( 17 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 24 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ) ],
+"loop": false,
+"name": "Hands",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 16 ), ExtResource( 118 ), ExtResource( 117 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 3 ), ExtResource( 121 ), ExtResource( 122 ) ],
+"loop": false,
+"name": "Smile",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 130 ), ExtResource( 131 ), ExtResource( 127 ), ExtResource( 144 ), ExtResource( 128 ), ExtResource( 126 ), ExtResource( 129 ), ExtResource( 135 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 136 ), ExtResource( 137 ), ExtResource( 138 ), ExtResource( 140 ), ExtResource( 139 ), ExtResource( 141 ), ExtResource( 143 ), ExtResource( 142 ), ExtResource( 145 ) ],
+"loop": false,
+"name": "Deletion",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 44 ), ExtResource( 88 ), ExtResource( 67 ) ],
+"loop": false,
+"name": "Dotdotdot",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 125 ), ExtResource( 29 ), ExtResource( 31 ), ExtResource( 93 ), ExtResource( 99 ), ExtResource( 28 ), ExtResource( 69 ), ExtResource( 68 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "Creation",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 123 ), ExtResource( 70 ), ExtResource( 87 ), ExtResource( 100 ), ExtResource( 96 ), ExtResource( 15 ), ExtResource( 111 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 112 ), ExtResource( 113 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 116 ) ],
+"loop": false,
+"name": "Question",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 124 ), ExtResource( 102 ), ExtResource( 27 ), ExtResource( 82 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "Exclamation",
+"speed": 10.0
+} ]
+
+[node name="SpeechBubble" type="AnimatedSprite"]
+scale = Vector2( 2, 2 )
+frames = SubResource( 1 )
+animation = "Creation"
