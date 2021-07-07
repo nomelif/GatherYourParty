@@ -1,4 +1,4 @@
-[gd_scene load_steps=87 format=2]
+[gd_scene load_steps=93 format=2]
 
 [ext_resource path="res://Map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=2]
@@ -78,6 +78,10 @@
 [ext_resource path="res://SpeechBubble.tscn" type="PackedScene" id=76]
 [ext_resource path="res://Hub to Meadow Collider.gd" type="Script" id=77]
 [ext_resource path="res://Sprite scenes/Door.tscn" type="PackedScene" id=78]
+[ext_resource path="res://ShieldSprite.tscn" type="PackedScene" id=79]
+[ext_resource path="res://Magic.tscn" type="PackedScene" id=80]
+[ext_resource path="res://BridgeSprite.tscn" type="PackedScene" id=81]
+[ext_resource path="res://Sword.tscn" type="PackedScene" id=82]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 62.4757
@@ -113,14 +117,14 @@ animations = [ {
 "name": "up_idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 25 ), ExtResource( 26 ) ],
-"loop": true,
-"name": "right_idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "down_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ), ExtResource( 26 ) ],
+"loop": true,
+"name": "right_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 12 ), ExtResource( 11 ) ],
@@ -156,14 +160,14 @@ animations = [ {
 "name": "up_idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 33 ), ExtResource( 34 ) ],
-"loop": true,
-"name": "right_idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 36 ), ExtResource( 35 ) ],
 "loop": true,
 "name": "down_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 33 ), ExtResource( 34 ) ],
+"loop": true,
+"name": "right_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 19 ), ExtResource( 13 ) ],
@@ -199,14 +203,14 @@ animations = [ {
 "name": "up_idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 42 ), ExtResource( 41 ) ],
-"loop": true,
-"name": "right_idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 15 ), ExtResource( 18 ) ],
 "loop": true,
 "name": "down_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 42 ), ExtResource( 41 ) ],
+"loop": true,
+"name": "right_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 38 ), ExtResource( 37 ) ],
@@ -242,14 +246,14 @@ animations = [ {
 "name": "up_idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 53 ), ExtResource( 52 ) ],
-"loop": true,
-"name": "right_idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 64 ), ExtResource( 63 ) ],
 "loop": true,
 "name": "down_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 53 ), ExtResource( 52 ) ],
+"loop": true,
+"name": "right_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 55 ), ExtResource( 54 ) ],
@@ -262,6 +266,12 @@ animations = [ {
 radius = 143.308
 height = 141.036
 
+[sub_resource type="CircleShape2D" id=9]
+radius = 72.0812
+
+[sub_resource type="CircleShape2D" id=10]
+radius = 59.0171
+
 [sub_resource type="RectangleShape2D" id=8]
 extents = Vector2( 227.202, 200.39 )
 
@@ -269,10 +279,15 @@ extents = Vector2( 227.202, 200.39 )
 
 [node name="YSort" type="YSort" parent="."]
 
+[node name="BridgeSprite" parent="YSort" instance=ExtResource( 81 )]
+position = Vector2( 2048.81, 2550 )
+scale = Vector2( 1.5, 1.5 )
+
 [node name="MeadowDoor" type="Area2D" parent="YSort"]
 position = Vector2( 1564.52, 3620 )
 script = ExtResource( 72 )
-required_character = "Sorceress"
+required_character = "Fighter"
+success_dialogue = [ [ "../../Sword", "Activate" ] ]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/MeadowDoor"]
 position = Vector2( 2.97266, -42.8113 )
@@ -344,6 +359,7 @@ offset = Vector2( 0, -85 )
 [node name="Fog" type="Area2D" parent="YSort"]
 script = ExtResource( 72 )
 required_character = "Protector"
+success_dialogue = [ [ "../../Shield", "Activate" ] ]
 
 [node name="YSort" type="YSort" parent="YSort/Fog"]
 
@@ -359,6 +375,21 @@ position = Vector2( 3646.32, 2876.78 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Fog"]
 position = Vector2( 3574.75, 2802.89 )
 shape = SubResource( 7 )
+
+[node name="Bridge" type="Area2D" parent="YSort"]
+script = ExtResource( 72 )
+required_character = "Sorceress"
+success_dialogue = [ [ "../../Magic", "A" ], [ "../BridgeSprite", "Fix" ], [ "../../Magic", "B" ] ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Bridge"]
+position = Vector2( 2038.07, 2639.96 )
+shape = SubResource( 9 )
+
+[node name="KinematicBody2D" type="KinematicBody2D" parent="YSort/Bridge"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Bridge/KinematicBody2D"]
+position = Vector2( 2038.8, 2640.61 )
+shape = SubResource( 10 )
 
 [node name="Hub to Ruins Collider" type="Area2D" parent="."]
 visible = false
@@ -408,11 +439,24 @@ position = Vector2( 6375.95, 3365.72 )
 light_mask = 0
 position = Vector2( 1404.13, 4949.36 )
 
+[node name="Shield" parent="." instance=ExtResource( 79 )]
+position = Vector2( 3604.06, 2797.17 )
+
+[node name="Magic" parent="." instance=ExtResource( 80 )]
+position = Vector2( 2046.32, 2640.73 )
+scale = Vector2( 2, 2 )
+
+[node name="Sword" parent="." instance=ExtResource( 82 )]
+position = Vector2( 1605.24, 3656.61 )
+scale = Vector2( 2, 2 )
+
+[connection signal="animation_finished" from="YSort/BridgeSprite" to="YSort/PlayerCharacter" method="_on_animation_finished"]
 [connection signal="body_entered" from="YSort/MeadowDoor" to="YSort/MeadowDoor" method="_on_body_entered"]
 [connection signal="body_entered" from="YSort/Protector_pickup" to="YSort/Protector_pickup" method="_on_body_entered"]
 [connection signal="body_entered" from="YSort/Sorceress_pickup" to="YSort/Sorceress_pickup" method="_on_body_entered"]
 [connection signal="body_entered" from="YSort/Healer_pickup" to="YSort/Healer_pickup" method="_on_body_entered"]
 [connection signal="body_entered" from="YSort/Fog" to="YSort/Fog" method="_on_body_entered"]
+[connection signal="body_entered" from="YSort/Bridge" to="YSort/Bridge" method="_on_body_entered"]
 [connection signal="body_exited" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
 [connection signal="body_exited" from="Hub to Swamp Collider" to="Hub to Swamp Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
 [connection signal="body_exited" from="Hub to Meadow Collider" to="Hub to Meadow Collider" method="_on_Hub_to_Meadow_Collider_body_exited"]
@@ -420,3 +464,6 @@ position = Vector2( 1404.13, 4949.36 )
 [connection signal="animation_finished" from="ProtectorBubble" to="YSort/PlayerCharacter" method="_on_animation_finished"]
 [connection signal="animation_finished" from="SorceressBubble" to="YSort/PlayerCharacter" method="_on_animation_finished"]
 [connection signal="animation_finished" from="HealerBubble" to="YSort/PlayerCharacter" method="_on_animation_finished"]
+[connection signal="animation_finished" from="Shield" to="YSort/PlayerCharacter" method="_on_animation_finished"]
+[connection signal="animation_finished" from="Magic" to="YSort/PlayerCharacter" method="_on_animation_finished"]
+[connection signal="animation_finished" from="Sword" to="YSort/PlayerCharacter" method="_on_animation_finished"]

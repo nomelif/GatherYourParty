@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=57 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/area_1_flowers_5.tscn" type="PackedScene" id=3]
@@ -14,7 +14,6 @@
 [ext_resource path="res://Sprite scenes/area_1_river_2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Sprite scenes/area_1_river_1.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Sprite scenes/area_1_river_3.tscn" type="PackedScene" id=15]
-[ext_resource path="res://Sprite scenes/bridge_broken.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Sprite scenes/area_1_stones_1.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Sprite scenes/area_1_stones_3.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Sprite scenes/area_1_stones_2.tscn" type="PackedScene" id=19]
@@ -1682,9 +1681,6 @@ position = Vector2( 3248.12, 3340.92 )
 
 [node name="Node2D20" parent="Background/River" instance=ExtResource( 13 )]
 position = Vector2( 3419.56, 3396.48 )
-
-[node name="Broken Bridge" parent="Background" instance=ExtResource( 16 )]
-position = Vector2( 2037.92, 2631.08 )
 
 [node name="Stones" parent="Background" instance=ExtResource( 17 )]
 position = Vector2( 587.626, 2654.9 )

@@ -27,6 +27,9 @@ var directions = []
 func front_peep():
 	return sprites[(peep_offset) % people_qty]
 
+func has_peep(peep):
+	return sprites.find(peep) < people_qty && peep in sprites
+
 func _ready():
 	for x in range(total_steps):
 		positions.append(position)
@@ -114,17 +117,19 @@ func queue_animations(sequence):
 		queue.append_array(sequence)
 		#queue.append("Deleted")
 	cutscene = true
-	get_node(queue[0][0]).play(queue[0][1])
+	_run_step()
 	
+func _run_step():
+	if queue[0][0] == null:
+		queue[0][1].call_func()
+		_on_animation_finished()
+	else:
+		get_node(queue[0][0]).play(queue[0][1])
 
 func _on_animation_finished():
 	queue.pop_front()
 	if len(queue) != 0:
-		if queue[0][0] == null:
-			queue[0][1].call_func()
-			_on_animation_finished()
-		else:
-			get_node(queue[0][0]).play(queue[0][1])
+		_run_step()
 	else:
 		cutscene = false
 	
