@@ -1050,20 +1050,32 @@ position = Vector2( -292.932, 1159.34 )
 [node name="Flowers2" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( -66.6573, 975.494 )
 
+[node name="Butterfly B" parent="YSorted flowers/Flowers2" instance=ExtResource( 3 )]
+position = Vector2( -19.195, -73.7114 )
+
 [node name="Flowers3" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( -1.60352, 958.523 )
 
 [node name="Flowers4" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 247.298, 969.837 )
 
+[node name="Butterfly A" parent="YSorted flowers/Flowers4" instance=ExtResource( 2 )]
+position = Vector2( -19.1945, -62.3975 )
+
 [node name="Flowers5" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 371.749, 1066 )
+
+[node name="Butterfly C" parent="YSorted flowers/Flowers5" instance=ExtResource( 4 )]
+position = Vector2( 3.43289, -34.1096 )
 
 [node name="Flowers6" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( -110.541, 1153.42 )
 
 [node name="Flowers7" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 390.091, 1504.14 )
+
+[node name="Butterfly C" parent="YSorted flowers/Flowers7" instance=ExtResource( 4 )]
+position = Vector2( -37.5366, -73.4408 )
 
 [node name="Flowers8" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 450.902, 1391.01 )
@@ -1134,11 +1146,20 @@ position = Vector2( -536.891, 1736.14 )
 [node name="Flowers30" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( -471.837, 1699.37 )
 
+[node name="Butterfly A" parent="YSorted flowers/Flowers30" instance=ExtResource( 2 )]
+position = Vector2( 18.2888, -79.1661 )
+
 [node name="Flowers31" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( -1342.99, 1999.18 )
 
+[node name="Butterfly B" parent="YSorted flowers/Flowers31" instance=ExtResource( 3 )]
+position = Vector2( -9.99915, -56.535 )
+
 [node name="Flowers32" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( -1306.22, 1917.16 )
+
+[node name="Butterfly A" parent="YSorted flowers/Flowers32" instance=ExtResource( 2 )]
+position = Vector2( -15.6564, -59.3678 )
 
 [node name="Flowers33" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( -1359.96, 1917.16 )
@@ -1146,8 +1167,14 @@ position = Vector2( -1359.96, 1917.16 )
 [node name="Flowers34" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( -1198.74, 2007.67 )
 
+[node name="Butterfly C" parent="YSorted flowers/Flowers34" instance=ExtResource( 4 )]
+position = Vector2( 15.4567, -76.3387 )
+
 [node name="Flowers35" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( -1348.65, 754.673 )
+
+[node name="Butterfly C" parent="YSorted flowers/Flowers35" instance=ExtResource( 4 )]
+position = Vector2( -41.1086, -76.3364 )
 
 [node name="Flowers36" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( -1348.65, 661.335 )
@@ -1161,20 +1188,35 @@ position = Vector2( -1218.54, 961.148 )
 [node name="Flowers39" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 1055.51, 1342.99 )
 
+[node name="Butterfly A" parent="YSorted flowers/Flowers39" instance=ExtResource( 2 )]
+position = Vector2( -9.99023, -65.0261 )
+
 [node name="Flowers40" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 984.803, 1348.64 )
+
+[node name="Butterfly B" parent="YSorted flowers/Flowers40" instance=ExtResource( 3 )]
+position = Vector2( -15.6506, -84.8182 )
 
 [node name="Flowers41" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 509.627, 75.8504 )
 
+[node name="Butterfly A" parent="YSorted flowers/Flowers41" instance=ExtResource( 2 )]
+position = Vector2( -24.1363, -48.0528 )
+
 [node name="Flowers42" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 594.48, 39.0809 )
+
+[node name="Butterfly B" parent="YSorted flowers/Flowers42" instance=ExtResource( 3 )]
+position = Vector2( -7.16577, -79.1656 )
 
 [node name="Flowers43" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 653.877, 47.5662 )
 
 [node name="Flowers44" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 1830.5, 2007.67 )
+
+[node name="Butterfly A" parent="YSorted flowers/Flowers44" instance=ExtResource( 2 )]
+position = Vector2( -1.50488, -48.0543 )
 
 [node name="Flowers45" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 1756.96, 2013.32 )
@@ -1193,6 +1235,12 @@ position = Vector2( 2096.37, 1631.49 )
 
 [node name="Flowers50" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 1109.25, 824.36 )
+
+[node name="Butterfly A" parent="YSorted flowers/Flowers50" instance=ExtResource( 2 )]
+position = Vector2( -26.9604, -44.1999 )
+
+[node name="Butterfly B" parent="YSorted flowers/Flowers50" instance=ExtResource( 3 )]
+position = Vector2( 23.9512, -80.9694 )
 
 [node name="Flowers51" parent="YSorted flowers" instance=ExtResource( 11 )]
 position = Vector2( 1160.17, 849.816 )
