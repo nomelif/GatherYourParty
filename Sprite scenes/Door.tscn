@@ -15,14 +15,14 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
-"loop": false,
-"name": "1 to 2",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 4 ) ],
 "loop": false,
 "name": "3 to 4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ), ExtResource( 10 ) ],
+"loop": false,
+"name": "Activation",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
@@ -30,9 +30,9 @@ animations = [ {
 "name": "2 to 3",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 11 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
 "loop": false,
-"name": "Activation",
+"name": "1 to 2",
 "speed": 5.0
 } ]
 
