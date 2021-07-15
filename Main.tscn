@@ -111,11 +111,6 @@ animations = [ {
 "name": "up",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "down_idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 28 ), ExtResource( 27 ) ],
 "loop": true,
 "name": "left_idle",
@@ -135,6 +130,11 @@ animations = [ {
 "loop": true,
 "name": "down",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=5]
@@ -152,11 +152,6 @@ animations = [ {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 36 ), ExtResource( 35 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 31 ), ExtResource( 32 ) ],
@@ -178,6 +173,11 @@ animations = [ {
 "loop": true,
 "name": "down",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=6]
@@ -195,11 +195,6 @@ animations = [ {
 "frames": [ ExtResource( 39 ), ExtResource( 40 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 15 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 49 ), ExtResource( 50 ) ],
@@ -221,6 +216,11 @@ animations = [ {
 "loop": true,
 "name": "down",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=7]
@@ -238,11 +238,6 @@ animations = [ {
 "frames": [ ExtResource( 51 ), ExtResource( 66 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 64 ), ExtResource( 63 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 62 ), ExtResource( 58 ) ],
@@ -264,6 +259,11 @@ animations = [ {
 "loop": true,
 "name": "down",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 64 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=8]
@@ -280,6 +280,16 @@ radius = 59.0171
 extents = Vector2( 227.202, 200.39 )
 
 [node name="Main" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 1642.0
+margin_top = 23.0
+margin_right = 1952.0
+margin_bottom = 400.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="YSort" type="YSort" parent="."]
 
