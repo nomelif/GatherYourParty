@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Sprites/area 1 door opening 3.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/area 1 door opening 2.png" type="Texture" id=2]
@@ -11,30 +11,34 @@
 [ext_resource path="res://Sprites/area 1 door 2 gems.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/area 1 door opening 5.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/area 1 door opening 4.png" type="Texture" id=11]
+[ext_resource path="res://Sprite scenes/Door.gd" type="Script" id=12]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 8 ), ExtResource( 4 ) ],
-"loop": false,
-"name": "3 to 4",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 6 ), ExtResource( 9 ) ],
 "loop": false,
 "name": "1 to 2",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 11 ), ExtResource( 10 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 4 ) ],
 "loop": false,
-"name": "Activation",
+"name": "3 to 4",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ), ExtResource( 8 ) ],
 "loop": false,
 "name": "2 to 3",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 5 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 1 ), ExtResource( 11 ), ExtResource( 10 ) ],
+"loop": false,
+"name": "Activation",
+"speed": 5.0
 } ]
 
 [node name="Door" type="AnimatedSprite"]
 frames = SubResource( 1 )
 animation = "1 to 2"
+script = ExtResource( 12 )
+
+[connection signal="animation_finished" from="." to="." method="_on_Door_animation_finished"]
