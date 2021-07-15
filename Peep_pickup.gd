@@ -27,6 +27,5 @@ func _on_body_entered(body):
 func cleanup():
 	player.people_qty += 1
 	get_node('../'+character+'Sprite').visible = true
-	get_node('../Door').increment_door()
 	player.cutscene = false
 	get_parent().remove_child(self)

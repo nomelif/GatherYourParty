@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=2]
+[gd_scene load_steps=95 format=2]
 
 [ext_resource path="res://Map.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=2]
@@ -82,15 +82,19 @@
 [ext_resource path="res://Magic.tscn" type="PackedScene" id=80]
 [ext_resource path="res://BridgeSprite.tscn" type="PackedScene" id=81]
 [ext_resource path="res://Sword.tscn" type="PackedScene" id=82]
+[ext_resource path="res://Sprite scenes/brushery.tscn" type="PackedScene" id=83]
 
-[sub_resource type="CapsuleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 229.93, 35.5937 )
+
+[sub_resource type="CapsuleShape2D" id=2]
 radius = 62.4757
 height = 122.191
 
-[sub_resource type="RectangleShape2D" id=2]
+[sub_resource type="RectangleShape2D" id=3]
 extents = Vector2( 40, 15.2259 )
 
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 10 ), ExtResource( 6 ) ],
 "loop": true,
@@ -107,6 +111,11 @@ animations = [ {
 "name": "up",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 28 ), ExtResource( 27 ) ],
 "loop": true,
 "name": "left_idle",
@@ -115,11 +124,6 @@ animations = [ {
 "frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
 "loop": true,
 "name": "up_idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 25 ), ExtResource( 26 ) ],
@@ -133,7 +137,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=4]
+[sub_resource type="SpriteFrames" id=5]
 animations = [ {
 "frames": [ ExtResource( 14 ), ExtResource( 20 ) ],
 "loop": true,
@@ -150,6 +154,11 @@ animations = [ {
 "name": "up",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 36 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 31 ), ExtResource( 32 ) ],
 "loop": true,
 "name": "left_idle",
@@ -158,11 +167,6 @@ animations = [ {
 "frames": [ ExtResource( 29 ), ExtResource( 30 ) ],
 "loop": true,
 "name": "up_idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 36 ), ExtResource( 35 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 33 ), ExtResource( 34 ) ],
@@ -176,7 +180,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=5]
+[sub_resource type="SpriteFrames" id=6]
 animations = [ {
 "frames": [ ExtResource( 48 ), ExtResource( 45 ) ],
 "loop": true,
@@ -193,6 +197,11 @@ animations = [ {
 "name": "up",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 15 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 49 ), ExtResource( 50 ) ],
 "loop": true,
 "name": "left_idle",
@@ -201,11 +210,6 @@ animations = [ {
 "frames": [ ExtResource( 47 ), ExtResource( 46 ) ],
 "loop": true,
 "name": "up_idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 15 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 42 ), ExtResource( 41 ) ],
@@ -219,7 +223,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=6]
+[sub_resource type="SpriteFrames" id=7]
 animations = [ {
 "frames": [ ExtResource( 60 ), ExtResource( 59 ) ],
 "loop": true,
@@ -236,6 +240,11 @@ animations = [ {
 "name": "up",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 64 ), ExtResource( 63 ) ],
+"loop": true,
+"name": "down_idle",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 62 ), ExtResource( 58 ) ],
 "loop": true,
 "name": "left_idle",
@@ -244,11 +253,6 @@ animations = [ {
 "frames": [ ExtResource( 65 ), ExtResource( 56 ) ],
 "loop": true,
 "name": "up_idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 64 ), ExtResource( 63 ) ],
-"loop": true,
-"name": "down_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 53 ), ExtResource( 52 ) ],
@@ -262,7 +266,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=7]
+[sub_resource type="CapsuleShape2D" id=8]
 radius = 143.308
 height = 141.036
 
@@ -272,12 +276,21 @@ radius = 72.0812
 [sub_resource type="CircleShape2D" id=10]
 radius = 59.0171
 
-[sub_resource type="RectangleShape2D" id=8]
+[sub_resource type="RectangleShape2D" id=11]
 extents = Vector2( 227.202, 200.39 )
 
 [node name="Main" type="Node2D"]
 
 [node name="YSort" type="YSort" parent="."]
+
+[node name="Door Trigger" type="Area2D" parent="YSort"]
+script = ExtResource( 72 )
+required_character = "Healer"
+success_dialogue = [ [ "../../HealerBubble", "Creation" ], [ "../../HealerBubble", "Door" ], [ "../../HealerBubble", "Deletion" ], [ "../Door", "Activation" ] ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Door Trigger"]
+position = Vector2( 1783.51, 407.505 )
+shape = SubResource( 1 )
 
 [node name="BridgeSprite" parent="YSort" instance=ExtResource( 81 )]
 position = Vector2( 2048.81, 2550 )
@@ -292,25 +305,31 @@ success_dialogue = [ [ "../../Sword", "Activate" ] ]
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/MeadowDoor"]
 position = Vector2( 2.97266, -42.8113 )
 rotation = -1.55524
-shape = SubResource( 1 )
+shape = SubResource( 2 )
+
+[node name="Brushery" parent="YSort/MeadowDoor" instance=ExtResource( 83 )]
+position = Vector2( 20.5657, 14.7212 )
+
+[node name="Brushery2" parent="YSort/MeadowDoor" instance=ExtResource( 83 )]
+position = Vector2( -97.1659, 5.20752 )
 
 [node name="Protector_pickup" parent="YSort" instance=ExtResource( 69 )]
 position = Vector2( 6526.14, 349.936 )
 script = ExtResource( 70 )
 character = "Protector"
-dialogue = [ [ "../../FighterBubble", "Creation" ], [ "../../FighterBubble", "Door" ], [ "../../FighterBubble", "Question" ], [ "../../ProtectorBubble", "Creation" ], [ "../../ProtectorBubble", "No" ], [ "../../ProtectorBubble", "Hands" ], [ "../../FighterBubble", "Agree" ], [ "../../ProtectorBubble", "Deletion" ], [ "../../FighterBubble", "Deletion" ] ]
+dialogue = [ [ "../../FighterBubble", "Creation" ], [ "../../FighterBubble", "Door" ], [ "../../FighterBubble", "Question" ], [ "../../ProtectorBubble", "Creation" ], [ "../../ProtectorBubble", "No" ], [ "../../ProtectorBubble", "Hands" ], [ "../../FighterBubble", "Agree" ], [ "../../ProtectorBubble", "Deletion" ], [ "../../FighterBubble", "Deletion" ], [ "../Door", "1 to 2" ] ]
 
 [node name="Sorceress_pickup" parent="YSort" instance=ExtResource( 74 )]
 position = Vector2( 6407.31, 3550 )
 script = ExtResource( 70 )
 character = "Sorceress"
-dialogue = [ [ "../../FighterBubble", "Creation" ], [ "../../FighterBubble", "Hands" ], [ "../../SorceressBubble", "Creation" ], [ "../../SorceressBubble", "Agree" ], [ "../../FighterBubble", "Deletion" ], [ "../../SorceressBubble", "Deletion" ] ]
+dialogue = [ [ "../../FighterBubble", "Creation" ], [ "../../FighterBubble", "Hands" ], [ "../../SorceressBubble", "Creation" ], [ "../../SorceressBubble", "Agree" ], [ "../../FighterBubble", "Deletion" ], [ "../../SorceressBubble", "Deletion" ], [ "../Door", "2 to 3" ] ]
 
 [node name="Healer_pickup" parent="YSort" instance=ExtResource( 75 )]
 position = Vector2( 1437.4, 5132.71 )
 script = ExtResource( 70 )
 character = "Healer"
-dialogue = [ [ "../../FighterBubble", "Creation" ], [ "../../FighterBubble", "Hands" ], [ "../../HealerBubble", "Creation" ], [ "../../HealerBubble", "Agree" ], [ "../../HealerBubble", "Deletion" ], [ "../../FighterBubble", "Deletion" ] ]
+dialogue = [ [ "../../FighterBubble", "Creation" ], [ "../../FighterBubble", "Hands" ], [ "../../HealerBubble", "Creation" ], [ "../../HealerBubble", "Agree" ], [ "../../HealerBubble", "Deletion" ], [ "../../FighterBubble", "Deletion" ], [ "../Door", "3 to 4" ] ]
 
 [node name="Door" parent="YSort" instance=ExtResource( 78 )]
 position = Vector2( 1797.38, 180.282 )
@@ -324,19 +343,19 @@ people_qty = 1
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/PlayerCharacter"]
 position = Vector2( -13.7557, -19.4383 )
-shape = SubResource( 2 )
+shape = SubResource( 3 )
 
 [node name="FighterSprite" type="AnimatedSprite" parent="YSort"]
 position = Vector2( 143.994, 517.008 )
 z_as_relative = false
-frames = SubResource( 3 )
+frames = SubResource( 4 )
 animation = "down_idle"
 offset = Vector2( 0, -90 )
 
 [node name="SorceressSprite" type="AnimatedSprite" parent="YSort"]
 visible = false
 position = Vector2( 327.893, 202.266 )
-frames = SubResource( 4 )
+frames = SubResource( 5 )
 animation = "left"
 frame = 1
 offset = Vector2( 0, -85 )
@@ -344,7 +363,7 @@ offset = Vector2( 0, -85 )
 [node name="HealerSprite" type="AnimatedSprite" parent="YSort"]
 visible = false
 position = Vector2( 482.868, 203.125 )
-frames = SubResource( 5 )
+frames = SubResource( 6 )
 animation = "up_idle"
 frame = 1
 offset = Vector2( 0, -85 )
@@ -352,7 +371,7 @@ offset = Vector2( 0, -85 )
 [node name="ProtectorSprite" type="AnimatedSprite" parent="YSort"]
 visible = false
 position = Vector2( 607.594, 203.125 )
-frames = SubResource( 6 )
+frames = SubResource( 7 )
 animation = "left_idle"
 offset = Vector2( 0, -85 )
 
@@ -374,7 +393,7 @@ position = Vector2( 3646.32, 2876.78 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Fog"]
 position = Vector2( 3574.75, 2802.89 )
-shape = SubResource( 7 )
+shape = SubResource( 8 )
 
 [node name="Bridge" type="Area2D" parent="YSort"]
 script = ExtResource( 72 )
@@ -397,21 +416,21 @@ position = Vector2( 3799.67, 982.922 )
 script = ExtResource( 67 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hub to Ruins Collider"]
-shape = SubResource( 8 )
+shape = SubResource( 11 )
 
 [node name="Hub to Swamp Collider" type="Area2D" parent="."]
 position = Vector2( 3807.67, 2806.92 )
 script = ExtResource( 73 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hub to Swamp Collider"]
-shape = SubResource( 8 )
+shape = SubResource( 11 )
 
 [node name="Hub to Meadow Collider" type="Area2D" parent="."]
 position = Vector2( 1614.51, 3599.13 )
 script = ExtResource( 77 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hub to Meadow Collider"]
-shape = SubResource( 8 )
+shape = SubResource( 11 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 511.143, 298.431 )
@@ -450,11 +469,13 @@ scale = Vector2( 2, 2 )
 position = Vector2( 1605.24, 3656.61 )
 scale = Vector2( 2, 2 )
 
+[connection signal="body_entered" from="YSort/Door Trigger" to="YSort/Door Trigger" method="_on_body_entered"]
 [connection signal="animation_finished" from="YSort/BridgeSprite" to="YSort/PlayerCharacter" method="_on_animation_finished"]
 [connection signal="body_entered" from="YSort/MeadowDoor" to="YSort/MeadowDoor" method="_on_body_entered"]
 [connection signal="body_entered" from="YSort/Protector_pickup" to="YSort/Protector_pickup" method="_on_body_entered"]
 [connection signal="body_entered" from="YSort/Sorceress_pickup" to="YSort/Sorceress_pickup" method="_on_body_entered"]
 [connection signal="body_entered" from="YSort/Healer_pickup" to="YSort/Healer_pickup" method="_on_body_entered"]
+[connection signal="animation_finished" from="YSort/Door" to="YSort/PlayerCharacter" method="_on_animation_finished"]
 [connection signal="body_entered" from="YSort/Fog" to="YSort/Fog" method="_on_body_entered"]
 [connection signal="body_entered" from="YSort/Bridge" to="YSort/Bridge" method="_on_body_entered"]
 [connection signal="body_exited" from="Hub to Ruins Collider" to="Hub to Ruins Collider" method="_on_Hub_to_Ruins_Collider_body_exited"]
