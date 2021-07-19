@@ -22,14 +22,20 @@ var timers = {"Tail": null,
 
 var transitions = {
 	"Tail": {
-		"down": ["Down to up"],
-		"up": ["Up to down"]
+		"down": [["Down to up", 1.0]],
+		"up": [["Up to down", 1.0]]
 	},
 	"Head": {
-		"left": ["Left to left centre", "Left blink"],
-		"left centre": ["Left centre to left", "Left centre to right centre", "Left centre blink"],
-		"right centre": ["Right centre to right", "Right centre to left centre", "Right centre blink"],
-		"right": ["Right to right centre", "Right blink"]
+		"left": [["Left to left centre", 0.8],
+				 ["Left blink", 0.2]],
+		"left centre": [["Left centre to left", 0.4],
+						["Left centre to right centre", 0.4],
+						["Left centre blink", 0.2]],
+		"right centre": [["Right centre to right", 0.4],
+						 ["Right centre to left centre", 0.4],
+						 ["Right centre blink", 0.2]],
+		"right": [["Right to right centre", 0.8],
+				  ["Right blink", 0.2]]
 	}
 }
 
@@ -74,14 +80,23 @@ func play_next(node, index):
 	#timers[node+index] = Timer.new()
 	#add_child(timers[node + index])
 	#timers[node + index].connect("timeout", self, "_on_" + node + index + "_timeout")
-	timers[node+index].set_wait_time(rng.randf_range(1, 2))
+	timers[node+index].set_wait_time(rng.randf_range(0.5, 1.0))
 	timers[node+index].start()
 	
 func play_next_b(node, index):
 	#remove_child(timers[node+index])
 	if state[node+index] in animation_finish_transition[node]:
 		state[node+index] = animation_finish_transition[node][state[node+index]]
-	state[node+index] = transitions[node][state[node+index]][rng.randi_range(0, len(transitions[node][state[node+index]])-1)]
+	var total_probability = 0
+	for transition in transitions[node][state[node+index]]:
+		total_probability += transition[1]
+	var k = rng.randf_range(0, total_probability)
+	var c = 0
+	for i in range(0, len(transitions[node][state[node+index]])):
+		c += transitions[node][state[node+index]][i][1]
+		if c > k:
+			state[node+index] = transitions[node][state[node+index]][i-1][0]
+			break
 	get_node(node+index).play(state[node+index])
 
 func _on_Head2_animation_finished():
