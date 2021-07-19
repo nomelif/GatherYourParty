@@ -99,9 +99,14 @@ func play_next_b(node, index):
 	for i in range(0, len(transitions[node][state[node+index]])):
 		c += transitions[node][state[node+index]][i][1]
 		if c > k:
-			state[node+index] = transitions[node][state[node+index]][i-1][0]
+			state[node+index] = transitions[node][state[node+index]][i][0]
 			break
+	if state[node+index] == "Attack A":
+		trigger_attack(node, index)
 	get_node(node+index).play(state[node+index])
+
+func trigger_attack(node, index):
+	get_node("Warning" + index).play("Activate")
 
 func _on_Head2_animation_finished():
 	play_next("Head", "2")
