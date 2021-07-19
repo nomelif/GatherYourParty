@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Boss attack_0000_Frame 1.bmp-e73d42be7f43d368bd64a54b0a0a837b.stex"
+path="res://.import/Projectile-04.png-bb7cbf7bfafc0c91c57a70db1c0b4113.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Boss/Boss attack/Boss attack_0000_Frame 1.bmp"
-dest_files=[ "res://.import/Boss attack_0000_Frame 1.bmp-e73d42be7f43d368bd64a54b0a0a837b.stex" ]
+source_file="res://Boss/Boss attack/Projectile-04.png"
+dest_files=[ "res://.import/Projectile-04.png-bb7cbf7bfafc0c91c57a70db1c0b4113.stex" ]
 
 [params]
 
