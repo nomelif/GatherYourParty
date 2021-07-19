@@ -28,14 +28,16 @@ var transitions = {
 	"Head": {
 		"left": [["Left to left centre", 0.8],
 				 ["Left blink", 0.2]],
-		"left centre": [["Left centre to left", 0.4],
-						["Left centre to right centre", 0.4],
-						["Left centre blink", 0.2]],
+		"left centre": [["Left centre to left", 0.1],
+						["Left centre to right centre", 0.1],
+						["Left centre blink", 0.2],
+						["Attack A", 0.2]],
 		"right centre": [["Right centre to right", 0.4],
 						 ["Right centre to left centre", 0.4],
 						 ["Right centre blink", 0.2]],
 		"right": [["Right to right centre", 0.8],
-				  ["Right blink", 0.2]]
+				  ["Right blink", 0.2]],
+		"attacking": [["Attack B", 1.0]]
 	}
 }
 
@@ -54,7 +56,9 @@ var animation_finish_transition = {
 		"Left blink": "left",
 		"Left centre blink": "left centre",
 		"Right centre blink": "right centre",
-		"Right blink": "right"
+		"Right blink": "right",
+		"Attack A": "attacking",
+		"Attack B": "left centre"
 	}
 }
 
