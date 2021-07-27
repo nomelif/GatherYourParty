@@ -62,7 +62,7 @@ func get_input():
 	if Input.is_action_pressed('run'):
 		effective_speed *= run_multiplier
 	velocity = velocity.normalized() * effective_speed
-	if Input.is_action_just_pressed('switch_peeps'):
+	if Input.is_action_just_pressed('switch_peeps') and not cutscene:
 		peep_offset += 1
 		
 
