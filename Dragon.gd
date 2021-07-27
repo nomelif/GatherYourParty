@@ -1,14 +1,12 @@
 extends Node2D
 
 var rng = RandomNumberGenerator.new()
-var state = {"Tail":"down",
-			 "Head":"left",
+var state = {"Head":"left",
 			 "Head2":"left",
 			 "Head3":"left",
 			 "Head4":"left"}
 
-var timers = {"Tail": null,
-			  "Head": null,
+var timers = {"Head": null,
 			  "Head2": null,
 			  "Head3": null,
 			  "Head4": null}
@@ -21,10 +19,6 @@ var timers = {"Tail": null,
 #	timer.start()
 
 var transitions = {
-	"Tail": {
-		"down": [["Down to up", 1.0]],
-		"up": [["Up to down", 1.0]]
-	},
 	"Head": {
 		"left": [["Left to left centre", 0.8],
 				 ["Left blink", 0.2]],
@@ -42,10 +36,6 @@ var transitions = {
 }
 
 var animation_finish_transition = {
-	"Tail": {
-		"Down to up": "up",
-		"Up to down": "down"
-	},
 	"Head": {
 		"Left to left centre": "left centre",
 		"Left centre to left": "left",
@@ -72,7 +62,6 @@ func _ready():
 		timers[timer].connect("timeout", self, "_on_" + timer + "_timeout")
 	
 	
-	play_next("Tail", "")
 	play_next("Head", "")
 	play_next("Head", "2")
 	play_next("Head", "3")
@@ -122,13 +111,6 @@ func _on_Head4_animation_finished():
 
 func _on_Head_animation_finished():
 	play_next("Head", "")
-
-
-func _on_Tail_animation_finished():
-	play_next("Tail", "")
-
-func _on_Tail_timeout():
-	play_next_b("Tail", "")
 
 func _on_Head_timeout():
 	play_next_b("Head", "")

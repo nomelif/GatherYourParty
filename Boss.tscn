@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Boss/Body.png" type="Texture" id=1]
 [ext_resource path="res://Sprite scenes/plants_1.tscn" type="PackedScene" id=2]
@@ -23,6 +23,7 @@
 [ext_resource path="res://Head.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Dragon.gd" type="Script" id=22]
 [ext_resource path="res://Warning.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Tail.gd" type="Script" id=24]
 
 [node name="Node2D2" type="Node2D"]
 
@@ -207,6 +208,7 @@ scale = Vector2( 2, 2 )
 [node name="Tail" parent="PlayArea/Dragon" instance=ExtResource( 20 )]
 position = Vector2( 311.745, 368.503 )
 scale = Vector2( 2, 2 )
+script = ExtResource( 24 )
 
 [node name="Warning" parent="PlayArea/Dragon" instance=ExtResource( 23 )]
 position = Vector2( 365.976, 228.763 )
@@ -247,4 +249,3 @@ texture = ExtResource( 18 )
 [connection signal="animation_finished" from="PlayArea/Dragon/Head2" to="PlayArea/Dragon" method="_on_Head2_animation_finished"]
 [connection signal="animation_finished" from="PlayArea/Dragon/Head3" to="PlayArea/Dragon" method="_on_Head3_animation_finished"]
 [connection signal="animation_finished" from="PlayArea/Dragon/Head4" to="PlayArea/Dragon" method="_on_Head_animation_finished"]
-[connection signal="animation_finished" from="PlayArea/Dragon/Tail" to="PlayArea/Dragon" method="_on_Tail_animation_finished"]
