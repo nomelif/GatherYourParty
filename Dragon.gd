@@ -1,125 +1,30 @@
 extends Node2D
 
 var rng = RandomNumberGenerator.new()
-var state = {"Head":"left",
-			 "Head2":"left",
-			 "Head3":"left",
-			 "Head4":"left"}
+var central_timer = Timer.new()
 
-var timers = {"Head": null,
-			  "Head2": null,
-			  "Head3": null,
-			  "Head4": null}
+export var fire_probability = 0.7
 
-#	timer = Timer.new()
-#	timer.connect("timeout",self,"_on_timer_timeout")
-#	timer.set_wait_time(rng.randf_range(2, 3))
-#	add_child(timer)
-#	connect("animation_finished", self, "_stop")
-#	timer.start()
-
-var transitions = {
-	"Head": {
-		"left": [["Left to left centre", 0.8],
-				 ["Left blink", 0.2]],
-		"left centre": [["Left centre to left", 0.1],
-						["Left centre to right centre", 0.1],
-						["Left centre blink", 0.2],
-						["Attack A", 0.2]],
-		"right centre": [["Right centre to right", 0.4],
-						 ["Right centre to left centre", 0.4],
-						 ["Right centre blink", 0.2]],
-		"right": [["Right to right centre", 0.8],
-				  ["Right blink", 0.2]],
-		"attacking": [["Attack B", 1.0]]
-	}
-}
-
-var animation_finish_transition = {
-	"Head": {
-		"Left to left centre": "left centre",
-		"Left centre to left": "left",
-		"Left centre to right centre": "right centre",
-		"Right centre to left centre": "left centre",
-		"Right centre to right": "right",
-		"Right to right centre": "right centre",
-		"Left blink": "left",
-		"Left centre blink": "left centre",
-		"Right centre blink": "right centre",
-		"Right blink": "right",
-		"Attack A": "attacking",
-		"Attack B": "left centre"
-	}
-}
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	rng.randomize()
+	add_child(central_timer)
+	central_timer.connect("timeout", self, "next_round")
+	next_round()
+
+func next_round():
+	print("---")
+	if rng.randf_range(0, 1) < fire_probability:
+		var firing_head = rng.randi_range(1, 4)
+		print("Head" + str(firing_head) + ": firing")
+		#get_node("Head" + str(firing_head)).fire()
+		for i in range(1, 5):
+			if i != firing_head:
+				print("Head" + str(i) + ": idling")
+				#get_node("Head" + str(i)).idle()
+	else:
+		for i in range(1, 5):
+			print("Head" + str(i) + ": idling")
+			#get_node("Head" + str(i)).idle()
+	central_timer.set_wait_time(rng.randf_range(0.5, 2.0))
+	central_timer.start()
 	
-	for timer in timers.keys():
-		timers[timer] = Timer.new()
-		add_child(timers[timer])
-		timers[timer].connect("timeout", self, "_on_" + timer + "_timeout")
-	
-	
-	play_next("Head", "")
-	play_next("Head", "2")
-	play_next("Head", "3")
-	play_next("Head", "4")
-	
-# Whenever an animation finishes, queue a random connected one
-
-func play_next(node, index):
-	#timers[node+index] = Timer.new()
-	#add_child(timers[node + index])
-	#timers[node + index].connect("timeout", self, "_on_" + node + index + "_timeout")
-	timers[node+index].set_wait_time(rng.randf_range(0.5, 1.0))
-	timers[node+index].start()
-	
-func play_next_b(node, index):
-	#remove_child(timers[node+index])
-	if state[node+index] in animation_finish_transition[node]:
-		state[node+index] = animation_finish_transition[node][state[node+index]]
-	var total_probability = 0
-	for transition in transitions[node][state[node+index]]:
-		total_probability += transition[1]
-	var k = rng.randf_range(0, total_probability)
-	var c = 0
-	for i in range(0, len(transitions[node][state[node+index]])):
-		c += transitions[node][state[node+index]][i][1]
-		if c > k:
-			state[node+index] = transitions[node][state[node+index]][i][0]
-			break
-	if state[node+index] == "Attack A":
-		trigger_attack(node, index)
-	get_node(node+index).play(state[node+index])
-
-func trigger_attack(node, index):
-	get_node("Warning" + index).play("Activate")
-
-func _on_Head2_animation_finished():
-	play_next("Head", "2")
-
-
-func _on_Head3_animation_finished():
-	play_next("Head", "3")
-
-
-func _on_Head4_animation_finished():
-	play_next("Head", "4")
-
-
-func _on_Head_animation_finished():
-	play_next("Head", "")
-
-func _on_Head_timeout():
-	play_next_b("Head", "")
-
-func _on_Head2_timeout():
-	play_next_b("Head", "2")
-
-func _on_Head3_timeout():
-	play_next_b("Head", "3")
-
-func _on_Head4_timeout():
-	play_next_b("Head", "4")
