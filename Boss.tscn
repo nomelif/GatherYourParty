@@ -1,4 +1,4 @@
-[gd_scene load_steps=26 format=2]
+[gd_scene load_steps=28 format=2]
 
 [ext_resource path="res://Boss/Body.png" type="Texture" id=1]
 [ext_resource path="res://Sprite scenes/plants_1.tscn" type="PackedScene" id=2]
@@ -25,6 +25,11 @@
 [ext_resource path="res://Warning.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Tail.gd" type="Script" id=24]
 [ext_resource path="res://Head.gd" type="Script" id=25]
+[ext_resource path="res://Hit_player.gd" type="Script" id=26]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 37.4942
+height = 310.595
 
 [node name="Node2D2" type="Node2D"]
 
@@ -254,3 +259,13 @@ texture = ExtResource( 15 )
 [node name="hahmo_taka_a_idle" type="Sprite" parent="PlayArea/Peeps"]
 position = Vector2( 500.035, 524.667 )
 texture = ExtResource( 18 )
+
+[node name="Hit" type="Area2D" parent="PlayArea"]
+script = ExtResource( 26 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayArea/Hit"]
+position = Vector2( 523.031, 469.925 )
+rotation = 1.57079
+shape = SubResource( 1 )
+
+[connection signal="body_entered" from="PlayArea/Hit" to="PlayArea/Hit" method="_on_Hit_body_entered"]

@@ -1,12 +1,10 @@
-extends KinematicBody2D
+extends Area2D
 
 
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 
-var target = self
-var speed = 16000
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -14,10 +12,11 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	if target.global_position == global_position:
-		return
-	move_and_slide((target.global_position - global_position).normalized() * delta * speed)
+#func _process(delta):
+#	pass
 
-func set_target(tgt):
-	target = tgt
+
+func _on_Hit_body_entered(body):
+	if body.name == "Projectile":
+		body.get_parent().remove_child(body)
+		print("Projectile impacted")
