@@ -8,7 +8,6 @@ extends AnimatedSprite
 var done = true
 
 var point = 1
-var positions = ["left", "left centre", "right centre", "right"]
 var leftwards = ["Left centre to left",
 				 "Right centre to left centre",
 				 "Right to right centre"]
