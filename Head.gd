@@ -5,6 +5,9 @@ extends AnimatedSprite
 # var a = 2
 # var b = "text"
 
+var projectile_scene = load("Projectile.tscn")
+export var target_location: NodePath
+
 var done = true
 
 var point = 1
@@ -33,6 +36,11 @@ func fire_b():
 	yield(self, "animation_finished")
 	get_node("../Warning" + str(index)).play("Activate")
 	yield(get_node("../Warning" + str(index)), "animation_finished")
+	var bullet = projectile_scene.instance()
+	bullet.scale.x = 2
+	bullet.scale.y = 2
+	bullet.set_target(get_node(target_location))
+	add_child(bullet)
 	play("Attack B")
 	yield(self, "animation_finished")
 	done = true

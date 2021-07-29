@@ -195,21 +195,25 @@ texture = ExtResource( 1 )
 position = Vector2( 381.654, 214.678 )
 scale = Vector2( 2, 2 )
 script = ExtResource( 25 )
+target_location = NodePath("../../Peeps/hahmo_taka_idle_a")
 
 [node name="Head2" parent="PlayArea/Dragon" instance=ExtResource( 21 )]
 position = Vector2( 417.745, 122.236 )
 scale = Vector2( 2, 2 )
 script = ExtResource( 25 )
+target_location = NodePath("../../Peeps/hahmo_taka_idle_a2")
 
 [node name="Head3" parent="PlayArea/Dragon" instance=ExtResource( 21 )]
 position = Vector2( 568.161, 111.615 )
 scale = Vector2( 2, 2 )
 script = ExtResource( 25 )
+target_location = NodePath("../../Peeps/hahmo_taka_idle_a3")
 
 [node name="Head4" parent="PlayArea/Dragon" instance=ExtResource( 21 )]
 position = Vector2( 621.359, 172.761 )
 scale = Vector2( 2, 2 )
 script = ExtResource( 25 )
+target_location = NodePath("../../Peeps/hahmo_taka_a_idle")
 
 [node name="Tail" parent="PlayArea/Dragon" instance=ExtResource( 20 )]
 position = Vector2( 311.745, 368.503 )
@@ -229,7 +233,7 @@ position = Vector2( 552.632, 123.978 )
 scale = Vector2( 2, 2 )
 
 [node name="Warning4" parent="PlayArea/Dragon" instance=ExtResource( 23 )]
-position = Vector2( 605.609, 187.731 )
+position = Vector2( 609.689, 188.245 )
 scale = Vector2( 2, 2 )
 
 [node name="Peeps" type="Node2D" parent="PlayArea"]
