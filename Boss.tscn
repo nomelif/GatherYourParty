@@ -1,4 +1,4 @@
-[gd_scene load_steps=89 format=2]
+[gd_scene load_steps=92 format=2]
 
 [ext_resource path="res://Boss/Body.png" type="Texture" id=1]
 [ext_resource path="res://Sprite scenes/plants_1.tscn" type="PackedScene" id=2]
@@ -84,6 +84,7 @@
 [ext_resource path="res://Obstacle attacks/Magic/Frame 9.png" type="Texture" id=82]
 [ext_resource path="res://Obstacle attacks/Magic/Frame 21.png" type="Texture" id=83]
 [ext_resource path="res://Defenses.gd" type="Script" id=84]
+[ext_resource path="res://DefenseCollider.gd" type="Script" id=85]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -98,7 +99,10 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=2]
+[sub_resource type="CircleShape2D" id=2]
+radius = 26.7851
+
+[sub_resource type="SpriteFrames" id=3]
 animations = [ {
 "frames": [ ExtResource( 40 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 32 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 27 ) ],
 "loop": false,
@@ -111,7 +115,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=3]
+[sub_resource type="SpriteFrames" id=4]
 animations = [ {
 "frames": [ ExtResource( 40 ), ExtResource( 58 ), ExtResource( 66 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 72 ), ExtResource( 65 ), ExtResource( 79 ), ExtResource( 60 ), ExtResource( 82 ), ExtResource( 70 ), ExtResource( 69 ), ExtResource( 71 ), ExtResource( 78 ), ExtResource( 75 ), ExtResource( 77 ), ExtResource( 76 ), ExtResource( 80 ), ExtResource( 81 ) ],
 "loop": false,
@@ -124,7 +128,10 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=4]
+[sub_resource type="CircleShape2D" id=5]
+radius = 44.6687
+
+[sub_resource type="CapsuleShape2D" id=6]
 radius = 37.4942
 height = 310.595
 
@@ -366,22 +373,47 @@ rotation = -3.14159
 frames = SubResource( 1 )
 animation = "Activate"
 
+[node name="DefenseCollider" type="Area2D" parent="PlayArea/Peeps/Defenses/Protect_fighter"]
+script = ExtResource( 85 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayArea/Peeps/Defenses/Protect_fighter/DefenseCollider"]
+shape = SubResource( 2 )
+
 [node name="Protect_healer" type="AnimatedSprite" parent="PlayArea/Peeps/Defenses"]
 position = Vector2( 301.865, 355.381 )
 rotation = -3.14159
 frames = SubResource( 1 )
 animation = "Activate"
 
+[node name="DefenseCollider" type="Area2D" parent="PlayArea/Peeps/Defenses/Protect_healer"]
+script = ExtResource( 85 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayArea/Peeps/Defenses/Protect_healer/DefenseCollider"]
+shape = SubResource( 2 )
+
 [node name="Protect_protector" type="AnimatedSprite" parent="PlayArea/Peeps/Defenses"]
 position = Vector2( 385.257, 357.628 )
-frames = SubResource( 2 )
+frames = SubResource( 3 )
 animation = "Activate"
+
+[node name="DefenseCollider" type="Area2D" parent="PlayArea/Peeps/Defenses/Protect_protector"]
+script = ExtResource( 85 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayArea/Peeps/Defenses/Protect_protector/DefenseCollider"]
+shape = SubResource( 2 )
 
 [node name="Protect_sorceress" type="AnimatedSprite" parent="PlayArea/Peeps/Defenses"]
 position = Vector2( 501.9, 375.757 )
 scale = Vector2( 0.6, 0.6 )
-frames = SubResource( 3 )
+frames = SubResource( 4 )
 animation = "Activate"
+
+[node name="DefenseCollider" type="Area2D" parent="PlayArea/Peeps/Defenses/Protect_sorceress"]
+script = ExtResource( 85 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlayArea/Peeps/Defenses/Protect_sorceress/DefenseCollider"]
+position = Vector2( 0, -30.205 )
+shape = SubResource( 5 )
 
 [node name="Hit" type="Area2D" parent="PlayArea"]
 script = ExtResource( 26 )
@@ -389,6 +421,10 @@ script = ExtResource( 26 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PlayArea/Hit"]
 position = Vector2( 525.034, 484.608 )
 rotation = 1.57079
-shape = SubResource( 4 )
+shape = SubResource( 6 )
 
+[connection signal="body_entered" from="PlayArea/Peeps/Defenses/Protect_fighter/DefenseCollider" to="PlayArea/Peeps/Defenses/Protect_fighter/DefenseCollider" method="_on_DefenseCollider_body_entered"]
+[connection signal="body_entered" from="PlayArea/Peeps/Defenses/Protect_healer/DefenseCollider" to="PlayArea/Peeps/Defenses/Protect_healer/DefenseCollider" method="_on_DefenseCollider_body_entered"]
+[connection signal="body_entered" from="PlayArea/Peeps/Defenses/Protect_protector/DefenseCollider" to="PlayArea/Peeps/Defenses/Protect_protector/DefenseCollider" method="_on_DefenseCollider_body_entered"]
+[connection signal="body_entered" from="PlayArea/Peeps/Defenses/Protect_sorceress/DefenseCollider" to="PlayArea/Peeps/Defenses/Protect_sorceress/DefenseCollider" method="_on_DefenseCollider_body_entered"]
 [connection signal="body_entered" from="PlayArea/Hit" to="PlayArea/Hit" method="_on_Hit_body_entered"]
