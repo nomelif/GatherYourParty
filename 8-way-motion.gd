@@ -1,5 +1,9 @@
 extends KinematicBody2D
 
+# Signal that the peep order changed
+
+signal peeps_changed();
+
 # Dynamics to tweak the walking and running speeds
 
 export (int) var speed = 350
@@ -64,6 +68,7 @@ func get_input():
 	velocity = velocity.normalized() * effective_speed
 	if Input.is_action_just_pressed('switch_peeps') and not cutscene:
 		peep_offset += 1
+		emit_signal("peeps_changed")
 		
 
 func _physics_process(delta):
