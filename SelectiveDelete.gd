@@ -26,6 +26,7 @@ func _on_body_entered(body):
 		elif body.has_peep(required_character):
 			body.queue_animations([["../../" + required_character + "Bubble", "Creation"],
 								   ["../../" + required_character + "Bubble", "Exclamation"],
+								   ["../../" + required_character + "Bubble", "Press X"],
 								   ["../../" + required_character + "Bubble", "Deletion"]])
 		else:
 			body.queue_animations([["../../FighterBubble", "Creation"],
