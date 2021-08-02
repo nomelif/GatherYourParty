@@ -113,11 +113,6 @@ animations = [ {
 "name": "up",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
-"loop": true,
-"name": "up_idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 12 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "down",
@@ -137,6 +132,11 @@ animations = [ {
 "loop": true,
 "name": "down_idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 23 ), ExtResource( 24 ) ],
+"loop": true,
+"name": "up_idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=5]
@@ -154,11 +154,6 @@ animations = [ {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 29 ), ExtResource( 30 ) ],
-"loop": true,
-"name": "up_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 19 ), ExtResource( 13 ) ],
@@ -180,6 +175,11 @@ animations = [ {
 "loop": true,
 "name": "down_idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 29 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "up_idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=6]
@@ -197,11 +197,6 @@ animations = [ {
 "frames": [ ExtResource( 39 ), ExtResource( 40 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 47 ), ExtResource( 46 ) ],
-"loop": true,
-"name": "up_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 38 ), ExtResource( 37 ) ],
@@ -223,6 +218,11 @@ animations = [ {
 "loop": true,
 "name": "down_idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 47 ), ExtResource( 46 ) ],
+"loop": true,
+"name": "up_idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=7]
@@ -240,11 +240,6 @@ animations = [ {
 "frames": [ ExtResource( 51 ), ExtResource( 66 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 65 ), ExtResource( 56 ) ],
-"loop": true,
-"name": "up_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 55 ), ExtResource( 54 ) ],
@@ -265,6 +260,11 @@ animations = [ {
 "frames": [ ExtResource( 64 ), ExtResource( 63 ) ],
 "loop": true,
 "name": "down_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 65 ), ExtResource( 56 ) ],
+"loop": true,
+"name": "up_idle",
 "speed": 5.0
 } ]
 
@@ -392,7 +392,7 @@ offset = Vector2( 0, -85 )
 [node name="Fog" type="Area2D" parent="YSort"]
 script = ExtResource( 72 )
 required_character = "Protector"
-success_dialogue = [ [ "../../Shield", "Activate" ], [ "../Fog/YSort/CollisionlessFog", "Deletion" ], [ "../Fog/YSort/CollisionlessFog2", "Deletion" ], [ "../Fog/YSort/CollisionlessFog3", "Deletion" ] ]
+success_dialogue = [ [ "../../Shield", "Activate" ], [ "../Fog/YSort/CollisionlessFog", "Deletion" ], [ "../Fog/YSort/CollisionlessFog2", "Deletion" ], [ "../Fog/YSort/CollisionlessFog3", "Deletion" ], [ "../../Shield", "Deactivate" ] ]
 
 [node name="YSort" type="YSort" parent="YSort/Fog"]
 script = ExtResource( 85 )
