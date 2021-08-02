@@ -268,21 +268,21 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=12]
+[sub_resource type="CapsuleShape2D" id=8]
 radius = 140.0
 height = 140.0
 
-[sub_resource type="CapsuleShape2D" id=8]
+[sub_resource type="CapsuleShape2D" id=9]
 radius = 143.308
 height = 141.036
 
-[sub_resource type="CircleShape2D" id=9]
+[sub_resource type="CircleShape2D" id=10]
 radius = 72.0812
 
-[sub_resource type="CircleShape2D" id=10]
+[sub_resource type="CircleShape2D" id=11]
 radius = 59.0171
 
-[sub_resource type="RectangleShape2D" id=11]
+[sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 227.202, 200.39 )
 
 [node name="Main" type="Node2D"]
@@ -401,7 +401,7 @@ script = ExtResource( 85 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Fog/YSort/KinematicBody2D"]
 position = Vector2( 3577.69, 2803.32 )
-shape = SubResource( 12 )
+shape = SubResource( 8 )
 
 [node name="CollisionlessFog" parent="YSort/Fog/YSort" instance=ExtResource( 71 )]
 position = Vector2( 3668.82, 2751.08 )
@@ -417,7 +417,7 @@ frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Fog"]
 position = Vector2( 3574.75, 2802.89 )
-shape = SubResource( 8 )
+shape = SubResource( 9 )
 
 [node name="Bridge" type="Area2D" parent="YSort"]
 script = ExtResource( 72 )
@@ -426,13 +426,13 @@ success_dialogue = [ [ "../../Magic", "A" ], [ "../BridgeSprite", "Fix" ], [ "..
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Bridge"]
 position = Vector2( 2038.07, 2639.96 )
-shape = SubResource( 9 )
+shape = SubResource( 10 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="YSort/Bridge"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Bridge/KinematicBody2D"]
 position = Vector2( 2038.8, 2640.61 )
-shape = SubResource( 10 )
+shape = SubResource( 11 )
 
 [node name="Hub to Ruins Collider" type="Area2D" parent="."]
 visible = false
@@ -440,21 +440,21 @@ position = Vector2( 3799.67, 982.922 )
 script = ExtResource( 67 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hub to Ruins Collider"]
-shape = SubResource( 11 )
+shape = SubResource( 12 )
 
 [node name="Hub to Swamp Collider" type="Area2D" parent="."]
 position = Vector2( 3807.67, 2806.92 )
 script = ExtResource( 73 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hub to Swamp Collider"]
-shape = SubResource( 11 )
+shape = SubResource( 12 )
 
 [node name="Hub to Meadow Collider" type="Area2D" parent="."]
 position = Vector2( 1614.51, 3599.13 )
 script = ExtResource( 77 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Hub to Meadow Collider"]
-shape = SubResource( 11 )
+shape = SubResource( 12 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2( 511.143, 298.431 )
