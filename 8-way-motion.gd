@@ -108,14 +108,8 @@ func _physics_process(delta):
 var queue = []
 
 func queue_animations(sequence):
-	if len(queue) == 0:
-		#queue.append("Creation")
-		queue.append_array(sequence)
-		#queue.append("Deleted") # TODO: täytyy toteuttaa
-	else:
-		#queue.pop_back()
-		queue.append_array(sequence)
-		#queue.append("Deleted")
+	for x in sequence:
+		queue.append(x)
 	cutscene = true
 	_run_step()
 	
