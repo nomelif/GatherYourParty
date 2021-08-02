@@ -97,15 +97,15 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 40 ), ExtResource( 49 ), ExtResource( 48 ), ExtResource( 41 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 45 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 55 ), ExtResource( 44 ), ExtResource( 54 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 53 ), ExtResource( 52 ), ExtResource( 46 ) ],
-"loop": false,
-"name": "Activate",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 46 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 54 ), ExtResource( 44 ), ExtResource( 55 ), ExtResource( 57 ), ExtResource( 56 ), ExtResource( 45 ), ExtResource( 51 ), ExtResource( 50 ), ExtResource( 47 ), ExtResource( 41 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 40 ) ],
 "loop": false,
 "name": "Deactivate",
-"speed": 5.0
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 49 ), ExtResource( 48 ), ExtResource( 41 ), ExtResource( 47 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 45 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 55 ), ExtResource( 44 ), ExtResource( 54 ), ExtResource( 43 ), ExtResource( 42 ), ExtResource( 53 ), ExtResource( 52 ), ExtResource( 46 ) ],
+"loop": false,
+"name": "Activate",
+"speed": 20.0
 } ]
 
 [sub_resource type="CircleShape2D" id=2]
@@ -113,41 +113,41 @@ radius = 26.7851
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 40 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 86 ), ExtResource( 92 ), ExtResource( 94 ), ExtResource( 93 ), ExtResource( 87 ) ],
-"loop": false,
-"name": "Activate",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 87 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 92 ), ExtResource( 86 ), ExtResource( 91 ), ExtResource( 90 ), ExtResource( 89 ), ExtResource( 88 ), ExtResource( 40 ) ],
 "loop": false,
 "name": "Deactivate",
-"speed": 5.0
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 86 ), ExtResource( 92 ), ExtResource( 94 ), ExtResource( 93 ), ExtResource( 87 ) ],
+"loop": false,
+"name": "Activate",
+"speed": 20.0
 } ]
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 40 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 32 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 27 ) ],
-"loop": false,
-"name": "Activate",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 27 ), ExtResource( 30 ), ExtResource( 31 ), ExtResource( 36 ), ExtResource( 34 ), ExtResource( 33 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 37 ), ExtResource( 35 ), ExtResource( 32 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ) ],
 "loop": false,
 "name": "Deactivate",
-"speed": 5.0
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 39 ), ExtResource( 38 ), ExtResource( 32 ), ExtResource( 35 ), ExtResource( 37 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 36 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 27 ) ],
+"loop": false,
+"name": "Activate",
+"speed": 20.0
 } ]
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ ExtResource( 40 ), ExtResource( 58 ), ExtResource( 66 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 72 ), ExtResource( 65 ), ExtResource( 79 ), ExtResource( 60 ), ExtResource( 82 ), ExtResource( 70 ), ExtResource( 69 ), ExtResource( 71 ), ExtResource( 78 ), ExtResource( 75 ), ExtResource( 77 ), ExtResource( 76 ), ExtResource( 80 ), ExtResource( 81 ) ],
-"loop": false,
-"name": "Activate",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 61 ), ExtResource( 62 ), ExtResource( 83 ), ExtResource( 59 ), ExtResource( 68 ), ExtResource( 67 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 40 ) ],
 "loop": false,
 "name": "Deactivate",
-"speed": 5.0
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 40 ), ExtResource( 58 ), ExtResource( 66 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 72 ), ExtResource( 65 ), ExtResource( 79 ), ExtResource( 60 ), ExtResource( 82 ), ExtResource( 70 ), ExtResource( 69 ), ExtResource( 71 ), ExtResource( 78 ), ExtResource( 75 ), ExtResource( 77 ), ExtResource( 76 ), ExtResource( 80 ), ExtResource( 81 ) ],
+"loop": false,
+"name": "Activate",
+"speed": 20.0
 } ]
 
 [sub_resource type="CircleShape2D" id=6]
@@ -443,7 +443,6 @@ script = ExtResource( 26 )
 position = Vector2( 525.034, 484.608 )
 rotation = 1.57079
 shape = SubResource( 7 )
-
 [connection signal="body_entered" from="PlayArea/Peeps/Defenses/Protect_fighter/DefenseCollider" to="PlayArea/Peeps/Defenses/Protect_fighter/DefenseCollider" method="_on_DefenseCollider_body_entered"]
 [connection signal="body_entered" from="PlayArea/Peeps/Defenses/Protect_healer/DefenseCollider" to="PlayArea/Peeps/Defenses/Protect_healer/DefenseCollider" method="_on_DefenseCollider_body_entered"]
 [connection signal="body_entered" from="PlayArea/Peeps/Defenses/Protect_protector/DefenseCollider" to="PlayArea/Peeps/Defenses/Protect_protector/DefenseCollider" method="_on_DefenseCollider_body_entered"]
