@@ -37,8 +37,8 @@ func fire_b():
 	get_node("../Warning" + str(index)).play("Activate")
 	yield(get_node("../Warning" + str(index)), "animation_finished")
 	var bullet = projectile_scene.instance()
-	bullet.scale.x = 2
-	bullet.scale.y = 2
+	bullet.scale.x = 3
+	bullet.scale.y = 3
 	bullet.set_target(get_node(target_location))
 	add_child(bullet)
 	play("Attack B")
