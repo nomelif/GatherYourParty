@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ColorRect.gd" type="Script" id=1]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 1031.0
+margin_bottom = 603.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 41.38
+margin_top = 44.0497
+margin_right = 126.38
+margin_bottom = 58.0497
+rect_scale = Vector2( 6.35362, 11.758 )
+text = "Much credits"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label2" type="Label" parent="."]
+margin_left = 413.8
+margin_top = 282.986
+margin_right = 514.8
+margin_bottom = 296.986
+rect_scale = Vector2( 4.16913, 14.1611 )
+text = "Such attribution"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label3" type="Label" parent="."]
+margin_left = 696.322
+margin_top = 462.535
+margin_right = 736.322
+margin_bottom = 476.535
+rect_rotation = -63.7102
+rect_scale = Vector2( 6.23255, 10.2111 )
+text = "wow"
+__meta__ = {
+"_edit_use_anchors_": false
+}

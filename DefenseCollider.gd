@@ -23,4 +23,8 @@ func _on_DefenseCollider_body_entered(body):
 		return
 	if body.name == "Projectile":
 		body.get_parent().remove_child(body)
-		print("Projectile stopped")
+		var health = get_node("../../../../Healthbar base/Health")
+		if health.margin_right - health.margin_left < 0:
+			get_tree().change_scene("res://Credits.tscn");
+		else:
+			health.margin_right -= 20
