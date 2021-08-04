@@ -405,14 +405,15 @@ shape = SubResource( 8 )
 
 [node name="CollisionlessFog" parent="YSort/Fog/YSort" instance=ExtResource( 71 )]
 position = Vector2( 3668.82, 2751.08 )
-frame = 1
+frame = 3
 
 [node name="CollisionlessFog2" parent="YSort/Fog/YSort" instance=ExtResource( 71 )]
 position = Vector2( 3642.33, 2919.53 )
+frame = 2
 
 [node name="CollisionlessFog3" parent="YSort/Fog/YSort" instance=ExtResource( 71 )]
 position = Vector2( 3887.23, 2856.42 )
-frame = 1
+frame = 3
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Fog"]
 position = Vector2( 3574.75, 2802.89 )
@@ -489,7 +490,7 @@ position = Vector2( 2046.32, 2640.73 )
 scale = Vector2( 2, 2 )
 
 [node name="Sword" parent="." instance=ExtResource( 82 )]
-position = Vector2( 1605.24, 3656.61 )
+position = Vector2( 1597.82, 3584.57 )
 scale = Vector2( 2, 2 )
 
 [connection signal="body_entered" from="YSort/Door Trigger" to="YSort/Door Trigger" method="_on_body_entered"]
