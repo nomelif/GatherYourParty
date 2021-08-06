@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=42 format=2]
 
 [ext_resource path="res://Sprite scenes/area_1_grass_4.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprite scenes/area_1_stones_1.tscn" type="PackedScene" id=2]
@@ -35,6 +35,8 @@
 [ext_resource path="res://Character animation/Sorceress/hahmo_a.png" type="Texture" id=33]
 [ext_resource path="res://Character animation/Sorceress/hahmo_b.png" type="Texture" id=34]
 [ext_resource path="res://Character animation/Protector/hahmo_etu_idle_b.png" type="Texture" id=35]
+[ext_resource path="res://Sprite scenes/frog.tscn" type="PackedScene" id=36]
+[ext_resource path="res://Sprite scenes/butterfly_3.tscn" type="PackedScene" id=37]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -78,25 +80,21 @@ position = Vector2( 522.352, 536 )
 [node name="Fighter" type="AnimatedSprite" parent="Peeps"]
 position = Vector2( 398, 448 )
 frames = SubResource( 1 )
-frame = 1
 playing = true
 
 [node name="Healer" type="AnimatedSprite" parent="Peeps"]
 position = Vector2( 636, 450 )
 frames = SubResource( 2 )
-frame = 1
 playing = true
 
 [node name="Protector" type="AnimatedSprite" parent="Peeps"]
 position = Vector2( 470, 410 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="Sorceress" type="AnimatedSprite" parent="Peeps"]
 position = Vector2( 570, 412 )
 frames = SubResource( 4 )
-frame = 1
 playing = true
 
 [node name="Trees" type="YSort" parent="."]
@@ -322,6 +320,9 @@ position = Vector2( 36.3517, 495.467 )
 [node name="Grass 7" parent="Plants" instance=ExtResource( 1 )]
 position = Vector2( 574.352, 585.467 )
 
+[node name="Butterfly C" parent="Plants/Grass 7" instance=ExtResource( 37 )]
+position = Vector2( -8.43146, -15.3336 )
+
 [node name="Grass 8" parent="Plants" instance=ExtResource( 1 )]
 position = Vector2( 182.352, 533.467 )
 
@@ -434,3 +435,12 @@ position = Vector2( 858.352, 293.467 )
 
 [node name="Gate sidefacing vines" parent="Ruins" instance=ExtResource( 13 )]
 position = Vector2( 28.3517, 521.467 )
+
+[node name="Frog" parent="." instance=ExtResource( 36 )]
+position = Vector2( 221.325, 567.888 )
+
+[node name="Frog2" parent="." instance=ExtResource( 36 )]
+position = Vector2( 745.514, 380.437 )
+
+[node name="Frog3" parent="." instance=ExtResource( 36 )]
+position = Vector2( 321.224, 277.171 )

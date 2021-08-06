@@ -16,7 +16,7 @@ func _ready():
 		"color", Color.black, Color(0, 0, 0.1), 10,
 		Tween.TRANS_LINEAR, Tween.EASE_OUT)
 	tween.interpolate_property(get_node("View/Stars"),
-		"modulate", Color.white, Color(1, 1, 1, 0), 25,
+		"modulate", Color.white, Color(1, 1, 1, 0), 30,
 		Tween.TRANS_LINEAR, Tween.EASE_OUT)
 	add_child(tween)
 	tween.start()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Stars.gd" type="Script" id=1]
 [ext_resource path="res://End_credits.gd" type="Script" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://Fire light.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Credits_back.png" type="Texture" id=5]
 [ext_resource path="res://Credits_highlight.png" type="Texture" id=6]
+[ext_resource path="res://Sprite scenes/Raven.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Sprite scenes/frog.tscn" type="PackedScene" id=8]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 0.457031, 0.295285, 0.187454, 1, 1, 0.574677, 0.292969, 1 )
@@ -44,6 +46,9 @@ texture = ExtResource( 6 )
 light_mask = 0
 texture = ExtResource( 5 )
 
+[node name="Raven" parent="View/Scrollable/Text" instance=ExtResource( 7 )]
+position = Vector2( 83.7352, -85.6504 )
+
 [node name="Camp" parent="View/Scrollable" instance=ExtResource( 3 )]
 
 [node name="Darkness" type="Light2D" parent="View/Scrollable/Camp"]
@@ -55,3 +60,6 @@ mode = 1
 
 [node name="Fire light" parent="View/Scrollable/Camp" instance=ExtResource( 4 )]
 position = Vector2( 499.889, 400.972 )
+
+[node name="Frog" parent="View/Scrollable" instance=ExtResource( 8 )]
+position = Vector2( 510.912, -1158.56 )
