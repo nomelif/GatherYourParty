@@ -1,0 +1,56 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://PreFight.gd" type="Script" id=1]
+[ext_resource path="res://Boss/intro-blink-1.png" type="Texture" id=2]
+[ext_resource path="res://Boss/intro-blink-3.png" type="Texture" id=3]
+[ext_resource path="res://Boss/intro-body.png" type="Texture" id=4]
+[ext_resource path="res://Boss/intro-blink-2.png" type="Texture" id=5]
+[ext_resource path="res://Boss/intro-yell-2.png" type="Texture" id=6]
+[ext_resource path="res://Boss/intro-yell-3.png" type="Texture" id=7]
+[ext_resource path="res://Boss/intro-yell-1.png" type="Texture" id=8]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "Yell",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 5 ), ExtResource( 3 ) ],
+"loop": false,
+"name": "Wake up",
+"speed": 5.0
+} ]
+
+[node name="Node2D" type="ColorRect"]
+color = Color( 0, 0, 0, 1 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="View" type="Node2D" parent="."]
+
+[node name="Body" type="Sprite" parent="View"]
+position = Vector2( 513.166, 309.298 )
+texture = ExtResource( 4 )
+
+[node name="Head1" type="AnimatedSprite" parent="View"]
+position = Vector2( 263.454, 429.445 )
+frames = SubResource( 1 )
+animation = "Wake up"
+
+[node name="Head2" type="AnimatedSprite" parent="View"]
+position = Vector2( 360.969, 222.523 )
+frames = SubResource( 1 )
+animation = "Wake up"
+
+[node name="Head3" type="AnimatedSprite" parent="View"]
+position = Vector2( 641.622, 170.198 )
+frames = SubResource( 1 )
+animation = "Wake up"
+
+[node name="Head4" type="AnimatedSprite" parent="View"]
+position = Vector2( 777.191, 286.74 )
+frames = SubResource( 1 )
+animation = "Wake up"
