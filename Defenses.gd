@@ -20,9 +20,9 @@ func _process(delta):
 		current_press = "fighter"
 	if Input.is_action_just_pressed("up"):
 		current_press = "healer"
-	if Input.is_action_just_pressed("right"):
-		current_press = "protector"
 	if Input.is_action_just_pressed("down"):
+		current_press = "protector"
+	if Input.is_action_just_pressed("right"):
 		current_press = "sorceress"
 	if current_press != null && current_press != current_visible && not animation_running:
 		animation_running = true
