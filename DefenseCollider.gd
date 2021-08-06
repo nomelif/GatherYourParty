@@ -25,6 +25,6 @@ func _on_DefenseCollider_body_entered(body):
 		body.get_parent().remove_child(body)
 		var health = get_node("../../../../Healthbar base/Health")
 		if health.margin_right - health.margin_left < 0:
-			get_tree().change_scene("res://Credits.tscn");
+			get_tree().change_scene("res://PostFight.tscn");
 		else:
 			health.margin_right -= 20
