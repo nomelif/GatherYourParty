@@ -8,6 +8,10 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	position.x = get_viewport().size.x / 2 - $Background.rect_size.x / 2;
+	position.y = get_viewport().size.y / 2 - $Background.rect_size.y / 2;
+	get_node("../Black").rect_size.x = get_viewport().size.x;
+	get_node("../Black").rect_size.y = get_viewport().size.y;
 	pass # Replace with function body.
 
 
