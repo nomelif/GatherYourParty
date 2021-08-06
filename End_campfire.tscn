@@ -1,3 +1,436 @@
-[gd_scene format=2]
+[gd_scene load_steps=40 format=2]
 
-[node name="Node2D" type="Node2D"]
+[ext_resource path="res://Sprite scenes/area_1_grass_4.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprite scenes/area_1_stones_1.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Sprite scenes/area_1_stones_3.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Sprite scenes/area_1_stones_4.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Sprite scenes/area_1_grass_2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Sprite scenes/flowers.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Sprite scenes/area_1_stones_2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Sprite scenes/tree_3.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Sprite scenes/area_1_grass_3.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Sprite scenes/area_1_grass_1.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Sprite scenes/flowers_and_leaves.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Sprite scenes/tree_1.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Sprite scenes/area2_ruin_gate_sidefacing_vines.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Sprite scenes/tree_2.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Sprite scenes/area2_ruin_frontfacing_gate_vines.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Sprite scenes/Raven.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Sprite scenes/butterfly_2.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Sprite scenes/tree_1_swamp.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Sprite scenes/mushroom_5.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Sprite scenes/butterfly_1.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Sprite scenes/tree_2_swamp.tscn" type="PackedScene" id=21]
+[ext_resource path="res://Sprite scenes/tree_4.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Sprite scenes/area2_ruin_pillar_vines.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Sprite scenes/mushroom_3.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Sprite scenes/fire.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Sprite scenes/mushroom_1.tscn" type="PackedScene" id=26]
+[ext_resource path="res://Sprite scenes/fallen_tree_dead2.tscn" type="PackedScene" id=27]
+[ext_resource path="res://Character animation/Fighter/hahmo_oikea_idle_a.png" type="Texture" id=28]
+[ext_resource path="res://Character animation/Fighter/hahmo_oikea_idle_b.png" type="Texture" id=29]
+[ext_resource path="res://Character animation/Healer/hahmo_vasen_idle_b.png" type="Texture" id=30]
+[ext_resource path="res://Character animation/Protector/hahmo_etu_idle_a.png" type="Texture" id=31]
+[ext_resource path="res://Character animation/Healer/hahmo_vasen_idle_a.png" type="Texture" id=32]
+[ext_resource path="res://Character animation/Sorceress/hahmo_a.png" type="Texture" id=33]
+[ext_resource path="res://Character animation/Sorceress/hahmo_b.png" type="Texture" id=34]
+[ext_resource path="res://Character animation/Protector/hahmo_etu_idle_b.png" type="Texture" id=35]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 28 ), ExtResource( 29 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 32 ), ExtResource( 30 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 31 ), ExtResource( 35 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 33 ), ExtResource( 34 ) ],
+"loop": true,
+"name": "default",
+"speed": 2.0
+} ]
+
+[node name="End" type="YSort"]
+
+[node name="Fire" parent="." instance=ExtResource( 25 )]
+position = Vector2( 522.352, 536 )
+
+[node name="Peeps" type="YSort" parent="."]
+
+[node name="Fighter" type="AnimatedSprite" parent="Peeps"]
+position = Vector2( 398, 448 )
+frames = SubResource( 1 )
+frame = 1
+playing = true
+
+[node name="Healer" type="AnimatedSprite" parent="Peeps"]
+position = Vector2( 636, 450 )
+frames = SubResource( 2 )
+frame = 1
+playing = true
+
+[node name="Protector" type="AnimatedSprite" parent="Peeps"]
+position = Vector2( 470, 410 )
+frames = SubResource( 3 )
+frame = 1
+playing = true
+
+[node name="Sorceress" type="AnimatedSprite" parent="Peeps"]
+position = Vector2( 570, 412 )
+frames = SubResource( 4 )
+frame = 1
+playing = true
+
+[node name="Trees" type="YSort" parent="."]
+
+[node name="Tree B6" parent="Trees" instance=ExtResource( 21 )]
+position = Vector2( 956.352, 112 )
+
+[node name="Fallen tree dead 2" parent="Trees" instance=ExtResource( 27 )]
+position = Vector2( 226.352, 520 )
+rotation = -0.392235
+
+[node name="Tree A2" parent="Trees" instance=ExtResource( 18 )]
+position = Vector2( 110.352, 312 )
+
+[node name="Tree B" parent="Trees" instance=ExtResource( 14 )]
+position = Vector2( 10.3517, 428 )
+
+[node name="Tree B2" parent="Trees" instance=ExtResource( 14 )]
+position = Vector2( 400.352, 270 )
+
+[node name="Tree B3" parent="Trees" instance=ExtResource( 14 )]
+position = Vector2( 894.352, 448 )
+
+[node name="Raven" parent="Trees/Tree B3" instance=ExtResource( 16 )]
+position = Vector2( -54, -244 )
+
+[node name="Tree B4" parent="Trees" instance=ExtResource( 14 )]
+position = Vector2( 810.352, 220 )
+
+[node name="Tree A" parent="Trees" instance=ExtResource( 12 )]
+position = Vector2( 646.352, 400 )
+
+[node name="Tree B5" parent="Trees" instance=ExtResource( 21 )]
+position = Vector2( 266.352, 168 )
+
+[node name="Tree C" parent="Trees" instance=ExtResource( 8 )]
+position = Vector2( 486.352, 406 )
+
+[node name="Raven" parent="Trees/Tree C" instance=ExtResource( 16 )]
+position = Vector2( -56.1218, -301.778 )
+
+[node name="Tree C2" parent="Trees" instance=ExtResource( 8 )]
+position = Vector2( 1012.35, 324 )
+
+[node name="Tree C3" parent="Trees" instance=ExtResource( 8 )]
+position = Vector2( 648.352, 110 )
+
+[node name="Tree C4" parent="Trees" instance=ExtResource( 8 )]
+position = Vector2( 120.352, 136 )
+
+[node name="Tree D" parent="Trees" instance=ExtResource( 22 )]
+position = Vector2( 222.352, 392 )
+
+[node name="Tree D2" parent="Trees" instance=ExtResource( 22 )]
+position = Vector2( 842.352, 92 )
+
+[node name="Tree D3" parent="Trees" instance=ExtResource( 22 )]
+position = Vector2( 382.352, 106 )
+
+[node name="Tree B7" parent="Trees" instance=ExtResource( 21 )]
+position = Vector2( 756.352, 360 )
+
+[node name="Tree B8" parent="Trees" instance=ExtResource( 21 )]
+position = Vector2( 564.352, 84 )
+
+[node name="Tree B9" parent="Trees" instance=ExtResource( 21 )]
+position = Vector2( 6.35168, 106 )
+
+[node name="Tree B10" parent="Trees" instance=ExtResource( 21 )]
+position = Vector2( 360.352, 368 )
+
+[node name="Tree B11" parent="Trees" instance=ExtResource( 14 )]
+position = Vector2( 694.352, 16 )
+
+[node name="Tree B12" parent="Trees" instance=ExtResource( 14 )]
+position = Vector2( 178.352, 54 )
+
+[node name="Tree A3" parent="Trees" instance=ExtResource( 18 )]
+position = Vector2( 186.352, 400 )
+
+[node name="Tree A4" parent="Trees" instance=ExtResource( 18 )]
+position = Vector2( 586.352, 234 )
+
+[node name="Tree A5" parent="Trees" instance=ExtResource( 18 )]
+position = Vector2( 1036.35, 394 )
+
+[node name="Tree A6" parent="Trees" instance=ExtResource( 18 )]
+position = Vector2( 406.352, -12 )
+
+[node name="Stone" type="YSort" parent="."]
+
+[node name="Stone A" parent="Stone" instance=ExtResource( 2 )]
+position = Vector2( 96.3517, 473.467 )
+
+[node name="Stone A2" parent="Stone" instance=ExtResource( 2 )]
+position = Vector2( 728.352, 561.467 )
+
+[node name="Stone A3" parent="Stone" instance=ExtResource( 2 )]
+position = Vector2( 786.352, 375.467 )
+
+[node name="Stone B" parent="Stone" instance=ExtResource( 7 )]
+position = Vector2( 344.352, 437.467 )
+
+[node name="Stone B2" parent="Stone" instance=ExtResource( 7 )]
+position = Vector2( 992.352, 493.467 )
+
+[node name="Stone C" parent="Stone" instance=ExtResource( 3 )]
+position = Vector2( 528.352, 323.467 )
+
+[node name="Stone C2" parent="Stone" instance=ExtResource( 3 )]
+position = Vector2( 430.352, 583.467 )
+
+[node name="Stone C3" parent="Stone" instance=ExtResource( 3 )]
+position = Vector2( 816.352, 463.467 )
+
+[node name="Stone D" parent="Stone" instance=ExtResource( 4 )]
+position = Vector2( 24.3517, 589.467 )
+
+[node name="Stone D2" parent="Stone" instance=ExtResource( 4 )]
+position = Vector2( 348.352, 287.467 )
+
+[node name="Stone D3" parent="Stone" instance=ExtResource( 4 )]
+position = Vector2( 740.352, 231.467 )
+
+[node name="Stone D4" parent="Stone" instance=ExtResource( 4 )]
+position = Vector2( 912.352, 593.467 )
+
+[node name="Stone C4" parent="Stone" instance=ExtResource( 3 )]
+position = Vector2( 724.352, 291.467 )
+
+[node name="Stone C5" parent="Stone" instance=ExtResource( 3 )]
+position = Vector2( 212.352, 321.467 )
+
+[node name="Stone B3" parent="Stone" instance=ExtResource( 7 )]
+position = Vector2( 60.3517, 325.467 )
+
+[node name="Plants" type="YSort" parent="."]
+
+[node name="Grass B" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 72.3517, 401.467 )
+
+[node name="Grass B2" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 216.352, 293.467 )
+
+[node name="Grass B3" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 340.352, 379.467 )
+
+[node name="Grass B4" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 702.352, 253.467 )
+
+[node name="Grass B5" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 834.352, 367.467 )
+
+[node name="Grass B6" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 384.352, 537.467 )
+
+[node name="Grass B7" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 144.352, 527.467 )
+
+[node name="Grass B8" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 726.352, 491.467 )
+
+[node name="Grass B9" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 632.352, 583.467 )
+
+[node name="Grass B10" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 956.352, 535.467 )
+
+[node name="Grass B11" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 964.352, 259.467 )
+
+[node name="Grass B12" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 678.352, 177.467 )
+
+[node name="Grass B13" parent="Plants" instance=ExtResource( 5 )]
+position = Vector2( 324.352, 223.467 )
+
+[node name="Grass A" parent="Plants" instance=ExtResource( 10 )]
+position = Vector2( 812.352, 585.467 )
+
+[node name="Grass A2" parent="Plants" instance=ExtResource( 10 )]
+position = Vector2( 84.3517, 289.467 )
+
+[node name="Grass A3" parent="Plants" instance=ExtResource( 10 )]
+position = Vector2( 14.3517, 517.467 )
+
+[node name="Grass A4" parent="Plants" instance=ExtResource( 10 )]
+position = Vector2( 510.352, 275.467 )
+
+[node name="Grass C" parent="Plants" instance=ExtResource( 9 )]
+position = Vector2( 84.3517, 587.467 )
+
+[node name="Grass C2" parent="Plants" instance=ExtResource( 9 )]
+position = Vector2( 282.352, 447.467 )
+
+[node name="Grass C3" parent="Plants" instance=ExtResource( 9 )]
+position = Vector2( 468.352, 583.467 )
+
+[node name="Grass C4" parent="Plants" instance=ExtResource( 9 )]
+position = Vector2( 858.352, 477.467 )
+
+[node name="Grass C5" parent="Plants" instance=ExtResource( 9 )]
+position = Vector2( 1010.35, 585.467 )
+
+[node name="Grass C6" parent="Plants" instance=ExtResource( 9 )]
+position = Vector2( 698.352, 363.467 )
+
+[node name="Grass C7" parent="Plants" instance=ExtResource( 9 )]
+position = Vector2( 562.352, 345.467 )
+
+[node name="Grass C8" parent="Plants" instance=ExtResource( 9 )]
+position = Vector2( 832.352, 281.467 )
+
+[node name="Grass C9" parent="Plants" instance=ExtResource( 9 )]
+position = Vector2( 968.352, 335.467 )
+
+[node name="Grass C10" parent="Plants" instance=ExtResource( 9 )]
+position = Vector2( 200.352, 261.467 )
+
+[node name="Grass 6" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 36.3517, 495.467 )
+
+[node name="Grass 7" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 574.352, 585.467 )
+
+[node name="Grass 8" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 182.352, 533.467 )
+
+[node name="Grass 9" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 976.352, 445.467 )
+
+[node name="Grass 10" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 568.352, 307.467 )
+
+[node name="Grass 11" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 424.352, 279.467 )
+
+[node name="Grass 12" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 842.352, 313.467 )
+
+[node name="Grass 13" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 156.352, 365.467 )
+
+[node name="Grass 14" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 674.352, 273.467 )
+
+[node name="Grass 15" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 928.352, 559.467 )
+
+[node name="Grass 16" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 622.352, 531.467 )
+
+[node name="Grass 17" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 246.352, 439.467 )
+
+[node name="Grass 18" parent="Plants" instance=ExtResource( 1 )]
+position = Vector2( 756.352, 465.467 )
+
+[node name="Flowers" parent="Plants" instance=ExtResource( 6 )]
+position = Vector2( 24.3517, 499.467 )
+
+[node name="Butterfly A" parent="Plants/Flowers" instance=ExtResource( 20 )]
+position = Vector2( 0.108154, -73.5907 )
+
+[node name="Flowers2" parent="Plants" instance=ExtResource( 6 )]
+position = Vector2( 530.352, 269.467 )
+
+[node name="Flowers3" parent="Plants" instance=ExtResource( 6 )]
+position = Vector2( 976.352, 357.467 )
+
+[node name="Flowers4" parent="Plants" instance=ExtResource( 6 )]
+position = Vector2( 758.352, 649.467 )
+
+[node name="Butterfly B" parent="Plants/Flowers4" instance=ExtResource( 17 )]
+position = Vector2( 22.6475, -106.855 )
+
+[node name="Flowers5" parent="Plants" instance=ExtResource( 6 )]
+position = Vector2( 256.352, 295.467 )
+
+[node name="Flowers6" parent="Plants" instance=ExtResource( 6 )]
+position = Vector2( 668.352, 73.4673 )
+
+[node name="Flowers and leaves" parent="Plants" instance=ExtResource( 11 )]
+position = Vector2( 124.352, 309.467 )
+
+[node name="Flowers and leaves2" parent="Plants" instance=ExtResource( 11 )]
+position = Vector2( 440.352, 253.467 )
+
+[node name="Flowers and leaves3" parent="Plants" instance=ExtResource( 11 )]
+position = Vector2( 850.352, 295.467 )
+
+[node name="Flowers and leaves4" parent="Plants" instance=ExtResource( 11 )]
+position = Vector2( 972.352, 473.467 )
+
+[node name="Mushroom A" parent="Plants" instance=ExtResource( 26 )]
+position = Vector2( 128.352, 439.467 )
+
+[node name="Mushroom A2" parent="Plants" instance=ExtResource( 26 )]
+position = Vector2( 668.352, 241.467 )
+
+[node name="Mushroom A3" parent="Plants" instance=ExtResource( 26 )]
+position = Vector2( 862.352, 547.467 )
+
+[node name="Mushroom C" parent="Plants" instance=ExtResource( 24 )]
+position = Vector2( 154.352, 459.467 )
+
+[node name="Mushroom C2" parent="Plants" instance=ExtResource( 24 )]
+position = Vector2( 866.352, 363.467 )
+
+[node name="Mushroom E" parent="Plants" instance=ExtResource( 19 )]
+position = Vector2( 562.352, 281.467 )
+
+[node name="Mushroom E2" parent="Plants" instance=ExtResource( 19 )]
+position = Vector2( 82.3517, 355.467 )
+
+[node name="Ruins" type="YSort" parent="."]
+
+[node name="Frontfacing gate vines" parent="Ruins" instance=ExtResource( 15 )]
+position = Vector2( 128.352, -80.5327 )
+
+[node name="Raven" parent="Ruins/Frontfacing gate vines" instance=ExtResource( 16 )]
+position = Vector2( -0.625336, -304.639 )
+
+[node name="Raven2" parent="Ruins/Frontfacing gate vines" instance=ExtResource( 16 )]
+position = Vector2( -29.8094, -297.904 )
+
+[node name="Pillar vines3" parent="Ruins" instance=ExtResource( 23 )]
+position = Vector2( 516.352, -80.5327 )
+
+[node name="Pillar vines2" parent="Ruins" instance=ExtResource( 23 )]
+position = Vector2( 996.352, 167.467 )
+
+[node name="Pillar vines" parent="Ruins" instance=ExtResource( 23 )]
+position = Vector2( 858.352, 293.467 )
+
+[node name="Gate sidefacing vines" parent="Ruins" instance=ExtResource( 13 )]
+position = Vector2( 28.3517, 521.467 )
