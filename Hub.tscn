@@ -1,6 +1,7 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
+[ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Sprite scenes/area_1_flowers_5.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Sprite scenes/area_1_flowers_2.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Sprite scenes/area_1_flowers_1.tscn" type="PackedScene" id=5]
@@ -14,6 +15,7 @@
 [ext_resource path="res://Sprite scenes/area_1_river_2.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Sprite scenes/area_1_river_1.tscn" type="PackedScene" id=14]
 [ext_resource path="res://Sprite scenes/area_1_river_3.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Sprite scenes/fallen_tree2.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Sprite scenes/area_1_stones_1.tscn" type="PackedScene" id=17]
 [ext_resource path="res://Sprite scenes/area_1_stones_3.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Sprite scenes/area_1_stones_2.tscn" type="PackedScene" id=19]
@@ -1044,6 +1046,51 @@ position = Vector2( 1805.88, 1020.65 )
 
 [node name="Flower E" parent="Background/Flowers" instance=ExtResource( 3 )]
 position = Vector2( 1903.68, 1329.4 )
+
+[node name="Flower A" parent="Background/Flowers" instance=ExtResource( 5 )]
+position = Vector2( 1104.73, -195.345 )
+
+[node name="Flower B" parent="Background/Flowers" instance=ExtResource( 4 )]
+position = Vector2( 1178.27, 93.155 )
+
+[node name="Flower C" parent="Background/Flowers" instance=ExtResource( 7 )]
+position = Vector2( 1158.47, 384.483 )
+
+[node name="Flower D" parent="Background/Flowers" instance=ExtResource( 6 )]
+position = Vector2( 1958.91, 146.895 )
+
+[node name="Flower E2" parent="Background/Flowers" instance=ExtResource( 3 )]
+position = Vector2( 2459.55, -195.345 )
+
+[node name="Flower A2" parent="Background/Flowers" instance=ExtResource( 5 )]
+position = Vector2( 796.43, 800.262 )
+
+[node name="Flower B2" parent="Background/Flowers" instance=ExtResource( 4 )]
+position = Vector2( 1540.31, 755.007 )
+
+[node name="Flower C2" parent="Background/Flowers" instance=ExtResource( 7 )]
+position = Vector2( 2219.13, 1170.79 )
+
+[node name="Flower D2" parent="Background/Flowers" instance=ExtResource( 6 )]
+position = Vector2( 2895.12, 1210.38 )
+
+[node name="Flower E3" parent="Background/Flowers" instance=ExtResource( 3 )]
+position = Vector2( 2815.93, 217.606 )
+
+[node name="Flower E4" parent="Background/Flowers" instance=ExtResource( 3 )]
+position = Vector2( 2733.9, 2060.9 )
+
+[node name="Flower D3" parent="Background/Flowers" instance=ExtResource( 6 )]
+position = Vector2( 3144.02, 1778.06 )
+
+[node name="Flower C3" parent="Background/Flowers" instance=ExtResource( 7 )]
+position = Vector2( 2004.17, 1670.58 )
+
+[node name="Flower B3" parent="Background/Flowers" instance=ExtResource( 4 )]
+position = Vector2( 2745.22, 1475.42 )
+
+[node name="Flower A3" parent="Background/Flowers" instance=ExtResource( 5 )]
+position = Vector2( 2589.65, 1152.98 )
 
 [node name="Grass" parent="Background" instance=ExtResource( 8 )]
 position = Vector2( 1407.85, 388.211 )
@@ -2209,6 +2256,40 @@ position = Vector2( -2012.32, 20.8274 )
 [node name="Pillar9" parent="Ruin pillars" instance=ExtResource( 34 )]
 position = Vector2( -1725.68, 22.4843 )
 
+[node name="Pillar10" parent="Ruin pillars" instance=ExtResource( 34 )]
+position = Vector2( -2308.91, -382.871 )
+
+[node name="Pillar11" parent="Ruin pillars" instance=ExtResource( 34 )]
+position = Vector2( -1398.16, -385.7 )
+
+[node name="Gate sidefacing3" parent="Ruin pillars" instance=ExtResource( 43 )]
+position = Vector2( -3590.19, -394.185 )
+
+[node name="Gate sidefacing vines" parent="Ruin pillars/Gate sidefacing3" instance=ExtResource( 36 )]
+position = Vector2( 3241.8, 6.10352e-05 )
+
+[node name="Gate sidefacing" parent="Ruin pillars/Gate sidefacing3" instance=ExtResource( 43 )]
+position = Vector2( 3439.79, -8.48523 )
+
+[node name="Pillar12" parent="Ruin pillars" instance=ExtResource( 34 )]
+position = Vector2( -110.808, 1803.33 )
+
+[node name="Pillar13" parent="Ruin pillars" instance=ExtResource( 34 )]
+position = Vector2( -2333.95, 2592.79 )
+
+[node name="Gate sidefacing" parent="Ruin pillars/Pillar13" instance=ExtResource( 43 )]
+position = Vector2( 1455.21, -362.039 )
+
+[node name="Pillar14" parent="Ruin pillars" instance=ExtResource( 34 )]
+position = Vector2( -1624.02, 2601.27 )
+
+[node name="Frontfacing gate vines2" parent="Ruin pillars" instance=ExtResource( 35 )]
+position = Vector2( -194.72, 751.096 )
+
+[node name="Gate sidefacing4" parent="Ruin pillars" instance=ExtResource( 43 )]
+position = Vector2( -614.169, 643.25 )
+scale = Vector2( -1, 1 )
+
 [node name="Trees2" type="YSort" parent="."]
 
 [node name="Trees" parent="Trees2" instance=ExtResource( 23 )]
@@ -2300,6 +2381,16 @@ position = Vector2( 698.26, 2739.73 )
 
 [node name="Tree C4" parent="Trees2" instance=ExtResource( 24 )]
 position = Vector2( 2453.54, 740.519 )
+
+[node name="Brushery" parent="Trees2" instance=ExtResource( 22 )]
+position = Vector2( 293.264, 418.044 )
+
+[node name="Brushery2" parent="Trees2" instance=ExtResource( 22 )]
+position = Vector2( 3381.26, 418.044 )
+
+[node name="Fallen Tree B" parent="Trees2" instance=ExtResource( 16 )]
+position = Vector2( 3141.26, 1972.15 )
+scale = Vector2( 1.19998, 1.16 )
 
 [node name="Forest Trees" type="YSort" parent="."]
 
@@ -2482,3 +2573,7 @@ position = Vector2( 3446.87, 3441.32 )
 rotation = -1.27216
 z_index = 4096
 shape = SubResource( 1 )
+
+[node name="Scroll" parent="." instance=ExtResource( 2 )]
+position = Vector2( 63.2785, 2062.5 )
+frame = 1
