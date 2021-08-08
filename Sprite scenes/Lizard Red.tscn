@@ -1,20 +1,21 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Sprites Finished/lizard_a_blep_1.png" type="Texture" id=1]
 [ext_resource path="res://Sprites Finished/lizard_a_idle.png" type="Texture" id=2]
 [ext_resource path="res://Sprites Finished/lizard_a_blep_2.png" type="Texture" id=3]
 [ext_resource path="res://Sprites Finished/lizard_a_blink.png" type="Texture" id=4]
+[ext_resource path="res://Sprite scenes/Lizard.gd" type="Script" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "Blink",
+"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "Blep",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 1 ), ExtResource( 3 ), ExtResource( 1 ) ],
-"loop": true,
-"name": "Blep",
+"frames": [ ExtResource( 2 ), ExtResource( 4 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "Blink",
 "speed": 5.0
 } ]
 
@@ -22,3 +23,6 @@ animations = [ {
 frames = SubResource( 1 )
 animation = "Blep"
 frame = 1
+script = ExtResource( 5 )
+
+[connection signal="animation_finished" from="." to="." method="_on_animation_finished"]
