@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://Sprite scenes/area_1_grass_4.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprite scenes/area_1_stones_1.tscn" type="PackedScene" id=2]
@@ -37,6 +37,8 @@
 [ext_resource path="res://Character animation/Protector/hahmo_etu_idle_b.png" type="Texture" id=35]
 [ext_resource path="res://Sprite scenes/frog.tscn" type="PackedScene" id=36]
 [ext_resource path="res://Sprite scenes/butterfly_3.tscn" type="PackedScene" id=37]
+[ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=38]
+[ext_resource path="res://Sprite scenes/Lizard Green.tscn" type="PackedScene" id=39]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -80,21 +82,25 @@ position = Vector2( 522.352, 536 )
 [node name="Fighter" type="AnimatedSprite" parent="Peeps"]
 position = Vector2( 398, 448 )
 frames = SubResource( 1 )
+frame = 1
 playing = true
 
 [node name="Healer" type="AnimatedSprite" parent="Peeps"]
 position = Vector2( 636, 450 )
 frames = SubResource( 2 )
+frame = 1
 playing = true
 
 [node name="Protector" type="AnimatedSprite" parent="Peeps"]
 position = Vector2( 470, 410 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 
 [node name="Sorceress" type="AnimatedSprite" parent="Peeps"]
 position = Vector2( 570, 412 )
 frames = SubResource( 4 )
+frame = 1
 playing = true
 
 [node name="Trees" type="YSort" parent="."]
@@ -427,14 +433,26 @@ position = Vector2( -29.8094, -297.904 )
 [node name="Pillar vines3" parent="Ruins" instance=ExtResource( 23 )]
 position = Vector2( 516.352, -80.5327 )
 
+[node name="AnimatedSprite" parent="Ruins/Pillar vines3" instance=ExtResource( 39 )]
+position = Vector2( -26.3657, -292.356 )
+
 [node name="Pillar vines2" parent="Ruins" instance=ExtResource( 23 )]
 position = Vector2( 996.352, 167.467 )
+
+[node name="AnimatedSprite" parent="Ruins/Pillar vines2" instance=ExtResource( 38 )]
+position = Vector2( -25.9521, -247.393 )
 
 [node name="Pillar vines" parent="Ruins" instance=ExtResource( 23 )]
 position = Vector2( 858.352, 293.467 )
 
 [node name="Gate sidefacing vines" parent="Ruins" instance=ExtResource( 13 )]
 position = Vector2( 28.3517, 521.467 )
+
+[node name="AnimatedSprite" parent="Ruins/Gate sidefacing vines" instance=ExtResource( 38 )]
+position = Vector2( -67.0448, -54.4813 )
+
+[node name="AnimatedSprite2" parent="Ruins/Gate sidefacing vines" instance=ExtResource( 39 )]
+position = Vector2( 51.9361, -181.319 )
 
 [node name="Frog" parent="." instance=ExtResource( 36 )]
 position = Vector2( 221.325, 567.888 )
