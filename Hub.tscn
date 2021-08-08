@@ -1,4 +1,4 @@
-[gd_scene load_steps=59 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://Sprite scenes/flowers_and_leaves.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Sprite scenes/tree_1.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Sprite scenes/water_sausage.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Sprite scenes/Lizard Green.tscn" type="PackedScene" id=29]
 [ext_resource path="res://Sprite scenes/frog.tscn" type="PackedScene" id=30]
 [ext_resource path="res://Sprite scenes/water_extra_small_anim.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Sprite scenes/water_small_anim.tscn" type="PackedScene" id=32]
@@ -56,6 +57,7 @@
 [ext_resource path="res://Sprite scenes/River_animation.gd" type="Script" id=55]
 [ext_resource path="res://Sprite scenes/area2_ruin_frontfacing_gate.tscn" type="PackedScene" id=56]
 [ext_resource path="res://Sprite scenes/fallen_tree_dead.tscn" type="PackedScene" id=57]
+[ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=58]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 34.2408
@@ -2208,6 +2210,9 @@ position = Vector2( -59.6978, -291.962 )
 [node name="Node2D4" parent="Ruin pillars/Ruin pillars" instance=ExtResource( 10 )]
 position = Vector2( 64.7532, -290.548 )
 
+[node name="AnimatedSprite" parent="Ruin pillars/Ruin pillars" instance=ExtResource( 29 )]
+position = Vector2( 101.33, -215.66 )
+
 [node name="Ruin wall" parent="Ruin pillars" instance=ExtResource( 40 )]
 position = Vector2( -296.917, 63.241 )
 
@@ -2238,6 +2243,9 @@ position = Vector2( -3571.47, 627.6 )
 [node name="Pillar4" parent="Ruin pillars" instance=ExtResource( 34 )]
 position = Vector2( -3379.14, 1671.29 )
 
+[node name="AnimatedSprite" parent="Ruin pillars/Pillar4" instance=ExtResource( 58 )]
+position = Vector2( -22.8912, -191.829 )
+
 [node name="Pillar5" parent="Ruin pillars" instance=ExtResource( 34 )]
 position = Vector2( -3263.17, 1017.92 )
 
@@ -2253,6 +2261,9 @@ position = Vector2( -1498.23, -175.334 )
 [node name="Pillar8" parent="Ruin pillars" instance=ExtResource( 34 )]
 position = Vector2( -2012.32, 20.8274 )
 
+[node name="AnimatedSprite" parent="Ruin pillars/Pillar8" instance=ExtResource( 29 )]
+position = Vector2( -21.3632, -234.919 )
+
 [node name="Pillar9" parent="Ruin pillars" instance=ExtResource( 34 )]
 position = Vector2( -1725.68, 22.4843 )
 
@@ -2262,23 +2273,23 @@ position = Vector2( -2308.91, -382.871 )
 [node name="Pillar11" parent="Ruin pillars" instance=ExtResource( 34 )]
 position = Vector2( -1398.16, -385.7 )
 
+[node name="Gate sidefacing vines" parent="Ruin pillars" instance=ExtResource( 36 )]
+position = Vector2( -348.39, -394.185 )
+
+[node name="Gate sidefacing5" parent="Ruin pillars" instance=ExtResource( 43 )]
+position = Vector2( -150.4, -402.67 )
+
 [node name="Gate sidefacing3" parent="Ruin pillars" instance=ExtResource( 43 )]
 position = Vector2( -3590.19, -394.185 )
-
-[node name="Gate sidefacing vines" parent="Ruin pillars/Gate sidefacing3" instance=ExtResource( 36 )]
-position = Vector2( 3241.8, 6.10352e-05 )
-
-[node name="Gate sidefacing" parent="Ruin pillars/Gate sidefacing3" instance=ExtResource( 43 )]
-position = Vector2( 3439.79, -8.48523 )
 
 [node name="Pillar12" parent="Ruin pillars" instance=ExtResource( 34 )]
 position = Vector2( -110.808, 1803.33 )
 
+[node name="Gate sidefacing6" parent="Ruin pillars" instance=ExtResource( 43 )]
+position = Vector2( -878.74, 2230.75 )
+
 [node name="Pillar13" parent="Ruin pillars" instance=ExtResource( 34 )]
 position = Vector2( -2333.95, 2592.79 )
-
-[node name="Gate sidefacing" parent="Ruin pillars/Pillar13" instance=ExtResource( 43 )]
-position = Vector2( 1455.21, -362.039 )
 
 [node name="Pillar14" parent="Ruin pillars" instance=ExtResource( 34 )]
 position = Vector2( -1624.02, 2601.27 )
@@ -2577,3 +2588,33 @@ shape = SubResource( 1 )
 [node name="Scroll" parent="." instance=ExtResource( 2 )]
 position = Vector2( 63.2785, 2062.5 )
 frame = 1
+
+[node name="Lizards" type="Node2D" parent="."]
+
+[node name="AnimatedSprite" parent="Lizards" instance=ExtResource( 29 )]
+position = Vector2( 592.854, 286.515 )
+
+[node name="AnimatedSprite2" parent="Lizards" instance=ExtResource( 58 )]
+position = Vector2( 2292.74, 261.06 )
+
+[node name="AnimatedSprite3" parent="Lizards" instance=ExtResource( 29 )]
+position = Vector2( 3506.13, 128.123 )
+
+[node name="AnimatedSprite4" parent="Lizards" instance=ExtResource( 58 )]
+position = Vector2( 940.75, -7.64346 )
+
+[node name="AnimatedSprite5" parent="Lizards" instance=ExtResource( 29 )]
+position = Vector2( -190.708, 1753.13 )
+
+[node name="AnimatedSprite6" parent="Lizards" instance=ExtResource( 29 )]
+position = Vector2( 1834.45, 3693.26 )
+
+[node name="AnimatedSprite7" parent="Lizards" instance=ExtResource( 58 )]
+position = Vector2( 1364.93, 3435.87 )
+
+[node name="AnimatedSprite8" parent="Lizards" instance=ExtResource( 29 )]
+position = Vector2( 3312, 3430.22 )
+
+[node name="AnimatedSprite9" parent="Lizards" instance=ExtResource( 29 )]
+position = Vector2( 3665.56, 1264.48 )
+scale = Vector2( -1, 1 )

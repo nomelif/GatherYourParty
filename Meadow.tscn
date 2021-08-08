@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/butterfly_1.tscn" type="PackedScene" id=2]
@@ -28,6 +28,9 @@
 [ext_resource path="res://Sprite scenes/area_1_stones_1.tscn" type="PackedScene" id=26]
 [ext_resource path="res://Sprite scenes/area_1_stones_3.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Sprite scenes/area_1_grass_2.tscn" type="PackedScene" id=28]
+[ext_resource path="res://Sprite scenes/Lizard Green.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=30]
+[ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=31]
 
 [node name="Meadow" type="YSort"]
 
@@ -1646,3 +1649,21 @@ position = Vector2( 1735.66, 0.0501099 )
 
 [node name="Grass 30" parent="YSorted flowers" instance=ExtResource( 24 )]
 position = Vector2( 1647.97, 206.525 )
+
+[node name="Lizards" type="Node2D" parent="."]
+
+[node name="AnimatedSprite" parent="Lizards" instance=ExtResource( 29 )]
+position = Vector2( 1996.63, 2019.01 )
+
+[node name="AnimatedSprite2" parent="Lizards" instance=ExtResource( 31 )]
+position = Vector2( -1420.17, 1439.18 )
+
+[node name="AnimatedSprite3" parent="Lizards" instance=ExtResource( 29 )]
+position = Vector2( -1473.92, 24.9692 )
+
+[node name="Scroll" type="YSort" parent="."]
+
+[node name="Node2D" parent="Scroll" instance=ExtResource( 30 )]
+position = Vector2( 1684.93, 1135.37 )
+z_index = 1
+frame = 5

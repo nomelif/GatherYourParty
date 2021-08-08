@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=27 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/area_2_broken_stone_tile_1.tscn" type="PackedScene" id=2]
@@ -21,6 +21,9 @@
 [ext_resource path="res://Sprite scenes/flowers.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Sprite scenes/Raven.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Sprites Finished/Light.png" type="Texture" id=21]
+[ext_resource path="res://Sprite scenes/Lizard Green.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=24]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.0739857, 1 )
@@ -41,6 +44,7 @@ format = 1
 tile_data = PoolIntArray( -131072, 0, 196613, -131071, 0, 393221, -131070, 0, 393220, -131069, 0, 196613, -131068, 0, 196613, -131067, 0, 196614, -131066, 0, 393221, -131065, 0, 196613, -131064, 0, 393220, -131063, 0, 196613, -131062, 0, 196614, -131061, 0, 393220, -131060, 0, 393220, -131059, 0, 196613, -131058, 0, 196614, -131057, 0, 393221, -65536, 0, 196614, -65535, 0, 196613, -65534, 0, 196614, -65533, 0, 196614, -65532, 0, 196613, -65531, 0, 196614, -65530, 0, 196613, -65529, 0, 196613, -65528, 0, 196614, -65527, 0, 196613, -65526, 0, 196614, -65525, 0, 196614, -65524, 0, 196613, -65523, 0, 196614, -65522, 0, 196614, -65521, 0, 196614, 0, 0, 0, 1, 0, 65536, 2, 0, 65536, 3, 0, 65536, 4, 0, 65536, 5, 0, 2, 6, 0, 65536, 7, 0, 1, 8, 0, 1, 9, 0, 65536, 10, 0, 3, 11, 0, 2, 12, 0, 3, 13, 0, 2, 14, 0, 196613, 15, 0, 196614, 65536, 0, 1, 65537, 0, 2, 65538, 0, 0, 65539, 0, 65536, 65540, 0, 2, 65541, 0, 65536, 65542, 0, 65536, 65543, 0, 65536, 65544, 0, 65536, 65545, 0, 65536, 65546, 0, 0, 65547, 0, 1, 65548, 0, 65536, 65549, 0, 0, 65550, 0, 196614, 65551, 0, 196613, 131072, 0, 2, 131073, 0, 65536, 131074, 0, 65536, 131075, 0, 3, 131076, 0, 65536, 131077, 0, 3, 131078, 0, 2, 131079, 0, 65536, 131080, 0, 65536, 131081, 0, 65536, 131082, 0, 65536, 131083, 0, 3, 131084, 0, 65536, 131085, 0, 65536, 131086, 0, 196613, 131087, 0, 196613, 196608, 0, 65536, 196609, 0, 2, 196610, 0, 3, 196611, 0, 0, 196612, 0, 65536, 196613, 0, 3, 196614, 0, 1, 196615, 0, 1, 196616, 0, 65536, 196617, 0, 2, 196618, 0, 65536, 196619, 0, 65536, 196620, 0, 0, 196621, 0, 65536, 196622, 0, 196613, 196623, 0, 196614, 262144, 0, 65536, 262145, 0, 3, 262146, 0, 65536, 262147, 0, 3, 262148, 0, 65536, 262149, 0, 65536, 262150, 0, 65536, 262151, 0, 65536, 262152, 0, 65536, 262153, 0, 3, 262154, 0, 2, 262155, 0, 65536, 262156, 0, 1, 262157, 0, 1, 262158, 0, 196614, 262159, 0, 196613, 327680, 0, 3, 327681, 0, 65536, 327682, 0, 65536, 327683, 0, 65536, 327684, 0, 2, 327685, 0, 65536, 327686, 0, 1, 327687, 0, 65536, 327688, 0, 65536, 327689, 0, 0, 327690, 0, 65536, 327691, 0, 65536, 327692, 0, 3, 327693, 0, 3, 327694, 0, 196614, 327695, 0, 196613, 393216, 0, 65536, 393217, 0, 65536, 393218, 0, 0, 393219, 0, 3, 393220, 0, 65536, 393221, 0, 65536, 393222, 0, 65536, 393223, 0, 65536, 393224, 0, 2, 393225, 0, 3, 393226, 0, 2, 393227, 0, 3, 393228, 0, 65536, 393229, 0, 65536, 393230, 0, 196613, 393231, 0, 196614, 458752, 0, 65536, 458753, 0, 2, 458754, 0, 65536, 458755, 0, 65536, 458756, 0, 1, 458757, 0, 65536, 458758, 0, 2, 458759, 0, 2, 458760, 0, 1, 458761, 0, 0, 458762, 0, 65536, 458763, 0, 1, 458764, 0, 2, 458765, 0, 65536, 458766, 0, 196614, 458767, 0, 196613, 524288, 0, 65536, 524289, 0, 65536, 524290, 0, 65536, 524291, 0, 1, 524292, 0, 65536, 524293, 0, 65536, 524294, 0, 2, 524295, 0, 65536, 524296, 0, 65536, 524297, 0, 65536, 524298, 0, 0, 524299, 0, 1, 524300, 0, 0, 524301, 0, 65536, 524302, 0, 196614, 524303, 0, 196613, 589824, 0, 1, 589825, 0, 1, 589826, 0, 0, 589827, 0, 3, 589828, 0, 0, 589829, 0, 65536, 589830, 0, 65536, 589831, 0, 65536, 589832, 0, 3, 589833, 0, 65536, 589834, 0, 65536, 589835, 0, 2, 589836, 0, 3, 589837, 0, 1, 589838, 0, 196614, 589839, 0, 196613, 655360, 0, 196613, 655361, 0, 196613, 655362, 0, 196614, 655363, 0, 196613, 655364, 0, 196614, 655365, 0, 196613, 655366, 0, 196614, 655367, 0, 196613, 655368, 0, 196613, 655369, 0, 196614, 655370, 0, 196614, 655371, 0, 196613, 655372, 0, 196614, 655373, 0, 196614, 655374, 0, 196613, 655375, 0, 196614, 720896, 0, 196614, 720897, 0, 196614, 720898, 0, 196613, 720899, 0, 196614, 720900, 0, 196613, 720901, 0, 196614, 720902, 0, 196614, 720903, 0, 196613, 720904, 0, 196614, 720905, 0, 196613, 720906, 0, 196614, 720907, 0, 196613, 720908, 0, 196614, 720909, 0, 196614, 720910, 0, 196614, 720911, 0, 196613 )
 
 [node name="Darkness" type="Light2D" parent="."]
+visible = false
 light_mask = 0
 position = Vector2( 1598.64, 842.999 )
 scale = Vector2( 1.56327, 2500.6 )
@@ -592,6 +596,12 @@ scale = Vector2( -1, 1 )
 [node name="Flowers52" parent="Flowers" instance=ExtResource( 19 )]
 position = Vector2( 2527.94, 73.0785 )
 
+[node name="AnimatedSprite" parent="Flowers" instance=ExtResource( 22 )]
+position = Vector2( 389.044, -130.572 )
+
+[node name="AnimatedSprite2" parent="Flowers" instance=ExtResource( 24 )]
+position = Vector2( 2272.78, -161.684 )
+
 [node name="Fire" type="YSort" parent="."]
 
 [node name="Fire" parent="Fire" instance=ExtResource( 18 )]
@@ -1016,11 +1026,17 @@ position = Vector2( -32.2388, -300.739 )
 [node name="Raven2" parent="Pillars/Frontfacing gate vines2" instance=ExtResource( 20 )]
 position = Vector2( 13.0161, -298.029 )
 
+[node name="AnimatedSprite" parent="Pillars/Frontfacing gate vines2" instance=ExtResource( 22 )]
+position = Vector2( -103.082, -126.01 )
+
 [node name="Frontfacing Gate" parent="Pillars" instance=ExtResource( 10 )]
 position = Vector2( 254.537, 1508.65 )
 
 [node name="Raven" parent="Pillars/Frontfacing Gate" instance=ExtResource( 20 )]
 position = Vector2( -32.2361, -300.741 )
+
+[node name="AnimatedSprite" parent="Pillars/Frontfacing Gate" instance=ExtResource( 24 )]
+position = Vector2( 100.566, -128.84 )
 
 [node name="Frontfacing gate vines" parent="Pillars" instance=ExtResource( 9 )]
 position = Vector2( 1125.69, 377.277 )
@@ -1139,6 +1155,9 @@ position = Vector2( 2267.82, 1383.99 )
 
 [node name="Pillar9" parent="Pillars" instance=ExtResource( 11 )]
 position = Vector2( 2550.66, 1497.12 )
+
+[node name="AnimatedSprite" parent="Pillars/Pillar9" instance=ExtResource( 24 )]
+position = Vector2( -26.1511, -238.932 )
 
 [node name="Pillar10" parent="Pillars" instance=ExtResource( 11 )]
 position = Vector2( 2734.51, 1907.25 )
@@ -1260,6 +1279,9 @@ position = Vector2( -20.3636, -127.113 )
 [node name="Raven3" parent="Pillars/Ruin wall17" instance=ExtResource( 20 )]
 position = Vector2( 1.55542, -127.014 )
 
+[node name="AnimatedSprite" parent="Pillars/Ruin wall17" instance=ExtResource( 22 )]
+position = Vector2( 33.2424, -60.4105 )
+
 [node name="Ruin wall18" parent="Pillars" instance=ExtResource( 16 )]
 position = Vector2( 262.464, 2003.08 )
 
@@ -1347,3 +1369,9 @@ position = Vector2( 2324.24, 94.7452 )
 scale = Vector2( 12.0645, 11.6529 )
 texture = ExtResource( 21 )
 color = Color( 0.968627, 0.654902, 0.254902, 1 )
+
+[node name="Scroll" type="YSort" parent="."]
+
+[node name="Node2D" parent="Scroll" instance=ExtResource( 23 )]
+position = Vector2( 244.794, 1682.45 )
+frame = 0
