@@ -1,8 +1,8 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Hub.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Icons/green_pressed.png" type="Texture" id=2]
-[ext_resource path="res://Icons/green.png" type="Texture" id=3]
+[ext_resource path="res://Icons/grey.png" type="Texture" id=2]
+[ext_resource path="res://Icons/grey_pressed.png" type="Texture" id=3]
 [ext_resource path="res://Icons/play.png" type="Texture" id=4]
 [ext_resource path="res://Icons/save.png" type="Texture" id=5]
 [ext_resource path="res://Play_button.gd" type="Script" id=6]
@@ -10,31 +10,98 @@
 [ext_resource path="res://Main_menu.gd" type="Script" id=8]
 [ext_resource path="res://Header_back.png" type="Texture" id=9]
 [ext_resource path="res://Header_highlight.png" type="Texture" id=10]
+[ext_resource path="res://Header scale.gd" type="Script" id=11]
+[ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=12]
+[ext_resource path="res://Character animation/Fighter/hahmo_b.png" type="Texture" id=13]
+[ext_resource path="res://Character animation/Healer/hahmo_etu_idle_a.png" type="Texture" id=14]
+[ext_resource path="res://Character animation/Healer/hahmo_etu_idle_b.png" type="Texture" id=15]
+[ext_resource path="res://Character animation/Sorceress/hahmo_b.png" type="Texture" id=16]
+[ext_resource path="res://Character animation/Sorceress/hahmo_a.png" type="Texture" id=17]
+[ext_resource path="res://Character animation/Protector/hahmo_etu_idle_b.png" type="Texture" id=18]
+[ext_resource path="res://Character animation/Protector/hahmo_etu_idle_a.png" type="Texture" id=19]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 12 ), ExtResource( 13 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.0
+} ]
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.0
+} ]
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.0
+} ]
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 17 ), ExtResource( 16 ) ],
+"loop": true,
+"name": "default",
+"speed": 1.0
+} ]
 
 [node name="Main menu base" type="Node2D"]
 
 [node name="Hub" parent="." instance=ExtResource( 1 )]
-modulate = Color( 0.243137, 0.462745, 0.658824, 1 )
-position = Vector2( 12.4098, -1658.44 )
+modulate = Color( 0.937255, 0.894118, 0.823529, 1 )
+position = Vector2( 260.384, -1564.07 )
 
-[node name="Header shadow" type="Node2D" parent="."]
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Hub"]
+position = Vector2( 1597.78, 1904.66 )
+frames = SubResource( 1 )
+playing = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="Hub"]
+position = Vector2( 305.777, 2382.66 )
+frames = SubResource( 2 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite3" type="AnimatedSprite" parent="Hub"]
+position = Vector2( 367.689, 1689.64 )
+frames = SubResource( 3 )
+playing = true
+
+[node name="AnimatedSprite4" type="AnimatedSprite" parent="Hub"]
+position = Vector2( 730.277, 2425.34 )
+frames = SubResource( 4 )
+frame = 1
+playing = true
+
+[node name="Header" type="Node2D" parent="."]
+position = Vector2( 67.6981, 91.2007 )
+script = ExtResource( 11 )
+
+[node name="Header shadow" type="Node2D" parent="Header"]
 modulate = Color( 0, 0, 0, 1 )
-position = Vector2( 449.346, 89.215 )
+position = Vector2( 731.861, 149 )
 
-[node name="Header_back" type="Sprite" parent="Header shadow"]
+[node name="Header_back" type="Sprite" parent="Header/Header shadow"]
 texture = ExtResource( 9 )
 
-[node name="Header_highlight" type="Sprite" parent="Header shadow"]
+[node name="Header_highlight" type="Sprite" parent="Header/Header shadow"]
 modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
 texture = ExtResource( 10 )
 
-[node name="Header" type="Node2D" parent="."]
-position = Vector2( 449.346, 85.215 )
+[node name="Header text" type="Node2D" parent="Header"]
+position = Vector2( 731.861, 145 )
 
-[node name="Header_back" type="Sprite" parent="Header"]
+[node name="Header_back" type="Sprite" parent="Header/Header text"]
 texture = ExtResource( 9 )
 
-[node name="Header_highlight" type="Sprite" parent="Header"]
+[node name="Header_highlight" type="Sprite" parent="Header/Header text"]
 modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
 texture = ExtResource( 10 )
 
@@ -51,9 +118,10 @@ __meta__ = {
 }
 
 [node name="Neutral" type="NinePatchRect" parent="UI/Play"]
+modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
 margin_right = 172.0
 margin_bottom = 165.0
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 patch_margin_left = 9
 patch_margin_top = 8
 patch_margin_right = 8
@@ -64,9 +132,10 @@ __meta__ = {
 
 [node name="Pressed" type="NinePatchRect" parent="UI/Play"]
 visible = false
+modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
 margin_right = 172.0
 margin_bottom = 165.0
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 patch_margin_left = 9
 patch_margin_top = 8
 patch_margin_right = 8
@@ -95,9 +164,10 @@ __meta__ = {
 }
 
 [node name="Neutral" type="NinePatchRect" parent="UI/Save"]
+modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
 margin_right = 172.0
 margin_bottom = 165.0
-texture = ExtResource( 3 )
+texture = ExtResource( 2 )
 patch_margin_left = 9
 patch_margin_top = 8
 patch_margin_right = 8
@@ -108,9 +178,10 @@ __meta__ = {
 
 [node name="Pressed" type="NinePatchRect" parent="UI/Save"]
 visible = false
+modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
 margin_right = 172.0
 margin_bottom = 165.0
-texture = ExtResource( 2 )
+texture = ExtResource( 3 )
 patch_margin_left = 9
 patch_margin_top = 8
 patch_margin_right = 8
