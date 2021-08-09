@@ -1,18 +1,42 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Hub.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Icons/green_pressed.png" type="Texture" id=2]
 [ext_resource path="res://Icons/green.png" type="Texture" id=3]
 [ext_resource path="res://Icons/play.png" type="Texture" id=4]
 [ext_resource path="res://Icons/save.png" type="Texture" id=5]
-[ext_resource path="res://Play.gd" type="Script" id=6]
+[ext_resource path="res://Play_button.gd" type="Script" id=6]
 [ext_resource path="res://Save_button.gd" type="Script" id=7]
 [ext_resource path="res://Main_menu.gd" type="Script" id=8]
+[ext_resource path="res://Header_back.png" type="Texture" id=9]
+[ext_resource path="res://Header_highlight.png" type="Texture" id=10]
 
 [node name="Main menu base" type="Node2D"]
 
 [node name="Hub" parent="." instance=ExtResource( 1 )]
+modulate = Color( 0.243137, 0.462745, 0.658824, 1 )
 position = Vector2( 12.4098, -1658.44 )
+
+[node name="Header shadow" type="Node2D" parent="."]
+modulate = Color( 0, 0, 0, 1 )
+position = Vector2( 449.346, 89.215 )
+
+[node name="Header_back" type="Sprite" parent="Header shadow"]
+texture = ExtResource( 9 )
+
+[node name="Header_highlight" type="Sprite" parent="Header shadow"]
+modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
+texture = ExtResource( 10 )
+
+[node name="Header" type="Node2D" parent="."]
+position = Vector2( 449.346, 85.215 )
+
+[node name="Header_back" type="Sprite" parent="Header"]
+texture = ExtResource( 9 )
+
+[node name="Header_highlight" type="Sprite" parent="Header"]
+modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
+texture = ExtResource( 10 )
 
 [node name="UI" type="Node2D" parent="."]
 script = ExtResource( 8 )
