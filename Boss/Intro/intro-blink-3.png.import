@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/intro-yell-3.png-bf6c6d2e8952745c54056cbe609568ee.stex"
+path="res://.import/intro-blink-3.png-e714893d9627c1d054ce0973590bd6bf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Boss/intro-yell-3.png"
-dest_files=[ "res://.import/intro-yell-3.png-bf6c6d2e8952745c54056cbe609568ee.stex" ]
+source_file="res://Boss/Intro/intro-blink-3.png"
+dest_files=[ "res://.import/intro-blink-3.png-e714893d9627c1d054ce0973590bd6bf.stex" ]
 
 [params]
 

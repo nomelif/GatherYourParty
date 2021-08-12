@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/intro-blink-2.png-a6c5447607aa0fe880eb23c7b239b869.stex"
+path="res://.import/intro-blink-right-2.png-cbb583623337c84e7e33028cab3bedeb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Boss/intro-blink-2.png"
-dest_files=[ "res://.import/intro-blink-2.png-a6c5447607aa0fe880eb23c7b239b869.stex" ]
+source_file="res://Boss/Intro/intro-blink-right-2.png"
+dest_files=[ "res://.import/intro-blink-right-2.png-cbb583623337c84e7e33028cab3bedeb.stex" ]
 
 [params]
 

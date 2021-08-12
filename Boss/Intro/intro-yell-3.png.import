@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/intro-body.png-4cc071055838926b87dc467f5fda8941.stex"
+path="res://.import/intro-yell-3.png-2d0513e97cfe25812af69250a7460cfa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Boss/intro-body.png"
-dest_files=[ "res://.import/intro-body.png-4cc071055838926b87dc467f5fda8941.stex" ]
+source_file="res://Boss/Intro/intro-yell-3.png"
+dest_files=[ "res://.import/intro-yell-3.png-2d0513e97cfe25812af69250a7460cfa.stex" ]
 
 [params]
 
