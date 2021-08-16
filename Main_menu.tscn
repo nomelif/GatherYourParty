@@ -201,5 +201,7 @@ texture = ExtResource( 5 )
 
 [connection signal="button_down" from="UI/Play" to="UI/Play" method="_on_button_down"]
 [connection signal="button_up" from="UI/Play" to="UI/Play" method="_on_button_up"]
+[connection signal="pressed" from="UI/Play" to="UI/Play" method="_on_Play_pressed"]
 [connection signal="button_down" from="UI/Save" to="UI/Save" method="_on_button_down"]
 [connection signal="button_up" from="UI/Save" to="UI/Save" method="_on_button_up"]
+[connection signal="pressed" from="UI/Save" to="UI/Save" method="_on_Save_pressed"]

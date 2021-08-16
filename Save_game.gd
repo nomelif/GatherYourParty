@@ -29,22 +29,34 @@ var direction = 'up'
 # Ring buffer of steps*4 previous positions and directions
 # Used to anumate followers along path
 
-var cutscene = false
-var positions = []
-var directions = []
+
 
 func _on_pressed():
 	var main = get_node("../../../../../")
 	var player = main.get_node("YSort/PlayerCharacter")
+	var camera = main.get_node("Camera2D")
 	var state = {
 		"x": player.position.x,
 		"y": player.position.y,
 		"people_qty": player.people_qty,
-		"positions": player.positions,
+		"positions": [],
 		"directions": player.directions,
 		"peep_offset": player.peep_offset,
-		"direction": player.direction
+		"direction": player.direction,
+		"position_index": player.position_index,
+		"limit_left": camera.limit_left,
+		"limit_top": camera.limit_top,
+		"limit_right": camera.limit_right,
+		"limit_bottom": camera.limit_bottom
 	}
+	
+	var positions = []
+	var directions = []
+	
+	for position in player.positions:
+		positions.append([position.x, position.y])
+	state["positions"] = positions
+	
 	var scroll_paths = ["YSort/Map/Hub/Scroll",
 						"YSort/Map/Ruin/Scroll/Node2D",
 						"YSort/Map/Swamp/Scrolls/Node2D",

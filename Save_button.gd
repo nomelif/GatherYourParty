@@ -23,3 +23,7 @@ func _on_button_up():
 func _on_button_down():
 	$Pressed.visible = true
 	$Shadow.visible = false
+
+
+func _on_Save_pressed():
+	get_tree().change_scene("res://Main.tscn");
