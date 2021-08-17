@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://PreFight.gd" type="Script" id=1]
 [ext_resource path="res://Boss/Intro/intro-blink-1.png" type="Texture" id=2]
@@ -17,6 +17,8 @@
 [ext_resource path="res://Boss/Intro/intro-blink-left-1.png" type="Texture" id=15]
 [ext_resource path="res://Boss/Intro/intro-blink-centre-2.png" type="Texture" id=16]
 [ext_resource path="res://Boss/Intro/intro-blink-centre-1.png" type="Texture" id=17]
+[ext_resource path="res://Sounds/bensound-instinct.mp3" type="AudioStream" id=18]
+[ext_resource path="res://BossfightMusic.gd" type="Script" id=19]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -102,3 +104,7 @@ animation = "Wake up"
 position = Vector2( 777.191, 286.74 )
 frames = SubResource( 4 )
 animation = "Wake up"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 18 )
+script = ExtResource( 19 )

@@ -5,6 +5,7 @@ extends Area2D
 # var a = 2
 # var b = "text"
 
+var listening = true
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,6 +18,8 @@ func _ready():
 
 
 func _on_DefenseCollider_body_entered(body):
+	if not listening:
+		return
 	if get_node("../../").animation_running:
 		return
 	if "Protect_" + str(get_node("../../").current_visible) != get_node("../").name:
@@ -25,6 +28,10 @@ func _on_DefenseCollider_body_entered(body):
 		body.get_parent().remove_child(body)
 		var health = get_node("../../../../Healthbar base/Health")
 		if health.margin_right - health.margin_left < 0:
-			get_tree().change_scene("res://PostFight.tscn");
+			listening = false
+			get_node("/root/Node2D/Node2D2/PlayArea/Black").visible = true
+			get_node("/root/Node2D/AudioStreamPlayer").fade = true
+			yield(get_tree().create_timer(2), "timeout")
+			get_tree().change_scene("res://Credits.tscn");
 		else:
 			health.margin_right -= 20

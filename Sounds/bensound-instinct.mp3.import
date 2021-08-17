@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/bensound-instinct.mp3-fdbc976cc28325a49986b3e9116e3188.mp3str"
+
+[deps]
+
+source_file="res://Sounds/bensound-instinct.mp3"
+dest_files=[ "res://.import/bensound-instinct.mp3-fdbc976cc28325a49986b3e9116e3188.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
