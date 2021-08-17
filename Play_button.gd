@@ -28,4 +28,4 @@ func _on_button_down():
 func _on_Play_pressed():
 	var dir = Directory.new()
 	dir.remove("user://savegame.save")
-	get_tree().change_scene("res://Main.tscn");
+	get_tree().change_scene("res://Opening.tscn");
