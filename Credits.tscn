@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://Stars.gd" type="Script" id=1]
 [ext_resource path="res://End_credits.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Credits_highlight.png" type="Texture" id=6]
 [ext_resource path="res://Sprite scenes/Raven.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Sprite scenes/frog.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Sounds/magic-2072.mp3" type="AudioStream" id=9]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 0.457031, 0.295285, 0.187454, 1, 1, 0.574677, 0.292969, 1 )
@@ -65,3 +66,7 @@ position = Vector2( 499.889, 400.972 )
 
 [node name="Frog" parent="View/Scrollable" instance=ExtResource( 8 )]
 position = Vector2( 510.912, -1158.56 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+autoplay = true

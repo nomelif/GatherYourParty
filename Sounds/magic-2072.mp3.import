@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/magic-2072.mp3-7b6bd6dbe4e703f1acf2c3df921e85a8.mp3str"
+
+[deps]
+
+source_file="res://Sounds/magic-2072.mp3"
+dest_files=[ "res://.import/magic-2072.mp3-7b6bd6dbe4e703f1acf2c3df921e85a8.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
