@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/carried-by-the-wind-calm-classical-orchestral-2754.mp3-0c5755cf6f34c17722be01321f3bfdf1.mp3str"
+
+[deps]
+
+source_file="res://Sounds/carried-by-the-wind-calm-classical-orchestral-2754.mp3"
+dest_files=[ "res://.import/carried-by-the-wind-calm-classical-orchestral-2754.mp3-0c5755cf6f34c17722be01321f3bfdf1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

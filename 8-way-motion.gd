@@ -105,8 +105,7 @@ func _physics_process(delta):
 		if i < people_qty:
 			get_node('../../'+sprites[(i+peep_offset) % people_qty]+'Bubble').position += Vector2(-30, -180)
 	# Make camera follow character
-	
-	get_node('/root/Main/Camera2D').position = position;	
+	get_node('../../Camera2D').position = position;	
 
 ### Animation logic
 

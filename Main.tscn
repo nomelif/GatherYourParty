@@ -100,14 +100,14 @@ extents = Vector2( 40, 15.2259 )
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 9 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "right",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 10 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ) ],
@@ -143,14 +143,14 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
-"loop": true,
-"name": "right",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 14 ), ExtResource( 20 ) ],
 "loop": true,
 "name": "left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
+"loop": true,
+"name": "right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
@@ -186,14 +186,14 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ ExtResource( 43 ), ExtResource( 44 ) ],
-"loop": true,
-"name": "right",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 48 ), ExtResource( 45 ) ],
 "loop": true,
 "name": "left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 43 ), ExtResource( 44 ) ],
+"loop": true,
+"name": "right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 39 ), ExtResource( 40 ) ],
@@ -229,14 +229,14 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
-"frames": [ ExtResource( 57 ), ExtResource( 61 ) ],
-"loop": true,
-"name": "right",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 60 ), ExtResource( 59 ) ],
 "loop": true,
 "name": "left",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 57 ), ExtResource( 61 ) ],
+"loop": true,
+"name": "right",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 51 ), ExtResource( 66 ) ],
@@ -498,6 +498,7 @@ scale = Vector2( 2, 2 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Control" parent="CanvasLayer" instance=ExtResource( 86 )]
+
 [connection signal="body_entered" from="YSort/Door Trigger" to="YSort/Door Trigger" method="_on_body_entered"]
 [connection signal="animation_finished" from="YSort/BridgeSprite" to="YSort/PlayerCharacter" method="_on_animation_finished"]
 [connection signal="body_entered" from="YSort/MeadowDoor" to="YSort/MeadowDoor" method="_on_body_entered"]
