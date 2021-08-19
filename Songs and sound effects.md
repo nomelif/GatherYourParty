@@ -1,4 +1,6 @@
 
+# Implemented
+
 For Opening: Carried By The Wind, Bluemount Score https://pixabay.com/music/main-title-carried-by-the-wind-calm-classical-orchestral-2754/
 For Bossfight: Instinct, Benjamin Tissot https://www.bensound.com/royalty-free-music/track/instinct
 For End Credits: NightLife, Michael Kobrin https://pixabay.com/music/acoustic-group-nightlife-michael-kobrin-95bpm-3783/
@@ -11,9 +13,15 @@ Magic: Forecast, Serge Quadrado https://freemusicarchive.org/music/serge-quadrad
 
 Crows, other birds and ambient sounds: https://freesound.org/people/iwanPlays/sounds/512769/
 Crow: https://freesound.org/people/straget/sounds/404687/
-Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
-Fire: https://freesound.org/people/olliehahn12/sounds/264312/
 Fire in the woods: https://freesound.org/people/craftcrest/sounds/277464/
+
+# Unused
+
+Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
+(incompatible format) Fire: https://freesound.org/people/olliehahn12/sounds/264312/
+
+# TODO
+
 Ghostly Whail: https://freesound.org/people/colorsCrimsonTears/sounds/555687/
 Creepy sound: https://freesound.org/people/colorsCrimsonTears/sounds/556419/
 Robot baby: https://freesound.org/people/Jerimee/sounds/521775/
