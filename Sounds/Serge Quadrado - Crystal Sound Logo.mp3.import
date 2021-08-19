@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Serge Quadrado - Crystal Sound Logo.mp3-f3239f677e7b3b18b5b51c78b3f40fe5.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Serge Quadrado - Crystal Sound Logo.mp3"
+dest_files=[ "res://.import/Serge Quadrado - Crystal Sound Logo.mp3-f3239f677e7b3b18b5b51c78b3f40fe5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
