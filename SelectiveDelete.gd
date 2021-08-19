@@ -30,8 +30,11 @@ func logic():
 		return
 	var body = get_node("../PlayerCharacter")
 	if body.front_peep() == required_character:
+		$AudioStreamPlayer2D.play()
 		body.queue_animations(success_dialogue)
 		body.queue_animations([[null, funcref(self, "delete_sprite")]])
+		yield(get_tree().create_timer(8), "timeout")
+		$AudioStreamPlayer2D.stop()
 	elif body.has_peep(required_character):
 		body.queue_animations([["../../" + required_character + "Bubble", "Creation"],
 							   ["../../" + required_character + "Bubble", "Exclamation"],

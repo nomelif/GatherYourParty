@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Serge Quadrado - Forecast.mp3-323f95f2d46c93d9245f8975e0890e79.mp3str"
+
+[deps]
+
+source_file="res://Sounds/Serge Quadrado - Forecast.mp3"
+dest_files=[ "res://.import/Serge Quadrado - Forecast.mp3-323f95f2d46c93d9245f8975e0890e79.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
