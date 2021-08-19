@@ -1,4 +1,4 @@
-[gd_scene load_steps=61 format=2]
+[gd_scene load_steps=62 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=2]
@@ -58,6 +58,7 @@
 [ext_resource path="res://Sprite scenes/area2_ruin_frontfacing_gate.tscn" type="PackedScene" id=56]
 [ext_resource path="res://Sprite scenes/fallen_tree_dead.tscn" type="PackedScene" id=57]
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=58]
+[ext_resource path="res://Sounds/512769__iwanplays__morningbirds.wav" type="AudioStream" id=59]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 34.2408
@@ -2587,7 +2588,6 @@ shape = SubResource( 1 )
 
 [node name="Scroll" parent="." instance=ExtResource( 2 )]
 position = Vector2( 63.2785, 2062.5 )
-frame = 1
 
 [node name="Lizards" type="Node2D" parent="."]
 
@@ -2618,3 +2618,8 @@ position = Vector2( 3312, 3430.22 )
 [node name="AnimatedSprite9" parent="Lizards" instance=ExtResource( 29 )]
 position = Vector2( 3665.56, 1264.48 )
 scale = Vector2( -1, 1 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 2492.7, 1215.46 )
+stream = ExtResource( 59 )
+autoplay = true
