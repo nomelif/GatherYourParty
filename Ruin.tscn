@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/area_2_broken_stone_tile_1.tscn" type="PackedScene" id=2]
@@ -24,6 +24,9 @@
 [ext_resource path="res://Sprite scenes/Lizard Green.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Sounds/512769__iwanplays__morningbirds.wav" type="AudioStream" id=25]
+[ext_resource path="res://Sounds/404687__straget__hooded-crow.wav" type="AudioStream" id=26]
+[ext_resource path="res://Sounds/277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.wav" type="AudioStream" id=27]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.0739857, 1 )
@@ -1373,3 +1376,35 @@ color = Color( 0.968627, 0.654902, 0.254902, 1 )
 
 [node name="Node2D" parent="Scroll" instance=ExtResource( 23 )]
 position = Vector2( 244.794, 1682.45 )
+
+[node name="Background noise" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 1459.47, 995.606 )
+stream = ExtResource( 25 )
+autoplay = true
+
+[node name="Crow noises" type="Node2D" parent="."]
+
+[node name="Crow 1" type="AudioStreamPlayer2D" parent="Crow noises"]
+position = Vector2( 2087.28, 1172.53 )
+stream = ExtResource( 26 )
+autoplay = true
+
+[node name="Crow 2" type="AudioStreamPlayer2D" parent="Crow noises"]
+position = Vector2( 403.433, 1882.93 )
+stream = ExtResource( 26 )
+autoplay = true
+
+[node name="Crow 3" type="AudioStreamPlayer2D" parent="Crow noises"]
+position = Vector2( 2292.21, 159.577 )
+stream = ExtResource( 26 )
+autoplay = true
+
+[node name="Crow 4" type="AudioStreamPlayer2D" parent="Crow noises"]
+position = Vector2( 867.375, 65.6689 )
+stream = ExtResource( 26 )
+autoplay = true
+
+[node name="Fireplace noise" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 2343.45, 120.952 )
+stream = ExtResource( 27 )
+autoplay = true

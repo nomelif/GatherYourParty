@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.wav-cc277963340681e67a8e10d4a519611f.sample"
+
+[deps]
+
+source_file="res://Sounds/277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.wav"
+dest_files=[ "res://.import/277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.wav-cc277963340681e67a8e10d4a519611f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
