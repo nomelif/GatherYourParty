@@ -1380,6 +1380,7 @@ position = Vector2( 244.794, 1682.45 )
 [node name="Background noise" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 1459.47, 995.606 )
 stream = ExtResource( 25 )
+volume_db = -3.828
 autoplay = true
 
 [node name="Crow noises" type="Node2D" parent="."]
@@ -1387,24 +1388,30 @@ autoplay = true
 [node name="Crow 1" type="AudioStreamPlayer2D" parent="Crow noises"]
 position = Vector2( 2087.28, 1172.53 )
 stream = ExtResource( 26 )
+volume_db = 4.466
 autoplay = true
 
 [node name="Crow 2" type="AudioStreamPlayer2D" parent="Crow noises"]
 position = Vector2( 403.433, 1882.93 )
 stream = ExtResource( 26 )
+volume_db = 3.19
 autoplay = true
 
 [node name="Crow 3" type="AudioStreamPlayer2D" parent="Crow noises"]
 position = Vector2( 2292.21, 159.577 )
 stream = ExtResource( 26 )
+volume_db = 4.466
 autoplay = true
 
 [node name="Crow 4" type="AudioStreamPlayer2D" parent="Crow noises"]
 position = Vector2( 867.375, 65.6689 )
 stream = ExtResource( 26 )
+volume_db = 5.104
 autoplay = true
 
 [node name="Fireplace noise" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 2343.45, 120.952 )
 stream = ExtResource( 27 )
+volume_db = 4.466
 autoplay = true
+attenuation = 1.8025
