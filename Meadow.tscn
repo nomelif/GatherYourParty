@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/butterfly_1.tscn" type="PackedScene" id=2]
@@ -31,6 +31,7 @@
 [ext_resource path="res://Sprite scenes/Lizard Green.tscn" type="PackedScene" id=29]
 [ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=30]
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=31]
+[ext_resource path="res://Sounds/129431__le-abbaye-noirlac__tree-rustle-4.ogg" type="AudioStream" id=32]
 
 [node name="Meadow" type="YSort"]
 
@@ -1666,4 +1667,10 @@ position = Vector2( -1473.92, 24.9692 )
 [node name="Node2D" parent="Scroll" instance=ExtResource( 30 )]
 position = Vector2( 1684.93, 1135.37 )
 z_index = 1
-frame = 5
+
+[node name="Sounds" type="Node2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sounds"]
+position = Vector2( 237.962, 1077.56 )
+stream = ExtResource( 32 )
+autoplay = true
