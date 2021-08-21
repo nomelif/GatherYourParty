@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/loop_water_03.ogg-843c60ce0a7af7084e73d1a2451448ac.oggstr"
+
+[deps]
+
+source_file="res://Sounds/40-cc0-water-splash-slime-sfx/loop_water_03.ogg"
+dest_files=[ "res://.import/loop_water_03.ogg-843c60ce0a7af7084e73d1a2451448ac.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
