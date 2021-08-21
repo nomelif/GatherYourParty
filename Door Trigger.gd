@@ -18,6 +18,7 @@ func _ready():
 func _on_body_entered(body):
 	if body.name == "PlayerCharacter":
 		if body.people_qty == 4:
+			get_node("../Door/Ghostly sound").play()
 			body.queue_animations([["../../FighterBubble", "Exclamation"],
 								   ["../../ProtectorBubble", "Exclamation"],
 								   ["../../SorceressBubble", "Exclamation"],

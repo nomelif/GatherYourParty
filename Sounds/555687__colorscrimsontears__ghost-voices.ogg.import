@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/555687__colorscrimsontears__ghost-voices.ogg-be7899a7941257861e8a3fcf5b86de34.oggstr"
+
+[deps]
+
+source_file="res://Sounds/555687__colorscrimsontears__ghost-voices.ogg"
+dest_files=[ "res://.import/555687__colorscrimsontears__ghost-voices.ogg-be7899a7941257861e8a3fcf5b86de34.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
