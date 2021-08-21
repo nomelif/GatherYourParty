@@ -19,6 +19,12 @@ Crow: https://freesound.org/people/straget/sounds/404687/
 
 Fire in the woods: https://freesound.org/people/craftcrest/sounds/277464/
 
+Meadow: Wind in trees: https://freesound.org/people/le_abbaye_Noirlac/sounds/129431/
+
+Meadow: Bird sounds: https://opengameart.org/content/ambient-bird-sounds
+
+Frogs (individual) Frog close: https://freesound.org/people/Benboncan/sounds/91543/
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -66,25 +72,19 @@ Monster and speech sounds: https://opengameart.org/content/80-cc0-creature-sfx
 	* cute_ for talk
 	* scream_02.ogg for the dying situation
 
-## Don't need code
+Potential extra frog sound: Mutant frogs: https://opengameart.org/content/mutant-frog
 
-Frogs (individual) Frog close: https://freesound.org/people/Benboncan/sounds/91543/
+	* mutant_frog-1
+
+## Don't need code
 
 Possibly in the swamp: Creepy sound: https://freesound.org/people/colorsCrimsonTears/sounds/556419/
 
 Frogs (ambiance) Frogs: https://freesound.org/people/Danjocross/sounds/387868/
 
-Meadow: Wind in trees: https://freesound.org/people/le_abbaye_Noirlac/sounds/129431/
-
 Various ambient sounds (flowing water, footsteps): https://opengameart.org/content/100-cc0-sfx-2
 
 	* waterfall: loop_water_02
-
-Potential extra frog sound: Mutant frogs: https://opengameart.org/content/mutant-frog
-
-	* mutant_frog-1
-
-Meadow: Bird sounds: https://opengameart.org/content/ambient-bird-sounds
 
 Various ambient sounds (Water etc.): https://opengameart.org/content/30-cc0-sfx-loops
 
