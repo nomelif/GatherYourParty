@@ -80,7 +80,7 @@ Potential extra frog sound: Mutant frogs: https://opengameart.org/content/mutant
 
 Possibly in the swamp: Creepy sound: https://freesound.org/people/colorsCrimsonTears/sounds/556419/
 
-Frogs (ambiance) Frogs: https://freesound.org/people/Danjocross/sounds/387868/
+Frogs (ambiance) Frogs: https://freesound.org/people/Danjocross/sounds/387868/ (cut by us)
 
 Various ambient sounds (flowing water, footsteps): https://opengameart.org/content/100-cc0-sfx-2
 
