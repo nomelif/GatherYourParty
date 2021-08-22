@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/hut.tscn" type="PackedScene" id=2]
@@ -24,6 +24,7 @@
 [ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Sounds/91543__benboncan__frog-close.wav" type="AudioStream" id=24]
+[ext_resource path="res://audio-control.gd" type="Script" id=25]
 
 [node name="Swamp" type="YSort"]
 
@@ -1788,8 +1789,10 @@ position = Vector2( 1005.32, 767.592 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Frogs/Frog"]
 stream = ExtResource( 24 )
-autoplay = true
 attenuation = 5.09824
+script = ExtResource( 25 )
+loop = true
+randomize_start = true
 
 [node name="Frog2" parent="Frogs" instance=ExtResource( 20 )]
 position = Vector2( 1062.45, 901.049 )
@@ -1808,8 +1811,10 @@ position = Vector2( 692.974, 1239.74 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Frogs/Frog6"]
 stream = ExtResource( 24 )
-autoplay = true
 attenuation = 5.09824
+script = ExtResource( 25 )
+loop = true
+randomize_start = true
 
 [node name="Frog7" parent="Frogs" instance=ExtResource( 20 )]
 position = Vector2( 780.427, 1374.28 )
@@ -1828,8 +1833,10 @@ position = Vector2( 285.406, 504.228 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Frogs/Frog11"]
 stream = ExtResource( 24 )
-autoplay = true
 attenuation = 5.09824
+script = ExtResource( 25 )
+loop = true
+randomize_start = true
 
 [node name="Frog12" parent="Frogs" instance=ExtResource( 20 )]
 position = Vector2( 853.799, 261.903 )
@@ -1851,8 +1858,10 @@ position = Vector2( 1224.31, 217.89 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Frogs/Frog17"]
 stream = ExtResource( 24 )
-autoplay = true
 attenuation = 5.09824
+script = ExtResource( 25 )
+loop = true
+randomize_start = true
 
 [node name="Frog18" parent="Frogs" instance=ExtResource( 20 )]
 position = Vector2( 1447.03, 260.653 )
@@ -1883,8 +1892,10 @@ position = Vector2( 1872.65, 1769.19 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Frogs/Frog26"]
 stream = ExtResource( 24 )
-autoplay = true
 attenuation = 5.09824
+script = ExtResource( 25 )
+loop = true
+randomize_start = true
 
 [node name="Frog27" parent="Frogs" instance=ExtResource( 20 )]
 position = Vector2( 1920.65, 1545.19 )
@@ -1903,8 +1914,10 @@ position = Vector2( 2406.65, 1247.19 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Frogs/Frog31"]
 stream = ExtResource( 24 )
-autoplay = true
 attenuation = 5.09824
+script = ExtResource( 25 )
+loop = true
+randomize_start = true
 
 [node name="Frog32" parent="Frogs" instance=ExtResource( 20 )]
 position = Vector2( 2272.65, 1385.19 )
@@ -1920,8 +1933,10 @@ position = Vector2( 2412.65, 1539.19 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Frogs/Frog35"]
 stream = ExtResource( 24 )
-autoplay = true
 attenuation = 5.09824
+script = ExtResource( 25 )
+loop = true
+randomize_start = true
 
 [node name="AnimatedSprite" parent="Frogs" instance=ExtResource( 21 )]
 position = Vector2( 516.859, -164.944 )
@@ -1996,3 +2011,6 @@ position = Vector2( 2714.97, 473.83 )
 [node name="Sounds" type="Node2D" parent="."]
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Sounds"]
+script = ExtResource( 25 )
+loop = true
+randomize_start = true
