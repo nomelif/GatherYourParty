@@ -15,7 +15,10 @@ func _ready():
 	if randomize_start:
 		var rng = RandomNumberGenerator.new()
 		rng.randomize()
-		self.play(rng.randf_range(0, stream.get_length()))
+		if stream != null: # This apparently can happen
+			self.play(rng.randf_range(0, stream.get_length()))
+		else:
+			self.play()
 	else:
 		self.play()
 
