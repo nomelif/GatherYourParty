@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=35 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/butterfly_1.tscn" type="PackedScene" id=2]
@@ -33,6 +33,7 @@
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Sounds/129431__le-abbaye-noirlac__tree-rustle-4.ogg" type="AudioStream" id=32]
 [ext_resource path="res://Sounds/birds-isaiah658.ogg" type="AudioStream" id=33]
+[ext_resource path="res://audio-control.gd" type="Script" id=34]
 
 [node name="Meadow" type="YSort"]
 
@@ -1675,58 +1676,68 @@ z_index = 1
 position = Vector2( 237.962, 1077.56 )
 stream = ExtResource( 32 )
 volume_db = 3.828
-autoplay = true
+script = ExtResource( 34 )
+loop = true
 
 [node name="Wind2" type="AudioStreamPlayer2D" parent="Sounds"]
 position = Vector2( -1278.04, 69.5601 )
 stream = ExtResource( 32 )
 volume_db = -1.276
-autoplay = true
+script = ExtResource( 34 )
+loop = true
 
 [node name="Wind3" type="AudioStreamPlayer2D" parent="Sounds"]
 position = Vector2( -1346.04, 1933.56 )
 stream = ExtResource( 32 )
 volume_db = -1.276
-autoplay = true
+script = ExtResource( 34 )
+loop = true
 
 [node name="Wind4" type="AudioStreamPlayer2D" parent="Sounds"]
 position = Vector2( 2141.96, 1937.56 )
 stream = ExtResource( 32 )
 volume_db = -1.276
-autoplay = true
+script = ExtResource( 34 )
+loop = true
 
 [node name="Wind5" type="AudioStreamPlayer2D" parent="Sounds"]
 position = Vector2( 2093.96, 61.5601 )
 stream = ExtResource( 32 )
 volume_db = -1.276
-autoplay = true
+script = ExtResource( 34 )
+loop = true
 
 [node name="Birds" type="AudioStreamPlayer2D" parent="Sounds"]
 position = Vector2( 56, 1200 )
 stream = ExtResource( 33 )
 volume_db = -5.104
-autoplay = true
+script = ExtResource( 34 )
+loop = true
 
 [node name="Birds2" type="AudioStreamPlayer2D" parent="Sounds"]
 position = Vector2( -1236, 224 )
 stream = ExtResource( 33 )
 volume_db = -5.104
-autoplay = true
+script = ExtResource( 34 )
+loop = true
 
 [node name="Birds3" type="AudioStreamPlayer2D" parent="Sounds"]
 position = Vector2( 2080, 108 )
 stream = ExtResource( 33 )
 volume_db = -5.104
-autoplay = true
+script = ExtResource( 34 )
+loop = true
 
 [node name="Birds4" type="AudioStreamPlayer2D" parent="Sounds"]
 position = Vector2( 2096, 1904 )
 stream = ExtResource( 33 )
 volume_db = -5.104
-autoplay = true
+script = ExtResource( 34 )
+loop = true
 
 [node name="Birds5" type="AudioStreamPlayer2D" parent="Sounds"]
 position = Vector2( -1304, 1952 )
 stream = ExtResource( 33 )
 volume_db = -5.104
-autoplay = true
+script = ExtResource( 34 )
+loop = true
