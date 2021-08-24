@@ -32,6 +32,15 @@ func _on_DefenseCollider_body_entered(body):
 			get_node("/root/Node2D/Node2D2/PlayArea/Black").visible = true
 			get_node("/root/Node2D/Background music").fade = true
 			yield(get_tree().create_timer(2), "timeout")
+			get_node("/root/Node2D/Node2D2/Post boss sounds/sword").play()
+			yield(get_tree().create_timer(3), "timeout")
+			play_stab()
+			yield(get_tree().create_timer(3), "timeout")
 			get_tree().change_scene("res://Credits.tscn");
 		else:
 			health.margin_right -= 20
+
+func play_stab():
+	get_node("/root/Node2D/Node2D2/Post boss sounds/stab").play()
+	yield(get_tree().create_timer(0.7), "timeout")
+	get_node("/root/Node2D/Node2D2/Post boss sounds/stab").stop()

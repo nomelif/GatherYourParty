@@ -24,53 +24,53 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 15 ), ExtResource( 10 ), ExtResource( 14 ) ],
-"loop": false,
-"name": "Wake up",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ) ],
 "loop": false,
 "name": "Yell",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 10 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "Wake up",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 5 ) ],
-"loop": false,
-"name": "Wake up",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ) ],
 "loop": false,
 "name": "Yell",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "Wake up",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 17 ), ExtResource( 16 ), ExtResource( 13 ) ],
-"loop": false,
-"name": "Wake up",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ) ],
 "loop": false,
 "name": "Yell",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 16 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "Wake up",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 9 ), ExtResource( 11 ), ExtResource( 12 ) ],
-"loop": false,
-"name": "Wake up",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ) ],
 "loop": false,
 "name": "Yell",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": false,
+"name": "Wake up",
 "speed": 5.0
 } ]
 

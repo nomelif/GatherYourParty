@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/399614__soundsforhim__knife-sword-stab-1.mp3-e597398f8e1086b41b4e3989b53f55ea.mp3str"
+
+[deps]
+
+source_file="res://Sounds/399614__soundsforhim__knife-sword-stab-1.mp3"
+dest_files=[ "res://.import/399614__soundsforhim__knife-sword-stab-1.mp3-e597398f8e1086b41b4e3989b53f55ea.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=2]
+[gd_scene load_steps=109 format=2]
 
 [ext_resource path="res://Boss/Body.png" type="Texture" id=1]
 [ext_resource path="res://Sprite scenes/plants_1.tscn" type="PackedScene" id=2]
@@ -99,6 +99,8 @@
 [ext_resource path="res://Character animation/arrow.png" type="Texture" id=97]
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=98]
 [ext_resource path="res://Sprite scenes/Lizard Green.tscn" type="PackedScene" id=99]
+[ext_resource path="res://Sounds/361485__funwithsound__sword-clash-and-slide.mp3" type="AudioStream" id=100]
+[ext_resource path="res://Sounds/399614__soundsforhim__knife-sword-stab-1.mp3" type="AudioStream" id=101]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -163,6 +165,14 @@ radius = 37.4942
 height = 310.595
 
 [node name="Node2D2" type="Node2D"]
+
+[node name="Post boss sounds" type="Node2D" parent="."]
+
+[node name="sword" type="AudioStreamPlayer" parent="Post boss sounds"]
+stream = ExtResource( 100 )
+
+[node name="stab" type="AudioStreamPlayer" parent="Post boss sounds"]
+stream = ExtResource( 101 )
 
 [node name="Black" type="ColorRect" parent="."]
 margin_right = 40.0
