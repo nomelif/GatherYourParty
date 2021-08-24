@@ -25,6 +25,8 @@ Meadow: Bird sounds: https://opengameart.org/content/ambient-bird-sounds
 
 Frogs (individual) Frog close: https://freesound.org/people/Benboncan/sounds/91543/
 
+When the door starts glowing: Ghostly Whail: https://freesound.org/people/colorsCrimsonTears/sounds/555687/
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -34,8 +36,6 @@ Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
 # TODO
 
 ## Need code
-
-When the door starts glowing: Ghostly Whail: https://freesound.org/people/colorsCrimsonTears/sounds/555687/
 
 Talking sound, maybe: Babble: https://freesound.org/people/GET_Accel/sounds/427232/
 
