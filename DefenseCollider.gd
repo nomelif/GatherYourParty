@@ -30,7 +30,7 @@ func _on_DefenseCollider_body_entered(body):
 		if health.margin_right - health.margin_left < 0:
 			listening = false
 			get_node("/root/Node2D/Node2D2/PlayArea/Black").visible = true
-			get_node("/root/Node2D/AudioStreamPlayer").fade = true
+			get_node("/root/Node2D/Background music").fade = true
 			yield(get_tree().create_timer(2), "timeout")
 			get_tree().change_scene("res://Credits.tscn");
 		else:
