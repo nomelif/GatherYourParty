@@ -21,6 +21,8 @@ func _ready():
 		get_node("View/Head" + str(x)).play()
 		yield(get_node("View/Head" + str(x)), "animation_finished")
 	$"Background music".play()
+	$Roar.play()
+	$Roar.pitch_scale = 0.7
 	for x in range(1, 5):
 		get_node("View/Head" + str(x)).play("Yell")
 	yield(get_node("View/Head4"), "animation_finished")

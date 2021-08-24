@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://PreFight.gd" type="Script" id=1]
 [ext_resource path="res://Boss/Intro/intro-blink-1.png" type="Texture" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://Sounds/bensound-instinct.mp3" type="AudioStream" id=18]
 [ext_resource path="res://BossfightMusic.gd" type="Script" id=19]
 [ext_resource path="res://Sounds/Monster.wav" type="AudioStream" id=20]
+[ext_resource path="res://Sounds/537883__colorscrimsontears__monster-roar.wav" type="AudioStream" id=21]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -112,3 +113,6 @@ script = ExtResource( 19 )
 
 [node name="Growl" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 20 )
+
+[node name="Roar" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 21 )
