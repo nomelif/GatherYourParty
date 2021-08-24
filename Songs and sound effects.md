@@ -27,6 +27,8 @@ Frogs (individual) Frog close: https://freesound.org/people/Benboncan/sounds/915
 
 When the door starts glowing: Ghostly Whail: https://freesound.org/people/colorsCrimsonTears/sounds/555687/
 
+Pre-fight while opening eyes: Monster sound: https://opengameart.org/content/monster-5
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -48,8 +50,6 @@ Pre-fight, in fight, post-fight: Monster Roar: https://freesound.org/people/colo
 Hub, menu: Wind chimes (randomly triggered): https://freesound.org/people/InspectorJ/sounds/353194/
 
 Hub (door & scroll), loop: More wind chimes: https://freesound.org/people/giddster/sounds/437335/
-
-Pre-fight while opening eyes: Monster sound: https://opengameart.org/content/monster-5
 
 In the background of warning scene / when the door opens: Mysterious sound: https://opengameart.org/content/mysterious-sound
 
