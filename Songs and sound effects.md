@@ -35,6 +35,11 @@ As part of deathblow: Stab: https://freesound.org/people/SoundsForHim/sounds/399
 
 For the fight when damaging the monster: Monster sounds: https://opengameart.org/content/monster-sound-effects-pack
 
+
+Speech: https://opengameart.org/content/80-cc0-creature-sfx
+
+	* cute_ for talk
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -44,8 +49,6 @@ Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
 # TODO
 
 ## Need code
-
-Talking sound, maybe: Babble: https://freesound.org/people/GET_Accel/sounds/427232/
 
 Pre-fight, in fight, post-fight: Monster Roar: https://freesound.org/people/colorsCrimsonTears/sounds/537883/
 
@@ -67,9 +70,8 @@ Even more monster sounds: https://opengameart.org/content/monster-or-beast-sound
 
 Maybe for layering: Growl sounds: https://opengameart.org/content/silent-beast-growls4
 
-Monster and speech sounds: https://opengameart.org/content/80-cc0-creature-sfx
+Monster: https://opengameart.org/content/80-cc0-creature-sfx
 
-	* cute_ for talk
 	* scream_02.ogg for the dying situation
 
 Potential extra frog sound: Mutant frogs: https://opengameart.org/content/mutant-frog

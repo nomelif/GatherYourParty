@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/ooh.ogg-b0f1a3e860a157f91201c755c14d5e35.oggstr"
+
+[deps]
+
+source_file="res://Sounds/80-CC0-creature-SFX.zip/ooh.ogg"
+dest_files=[ "res://.import/ooh.ogg-b0f1a3e860a157f91201c755c14d5e35.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

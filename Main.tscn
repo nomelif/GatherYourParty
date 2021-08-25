@@ -416,15 +416,15 @@ shape = SubResource( 8 )
 
 [node name="CollisionlessFog" parent="YSort/Fog/YSort" instance=ExtResource( 71 )]
 position = Vector2( 3668.82, 2751.08 )
-frame = 3
+frame = 2
 
 [node name="CollisionlessFog2" parent="YSort/Fog/YSort" instance=ExtResource( 71 )]
 position = Vector2( 3642.33, 2919.53 )
-frame = 2
+frame = 1
 
 [node name="CollisionlessFog3" parent="YSort/Fog/YSort" instance=ExtResource( 71 )]
 position = Vector2( 3887.23, 2856.42 )
-frame = 3
+frame = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Fog"]
 position = Vector2( 3574.75, 2802.89 )
@@ -488,14 +488,17 @@ script = ExtResource( 68 )
 [node name="FighterBubble" parent="." instance=ExtResource( 76 )]
 light_mask = 0
 position = Vector2( 1391.91, 1323.14 )
+speed_factor = 0.9
 
 [node name="ProtectorBubble" parent="." instance=ExtResource( 76 )]
 light_mask = 0
 position = Vector2( 6486.27, 169.852 )
+speed_factor = 1.2
 
 [node name="SorceressBubble" parent="." instance=ExtResource( 76 )]
 light_mask = 0
 position = Vector2( 6375.95, 3365.72 )
+speed_factor = 0.5
 
 [node name="HealerBubble" parent="." instance=ExtResource( 76 )]
 light_mask = 0

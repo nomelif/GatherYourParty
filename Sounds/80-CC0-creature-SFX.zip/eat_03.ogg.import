@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/eat_03.ogg-0786d1f28b2c6294db11988feccf2370.oggstr"
+
+[deps]
+
+source_file="res://Sounds/80-CC0-creature-SFX.zip/eat_03.ogg"
+dest_files=[ "res://.import/eat_03.ogg-0786d1f28b2c6294db11988feccf2370.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
