@@ -29,6 +29,10 @@ When the door starts glowing: Ghostly Whail: https://freesound.org/people/colors
 
 Pre-fight while opening eyes: Monster sound: https://opengameart.org/content/monster-5
 
+Deathblow (dramatic) Sword: https://freesound.org/people/FunWithSound/sounds/361485/
+
+As part of deathblow: Stab: https://freesound.org/people/SoundsForHim/sounds/399614/
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -40,10 +44,6 @@ Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
 ## Need code
 
 Talking sound, maybe: Babble: https://freesound.org/people/GET_Accel/sounds/427232/
-
-Deathblow (dramatic) Sword: https://freesound.org/people/FunWithSound/sounds/361485/
-
-As part of deathblow: Stab: https://freesound.org/people/SoundsForHim/sounds/399614/
 
 Pre-fight, in fight, post-fight: Monster Roar: https://freesound.org/people/colorsCrimsonTears/sounds/537883/
 
