@@ -40,6 +40,7 @@ func fire_b():
 	bullet.scale.x = 3
 	bullet.scale.y = 3
 	bullet.set_target(get_node(target_location))
+	bullet.parent = self
 	add_child(bullet)
 	play("Attack B")
 	yield(self, "animation_finished")
@@ -69,3 +70,11 @@ func move_to(target, return_f):
 			yield(self, "animation_finished")
 			point = point - 1
 		move_to(target, return_f)
+
+func hurt():
+	$"Head sounds".hurt()
+	for x in range(2):
+		self_modulate = Color.lightcoral
+		yield(get_tree().create_timer(0.2), "timeout")
+		self_modulate = Color.white
+		yield(get_tree().create_timer(0.2), "timeout")

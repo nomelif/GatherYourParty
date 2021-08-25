@@ -25,6 +25,7 @@ func _on_DefenseCollider_body_entered(body):
 	if "Protect_" + str(get_node("../../").current_visible) != get_node("../").name:
 		return
 	if body.name == "Projectile":
+		body.parent.hurt()
 		body.get_parent().remove_child(body)
 		var health = get_node("../../../../Healthbar base/Health")
 		if health.margin_right - health.margin_left < 0:

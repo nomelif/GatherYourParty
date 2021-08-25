@@ -33,6 +33,8 @@ Deathblow (dramatic) Sword: https://freesound.org/people/FunWithSound/sounds/361
 
 As part of deathblow: Stab: https://freesound.org/people/SoundsForHim/sounds/399614/
 
+For the fight when damaging the monster: Monster sounds: https://opengameart.org/content/monster-sound-effects-pack
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -52,8 +54,6 @@ Hub, menu: Wind chimes (randomly triggered): https://freesound.org/people/Inspec
 Hub (door & scroll), loop: More wind chimes: https://freesound.org/people/giddster/sounds/437335/
 
 In the background of warning scene / when the door opens: Mysterious sound: https://opengameart.org/content/mysterious-sound
-
-For the fight when damaging the monster: Monster sounds: https://opengameart.org/content/monster-sound-effects-pack
 
 Fight, warnings / pre-fight: More monster sounds: https://opengameart.org/content/monster-sound-effects-2
 

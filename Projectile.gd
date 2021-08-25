@@ -14,6 +14,8 @@ var colors = {
 	"hahmo_taka_a_idle": Color.purple
 }
 
+var parent = null
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
