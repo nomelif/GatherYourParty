@@ -7,6 +7,7 @@ extends AudioStreamPlayer2D
 
 export var loop: bool = false
 export var randomize_start: bool = false
+export var delay = 0
 var last_pos = -1
 
 # Called when the node enters the scene tree for the first time.
@@ -16,7 +17,12 @@ func _ready():
 		var rng = RandomNumberGenerator.new()
 		rng.randomize()
 		if stream != null: # This apparently can happen
-			self.play(rng.randf_range(0, stream.get_length()))
+			var k = rng.randf_range(0, stream.get_length() + delay)
+			if k > stream.get_length():
+				yield(get_tree().create_timer(delay - (k - stream.get_length())), "timeout")
+				self.play()
+			else:
+				self.play(rng.randf_range(0, stream.get_length()))
 		else:
 			self.play()
 	else:
@@ -39,9 +45,15 @@ func _on_finished():
 
 func logic(caught_by_loop_test):
 	if loop and caught_by_loop_test:
-		pass
+		if delay == 0:
+			pass
+		else:
+			self.stop()
+			yield(get_tree().create_timer(delay), "timeout")
+			self.play(0)
 	else:
 		if loop:
+			yield(get_tree().create_timer(delay), "timeout")
 			self.play()
 		else:
 			self.stop()
