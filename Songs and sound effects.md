@@ -40,6 +40,10 @@ Speech: https://opengameart.org/content/80-cc0-creature-sfx
 
 	* cute_ for talk
 
+Potential extra frog sound: Mutant frogs: https://opengameart.org/content/mutant-frog
+
+	* mutant_frog-1
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -73,10 +77,6 @@ Maybe for layering: Growl sounds: https://opengameart.org/content/silent-beast-g
 Monster: https://opengameart.org/content/80-cc0-creature-sfx
 
 	* scream_02.ogg for the dying situation
-
-Potential extra frog sound: Mutant frogs: https://opengameart.org/content/mutant-frog
-
-	* mutant_frog-1
 
 ## Don't need code
 
