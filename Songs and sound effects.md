@@ -44,27 +44,7 @@ Potential extra frog sound: Mutant frogs: https://opengameart.org/content/mutant
 
 	* mutant_frog-1
 
-# Unused
-
-Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
-
-(incompatible format) Fire: https://freesound.org/people/olliehahn12/sounds/264312/
-
-# TODO
-
-## Need code
-
-Pre-fight, in fight, post-fight: Monster Roar: https://freesound.org/people/colorsCrimsonTears/sounds/537883/
-
-Hub, menu: Wind chimes (randomly triggered): https://freesound.org/people/InspectorJ/sounds/353194/
-
-Hub (door & scroll), loop: More wind chimes: https://freesound.org/people/giddster/sounds/437335/
-
-In the background of warning scene / when the door opens: Mysterious sound: https://opengameart.org/content/mysterious-sound
-
-Fight, warnings / pre-fight: More monster sounds: https://opengameart.org/content/monster-sound-effects-2
-
-	* Especially monster-1.wav
+Pre-fight: Monster Roar: https://freesound.org/people/colorsCrimsonTears/sounds/537883/
 
 Even more monster sounds: https://opengameart.org/content/monster-or-beast-sounds
 
@@ -72,11 +52,29 @@ Even more monster sounds: https://opengameart.org/content/monster-or-beast-sound
 	* Beast Growl 1.wav
 	* Dieing Beast.wav
 
-Maybe for layering: Growl sounds: https://opengameart.org/content/silent-beast-growls4
-
 Monster: https://opengameart.org/content/80-cc0-creature-sfx
 
-	* scream_02.ogg for the dying situation
+	* scream_02.ogg ended up being used for warnings
+
+# Unused
+
+Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
+
+(incompatible format) Fire: https://freesound.org/people/olliehahn12/sounds/264312/
+
+Didn't end up being used: More monster sounds: https://opengameart.org/content/monster-sound-effects-2
+
+Didn't end up being used: Growl sounds: https://opengameart.org/content/silent-beast-growls4
+
+# TODO
+
+## Need code
+
+Hub, menu: Wind chimes (randomly triggered): https://freesound.org/people/InspectorJ/sounds/353194/
+
+Hub (door & scroll), loop: More wind chimes: https://freesound.org/people/giddster/sounds/437335/
+
+In the background of warning scene / when the door opens: Mysterious sound: https://opengameart.org/content/mysterious-sound
 
 ## Don't need code
 

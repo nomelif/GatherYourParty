@@ -32,6 +32,7 @@ func fire():
 	move_to(1, funcref(self, "fire_b"))
 
 func fire_b():
+	$"Head sounds".scream()
 	play("Attack A")
 	yield(self, "animation_finished")
 	get_node("../Warning" + str(index)).play("Activate")
@@ -78,3 +79,4 @@ func hurt():
 		yield(get_tree().create_timer(0.2), "timeout")
 		self_modulate = Color.white
 		yield(get_tree().create_timer(0.2), "timeout")
+

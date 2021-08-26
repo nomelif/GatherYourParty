@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Spirit Shout.wav-935d6ec3da5214455f91fd9df8b21464.sample"
+
+[deps]
+
+source_file="res://Sounds/Monsters or Beasts/Spirit Shout.wav"
+dest_files=[ "res://.import/Spirit Shout.wav-935d6ec3da5214455f91fd9df8b21464.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

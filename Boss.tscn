@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=2]
+[gd_scene load_steps=113 format=2]
 
 [ext_resource path="res://Boss/Body.png" type="Texture" id=1]
 [ext_resource path="res://Sprite scenes/plants_1.tscn" type="PackedScene" id=2]
@@ -101,6 +101,10 @@
 [ext_resource path="res://Sprite scenes/Lizard Green.tscn" type="PackedScene" id=99]
 [ext_resource path="res://Sounds/361485__funwithsound__sword-clash-and-slide.mp3" type="AudioStream" id=100]
 [ext_resource path="res://Sounds/399614__soundsforhim__knife-sword-stab-1.mp3" type="AudioStream" id=101]
+[ext_resource path="res://Sounds/80-CC0-creature-SFX.zip/scream_02.ogg" type="AudioStream" id=102]
+[ext_resource path="res://Sounds/Monsters or Beasts/Demon Growl.wav" type="AudioStream" id=103]
+[ext_resource path="res://Sounds/Monsters or Beasts/Dieing Beast.wav" type="AudioStream" id=104]
+[ext_resource path="res://Sounds/Monsters or Beasts/Beast Growl 1.wav" type="AudioStream" id=105]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -173,6 +177,18 @@ stream = ExtResource( 100 )
 
 [node name="stab" type="AudioStreamPlayer" parent="Post boss sounds"]
 stream = ExtResource( 101 )
+
+[node name="scream" type="AudioStreamPlayer" parent="Post boss sounds"]
+stream = ExtResource( 102 )
+
+[node name="demon growl" type="AudioStreamPlayer" parent="Post boss sounds"]
+stream = ExtResource( 103 )
+
+[node name="beast growl 1" type="AudioStreamPlayer" parent="Post boss sounds"]
+stream = ExtResource( 105 )
+
+[node name="dieing beast" type="AudioStreamPlayer" parent="Post boss sounds"]
+stream = ExtResource( 104 )
 
 [node name="Black" type="ColorRect" parent="."]
 margin_right = 40.0

@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Yucky Beast 4.wav-a2beb6be44478e0b7d2ebd644229d298.sample"
+
+[deps]
+
+source_file="res://Sounds/Monsters or Beasts/Yucky Beast 4.wav"
+dest_files=[ "res://.import/Yucky Beast 4.wav-a2beb6be44478e0b7d2ebd644229d298.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

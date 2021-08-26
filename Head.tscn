@@ -24,39 +24,9 @@ animations = [ {
 "name": "Right blink",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
 "loop": false,
-"name": "Attack A",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 1 ) ],
-"loop": false,
-"name": "Attack B",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 1 ) ],
-"loop": false,
-"name": "Left to left centre",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 7 ) ],
-"loop": false,
-"name": "Left blink",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": false,
-"name": "Right centre to right",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
-"loop": false,
-"name": "Right to right centre",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 1 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 13 ) ],
-"loop": false,
-"name": "Left centre blink",
+"name": "Left centre to right centre",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ), ExtResource( 9 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 3 ) ],
@@ -74,9 +44,39 @@ animations = [ {
 "name": "Left centre to left",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 14 ), ExtResource( 13 ) ],
 "loop": false,
-"name": "Left centre to right centre",
+"name": "Left centre blink",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 8 ), ExtResource( 12 ), ExtResource( 8 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "Left blink",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ) ],
+"loop": false,
+"name": "Right centre to right",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": false,
+"name": "Right to right centre",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 1 ) ],
+"loop": false,
+"name": "Attack B",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 1 ) ],
+"loop": false,
+"name": "Left to left centre",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 5 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ) ],
+"loop": false,
+"name": "Attack A",
 "speed": 5.0
 } ]
 
