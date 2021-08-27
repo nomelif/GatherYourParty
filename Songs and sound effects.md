@@ -56,6 +56,9 @@ Monster: https://opengameart.org/content/80-cc0-creature-sfx
 
 	* scream_02.ogg ended up being used for warnings
 
+Frogs (ambiance) Frogs: https://freesound.org/people/Danjocross/sounds/387868/ (cut by us)
+
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -77,10 +80,6 @@ Hub (door & scroll), loop: More wind chimes: https://freesound.org/people/giddst
 In the background of warning scene / when the door opens: Mysterious sound: https://opengameart.org/content/mysterious-sound
 
 ## Don't need code
-
-Possibly in the swamp: Creepy sound: https://freesound.org/people/colorsCrimsonTears/sounds/556419/
-
-Frogs (ambiance) Frogs: https://freesound.org/people/Danjocross/sounds/387868/ (cut by us)
 
 Various ambient sounds (flowing water, footsteps): https://opengameart.org/content/100-cc0-sfx-2
 
