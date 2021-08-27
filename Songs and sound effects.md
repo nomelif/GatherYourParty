@@ -58,6 +58,18 @@ Monster: https://opengameart.org/content/80-cc0-creature-sfx
 
 Frogs (ambiance) Frogs: https://freesound.org/people/Danjocross/sounds/387868/ (cut by us)
 
+Various ambient sounds (flowing water, footsteps): https://opengameart.org/content/100-cc0-sfx-2
+
+	* waterfall: loop_water_02
+
+Various ambient sounds (Water etc.): https://opengameart.org/content/30-cc0-sfx-loops
+
+	* water_boiling: swamp
+	* water_flowing: river
+
+Slimes and splashes: https://opengameart.org/content/40-cc0-water-splash-slime-sfx
+
+	* loop_water_03.ogg river, maybe in combination with other stuff
 
 # Unused
 
@@ -68,6 +80,10 @@ Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
 Didn't end up being used: More monster sounds: https://opengameart.org/content/monster-sound-effects-2
 
 Didn't end up being used: Growl sounds: https://opengameart.org/content/silent-beast-growls4
+
+(Godot can't read the file) Various ambient sounds (Ui, water, footsteps): https://opengameart.org/content/sound-effects-pack
+
+	* Ambiance/night-crickets-ambiance-on-rural-property.wav
 
 # TODO
 
@@ -80,23 +96,6 @@ Hub (door & scroll), loop: More wind chimes: https://freesound.org/people/giddst
 In the background of warning scene / when the door opens: Mysterious sound: https://opengameart.org/content/mysterious-sound
 
 ## Don't need code
-
-Various ambient sounds (flowing water, footsteps): https://opengameart.org/content/100-cc0-sfx-2
-
-	* waterfall: loop_water_02
-
-Various ambient sounds (Water etc.): https://opengameart.org/content/30-cc0-sfx-loops
-
-	* water_boiling: swamp
-	* water_flowing: river
-
-Various ambient sounds (Ui, water, footsteps): https://opengameart.org/content/sound-effects-pack
-
-	* Ambiance/night-crickets-ambiance-on-rural-property.wav
-
-Slimes and splashes: https://opengameart.org/content/40-cc0-water-splash-slime-sfx
-
-	* loop_water_03.ogg river, maybe in combination with other stuff
 
 # Polish
 

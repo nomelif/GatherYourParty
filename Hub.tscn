@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=2]
@@ -60,6 +60,8 @@
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=58]
 [ext_resource path="res://Sounds/512769__iwanplays__morningbirds.wav" type="AudioStream" id=59]
 [ext_resource path="res://audio-control.gd" type="Script" id=60]
+[ext_resource path="res://Sounds/100-cc0-sfx-2/sfx100v2_loop_water_02.ogg" type="AudioStream" id=61]
+[ext_resource path="res://Sounds/40-cc0-water-splash-slime-sfx/loop_water_03.ogg" type="AudioStream" id=62]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 34.2408
@@ -2461,17 +2463,32 @@ position = Vector2( 39.954, 1827.54 )
 z_index = 4096
 shape = SubResource( 1 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 1"]
+stream = ExtResource( 61 )
+volume_db = 2.552
+autoplay = true
+
 [node name="Segment 2" type="CollisionShape2D" parent="River"]
 position = Vector2( 132.096, 1955.06 )
 rotation = -1.1945
 z_index = 4096
 shape = SubResource( 1 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 2"]
+stream = ExtResource( 61 )
+volume_db = -17.227
+autoplay = true
+
 [node name="Segment 3" type="CollisionShape2D" parent="River"]
 position = Vector2( 412.648, 2085.67 )
 rotation = -0.534959
 z_index = 4096
 shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 3"]
+stream = ExtResource( 62 )
+volume_db = -15.313
+autoplay = true
 
 [node name="Segment 4" type="CollisionShape2D" parent="River"]
 position = Vector2( 306.078, 2012.31 )
@@ -2491,6 +2508,11 @@ rotation = -1.52367
 z_index = 4096
 shape = SubResource( 1 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 6"]
+stream = ExtResource( 61 )
+volume_db = -17.227
+autoplay = true
+
 [node name="Segment 7" type="CollisionShape2D" parent="River"]
 position = Vector2( 947.887, 2258.08 )
 rotation = -1.24295
@@ -2503,6 +2525,11 @@ rotation = -1.43616
 z_index = 4096
 shape = SubResource( 1 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 8"]
+stream = ExtResource( 62 )
+volume_db = -14.675
+autoplay = true
+
 [node name="Segment 9" type="CollisionShape2D" parent="River"]
 position = Vector2( 1336.26, 2345.26 )
 rotation = -1.28244
@@ -2514,6 +2541,11 @@ position = Vector2( 1491.82, 2386.47 )
 rotation = -1.47477
 z_index = 4096
 shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 10"]
+stream = ExtResource( 61 )
+volume_db = -17.865
+autoplay = true
 
 [node name="Segment 11" type="CollisionShape2D" parent="River"]
 position = Vector2( 1610.39, 2463.83 )
@@ -2539,6 +2571,11 @@ rotation = -0.645386
 z_index = 1000
 shape = SubResource( 2 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 14"]
+stream = ExtResource( 61 )
+volume_db = -18.503
+autoplay = true
+
 [node name="Segment 15" type="CollisionShape2D" parent="River"]
 position = Vector2( 2238.49, 2794.34 )
 rotation = -1.26772
@@ -2550,6 +2587,11 @@ position = Vector2( 2438.29, 2849.34 )
 rotation = -1.42047
 z_index = 4096
 shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 16"]
+stream = ExtResource( 62 )
+volume_db = -15.313
+autoplay = true
 
 [node name="Segment 17" type="CollisionShape2D" parent="River"]
 position = Vector2( 2629.17, 2895.59 )
@@ -2563,6 +2605,11 @@ rotation = -0.617341
 z_index = 4096
 shape = SubResource( 1 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 18"]
+stream = ExtResource( 61 )
+volume_db = -18.503
+autoplay = true
+
 [node name="Segment 19" type="CollisionShape2D" parent="River"]
 position = Vector2( 2896.92, 3163.06 )
 rotation = -0.674507
@@ -2575,6 +2622,11 @@ rotation = -1.28132
 z_index = 4096
 shape = SubResource( 1 )
 
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 20"]
+stream = ExtResource( 62 )
+volume_db = -15.313
+autoplay = true
+
 [node name="Segment 21" type="CollisionShape2D" parent="River"]
 position = Vector2( 3247.13, 3316.84 )
 rotation = -1.4858
@@ -2586,6 +2638,11 @@ position = Vector2( 3446.87, 3441.32 )
 rotation = -1.27216
 z_index = 4096
 shape = SubResource( 1 )
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="River/Segment 22"]
+stream = ExtResource( 61 )
+volume_db = -19.779
+autoplay = true
 
 [node name="Scroll" parent="." instance=ExtResource( 2 )]
 position = Vector2( 63.2785, 2062.5 )
@@ -2622,6 +2679,13 @@ scale = Vector2( -1, 1 )
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
 position = Vector2( 2492.7, 1215.46 )
+stream = ExtResource( 59 )
+script = ExtResource( 60 )
+loop = true
+randomize_start = true
+
+[node name="AudioStreamPlayer2D2" type="AudioStreamPlayer2D" parent="."]
+position = Vector2( 105.507, 2295.92 )
 stream = ExtResource( 59 )
 script = ExtResource( 60 )
 loop = true
