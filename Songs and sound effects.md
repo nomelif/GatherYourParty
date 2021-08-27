@@ -89,11 +89,11 @@ Didn't end up being used: Growl sounds: https://opengameart.org/content/silent-b
 
 	* Ambiance/night-crickets-ambiance-on-rural-property.wav
 
+In the background of warning scene / when the door opens: Mysterious sound: https://opengameart.org/content/mysterious-sound
+
 # TODO
 
 ## Need code
-
-In the background of warning scene / when the door opens: Mysterious sound: https://opengameart.org/content/mysterious-sound
 
 ## Don't need code
 
