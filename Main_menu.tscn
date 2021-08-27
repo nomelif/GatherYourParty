@@ -1,12 +1,11 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://Hub.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Icons/grey.png" type="Texture" id=2]
 [ext_resource path="res://Icons/grey_pressed.png" type="Texture" id=3]
 [ext_resource path="res://Icons/play.png" type="Texture" id=4]
-[ext_resource path="res://Icons/save.png" type="Texture" id=5]
+[ext_resource path="res://Icons/plus.png" type="Texture" id=5]
 [ext_resource path="res://Play_button.gd" type="Script" id=6]
-[ext_resource path="res://Save_button.gd" type="Script" id=7]
 [ext_resource path="res://Main_menu.gd" type="Script" id=8]
 [ext_resource path="res://Header_back.png" type="Texture" id=9]
 [ext_resource path="res://Header_highlight.png" type="Texture" id=10]
@@ -117,6 +116,7 @@ script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+preserve_save = true
 
 [node name="Neutral" type="NinePatchRect" parent="UI/Play"]
 modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
@@ -154,17 +154,17 @@ texture = ExtResource( 4 )
 position = Vector2( 95.6216, 79.8504 )
 texture = ExtResource( 4 )
 
-[node name="Save" type="Button" parent="UI"]
+[node name="New" type="Button" parent="UI"]
 self_modulate = Color( 1, 1, 1, 0 )
 margin_top = 213.0
 margin_right = 172.0
 margin_bottom = 378.0
-script = ExtResource( 7 )
+script = ExtResource( 6 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Neutral" type="NinePatchRect" parent="UI/Save"]
+[node name="Neutral" type="NinePatchRect" parent="UI/New"]
 modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
 margin_right = 172.0
 margin_bottom = 165.0
@@ -177,7 +177,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Pressed" type="NinePatchRect" parent="UI/Save"]
+[node name="Pressed" type="NinePatchRect" parent="UI/New"]
 visible = false
 modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
 margin_right = 172.0
@@ -191,12 +191,12 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Shadow" type="Sprite" parent="UI/Save"]
+[node name="Shadow" type="Sprite" parent="UI/New"]
 self_modulate = Color( 0.513726, 0.513726, 0.513726, 1 )
 position = Vector2( 87.5102, 77.748 )
 texture = ExtResource( 5 )
 
-[node name="Icon" type="Sprite" parent="UI/Save"]
+[node name="Icon" type="Sprite" parent="UI/New"]
 position = Vector2( 87.1, 73.151 )
 texture = ExtResource( 5 )
 
@@ -204,7 +204,7 @@ texture = ExtResource( 5 )
 
 [connection signal="button_down" from="UI/Play" to="UI/Play" method="_on_button_down"]
 [connection signal="button_up" from="UI/Play" to="UI/Play" method="_on_button_up"]
-[connection signal="pressed" from="UI/Play" to="UI/Play" method="_on_Play_pressed"]
-[connection signal="button_down" from="UI/Save" to="UI/Save" method="_on_button_down"]
-[connection signal="button_up" from="UI/Save" to="UI/Save" method="_on_button_up"]
-[connection signal="pressed" from="UI/Save" to="UI/Save" method="_on_Save_pressed"]
+[connection signal="pressed" from="UI/Play" to="UI/Play" method="_on_pressed"]
+[connection signal="button_down" from="UI/New" to="UI/New" method="_on_button_down"]
+[connection signal="button_up" from="UI/New" to="UI/New" method="_on_button_up"]
+[connection signal="pressed" from="UI/New" to="UI/New" method="_on_pressed"]

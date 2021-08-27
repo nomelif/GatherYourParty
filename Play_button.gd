@@ -5,6 +5,7 @@ extends Button
 # var a = 2
 # var b = "text"
 
+export var preserve_save = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -25,7 +26,11 @@ func _on_button_down():
 	$Shadow.visible = false
 
 
-func _on_Play_pressed():
-	var dir = Directory.new()
-	dir.remove("user://savegame.save")
-	get_tree().change_scene("res://Opening.tscn");
+func _on_pressed():
+	if not preserve_save:
+		Directory.new().remove("user://savegame.save")
+	var save_game = File.new()
+	if save_game.file_exists("user://savegame.save"):
+		get_tree().change_scene("res://Main.tscn")
+	else:
+		get_tree().change_scene("res://Opening.tscn");
