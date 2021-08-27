@@ -73,6 +73,8 @@ Slimes and splashes: https://opengameart.org/content/40-cc0-water-splash-slime-s
 
 Hub, menu: Wind chimes (randomly triggered): https://freesound.org/people/InspectorJ/sounds/353194/
 
+Hub (door & scroll), loop: More wind chimes: https://freesound.org/people/giddster/sounds/437335/
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -90,8 +92,6 @@ Didn't end up being used: Growl sounds: https://opengameart.org/content/silent-b
 # TODO
 
 ## Need code
-
-Hub (door & scroll), loop: More wind chimes: https://freesound.org/people/giddster/sounds/437335/
 
 In the background of warning scene / when the door opens: Mysterious sound: https://opengameart.org/content/mysterious-sound
 
