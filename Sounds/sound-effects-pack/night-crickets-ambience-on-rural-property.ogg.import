@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/night-crickets-ambience-on-rural-property.ogg-962a09a2691b60cf2da0cd1f61e41958.oggstr"
+
+[deps]
+
+source_file="res://Sounds/sound-effects-pack/night-crickets-ambience-on-rural-property.ogg"
+dest_files=[ "res://.import/night-crickets-ambience-on-rural-property.ogg-962a09a2691b60cf2da0cd1f61e41958.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://Tiles.tres" type="TileSet" id=1]
 [ext_resource path="res://Sprite scenes/area_2_broken_stone_tile_1.tscn" type="PackedScene" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://Sounds/404687__straget__hooded-crow.wav" type="AudioStream" id=26]
 [ext_resource path="res://Sounds/277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.wav" type="AudioStream" id=27]
 [ext_resource path="res://audio-control.gd" type="Script" id=28]
+[ext_resource path="res://Sounds/sound-effects-pack/night-crickets-ambience-on-rural-property.ogg" type="AudioStream" id=29]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0, 0.0739857, 1 )
@@ -1424,6 +1425,48 @@ position = Vector2( 2343.45, 120.952 )
 stream = ExtResource( 27 )
 volume_db = 4.466
 attenuation = 1.8025
+script = ExtResource( 28 )
+loop = true
+randomize_start = true
+
+[node name="Crickets" type="Node2D" parent="."]
+position = Vector2( 1459.47, 995.606 )
+
+[node name="Crickets" type="AudioStreamPlayer2D" parent="Crickets"]
+stream = ExtResource( 29 )
+volume_db = -2.0
+script = ExtResource( 28 )
+loop = true
+randomize_start = true
+
+[node name="Crickets2" type="AudioStreamPlayer2D" parent="Crickets"]
+position = Vector2( -1290.02, -1218.75 )
+stream = ExtResource( 29 )
+volume_db = -2.0
+script = ExtResource( 28 )
+loop = true
+randomize_start = true
+
+[node name="Crickets3" type="AudioStreamPlayer2D" parent="Crickets"]
+position = Vector2( 1453.95, -1218.75 )
+stream = ExtResource( 29 )
+volume_db = -2.0
+script = ExtResource( 28 )
+loop = true
+randomize_start = true
+
+[node name="Crickets4" type="AudioStreamPlayer2D" parent="Crickets"]
+position = Vector2( 1461.07, 990.679 )
+stream = ExtResource( 29 )
+volume_db = -2.0
+script = ExtResource( 28 )
+loop = true
+randomize_start = true
+
+[node name="Crickets5" type="AudioStreamPlayer2D" parent="Crickets"]
+position = Vector2( -1354.17, 1026.32 )
+stream = ExtResource( 29 )
+volume_db = -2.0
 script = ExtResource( 28 )
 loop = true
 randomize_start = true

@@ -75,6 +75,10 @@ Hub, menu: Wind chimes (randomly triggered): https://freesound.org/people/Inspec
 
 Hub (door & scroll), loop: More wind chimes: https://freesound.org/people/giddster/sounds/437335/
 
+Various ambient sounds (Ui, water, footsteps): https://opengameart.org/content/sound-effects-pack
+
+	* Ambiance/night-crickets-ambiance-on-rural-property.wav
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -84,10 +88,6 @@ Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
 Didn't end up being used: More monster sounds: https://opengameart.org/content/monster-sound-effects-2
 
 Didn't end up being used: Growl sounds: https://opengameart.org/content/silent-beast-growls4
-
-(Godot can't read the file) Various ambient sounds (Ui, water, footsteps): https://opengameart.org/content/sound-effects-pack
-
-	* Ambiance/night-crickets-ambiance-on-rural-property.wav
 
 In the background of warning scene / when the door opens: Mysterious sound: https://opengameart.org/content/mysterious-sound
 
