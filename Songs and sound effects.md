@@ -71,6 +71,8 @@ Slimes and splashes: https://opengameart.org/content/40-cc0-water-splash-slime-s
 
 	* loop_water_03.ogg river, maybe in combination with other stuff
 
+Hub, menu: Wind chimes (randomly triggered): https://freesound.org/people/InspectorJ/sounds/353194/
+
 # Unused
 
 Crows talking: https://freesound.org/people/Ambientsoundapp/sounds/537988/
@@ -88,8 +90,6 @@ Didn't end up being used: Growl sounds: https://opengameart.org/content/silent-b
 # TODO
 
 ## Need code
-
-Hub, menu: Wind chimes (randomly triggered): https://freesound.org/people/InspectorJ/sounds/353194/
 
 Hub (door & scroll), loop: More wind chimes: https://freesound.org/people/giddster/sounds/437335/
 
