@@ -20,7 +20,7 @@ var velocity = Vector2()
 var direction = 'up'
 
 # Ring buffer of steps*4 previous positions and directions
-# Used to anumate followers along path
+# Used to animate followers along path
 
 var cutscene = false
 var steps = 20
