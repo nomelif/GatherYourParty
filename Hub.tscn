@@ -59,7 +59,7 @@
 [ext_resource path="res://Sprite scenes/fallen_tree_dead.tscn" type="PackedScene" id=57]
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=58]
 [ext_resource path="res://Sounds/512769__iwanplays__morningbirds.wav" type="AudioStream" id=59]
-[ext_resource path="res://Scripts/audio-control.gd" type="Script" id=60]
+[ext_resource path="res://Scripts/Audio Control.gd" type="Script" id=60]
 [ext_resource path="res://Sounds/100-cc0-sfx-2/sfx100v2_loop_water_02.ogg" type="AudioStream" id=61]
 [ext_resource path="res://Sounds/40-cc0-water-splash-slime-sfx/loop_water_03.ogg" type="AudioStream" id=62]
 

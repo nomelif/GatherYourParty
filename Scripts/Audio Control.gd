@@ -1,16 +1,10 @@
 extends AudioStreamPlayer2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 export var loop: bool = false
 export var randomize_start: bool = false
 export var delay = 0
 var last_pos = -1
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	connect("finished", self, "_on_finished")
 	if randomize_start:
