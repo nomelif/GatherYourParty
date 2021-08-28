@@ -24,7 +24,7 @@
 [ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Sounds/91543__benboncan__frog-close.wav" type="AudioStream" id=24]
-[ext_resource path="res://audio-control.gd" type="Script" id=25]
+[ext_resource path="res://Scripts/audio-control.gd" type="Script" id=25]
 [ext_resource path="res://Sounds/mutant-frog/mutant_frog-1.ogg" type="AudioStream" id=26]
 [ext_resource path="res://Sounds/387868__danjocross__frogs-toads-april-10-2017.wav" type="AudioStream" id=27]
 [ext_resource path="res://Sounds/30-cc0-sfx-loops/water_boiling.ogg" type="AudioStream" id=28]

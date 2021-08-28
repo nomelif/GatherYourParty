@@ -11,6 +11,7 @@ var done = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	print(main_scene)
 	rect_size.x = get_viewport().size.x;
 	rect_size.y = get_viewport().size.y;
 	$View.position.x = get_viewport().size.x / 2 - 512;

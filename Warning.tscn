@@ -12,7 +12,7 @@
 [ext_resource path="res://Boss/Boss attack/Projectile-10.png" type="Texture" id=10]
 [ext_resource path="res://Boss/Boss attack/Projectile-08.png" type="Texture" id=11]
 [ext_resource path="res://Speechbubble/Creation/0000.png" type="Texture" id=12]
-[ext_resource path="res://Warning.gd" type="Script" id=13]
+[ext_resource path="res://Scripts/Warning.gd" type="Script" id=13]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

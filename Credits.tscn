@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://Stars.gd" type="Script" id=1]
-[ext_resource path="res://End_credits.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Stars.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/End_credits.gd" type="Script" id=2]
 [ext_resource path="res://End_campfire.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Fire light.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Credits_back.png" type="Texture" id=5]

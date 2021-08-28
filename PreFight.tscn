@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=2]
 
-[ext_resource path="res://PreFight.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/PreFight.gd" type="Script" id=1]
 [ext_resource path="res://Boss/Intro/intro-blink-1.png" type="Texture" id=2]
 [ext_resource path="res://Boss/Intro/intro-yell-3.png" type="Texture" id=3]
 [ext_resource path="res://Boss/Intro/intro-body.png" type="Texture" id=4]
@@ -18,59 +18,59 @@
 [ext_resource path="res://Boss/Intro/intro-blink-centre-2.png" type="Texture" id=16]
 [ext_resource path="res://Boss/Intro/intro-blink-centre-1.png" type="Texture" id=17]
 [ext_resource path="res://Sounds/bensound-instinct.mp3" type="AudioStream" id=18]
-[ext_resource path="res://BossfightMusic.gd" type="Script" id=19]
+[ext_resource path="res://Scripts/BossfightMusic.gd" type="Script" id=19]
 [ext_resource path="res://Sounds/Monster.wav" type="AudioStream" id=20]
 [ext_resource path="res://Sounds/537883__colorscrimsontears__monster-roar.wav" type="AudioStream" id=21]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 15 ), ExtResource( 10 ), ExtResource( 14 ) ],
-"loop": false,
-"name": "Wake up",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ) ],
 "loop": false,
 "name": "Yell",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 15 ), ExtResource( 10 ), ExtResource( 14 ) ],
+"loop": false,
+"name": "Wake up",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 5 ) ],
-"loop": false,
-"name": "Wake up",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ) ],
 "loop": false,
 "name": "Yell",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "Wake up",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 17 ), ExtResource( 16 ), ExtResource( 13 ) ],
-"loop": false,
-"name": "Wake up",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ) ],
 "loop": false,
 "name": "Yell",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ), ExtResource( 16 ), ExtResource( 13 ) ],
+"loop": false,
+"name": "Wake up",
 "speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
-"frames": [ ExtResource( 9 ), ExtResource( 11 ), ExtResource( 12 ) ],
-"loop": false,
-"name": "Wake up",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ), ExtResource( 3 ) ],
 "loop": false,
 "name": "Yell",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 11 ), ExtResource( 12 ) ],
+"loop": false,
+"name": "Wake up",
 "speed": 5.0
 } ]
 

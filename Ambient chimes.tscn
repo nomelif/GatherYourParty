@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://Quiet chimes.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Quiet chimes.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/353194__inspectorj__wind-chimes-a.wav" type="AudioStream" id=2]
 [ext_resource path="res://Sounds/437335__giddster__wind-chimes-3-quiet.wav" type="AudioStream" id=3]
 

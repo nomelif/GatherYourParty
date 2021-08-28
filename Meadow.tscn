@@ -33,7 +33,7 @@
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=31]
 [ext_resource path="res://Sounds/129431__le-abbaye-noirlac__tree-rustle-4.ogg" type="AudioStream" id=32]
 [ext_resource path="res://Sounds/birds-isaiah658.ogg" type="AudioStream" id=33]
-[ext_resource path="res://audio-control.gd" type="Script" id=34]
+[ext_resource path="res://Scripts/audio-control.gd" type="Script" id=34]
 
 [node name="Meadow" type="YSort"]
 

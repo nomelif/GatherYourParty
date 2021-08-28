@@ -5,11 +5,11 @@
 [ext_resource path="res://Icons/grey_pressed.png" type="Texture" id=3]
 [ext_resource path="res://Icons/play.png" type="Texture" id=4]
 [ext_resource path="res://Icons/plus.png" type="Texture" id=5]
-[ext_resource path="res://Play_button.gd" type="Script" id=6]
-[ext_resource path="res://Main_menu.gd" type="Script" id=8]
+[ext_resource path="res://Scripts/Play_button.gd" type="Script" id=6]
+[ext_resource path="res://Scripts/Main_menu.gd" type="Script" id=8]
 [ext_resource path="res://Header_back.png" type="Texture" id=9]
 [ext_resource path="res://Header_highlight.png" type="Texture" id=10]
-[ext_resource path="res://Header scale.gd" type="Script" id=11]
+[ext_resource path="res://Scripts/Header scale.gd" type="Script" id=11]
 [ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=12]
 [ext_resource path="res://Character animation/Fighter/hahmo_b.png" type="Texture" id=13]
 [ext_resource path="res://Character animation/Healer/hahmo_etu_idle_a.png" type="Texture" id=14]
@@ -61,23 +61,23 @@ position = Vector2( 260.384, -1564.07 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Hub"]
 position = Vector2( 1597.78, 1904.66 )
 frames = SubResource( 1 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="Hub"]
 position = Vector2( 305.777, 2382.66 )
 frames = SubResource( 2 )
-frame = 1
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="Hub"]
 position = Vector2( 367.689, 1689.64 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="Hub"]
 position = Vector2( 730.277, 2425.34 )
 frames = SubResource( 4 )
-frame = 1
 playing = true
 
 [node name="Header" type="Node2D" parent="."]

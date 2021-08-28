@@ -10,7 +10,7 @@
 [ext_resource path="res://Sounds/monster_sfx_pack/monster-9.wav" type="AudioStream" id=8]
 [ext_resource path="res://Sounds/monster_sfx_pack/monster-2.wav" type="AudioStream" id=9]
 [ext_resource path="res://Sounds/monster_sfx_pack/monster-5.wav" type="AudioStream" id=10]
-[ext_resource path="res://Head sounds.gd" type="Script" id=11]
+[ext_resource path="res://Scripts/Head sounds.gd" type="Script" id=11]
 [ext_resource path="res://Sounds/80-CC0-creature-SFX.zip/scream_02.ogg" type="AudioStream" id=12]
 
 [node name="Head sounds" type="Node2D"]
