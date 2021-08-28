@@ -18,7 +18,7 @@
 [ext_resource path="res://Boss/Intro/intro-blink-centre-2.png" type="Texture" id=16]
 [ext_resource path="res://Boss/Intro/intro-blink-centre-1.png" type="Texture" id=17]
 [ext_resource path="res://Sounds/bensound-instinct.mp3" type="AudioStream" id=18]
-[ext_resource path="res://Scripts/BossfightMusic.gd" type="Script" id=19]
+[ext_resource path="res://Scripts/Bossfight Music.gd" type="Script" id=19]
 [ext_resource path="res://Sounds/Monster.wav" type="AudioStream" id=20]
 [ext_resource path="res://Sounds/537883__colorscrimsontears__monster-roar.wav" type="AudioStream" id=21]
 
