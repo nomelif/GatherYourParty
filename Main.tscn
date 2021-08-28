@@ -67,7 +67,7 @@
 [ext_resource path="res://Character animation/Protector/hahmo_taka_idle_a.png" type="Texture" id=65]
 [ext_resource path="res://Character animation/Protector/hahmo_taka_b.png" type="Texture" id=66]
 [ext_resource path="res://Scripts/Hub to Ruins Collider.gd" type="Script" id=67]
-[ext_resource path="res://Scripts/Camera2D.gd" type="Script" id=68]
+[ext_resource path="res://Scripts/Camera Control.gd" type="Script" id=68]
 [ext_resource path="res://Protector_pickup.tscn" type="PackedScene" id=69]
 [ext_resource path="res://Scripts/Peep_pickup.gd" type="Script" id=70]
 [ext_resource path="res://Sprite scenes/CollisionlessFog.tscn" type="PackedScene" id=71]
