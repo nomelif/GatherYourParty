@@ -25,7 +25,7 @@
 [ext_resource path="res://Warning.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Scripts/Tail.gd" type="Script" id=24]
 [ext_resource path="res://Scripts/Head.gd" type="Script" id=25]
-[ext_resource path="res://Scripts/Hit_player.gd" type="Script" id=26]
+[ext_resource path="res://Scripts/Hit Player.gd" type="Script" id=26]
 [ext_resource path="res://Bossfight attacks/Bossfight shield/shield13.png" type="Texture" id=27]
 [ext_resource path="res://Bossfight attacks/Bossfight shield/shield6.png" type="Texture" id=28]
 [ext_resource path="res://Bossfight attacks/Bossfight shield/shield7.png" type="Texture" id=29]
