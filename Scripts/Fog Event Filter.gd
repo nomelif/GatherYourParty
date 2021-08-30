@@ -1,20 +1,7 @@
 extends YSort
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
-func _ready():
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
+# The fog sprites run idle animations. If hooked directly to
+# _on_animation_finished(), they'd interfere with other animations
 
 func _on_CollisionlessFog_animation_finished():
 	if $CollisionlessFog.animation == "Deletion":

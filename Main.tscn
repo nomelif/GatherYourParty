@@ -84,7 +84,7 @@
 [ext_resource path="res://Sword.tscn" type="PackedScene" id=82]
 [ext_resource path="res://Sprite scenes/brushery.tscn" type="PackedScene" id=83]
 [ext_resource path="res://Scripts/Door Trigger.gd" type="Script" id=84]
-[ext_resource path="res://Scripts/FogEventFilter.gd" type="Script" id=85]
+[ext_resource path="res://Scripts/Fog Event Filter.gd" type="Script" id=85]
 [ext_resource path="res://Ingame_ui.tscn" type="PackedScene" id=86]
 [ext_resource path="res://Scripts/Main.gd" type="Script" id=87]
 [ext_resource path="res://Sounds/Serge Quadrado - Forecast.mp3" type="AudioStream" id=88]
