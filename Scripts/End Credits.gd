@@ -1,13 +1,10 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 var tween = Tween.new()
 
-# Called when the node enters the scene tree for the first time.
+# Scroll in the credits
+
 func _ready():
 	$ColorRect.rect_size.x = get_viewport().size.x;
 	$ColorRect.rect_size.y = get_viewport().size.y;
@@ -28,7 +25,7 @@ func _ready():
 		Tween.TRANS_LINEAR, Tween.EASE_OUT)
 	tween.start()
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Re-center viewport
 
 func _process(delta):
 	$View.visible = true
