@@ -70,7 +70,7 @@
 [ext_resource path="res://Protector_pickup.tscn" type="PackedScene" id=69]
 [ext_resource path="res://Scripts/Peep Pickup.gd" type="Script" id=70]
 [ext_resource path="res://Sprite scenes/CollisionlessFog.tscn" type="PackedScene" id=71]
-[ext_resource path="res://Scripts/SelectiveDelete.gd" type="Script" id=72]
+[ext_resource path="res://Scripts/Selective Delete.gd" type="Script" id=72]
 [ext_resource path="res://Sorceress_pickup.tscn" type="PackedScene" id=74]
 [ext_resource path="res://Healer_pickup.tscn" type="PackedScene" id=75]
 [ext_resource path="res://SpeechBubble.tscn" type="PackedScene" id=76]
