@@ -1,13 +1,10 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var star_scene = load("res://Sprite scenes/Star.tscn")
 var rng = RandomNumberGenerator.new()
 
-# Called when the node enters the scene tree for the first time.
+# Randomly populate area with stars
+
 func _ready():
 	rng.randomize()
 	for x in range(100):
@@ -20,8 +17,3 @@ func _ready():
 		star.frame = rand_range(0, 16)
 		star.modulate = Color(rng.randf_range(0.8, 1.0), rng.randf_range(0.8, 1.0), rng.randf_range(0.8, 1.0))
 		add_child(star)
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
