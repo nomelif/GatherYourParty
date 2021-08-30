@@ -170,7 +170,7 @@
 [ext_resource path="res://Sounds/80-CC0-creature-SFX.zip/cute_10.ogg" type="AudioStream" id=168]
 [ext_resource path="res://Sounds/80-CC0-creature-SFX.zip/cute_08.ogg" type="AudioStream" id=169]
 [ext_resource path="res://Scripts/SpeechBubble.gd" type="Script" id=170]
-[ext_resource path="res://Scripts/PlayOnce.gd" type="Script" id=171]
+[ext_resource path="res://Scripts/Play Once.gd" type="Script" id=171]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

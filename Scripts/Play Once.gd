@@ -1,9 +1,5 @@
 extends AudioStreamPlayer2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
 var last_pos = -1
 
 # Catch when the audio loops (there seems to be no signal to do this)
