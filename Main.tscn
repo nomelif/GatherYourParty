@@ -68,7 +68,7 @@
 [ext_resource path="res://Character animation/Protector/hahmo_taka_b.png" type="Texture" id=66]
 [ext_resource path="res://Scripts/Camera Control.gd" type="Script" id=68]
 [ext_resource path="res://Protector_pickup.tscn" type="PackedScene" id=69]
-[ext_resource path="res://Scripts/Peep_pickup.gd" type="Script" id=70]
+[ext_resource path="res://Scripts/Peep Pickup.gd" type="Script" id=70]
 [ext_resource path="res://Sprite scenes/CollisionlessFog.tscn" type="PackedScene" id=71]
 [ext_resource path="res://Scripts/SelectiveDelete.gd" type="Script" id=72]
 [ext_resource path="res://Sorceress_pickup.tscn" type="PackedScene" id=74]
