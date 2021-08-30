@@ -1,14 +1,10 @@
 extends AnimatedSprite
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+# Wag tail
 
 var timer = Timer.new()
 var rng = RandomNumberGenerator.new()
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	rng.randomize()
 	add_child(timer)
@@ -18,11 +14,6 @@ func _ready():
 func trigger_timer():
 	timer.set_wait_time(rng.randf_range(0.5, 2.0))
 	timer.start()
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
 
 func _on_timeout():
 	if self.animation == "Down to up":
