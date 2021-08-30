@@ -1,10 +1,5 @@
 extends AnimatedSprite
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 var projectile_scene = load("Projectile.tscn")
 export var target_location: NodePath
 
@@ -23,13 +18,15 @@ var index = -1
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	rng.randomize()
-	index = int(name[-1])
+	index = int(name[-1]) # Nodes named Head + index
 
 # Use this turn to fire
 
 func fire():
 	done = false
 	move_to(1, funcref(self, "fire_b"))
+
+# Triggered when the head is pointing in the right direction
 
 func fire_b():
 	$"Head sounds".scream()
@@ -71,6 +68,8 @@ func move_to(target, return_f):
 			yield(self, "animation_finished")
 			point = point - 1
 		move_to(target, return_f)
+
+# Visual & sound cues for a hit going through
 
 func hurt():
 	$"Head sounds".hurt()
