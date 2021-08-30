@@ -9,7 +9,7 @@
 [ext_resource path="res://Scripts/Main_menu.gd" type="Script" id=8]
 [ext_resource path="res://Header_back.png" type="Texture" id=9]
 [ext_resource path="res://Header_highlight.png" type="Texture" id=10]
-[ext_resource path="res://Scripts/Header scale.gd" type="Script" id=11]
+[ext_resource path="res://Scripts/Header Scale.gd" type="Script" id=11]
 [ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=12]
 [ext_resource path="res://Character animation/Fighter/hahmo_b.png" type="Texture" id=13]
 [ext_resource path="res://Character animation/Healer/hahmo_etu_idle_a.png" type="Texture" id=14]
