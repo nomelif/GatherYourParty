@@ -1,19 +1,12 @@
 extends Node2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 var main_scene = load("Main.tscn")
 var done = false
-# Called when the node enters the scene tree for the first time.
+
 func _ready():
 	$"Animation sprite".play()
 	$AudioStreamPlayer.play()
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if done:
 		return
@@ -28,5 +21,7 @@ func _on_Animation_sprite_animation_finished():
 	var main = main_scene.instance()
 	remove_child($"Animation sprite")
 	remove_child($ColorRect)
+
+	# Embed main such that music can play over the load boundary
+
 	add_child(main)
-	#get_tree().change_scene("res://Main.tscn");
