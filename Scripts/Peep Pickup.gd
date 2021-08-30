@@ -1,6 +1,5 @@
 extends Area2D
 
-
 export(String) var character;
 export(Array) var dialogue = [];
 var player = null

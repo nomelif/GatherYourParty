@@ -1,6 +1,5 @@
 extends Node2D
 
-
 var tween = Tween.new()
 
 # Scroll in the credits

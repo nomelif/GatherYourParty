@@ -1,6 +1,5 @@
 extends Node2D
 
-
 func _ready():
 
 	# Try to load savefile

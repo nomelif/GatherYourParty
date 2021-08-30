@@ -1,6 +1,5 @@
 extends Area2D
 
-
 var listening = true
 
 func _on_DefenseCollider_body_entered(body):
