@@ -1,17 +1,10 @@
 extends ColorRect
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 var timer = Timer.new()
 var main_scene = load("res://Boss.tscn")
-var done = false
+var done = false # Whether the cutscene is done
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
-	print(main_scene)
 	rect_size.x = get_viewport().size.x;
 	rect_size.y = get_viewport().size.y;
 	$View.position.x = get_viewport().size.x / 2 - 512;
@@ -36,9 +29,10 @@ func _ready():
 	add_child(boss)
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
+# Resize content to match viewport
+
 func _process(delta):
-	if done:
+	if done: # Don't try to resize after cutscene is done
 		return
 	rect_size.x = get_viewport().size.x;
 	rect_size.y = get_viewport().size.y;

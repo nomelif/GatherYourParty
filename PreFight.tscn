@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=2]
 
-[ext_resource path="res://Scripts/PreFight.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Pre Fight.gd" type="Script" id=1]
 [ext_resource path="res://Boss/Intro/intro-blink-1.png" type="Texture" id=2]
 [ext_resource path="res://Boss/Intro/intro-yell-3.png" type="Texture" id=3]
 [ext_resource path="res://Boss/Intro/intro-body.png" type="Texture" id=4]
