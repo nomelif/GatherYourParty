@@ -1,19 +1,22 @@
 extends Node2D
 
 
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
-
-# Called when the node enters the scene tree for the first time.
 func _ready():
+
+	# Try to load savefile
+
 	var save_game = File.new()
 	if not save_game.file_exists("user://savegame.save"):
 		return # No savefile
+	
+	# Read contents of savefile
+	
 	save_game.open("user://savegame.save", File.READ)
 	var state = parse_json(save_game.get_line())
 	save_game.close()
+	
+	# Restore player state
+	
 	$YSort/PlayerCharacter.position.x = state["x"]
 	$YSort/PlayerCharacter.position.y = state["y"]
 	$YSort/PlayerCharacter.people_qty = int(state["people_qty"])
@@ -77,7 +80,3 @@ func _ready():
 		var node = get_node(sprite)
 		node.animation = state[sprite]["animation"]
 		node.frame = int(state[sprite]["frame"])
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
