@@ -18,7 +18,7 @@
 [ext_resource path="res://Character animation/Fighter/hahmo_taka_idle_a.png" type="Texture" id=16]
 [ext_resource path="res://Character animation/Healer/hahmo_taka_idle_a.png" type="Texture" id=17]
 [ext_resource path="res://Character animation/Sorceress/hahmo_taka_a_idle.png" type="Texture" id=18]
-[ext_resource path="res://Scripts/PlayArea.gd" type="Script" id=19]
+[ext_resource path="res://Scripts/Boss Play Area Transform.gd" type="Script" id=19]
 [ext_resource path="res://Tail.tscn" type="PackedScene" id=20]
 [ext_resource path="res://Head.tscn" type="PackedScene" id=21]
 [ext_resource path="res://Scripts/Dragon.gd" type="Script" id=22]
