@@ -58,7 +58,7 @@
 [ext_resource path="res://Opening_png/frame-2.png" type="Texture" id=56]
 [ext_resource path="res://Opening_png/frame-1.png" type="Texture" id=57]
 [ext_resource path="res://Sounds/carried-by-the-wind-calm-classical-orchestral-2754.mp3" type="AudioStream" id=58]
-[ext_resource path="res://Scripts/IntroSound.gd" type="Script" id=59]
+[ext_resource path="res://Scripts/Intro Sound.gd" type="Script" id=59]
 [ext_resource path="res://Scripts/Opening.gd" type="Script" id=60]
 
 [sub_resource type="SpriteFrames" id=1]
