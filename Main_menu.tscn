@@ -61,23 +61,23 @@ position = Vector2( 260.384, -1564.07 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="Hub"]
 position = Vector2( 1597.78, 1904.66 )
 frames = SubResource( 1 )
-frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="Hub"]
 position = Vector2( 305.777, 2382.66 )
 frames = SubResource( 2 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="Hub"]
 position = Vector2( 367.689, 1689.64 )
 frames = SubResource( 3 )
-frame = 1
 playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="Hub"]
 position = Vector2( 730.277, 2425.34 )
 frames = SubResource( 4 )
+frame = 1
 playing = true
 
 [node name="Header" type="Node2D" parent="."]

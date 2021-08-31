@@ -1,6 +1,6 @@
 [gd_scene load_steps=16 format=2]
 
-[ext_resource path="res://Sprite scenes/randomize.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Sprite Scripts/Randomize.gd" type="Script" id=1]
 [ext_resource path="res://Visual Art/Sprites/fog 3 copy.png" type="Texture" id=2]
 [ext_resource path="res://Visual Art/Sprites/fog 1 copy.png" type="Texture" id=3]
 [ext_resource path="res://Visual Art/Sprites/fog 2 copy.png" type="Texture" id=4]

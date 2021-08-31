@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Visual Art/Sprites Finished/frog_idle_b.png" type="Texture" id=1]
 [ext_resource path="res://Visual Art/Sprites Finished/frog_idle_a.png" type="Texture" id=2]
-[ext_resource path="res://Sprite scenes/Frog.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Sprite Scripts/Frog.gd" type="Script" id=3]
 [ext_resource path="res://Visual Art/Sprites Finished/frog_mid_air.png" type="Texture" id=4]
 [ext_resource path="res://Visual Art/Sprites Finished/frog_descending.png" type="Texture" id=5]
 [ext_resource path="res://Visual Art/Sprites Finished/frog_leaping.png" type="Texture" id=6]

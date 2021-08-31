@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Visual Art/Sprites Finished/area_1_flowers_3_b.png" type="Texture" id=1]
 [ext_resource path="res://Visual Art/Sprites Finished/area_1_flowers_3_a.png" type="Texture" id=2]
-[ext_resource path="res://Sprite scenes/randomize.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Sprite Scripts/Randomize.gd" type="Script" id=3]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {

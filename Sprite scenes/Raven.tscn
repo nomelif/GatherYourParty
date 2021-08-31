@@ -7,7 +7,7 @@
 [ext_resource path="res://Visual Art/Sprites Finished/raven_6.png" type="Texture" id=5]
 [ext_resource path="res://Visual Art/Sprites Finished/raven_2.png" type="Texture" id=6]
 [ext_resource path="res://Visual Art/Sprites Finished/raven_4.png" type="Texture" id=7]
-[ext_resource path="res://Sprite scenes/raven.gd" type="Script" id=8]
+[ext_resource path="res://Scripts/Sprite Scripts/Raven.gd" type="Script" id=8]
 [ext_resource path="res://Visual Art/Sprites Finished/raven_7_eye.png" type="Texture" id=9]
 [ext_resource path="res://Visual Art/Sprites Finished/raven_6_eye.png" type="Texture" id=10]
 [ext_resource path="res://Visual Art/Sprites Finished/raven_3_eye.png" type="Texture" id=11]

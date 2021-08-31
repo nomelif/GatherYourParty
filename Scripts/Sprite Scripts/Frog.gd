@@ -1,16 +1,10 @@
 extends KinematicBody2D
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 var timer
 var rng = RandomNumberGenerator.new()
 var jump_direction = Vector2(0, 0)
 var vertical_speed = Vector2(0, 0)
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	rng.randomize()
 	timer = Timer.new()
@@ -31,7 +25,6 @@ func _on_timer_timeout():
 	vertical_speed = Vector2(0, -2.5)
 	$AnimatedSprite.play("jump")
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if jump_direction.x >= 0:
 		$AnimatedSprite.set_flip_h(true)

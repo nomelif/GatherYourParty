@@ -1,9 +1,6 @@
 extends AnimatedSprite
 
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
+# Implements a state machine
 
 var timer
 var rng = RandomNumberGenerator.new()
@@ -22,7 +19,6 @@ var animation_finish_transition = {
 	"flap": "left"
 }
 
-# Called when the node enters the scene tree for the first time.
 func _ready():
 	rng.randomize()
 	if rng.randi_range(0, 1) == 0:
@@ -46,8 +42,3 @@ func _stop():
 		play(animation_finish_transition[state])
 		$Eyes.play(animation_finish_transition[state])
 		state = animation_finish_transition[state]
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
