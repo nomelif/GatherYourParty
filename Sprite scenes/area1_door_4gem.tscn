@@ -1,8 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://Sprites/area 1 door 4 gems.png" type="Texture" id=1]
-
-[node name="Door 4 gem" type="Node2D"]
-
-[node name="Sprite" type="Sprite" parent="."]
-texture = ExtResource( 1 )
