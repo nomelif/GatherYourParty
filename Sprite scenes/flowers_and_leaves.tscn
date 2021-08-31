@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Sprites Finished/flowers_and_leaves.png" type="Texture" id=1]
+[ext_resource path="res://Visual Art/Sprites Finished/flowers_and_leaves.png" type="Texture" id=1]
 
 [node name="Flowers and leaves" type="Node2D"]
 

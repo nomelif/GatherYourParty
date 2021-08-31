@@ -20,7 +20,7 @@
 [ext_resource path="res://Sprite scenes/fire.tscn" type="PackedScene" id=18]
 [ext_resource path="res://Sprite scenes/flowers.tscn" type="PackedScene" id=19]
 [ext_resource path="res://Sprite scenes/Raven.tscn" type="PackedScene" id=20]
-[ext_resource path="res://Sprites Finished/Light.png" type="Texture" id=21]
+[ext_resource path="res://Visual Art/Sprites Finished/Light.png" type="Texture" id=21]
 [ext_resource path="res://Sprite scenes/Lizard Green.tscn" type="PackedScene" id=22]
 [ext_resource path="res://Sprite scenes/Scroll.tscn" type="PackedScene" id=23]
 [ext_resource path="res://Sprite scenes/Lizard Red.tscn" type="PackedScene" id=24]

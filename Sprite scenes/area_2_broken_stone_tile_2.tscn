@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://Sprites Finished/Area 2 broken stone tile,2.png" type="Texture" id=1]
+[ext_resource path="res://Visual Art/Sprites Finished/Area 2 broken stone tile,2.png" type="Texture" id=1]
 
 [node name="Broken tile B" type="Node2D"]
 

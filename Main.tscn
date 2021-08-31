@@ -1,71 +1,71 @@
 [gd_scene load_steps=101 format=2]
 
 [ext_resource path="res://Map.tscn" type="PackedScene" id=1]
-[ext_resource path="res://Character animation/Fighter/hahmo_a.png" type="Texture" id=2]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_a.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Characters.gd" type="Script" id=3]
-[ext_resource path="res://Character animation/Fighter/hahmo_b.png" type="Texture" id=4]
-[ext_resource path="res://Character animation/Fighter/hahmo_oikea_b.png" type="Texture" id=5]
-[ext_resource path="res://Character animation/Fighter/hahmo_vasen_b.png" type="Texture" id=6]
-[ext_resource path="res://Character animation/Fighter/hahmo_taka_b.png" type="Texture" id=7]
-[ext_resource path="res://Character animation/Fighter/hahmo_taka_a.png" type="Texture" id=8]
-[ext_resource path="res://Character animation/Fighter/hahmo_oikea_a.png" type="Texture" id=9]
-[ext_resource path="res://Character animation/Fighter/hahmo_vasen_a.png" type="Texture" id=10]
-[ext_resource path="res://Character animation/Fighter/hahmo_etu_b.png" type="Texture" id=11]
-[ext_resource path="res://Character animation/Fighter/hahmo_etu_a.png" type="Texture" id=12]
-[ext_resource path="res://Character animation/Sorceress/hahmo_etu_b.png" type="Texture" id=13]
-[ext_resource path="res://Character animation/Sorceress/hahmo_vasen_a.png" type="Texture" id=14]
-[ext_resource path="res://Character animation/Healer/hahmo_etu_idle_a.png" type="Texture" id=15]
-[ext_resource path="res://Character animation/Sorceress/hahmo_taka_a.png" type="Texture" id=16]
-[ext_resource path="res://Character animation/Sorceress/hahmo_taka_b.png" type="Texture" id=17]
-[ext_resource path="res://Character animation/Healer/hahmo_etu_idle_b.png" type="Texture" id=18]
-[ext_resource path="res://Character animation/Sorceress/hahmo_etu_a.png" type="Texture" id=19]
-[ext_resource path="res://Character animation/Sorceress/hahmo_vasen_b.png" type="Texture" id=20]
-[ext_resource path="res://Character animation/Sorceress/hahmo_oikea_a.png" type="Texture" id=21]
-[ext_resource path="res://Character animation/Sorceress/hahmo_oikea_b.png" type="Texture" id=22]
-[ext_resource path="res://Character animation/Fighter/hahmo_taka_idle_a.png" type="Texture" id=23]
-[ext_resource path="res://Character animation/Fighter/hahmo_taka_idle_b.png" type="Texture" id=24]
-[ext_resource path="res://Character animation/Fighter/hahmo_oikea_idle_a.png" type="Texture" id=25]
-[ext_resource path="res://Character animation/Fighter/hahmo_oikea_idle_b.png" type="Texture" id=26]
-[ext_resource path="res://Character animation/Fighter/hahmo_vasen_idle_b.png" type="Texture" id=27]
-[ext_resource path="res://Character animation/Fighter/hahmo_vasen_idle_a.png" type="Texture" id=28]
-[ext_resource path="res://Character animation/Sorceress/hahmo_taka_a_idle.png" type="Texture" id=29]
-[ext_resource path="res://Character animation/Sorceress/hahmo_taka_b_idle.png" type="Texture" id=30]
-[ext_resource path="res://Character animation/Sorceress/hahmo_vasen_idle_a.png" type="Texture" id=31]
-[ext_resource path="res://Character animation/Sorceress/hahmo_vasen_idle_b.png" type="Texture" id=32]
-[ext_resource path="res://Character animation/Sorceress/hahmo_oikea_idle_a.png" type="Texture" id=33]
-[ext_resource path="res://Character animation/Sorceress/hahmo_oikea_idle_b.png" type="Texture" id=34]
-[ext_resource path="res://Character animation/Sorceress/hahmo_b.png" type="Texture" id=35]
-[ext_resource path="res://Character animation/Sorceress/hahmo_a.png" type="Texture" id=36]
-[ext_resource path="res://Character animation/Healer/hahmo_etu_b.png" type="Texture" id=37]
-[ext_resource path="res://Character animation/Healer/hahmo_etu_a.png" type="Texture" id=38]
-[ext_resource path="res://Character animation/Healer/hahmo_taka_a.png" type="Texture" id=39]
-[ext_resource path="res://Character animation/Healer/hahmo_taka_b.png" type="Texture" id=40]
-[ext_resource path="res://Character animation/Healer/hahmo_oikea_idle_b.png" type="Texture" id=41]
-[ext_resource path="res://Character animation/Healer/hahmo_oikea_idle_a.png" type="Texture" id=42]
-[ext_resource path="res://Character animation/Healer/hahmo_oikea_a.png" type="Texture" id=43]
-[ext_resource path="res://Character animation/Healer/hahmo_oikea_b.png" type="Texture" id=44]
-[ext_resource path="res://Character animation/Healer/hahmo_vasen_b.png" type="Texture" id=45]
-[ext_resource path="res://Character animation/Healer/hahmo_taka_idle_b.png" type="Texture" id=46]
-[ext_resource path="res://Character animation/Healer/hahmo_taka_idle_a.png" type="Texture" id=47]
-[ext_resource path="res://Character animation/Healer/hahmo_vasen_a.png" type="Texture" id=48]
-[ext_resource path="res://Character animation/Healer/hahmo_vasen_idle_a.png" type="Texture" id=49]
-[ext_resource path="res://Character animation/Healer/hahmo_vasen_idle_b.png" type="Texture" id=50]
-[ext_resource path="res://Character animation/Protector/hahmo_taka_a.png" type="Texture" id=51]
-[ext_resource path="res://Character animation/Protector/hahmo_oikea_idle_b.png" type="Texture" id=52]
-[ext_resource path="res://Character animation/Protector/hahmo_oikea_idle_a.png" type="Texture" id=53]
-[ext_resource path="res://Character animation/Protector/hahmo_etu_b.png" type="Texture" id=54]
-[ext_resource path="res://Character animation/Protector/hahmo_etu_a.png" type="Texture" id=55]
-[ext_resource path="res://Character animation/Protector/hahmo_taka_idle_b.png" type="Texture" id=56]
-[ext_resource path="res://Character animation/Protector/hahmo_oikea_a.png" type="Texture" id=57]
-[ext_resource path="res://Character animation/Protector/hahmo_vasen_idle_b.png" type="Texture" id=58]
-[ext_resource path="res://Character animation/Protector/hahmo_vasen_b.png" type="Texture" id=59]
-[ext_resource path="res://Character animation/Protector/hahmo_vasen_a.png" type="Texture" id=60]
-[ext_resource path="res://Character animation/Protector/hahmo_oikea_b.png" type="Texture" id=61]
-[ext_resource path="res://Character animation/Protector/hahmo_vasen_idle_a.png" type="Texture" id=62]
-[ext_resource path="res://Character animation/Protector/hahmo_etu_idle_b.png" type="Texture" id=63]
-[ext_resource path="res://Character animation/Protector/hahmo_etu_idle_a.png" type="Texture" id=64]
-[ext_resource path="res://Character animation/Protector/hahmo_taka_idle_a.png" type="Texture" id=65]
-[ext_resource path="res://Character animation/Protector/hahmo_taka_b.png" type="Texture" id=66]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_b.png" type="Texture" id=4]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_oikea_b.png" type="Texture" id=5]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_vasen_b.png" type="Texture" id=6]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_taka_b.png" type="Texture" id=7]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_taka_a.png" type="Texture" id=8]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_oikea_a.png" type="Texture" id=9]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_vasen_a.png" type="Texture" id=10]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_etu_b.png" type="Texture" id=11]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_etu_a.png" type="Texture" id=12]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_etu_b.png" type="Texture" id=13]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_vasen_a.png" type="Texture" id=14]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_etu_idle_a.png" type="Texture" id=15]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_taka_a.png" type="Texture" id=16]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_taka_b.png" type="Texture" id=17]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_etu_idle_b.png" type="Texture" id=18]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_etu_a.png" type="Texture" id=19]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_vasen_b.png" type="Texture" id=20]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_oikea_a.png" type="Texture" id=21]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_oikea_b.png" type="Texture" id=22]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_taka_idle_a.png" type="Texture" id=23]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_taka_idle_b.png" type="Texture" id=24]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_oikea_idle_a.png" type="Texture" id=25]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_oikea_idle_b.png" type="Texture" id=26]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_vasen_idle_b.png" type="Texture" id=27]
+[ext_resource path="res://Visual Art/Character animation/Fighter/hahmo_vasen_idle_a.png" type="Texture" id=28]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_taka_a_idle.png" type="Texture" id=29]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_taka_b_idle.png" type="Texture" id=30]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_vasen_idle_a.png" type="Texture" id=31]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_vasen_idle_b.png" type="Texture" id=32]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_oikea_idle_a.png" type="Texture" id=33]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_oikea_idle_b.png" type="Texture" id=34]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_b.png" type="Texture" id=35]
+[ext_resource path="res://Visual Art/Character animation/Sorceress/hahmo_a.png" type="Texture" id=36]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_etu_b.png" type="Texture" id=37]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_etu_a.png" type="Texture" id=38]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_taka_a.png" type="Texture" id=39]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_taka_b.png" type="Texture" id=40]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_oikea_idle_b.png" type="Texture" id=41]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_oikea_idle_a.png" type="Texture" id=42]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_oikea_a.png" type="Texture" id=43]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_oikea_b.png" type="Texture" id=44]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_vasen_b.png" type="Texture" id=45]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_taka_idle_b.png" type="Texture" id=46]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_taka_idle_a.png" type="Texture" id=47]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_vasen_a.png" type="Texture" id=48]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_vasen_idle_a.png" type="Texture" id=49]
+[ext_resource path="res://Visual Art/Character animation/Healer/hahmo_vasen_idle_b.png" type="Texture" id=50]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_taka_a.png" type="Texture" id=51]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_oikea_idle_b.png" type="Texture" id=52]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_oikea_idle_a.png" type="Texture" id=53]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_etu_b.png" type="Texture" id=54]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_etu_a.png" type="Texture" id=55]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_taka_idle_b.png" type="Texture" id=56]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_oikea_a.png" type="Texture" id=57]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_vasen_idle_b.png" type="Texture" id=58]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_vasen_b.png" type="Texture" id=59]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_vasen_a.png" type="Texture" id=60]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_oikea_b.png" type="Texture" id=61]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_vasen_idle_a.png" type="Texture" id=62]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_etu_idle_b.png" type="Texture" id=63]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_etu_idle_a.png" type="Texture" id=64]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_taka_idle_a.png" type="Texture" id=65]
+[ext_resource path="res://Visual Art/Character animation/Protector/hahmo_taka_b.png" type="Texture" id=66]
 [ext_resource path="res://Scripts/Camera Control.gd" type="Script" id=68]
 [ext_resource path="res://Protector_pickup.tscn" type="PackedScene" id=69]
 [ext_resource path="res://Scripts/Peep Pickup.gd" type="Script" id=70]
@@ -116,11 +116,6 @@ animations = [ {
 "name": "up",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 28 ), ExtResource( 27 ) ],
-"loop": true,
-"name": "left_idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 25 ), ExtResource( 26 ) ],
 "loop": true,
 "name": "right_idle",
@@ -140,6 +135,11 @@ animations = [ {
 "loop": true,
 "name": "up_idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 28 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "left_idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=5]
@@ -157,11 +157,6 @@ animations = [ {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 31 ), ExtResource( 32 ) ],
-"loop": true,
-"name": "left_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 33 ), ExtResource( 34 ) ],
@@ -183,6 +178,11 @@ animations = [ {
 "loop": true,
 "name": "up_idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 31 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "left_idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=6]
@@ -200,11 +200,6 @@ animations = [ {
 "frames": [ ExtResource( 39 ), ExtResource( 40 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 49 ), ExtResource( 50 ) ],
-"loop": true,
-"name": "left_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 42 ), ExtResource( 41 ) ],
@@ -226,6 +221,11 @@ animations = [ {
 "loop": true,
 "name": "up_idle",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 49 ), ExtResource( 50 ) ],
+"loop": true,
+"name": "left_idle",
+"speed": 5.0
 } ]
 
 [sub_resource type="SpriteFrames" id=7]
@@ -243,11 +243,6 @@ animations = [ {
 "frames": [ ExtResource( 51 ), ExtResource( 66 ) ],
 "loop": true,
 "name": "up",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 62 ), ExtResource( 58 ) ],
-"loop": true,
-"name": "left_idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 53 ), ExtResource( 52 ) ],
@@ -268,6 +263,11 @@ animations = [ {
 "frames": [ ExtResource( 65 ), ExtResource( 56 ) ],
 "loop": true,
 "name": "up_idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 62 ), ExtResource( 58 ) ],
+"loop": true,
+"name": "left_idle",
 "speed": 5.0
 } ]
 
