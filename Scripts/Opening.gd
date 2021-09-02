@@ -1,6 +1,6 @@
 extends Node2D
 
-var main_scene = load("Main.tscn")
+var main_scene = load("res://Scenes/Main.tscn")
 var done = false
 
 func _ready():

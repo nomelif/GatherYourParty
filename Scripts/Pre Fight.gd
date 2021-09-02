@@ -1,7 +1,7 @@
 extends ColorRect
 
 var timer = Timer.new()
-var main_scene = load("res://Boss.tscn")
+var main_scene = load("res://Scenes/Areas/Boss.tscn")
 var done = false # Whether the cutscene is done
 
 func _ready():

@@ -27,7 +27,7 @@ func _on_DefenseCollider_body_entered(body):
 			yield(get_tree().create_timer(0.2), "timeout")
 			play_dieing_beast()
 			yield(get_tree().create_timer(3), "timeout")
-			get_tree().change_scene("res://Credits.tscn");
+			get_tree().change_scene("res://Scenes/Credit Scene/Credits.tscn");
 		else:
 			health.margin_right -= 20
 

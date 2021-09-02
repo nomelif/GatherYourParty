@@ -1,6 +1,6 @@
 extends Node2D
 
-var star_scene = load("res://Sprite scenes/Star.tscn")
+var star_scene = load("res://Scenes/Sprite Scenes/Star.tscn")
 var rng = RandomNumberGenerator.new()
 
 # Randomly populate area with stars

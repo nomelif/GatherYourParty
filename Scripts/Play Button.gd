@@ -17,6 +17,6 @@ func _on_pressed():
 		Directory.new().remove("user://savegame.save")
 	var save_game = File.new()
 	if save_game.file_exists("user://savegame.save"):
-		get_tree().change_scene("res://Main.tscn")
+		get_tree().change_scene("res://Scenes/Main.tscn")
 	else:
-		get_tree().change_scene("res://Opening.tscn");
+		get_tree().change_scene("res://Scenes/Opening.tscn");

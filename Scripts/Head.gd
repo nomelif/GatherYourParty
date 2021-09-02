@@ -1,6 +1,6 @@
 extends AnimatedSprite
 
-var projectile_scene = load("Projectile.tscn")
+var projectile_scene = load("res://Scenes/Dragon/Projectile.tscn")
 export var target_location: NodePath
 
 var done = true
