@@ -1,0 +1,180 @@
+Sounds
+
+
+Title: Carried By The Wind, Calm classical orchestral
+File: carried-by-the-wind-calm-classical-orchestral-2754.mp3
+Author: Bluemount Score
+License: The Pixabay License, https://pixabay.com/service/license/
+URL: https://pixabay.com/music/main-title-carried-by-the-wind-calm-classical-orchestral-2754/
+
+Title: Instinct
+File: bensound-instinct.mp3
+Author: Benjamin Tissot
+License: Free license as per here: https://www.bensound.com/licensing
+URL: https://www.bensound.com/royalty-free-music/track/instinct
+
+Title: Magic
+File: magic-2072.mp3
+Author: Nielizas
+License: The Pixabay License, https://pixabay.com/service/license/
+URL: https://pixabay.com/music/beats-magic-2072/
+
+Title: Crystal Sound Logo
+File: Serge Quadrado - Crystal Sound Logo.mp3
+Author: Serge Quadrado
+License: CC-BY-NC
+URL: https://freemusicarchive.org/music/serge-quadrado/music-logos/crystal-sound-logo
+
+Title: note manual
+File: The Books - note manual.mp3
+Author: The Books
+License: CC-BY-NC
+URL: https://freemusicarchive.org/music/The_Books/ShortDocs_2010_sonic_doodads/notemanual
+
+Title: Forecast
+File: Serge Quadrado - Forecast.mp3
+Author: Serge Quadrado
+License: CC-BY-NC
+URL: https://freemusicarchive.org/music/serge-quadrado/music-logos/forecast
+
+Title: MorningBirds.wav
+File: 512769__iwanplays__morningbirds.wav
+Author: iwanPlays
+License: CC-0
+URL: https://freesound.org/people/iwanPlays/sounds/512769/
+
+Title: Hooded crow.wav
+File: 404687__straget__hooded-crow.wav
+Author: straget
+License: CC-0
+URL: https://freesound.org/people/straget/sounds/404687/
+
+Title: The sound of the fire / burning wood in the woods rear
+File: 277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.wav
+Author: craftcrest
+License: CC-BY
+URL: https://freesound.org/people/craftcrest/sounds/277464/
+
+Title: Tree Rustle 4.aif
+File: 129431__le-abbaye-noirlac__tree-rustle-4.ogg
+Author: le_abbaye_Noirlac
+License: CC-BY
+URL: https://freesound.org/people/le_abbaye_Noirlac/sounds/129431/
+Note: Transcoded from aif to ogg
+
+Title: Ambient Bird Sounds
+File: birds-isaiah658.ogg
+Author: isaiah658
+License: CC-0
+URL: https://opengameart.org/content/ambient-bird-sounds
+
+Title: Frog Close.wav
+File: 91543__benboncan__frog-close.wav
+Author: Benboncan
+License: CC-BY
+URL: https://freesound.org/people/Benboncan/sounds/91543/
+
+Title: Ghost voices
+File: 555687__colorscrimsontears__ghost-voices.ogg
+Author: colorsCrimsonTears
+License: CC-0
+URL: https://freesound.org/people/colorsCrimsonTears/sounds/555687/
+Note: Cut and added a fade.
+
+Title: Monster
+File: Monster.wav
+Author: mikeask
+License: CC-0
+URL: https://opengameart.org/content/monster-5
+
+Title: Sword Clash and Slide.MP3
+File: 361485__funwithsound__sword-clash-and-slide.mp3
+Author: FunWithSound
+License: CC-BY
+URL: https://freesound.org/people/FunWithSound/sounds/361485/
+
+Title: Knife/sword stab #1.MP3
+File: 399614__soundsforhim__knife-sword-stab-1.mp3
+Author: SoundsForHim
+License: CC-0
+URL: https://freesound.org/people/SoundsForHim/sounds/399614/
+
+Title: Monster Sound Effects Pack
+Folder: monster_sfx_pack
+Author: Ogrebane
+License: CC-0
+URL: https://opengameart.org/content/monster-sound-effects-pack
+
+Title: 80 CC0 creature SFX
+Folder: 80-CC0-creature-SFX.zip
+Author: rubberduck
+License: CC-0
+URL: https://opengameart.org/content/80-cc0-creature-sfx
+Note: Deleted unused files.
+
+Title: Mutant Frog
+Folder: mutant-frog
+Author: AntumDeluge
+License: CC-0
+URL: https://opengameart.org/content/mutant-frog
+Note: Deleted unused files.
+
+Title: Monster roar
+File: 537883__colorscrimsontears__monster-roar.wav
+Author: colorsCrimsonTears
+License: CC-0
+URL: https://freesound.org/people/colorsCrimsonTears/sounds/537883/
+
+Title: Monster or beast sounds
+Folder: Monsters or Beasts
+Author: pauliuw
+License: CC-0
+URL: https://opengameart.org/content/monster-or-beast-sounds
+Note: Deleted unused files.
+
+Title: Frogs Toads April 10 2017.wav
+File: 387868__danjocross__frogs-toads-april-10-2017.wav
+Author: Danjocross
+License: CC-0
+URL: https://freesound.org/people/Danjocross/sounds/387868/
+Note: Cut.
+
+Title: 100 CC0 SFX #2
+Folder: 100-cc0-sfx-2
+Author: rubberduck
+License: CC-0
+URL: https://opengameart.org/content/100-cc0-sfx-2
+Note: Deleted unused files.
+
+Title: 30 CC0 SFX loops
+Folder: 30-cc0-sfx-loops
+Author: rubberduck
+License: CC-0
+URL: https://opengameart.org/content/30-cc0-sfx-loops
+Note: Deleted unused files.
+
+Title: 40 CC0 water / splash / slime SFX
+Folder: 40-cc0-water-splash-slime-sfx
+Author: rubberduck
+License: CC-0
+URL: https://opengameart.org/content/40-cc0-water-splash-slime-sfx
+Note: Deleted unused files.
+
+Title: Wind Chimes, A.wav
+File: 353194__inspectorj__wind-chimes-a.wav
+Author: InspectorJ
+License: CC-BY
+URL: https://freesound.org/people/InspectorJ/sounds/353194/
+
+Title: Wind Chimes, A.wav
+File: 437335__giddster__wind-chimes-3-quiet.wav
+Author: InspectorJ
+License: CC-BY
+URL: https://freesound.org/people/InspectorJ/sounds/353194/
+
+Title: Sound Effects Pack
+Folder: sound-effects-pack
+Author: OwlishMedia
+License: CC-0
+URL: https://opengameart.org/content/sound-effects-pack
+Note: Deleted unused files.
