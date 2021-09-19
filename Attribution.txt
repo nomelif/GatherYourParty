@@ -1,5 +1,11 @@
-Sounds
+Icons
 
+The folder Icons contains images from kenney.nl:
+
+- play.png, plus.png and save.png come from https://kenney.nl/assets/game-icons
+- grey.png and gray_pressed.png com from https://kenney.nl/assets/pixel-ui-pack
+
+Sounds
 
 Title: Carried By The Wind, Calm classical orchestral
 File: carried-by-the-wind-calm-classical-orchestral-2754.mp3
