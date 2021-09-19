@@ -1,3 +1,0 @@
-#! /run/current-system/sw/bin/bash
-echo $@
-steam-run /home/glados/blender-3.0.0-alpha+cycles-x.45d3c1325b4b-linux.x86_64-release/blender $@
