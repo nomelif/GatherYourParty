@@ -177,4 +177,4 @@ Folder: sound-effects-pack
 Author: OwlishMedia
 License: CC-0
 URL: https://opengameart.org/content/sound-effects-pack
-Note: Deleted unused files.
+Note: Deleted unused files, transcoded from incompatible format into ogg.
