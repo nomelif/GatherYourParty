@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/512769__iwanplays__morningbirds.ogg-65b3f47303118efe363c0b9e25737e02.oggstr"
+
+[deps]
+
+source_file="res://Sounds/512769__iwanplays__morningbirds.ogg"
+dest_files=[ "res://.import/512769__iwanplays__morningbirds.ogg-65b3f47303118efe363c0b9e25737e02.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
