@@ -51,10 +51,11 @@ URL: https://freesound.org/people/iwanPlays/sounds/512769/
 Note: Transcoded from wav to ogg
 
 Title: Hooded crow.wav
-File: 404687__straget__hooded-crow.wav
+File: 404687__straget__hooded-crow.ogg
 Author: straget
 License: CC-0
 URL: https://freesound.org/people/straget/sounds/404687/
+Note: Transcoded from wav to ogg.
 
 Title: The sound of the fire / burning wood in the woods rear
 File: 277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.ogg
@@ -141,11 +142,11 @@ URL: https://opengameart.org/content/monster-or-beast-sounds
 Note: Deleted unused files.
 
 Title: Frogs Toads April 10 2017.wav
-File: 387868__danjocross__frogs-toads-april-10-2017.wav
+File: 387868__danjocross__frogs-toads-april-10-2017.ogg
 Author: Danjocross
 License: CC-0
 URL: https://freesound.org/people/Danjocross/sounds/387868/
-Note: Cut.
+Note: Cut and transcoded from wav to ogg.
 
 Title: 100 CC0 SFX #2
 Folder: 100-cc0-sfx-2
@@ -175,10 +176,11 @@ License: CC-BY
 URL: https://freesound.org/people/InspectorJ/sounds/353194/
 
 Title: Wind Chimes, A.wav
-File: 437335__giddster__wind-chimes-3-quiet.wav
+File: 437335__giddster__wind-chimes-3-quiet.ogg
 Author: InspectorJ
 License: CC-BY
 URL: https://freesound.org/people/InspectorJ/sounds/353194/
+Note: Transcoded from wav to ogg.
 
 Title: Sound Effects Pack
 Folder: sound-effects-pack

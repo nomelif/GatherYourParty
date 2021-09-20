@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/387868__danjocross__frogs-toads-april-10-2017.ogg-3e817798b8846c851e6d57f3de51d2be.oggstr"
+
+[deps]
+
+source_file="res://Sounds/387868__danjocross__frogs-toads-april-10-2017.ogg"
+dest_files=[ "res://.import/387868__danjocross__frogs-toads-april-10-2017.ogg-3e817798b8846c851e6d57f3de51d2be.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

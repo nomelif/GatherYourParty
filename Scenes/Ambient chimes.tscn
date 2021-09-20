@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scripts/Quiet Chimes.gd" type="Script" id=1]
 [ext_resource path="res://Sounds/353194__inspectorj__wind-chimes-a.wav" type="AudioStream" id=2]
-[ext_resource path="res://Sounds/437335__giddster__wind-chimes-3-quiet.wav" type="AudioStream" id=3]
+[ext_resource path="res://Sounds/437335__giddster__wind-chimes-3-quiet.ogg" type="AudioStream" id=3]
 
 [node name="Ambient chimes" type="Node2D"]
 

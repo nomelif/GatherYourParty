@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/437335__giddster__wind-chimes-3-quiet.ogg-5c4f93c15efa6b32b02c415893ce3fc4.oggstr"
+
+[deps]
+
+source_file="res://Sounds/437335__giddster__wind-chimes-3-quiet.ogg"
+dest_files=[ "res://.import/437335__giddster__wind-chimes-3-quiet.ogg-5c4f93c15efa6b32b02c415893ce3fc4.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

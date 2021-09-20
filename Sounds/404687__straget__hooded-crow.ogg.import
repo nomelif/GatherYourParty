@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/404687__straget__hooded-crow.ogg-a262041e6558c50562451a21293958c6.oggstr"
+
+[deps]
+
+source_file="res://Sounds/404687__straget__hooded-crow.ogg"
+dest_files=[ "res://.import/404687__straget__hooded-crow.ogg-a262041e6558c50562451a21293958c6.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0
