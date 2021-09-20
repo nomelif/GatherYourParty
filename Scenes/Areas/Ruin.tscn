@@ -26,7 +26,7 @@
 [ext_resource path="res://Scenes/Sprite Scenes/Creatures/Lizard Red.tscn" type="PackedScene" id=24]
 [ext_resource path="res://Sounds/512769__iwanplays__morningbirds.wav" type="AudioStream" id=25]
 [ext_resource path="res://Sounds/404687__straget__hooded-crow.wav" type="AudioStream" id=26]
-[ext_resource path="res://Sounds/277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.wav" type="AudioStream" id=27]
+[ext_resource path="res://Sounds/277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.ogg" type="AudioStream" id=27]
 [ext_resource path="res://Scripts/Audio Control.gd" type="Script" id=28]
 [ext_resource path="res://Sounds/sound-effects-pack/night-crickets-ambience-on-rural-property.ogg" type="AudioStream" id=29]
 

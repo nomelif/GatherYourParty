@@ -56,10 +56,11 @@ License: CC-0
 URL: https://freesound.org/people/straget/sounds/404687/
 
 Title: The sound of the fire / burning wood in the woods rear
-File: 277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.wav
+File: 277464__craftcrest__the-sound-of-the-fire-burning-wood-in-the-woods-rear.ogg
 Author: craftcrest
 License: CC-BY
 URL: https://freesound.org/people/craftcrest/sounds/277464/
+Note: Transcoded from wav to ogg
 
 Title: Tree Rustle 4.aif
 File: 129431__le-abbaye-noirlac__tree-rustle-4.ogg
