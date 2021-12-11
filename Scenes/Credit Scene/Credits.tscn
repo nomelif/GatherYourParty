@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://Scripts/Stars.gd" type="Script" id=1]
 [ext_resource path="res://Scripts/End Credits.gd" type="Script" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Scenes/Sprite Scenes/Creatures/Raven.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/Sprite Scenes/Creatures/Frog.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Sounds/magic-2072.mp3" type="AudioStream" id=9]
+[ext_resource path="res://Visual Art/Credits/Music_back.png" type="Texture" id=10]
+[ext_resource path="res://Visual Art/Credits/Music_highlight.png" type="Texture" id=11]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 0.457031, 0.295285, 0.187454, 1, 1, 0.574677, 0.292969, 1 )
@@ -29,7 +31,6 @@ __meta__ = {
 }
 
 [node name="View" type="Node2D" parent="."]
-visible = false
 
 [node name="Stars" type="Node2D" parent="View"]
 script = ExtResource( 1 )
@@ -48,6 +49,15 @@ texture = ExtResource( 6 )
 [node name="Credits_back" type="Sprite" parent="View/Scrollable/Text"]
 light_mask = 0
 texture = ExtResource( 5 )
+
+[node name="MusicHighlight" type="Sprite" parent="View/Scrollable/Text"]
+modulate = Color( 0.854902, 0.12549, 0.329412, 1 )
+position = Vector2( 0, 582 )
+texture = ExtResource( 11 )
+
+[node name="MusicBack" type="Sprite" parent="View/Scrollable/Text"]
+position = Vector2( 0, 582 )
+texture = ExtResource( 10 )
 
 [node name="Raven" parent="View/Scrollable/Text" instance=ExtResource( 7 )]
 position = Vector2( 83.7352, -85.6504 )
