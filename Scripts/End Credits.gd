@@ -5,6 +5,7 @@ var tween = Tween.new()
 # Scroll in the credits
 
 func _ready():
+	var factor = 1.5;
 	$ColorRect.rect_size.x = get_viewport().size.x;
 	$ColorRect.rect_size.y = get_viewport().size.y;
 	tween.interpolate_property(get_node("View/Stars"),
@@ -14,13 +15,13 @@ func _ready():
 	tween.start()
 	yield(tween, "tween_all_completed")
 	tween.interpolate_property(get_node("View/Scrollable"),
-		"position", Vector2(0, 3000), Vector2(0, 0), 30,
+		"position", Vector2(0, 3000), Vector2(0, -300), 30 * factor,
 		Tween.TRANS_LINEAR, Tween.EASE_OUT)
 	tween.interpolate_property(get_node("ColorRect"),
-		"color", Color.black, Color(0, 0, 0.1), 10,
+		"color", Color.black, Color(0, 0, 0.1), 10 * factor,
 		Tween.TRANS_LINEAR, Tween.EASE_OUT)
 	tween.interpolate_property(get_node("View/Stars"),
-		"modulate", Color.white, Color(1, 1, 1, 0), 30,
+		"modulate", Color.white, Color(1, 1, 1, 0), 30 * factor,
 		Tween.TRANS_LINEAR, Tween.EASE_OUT)
 	tween.start()
 
